@@ -135,7 +135,7 @@ END
 delimiter ;
 call reservas_pedidos_cliente(2);
 
--- inserta en una tabla llamada 'reservas_hechas_mes' donde almacena el numero de reservas hechas en este mes
+-- inserta en una tabla llamada 'reservas_hechas_mes' donde almacena el numero de reservas hechas hoy
 
 
 drop table if exists reserva_mas_reciente;
