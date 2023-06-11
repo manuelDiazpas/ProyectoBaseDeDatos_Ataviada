@@ -1,3341 +1,2108 @@
 use ataviada;
 
--- Datos Proveedor
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (1, 'Mitchell, Klein and Dicki', 'ubernardini0@ca.gov', 'Indonesia', 23);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (2, 'Jakubowski and Sons', 'qroutley1@irs.gov', 'Hungary', 416);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (3, 'Barton Inc', 'redge2@census.gov', 'Kyrgyzstan', 693);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (4, 'Haley-Casper', 'gkearn3@upenn.edu', 'Philippines', 451);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (5, 'Haag Group', 'avasey4@java.com', 'Jordan', 719);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (6, 'Kassulke-Prosacco', 'gmarsh5@ft.com', 'Indonesia', 328);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (7, 'Lindgren-Hickle', 'bbodle6@networksolutions.com', 'El Salvador', 533);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (8, 'Roob, Rogahn and Ernser', 'gbarchrameev7@loc.gov', 'China', 68);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (9, 'Rice, Ortiz and Hessel', 'lstephenson8@sohu.com', 'Philippines', 861);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (10, 'MacGyver LLC', 'rpigny9@artisteer.com', 'Mexico', 514);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (11, 'Vandervort, Douglas and Sawayn', 'pfilera@slate.com', 'Russia', 288);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (12, 'Nader, Hamill and Kohler', 'pciubutarob@tripadvisor.com', 'Serbia', 233);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (13, 'Ullrich-Gutmann', 'rjanatac@businessweek.com', 'Nicaragua', 579);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (14, 'Sporer LLC', 'ggossaged@ebay.co.uk', 'Mexico', 417);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (15, 'Waelchi and Sons', 'cheinkee@163.com', 'China', 915);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (16, 'Rohan Inc', 'vsmeedf@bizjournals.com', 'Japan', 409);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (17, 'Satterfield, Gerhold and Baumbach', 'vhoudhuryg@elpais.com', 'Philippines', 502);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (18, 'Koch, Ward and Sipes', 'djorczykh@e-recht24.de', 'Portugal', 92);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (19, 'Stanton-Hauck', 'ayeldeni@msn.com', 'Philippines', 280);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (20, 'Kshlerin Group', 'wologhlenj@hatena.ne.jp', 'Russia', 783);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (21, 'Wintheiser, Glover and Wisoky', 'aoharek@github.com', 'Kazakhstan', 603);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (22, 'Hilll, Anderson and Keebler', 'gwittenl@posterous.com', 'Indonesia', 235);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (23, 'Hilll and Sons', 'colkowiczm@liveinternet.ru', 'Kenya', 890);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (24, 'Carroll, Gleason and Brekke', 'swaithn@chron.com', 'Brazil', 160);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (25, 'Fadel, Buckridge and Funk', 'dcolnetto@facebook.com', 'Bolivia', 35);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (26, 'Huel Group', 'dnannip@reverbnation.com', 'Brazil', 796);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (27, 'Crooks-Schoen', 'tbrownceyq@independent.co.uk', 'China', 843);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (28, 'Lehner, Flatley and Zulauf', 'ryashinr@washington.edu', 'Mexico', 630);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (29, 'Bailey-Altenwerth', 'rleess@quantcast.com', 'Indonesia', 812);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (30, 'Zboncak, Cummerata and O''Connell', 'odowdellt@nps.gov', 'Brazil', 235);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (31, 'Terry, Kuvalis and Roob', 'smockettu@unesco.org', 'Brazil', 618);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (32, 'Gaylord, Hintz and Streich', 'sabrahartv@usatoday.com', 'Slovenia', 713);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (33, 'Schuppe, Cartwright and Fritsch', 'tkelingew@umn.edu', 'United States', 162);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (34, 'Kling Inc', 'pmackellarx@imageshack.us', 'Czech Republic', 119);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (35, 'Jones-Rau', 'jbenkay@sitemeter.com', 'Indonesia', 585);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (36, 'Hartmann, Schroeder and Pacocha', 'ssevillez@mapy.cz', 'Sweden', 770);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (37, 'Smith Inc', 'stees10@squarespace.com', 'China', 553);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (38, 'Christiansen-Renner', 'jgiorgioni11@soundcloud.com', 'China', 532);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (39, 'Reichert, King and Kreiger', 'hforlong12@deviantart.com', 'Bulgaria', 821);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (40, 'Rippin Inc', 'atomaskunas13@youku.com', 'Myanmar', 630);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (41, 'Kub Inc', 'arollinshaw14@scientificamerican.com', 'Hungary', 436);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (42, 'Schroeder, Carter and Toy', 'htoffaloni15@de.vu', 'Brazil', 765);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (43, 'Upton, Romaguera and Bogan', 'lcoldridge16@linkedin.com', 'Belarus', 117);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (44, 'Corwin, Roob and Mertz', 'jbartelsellis17@tumblr.com', 'Russia', 403);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (45, 'Auer, Kovacek and Raynor', 'kcollison18@cdbaby.com', 'China', 345);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (46, 'Fritsch, Langosh and Mitchell', 'apadula19@ihg.com', 'Brazil', 115);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (47, 'Weber, Sporer and Schaden', 'wfayerbrother1a@thetimes.co.uk', 'Germany', 605);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (48, 'Franecki-Lemke', 'dbroughton1b@sphinn.com', 'China', 243);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (49, 'Dibbert Group', 'dreiach1c@unc.edu', 'China', 867);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (50, 'Beatty-Bauch', 'kmarre1d@npr.org', 'Nigeria', 524);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (51, 'Reichert LLC', 'dbarbrick1e@unicef.org', 'Belarus', 65);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (52, 'Harvey, Pouros and Keeling', 'gmckern1f@github.com', 'Indonesia', 173);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (53, 'Davis-Wilderman', 'mbrugsma1g@apache.org', 'Russia', 988);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (54, 'Luettgen, Towne and Kutch', 'srigden1h@ted.com', 'China', 493);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (55, 'Waelchi and Sons', 'efattore1i@moonfruit.com', 'Indonesia', 142);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (56, 'Bernhard, Nitzsche and Kohler', 'mszymonwicz1j@wp.com', 'China', 999);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (57, 'Hartmann-Balistreri', 'cewdale1k@storify.com', 'Greece', 396);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (58, 'Stark-Wuckert', 'gchyuerton1l@ebay.co.uk', 'Peru', 788);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (59, 'Hahn and Sons', 'glerigo1m@jimdo.com', 'China', 679);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (60, 'Hirthe, Lemke and Doyle', 'lbleyman1n@livejournal.com', 'Philippines', 747);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (61, 'Brekke-Green', 'bkindread1o@discuz.net', 'Russia', 965);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (62, 'O''Kon, Cummerata and Smitham', 'meggar1p@dropbox.com', 'China', 672);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (63, 'Schaden Inc', 'trandles1q@psu.edu', 'France', 570);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (64, 'Sanford, Parker and Gibson', 'vfenck1r@ustream.tv', 'Russia', 764);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (65, 'Douglas, Haley and Towne', 'vmcravey1s@biblegateway.com', 'Poland', 773);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (66, 'Fisher-Stanton', 'slackney1t@sciencedirect.com', 'Poland', 740);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (67, 'Walter Inc', 'wnekrews1u@amazon.de', 'Indonesia', 816);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (68, 'Legros Group', 'arubinsohn1v@deliciousdays.com', 'Czech Republic', 589);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (69, 'Abshire LLC', 'ftrobridge1w@marketwatch.com', 'Macedonia', 81);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (70, 'Cummerata-Pollich', 'gbyne1x@mayoclinic.com', 'China', 869);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (71, 'Jacobi Inc', 'pflewin1y@gravatar.com', 'Indonesia', 45);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (72, 'Mante-Altenwerth', 'furridge1z@howstuffworks.com', 'Philippines', 682);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (73, 'Howell-Wiza', 'kbakes20@vk.com', 'Russia', 829);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (74, 'Metz and Sons', 'akeyden21@gov.uk', 'Russia', 938);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (75, 'Medhurst LLC', 'ekittman22@ted.com', 'Indonesia', 707);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (76, 'Keebler, McKenzie and Mertz', 'ecometti23@weather.com', 'China', 944);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (77, 'Little-Heidenreich', 'riley24@ed.gov', 'China', 798);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (78, 'Kshlerin, Beier and Kautzer', 'drosbotham25@myspace.com', 'China', 393);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (79, 'Wolff-Bergnaum', 'pcuruclis26@huffingtonpost.com', 'Poland', 721);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (80, 'Douglas, Klocko and Kutch', 'dfaudrie27@cnn.com', 'China', 606);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (81, 'Funk-Huels', 'omclae28@prlog.org', 'Portugal', 362);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (82, 'Lynch Group', 'cesmonde29@netlog.com', 'China', 6);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (83, 'Hettinger LLC', 'ccawsy2a@fda.gov', 'China', 294);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (84, 'Ward, Mayer and Barrows', 'malf2b@sogou.com', 'Lithuania', 99);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (85, 'Kub-O''Reilly', 'abausmann2c@wiley.com', 'Philippines', 155);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (86, 'Schulist, Zulauf and Torphy', 'jkorda2d@twitpic.com', 'France', 422);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (87, 'Harvey Group', 'tdarlow2e@alexa.com', 'Russia', 540);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (88, 'Tillman-Terry', 'saggett2f@gravatar.com', 'Serbia', 7);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (89, 'Muller and Sons', 'hgrinishin2g@github.com', 'Czech Republic', 301);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (90, 'Becker LLC', 'lchurches2h@instagram.com', 'Armenia', 778);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (91, 'Konopelski-Abernathy', 'groark2i@who.int', 'Thailand', 167);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (92, 'Lakin, Koelpin and Abernathy', 'kcook2j@npr.org', 'Poland', 29);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (93, 'Daugherty, Grant and Krajcik', 'bousbie2k@yale.edu', 'China', 438);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (94, 'Heller-Hettinger', 'bshilburne2l@smh.com.au', 'Philippines', 187);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (95, 'Denesik Group', 'uglide2m@seattletimes.com', 'Argentina', 956);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (96, 'Roob, Schuppe and Jast', 'bmelloi2n@imgur.com', 'Czech Republic', 865);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (97, 'Lind, Lynch and Sanford', 'msnarr2o@weebly.com', 'Russia', 77);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (98, 'Rath-Borer', 'tpryn2p@cafepress.com', 'France', 356);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (99, 'Rosenbaum, Hane and Lakin', 'pdawidowicz2q@utexas.edu', 'Philippines', 137);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (100, 'Homenick LLC', 'tbrampton2r@theguardian.com', 'Hungary', 358);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (101, 'Jacobson Group', 'mtamsett2s@hostgator.com', 'Indonesia', 486);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (102, 'Von-Bode', 'epryde2t@cpanel.net', 'Cyprus', 279);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (103, 'Lowe-Ortiz', 'thardaway2u@narod.ru', 'Pakistan', 724);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (104, 'Dooley, Emmerich and McGlynn', 'jgurden2v@lulu.com', 'Angola', 759);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (105, 'Robel-Wisozk', 'amalshinger2w@un.org', 'Indonesia', 730);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (106, 'Sauer Group', 'dcorselles2x@google.de', 'China', 319);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (107, 'Toy-Marvin', 'swillarton2y@army.mil', 'Peru', 378);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (108, 'Schmitt Inc', 'rpallister2z@independent.co.uk', 'Brazil', 592);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (109, 'Gutkowski-West', 'cstrewther30@wisc.edu', 'China', 50);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (110, 'Larkin-Nolan', 'rmewton31@over-blog.com', 'Indonesia', 647);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (111, 'Bogan LLC', 'jolden32@army.mil', 'Brazil', 221);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (112, 'Weber and Sons', 'bwiddop33@merriam-webster.com', 'Serbia', 94);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (113, 'Stiedemann-Jaskolski', 'nhuff34@slideshare.net', 'Guatemala', 951);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (114, 'Vandervort, Thiel and Jacobs', 'hmacellar35@ted.com', 'Botswana', 339);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (115, 'Rogahn, Schumm and Gerhold', 'ggoudge36@aboutads.info', 'Portugal', 571);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (116, 'Raynor, Flatley and Greenfelder', 'mawcoate37@aol.com', 'Indonesia', 962);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (117, 'Franecki Group', 'kratchford38@1688.com', 'France', 737);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (118, 'Howell-Boehm', 'odezamudio39@addthis.com', 'Iran', 729);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (119, 'Koss-Adams', 'clovekin3a@cpanel.net', 'France', 849);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (120, 'Rutherford, Schiller and Goldner', 'tcaherny3b@fema.gov', 'China', 688);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (121, 'Sporer, Windler and O''Hara', 'schubb3c@washingtonpost.com', 'Indonesia', 689);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (122, 'Cruickshank, Rath and Okuneva', 'mdugall3d@shutterfly.com', 'China', 282);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (123, 'Bode-Bogisich', 'abassford3e@histats.com', 'Venezuela', 333);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (124, 'Cole-Kshlerin', 'fmaruska3f@lycos.com', 'China', 240);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (125, 'Considine-Bosco', 'jrubberts3g@blogs.com', 'Canada', 728);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (126, 'Simonis, Franecki and Sanford', 'wmccarry3h@newyorker.com', 'Indonesia', 86);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (127, 'Cruickshank, Funk and Schumm', 'klindup3i@newsvine.com', 'Ethiopia', 819);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (128, 'Johns Group', 'kwike3j@java.com', 'Russia', 397);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (129, 'West Group', 'rlorimer3k@cbc.ca', 'Madagascar', 986);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (130, 'Thompson Inc', 'dfoxall3l@exblog.jp', 'Poland', 883);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (131, 'Wisozk-Strosin', 'bisbell3m@noaa.gov', 'Indonesia', 99);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (132, 'Corkery-Satterfield', 'ekubik3n@gravatar.com', 'New Zealand', 703);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (133, 'Hagenes-Conroy', 'fjurca3o@cornell.edu', 'China', 250);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (134, 'Kohler Group', 'mwinckle3p@cbc.ca', 'China', 544);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (135, 'Haley-Tremblay', 'dprothero3q@miitbeian.gov.cn', 'Poland', 959);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (136, 'Mohr-Zboncak', 'snollet3r@xinhuanet.com', 'Guatemala', 388);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (137, 'Rosenbaum-Schmitt', 'bleguey3s@springer.com', 'France', 926);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (138, 'Moore, Schuster and Ziemann', 'svondruska3t@soundcloud.com', 'Indonesia', 153);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (139, 'Hirthe-Koepp', 'rbrunelli3u@craigslist.org', 'Brazil', 390);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (140, 'Marquardt LLC', 'champstead3v@dagondesign.com', 'Indonesia', 943);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (141, 'Rowe-Walsh', 'akment3w@multiply.com', 'Thailand', 295);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (142, 'Ferry Inc', 'lbehr3x@ifeng.com', 'Finland', 843);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (143, 'Littel-Ebert', 'xchawkley3y@seattletimes.com', 'Philippines', 120);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (144, 'Koelpin, Roberts and Raynor', 'fsurphliss3z@friendfeed.com', 'China', 58);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (145, 'Kassulke-Breitenberg', 'tcann40@youtu.be', 'Russia', 970);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (146, 'Mohr, Leannon and Carroll', 'bvedyasov41@soup.io', 'Colombia', 700);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (147, 'Becker LLC', 'jbencher42@ask.com', 'Ukraine', 939);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (148, 'Cremin LLC', 'htwyning43@trellian.com', 'Russia', 465);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (149, 'Kshlerin-White', 'vrikel44@sciencedaily.com', 'Thailand', 71);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (150, 'Schoen, Ferry and Ward', 'ostelle45@un.org', 'China', 774);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (151, 'Bauch-Ernser', 'jswanbourne46@ca.gov', 'China', 561);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (152, 'Wintheiser-Nitzsche', 'lconville47@wikimedia.org', 'Brazil', 171);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (153, 'Rodriguez, Roob and Schneider', 'eabreheart48@wix.com', 'Sweden', 603);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (154, 'Monahan, Smitham and Krajcik', 'rbosquet49@csmonitor.com', 'Argentina', 149);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (155, 'Schumm LLC', 'rduckers4a@springer.com', 'Russia', 278);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (156, 'Will Inc', 'fcrommett4b@technorati.com', 'Russia', 525);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (157, 'Hackett, Miller and Heller', 'scalcut4c@eventbrite.com', 'Portugal', 990);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (158, 'O''Hara Group', 'chaines4d@dot.gov', 'South Sudan', 786);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (159, 'Marquardt-Aufderhar', 'gwoodier4e@pagesperso-orange.fr', 'Poland', 531);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (160, 'Ullrich-Wyman', 'sdemcik4f@chron.com', 'Palestinian Territory', 735);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (161, 'Schoen-Reinger', 'afairhurst4g@twitter.com', 'Russia', 656);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (162, 'Nitzsche and Sons', 'briseam4h@goodreads.com', 'Sweden', 380);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (163, 'Durgan-D''Amore', 'apetrashov4i@theglobeandmail.com', 'Venezuela', 603);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (164, 'Predovic-Yost', 'ecurrao4j@lulu.com', 'Russia', 978);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (165, 'Purdy, Schamberger and Kirlin', 'cfoyle4k@mapy.cz', 'Nepal', 695);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (166, 'Marvin, Erdman and Flatley', 'gclaypole4l@indiegogo.com', 'Russia', 881);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (167, 'Shanahan, Huel and Ratke', 'rnorway4m@ocn.ne.jp', 'Russia', 561);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (168, 'VonRueden LLC', 'prowden4n@symantec.com', 'Greece', 922);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (169, 'Stracke-Haley', 'gmarfell4o@behance.net', 'Portugal', 266);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (170, 'Okuneva-Wyman', 'eaupol4p@pinterest.com', 'Uruguay', 27);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (171, 'Aufderhar LLC', 'otompkin4q@kickstarter.com', 'China', 677);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (172, 'Rice, Hauck and Leuschke', 'amixon4r@mashable.com', 'Vietnam', 939);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (173, 'Connelly Inc', 'sfeldman4s@sogou.com', 'China', 902);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (174, 'Feil Inc', 'aduggen4t@cbslocal.com', 'France', 894);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (175, 'King-Bartell', 'sartharg4u@cmu.edu', 'Portugal', 948);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (176, 'Kessler-Reinger', 'mcuttell4v@woothemes.com', 'Nigeria', 976);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (177, 'Stroman-Hyatt', 'ploblie4w@gov.uk', 'Portugal', 751);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (178, 'Walker Group', 'gkegley4x@slideshare.net', 'French Polynesia', 643);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (179, 'Pacocha-Kulas', 'ljaquemar4y@yelp.com', 'Netherlands', 656);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (180, 'O''Reilly and Sons', 'btewkesbury4z@eepurl.com', 'Tanzania', 538);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (181, 'Harber-Wisoky', 'wkarlolak50@histats.com', 'Kuwait', 387);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (182, 'Hessel-Swift', 'vbevington51@ucoz.com', 'Egypt', 524);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (183, 'Kuhlman Group', 'fklaessen52@whitehouse.gov', 'China', 128);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (184, 'Balistreri-Roob', 'htaffs53@xrea.com', 'Uganda', 81);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (185, 'Braun and Sons', 'atampion54@wordpress.com', 'Indonesia', 795);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (186, 'Harvey-Hessel', 'jtocque55@loc.gov', 'Sweden', 89);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (187, 'Russel-Runolfsson', 'ekleinsmuntz56@prlog.org', 'Barbados', 481);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (188, 'Brown-Brown', 'astables57@squidoo.com', 'France', 79);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (189, 'Gaylord-Botsford', 'jcodrington58@chron.com', 'Albania', 827);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (190, 'Quigley-Kunde', 'kgiovannilli59@chronoengine.com', 'China', 865);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (191, 'Strosin-Hoeger', 'xlacy5a@google.es', 'China', 655);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (192, 'Schultz-Kuphal', 'ktappor5b@flickr.com', 'Portugal', 344);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (193, 'Will-Wuckert', 'tschumacher5c@shop-pro.jp', 'China', 124);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (194, 'Schinner, Schmeler and Schiller', 'nduckworth5d@deviantart.com', 'Indonesia', 505);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (195, 'Boehm Inc', 'kferrarone5e@fastcompany.com', 'Indonesia', 58);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (196, 'Simonis Inc', 'mimison5f@zdnet.com', 'Russia', 432);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (197, 'Hyatt, Green and Smith', 'ctripney5g@jugem.jp', 'Pakistan', 715);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (198, 'Jerde-Hessel', 'jgreswell5h@sitemeter.com', 'France', 217);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (199, 'O''Kon, Casper and Blanda', 'aszymanowicz5i@hibu.com', 'Republic of the Congo', 137);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (200, 'Durgan, Boehm and Gleason', 'frait5j@yellowbook.com', 'Brazil', 536);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (201, 'Gerlach Inc', 'mbontein5k@sogou.com', 'Indonesia', 905);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (202, 'Jast, Metz and Rippin', 'jshivell5l@utexas.edu', 'Luxembourg', 816);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (203, 'Connelly-Marvin', 'sgribbon5m@soundcloud.com', 'China', 739);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (204, 'Runolfsson Group', 'murwen5n@ftc.gov', 'Indonesia', 439);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (205, 'Sanford-Kassulke', 'rwoods5o@ucla.edu', 'Latvia', 517);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (206, 'Bartoletti and Sons', 'cblowne5p@samsung.com', 'Indonesia', 766);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (207, 'Beer, Kunze and Waters', 'blabrow5q@fc2.com', 'China', 120);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (208, 'Mueller-Rippin', 'chedworth5r@oakley.com', 'China', 981);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (209, 'White-Bergstrom', 'msills5s@zimbio.com', 'China', 878);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (210, 'O''Hara, Ruecker and Schinner', 'drippen5t@live.com', 'Poland', 306);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (211, 'Dickens and Sons', 'thouseman5u@msu.edu', 'Cambodia', 394);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (212, 'Labadie, Moen and Cruickshank', 'ehannaford5v@rakuten.co.jp', 'China', 116);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (213, 'Klein, Johnson and Lang', 'asearle5w@alibaba.com', 'Vietnam', 802);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (214, 'Kreiger-Nader', 'kludlem5x@sfgate.com', 'Mexico', 785);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (215, 'Borer, Dach and Ullrich', 'amularkey5y@google.com.au', 'China', 466);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (216, 'Hane Group', 'tricardou5z@fastcompany.com', 'Portugal', 627);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (217, 'Bruen-Ryan', 'rwroth60@reuters.com', 'Macedonia', 814);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (218, 'Osinski LLC', 'zdunthorn61@springer.com', 'Sri Lanka', 58);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (219, 'Orn-Schmitt', 'ejeffree62@about.com', 'Russia', 683);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (220, 'Spencer, Connelly and Blick', 'rneeve63@reference.com', 'Indonesia', 233);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (221, 'Carter, Lesch and Lang', 'hdundon64@seesaa.net', 'United States', 365);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (222, 'Schamberger, Beier and Reichert', 'ggurwood65@ucoz.com', 'Japan', 985);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (223, 'Abshire and Sons', 'gchark66@drupal.org', 'China', 817);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (224, 'Feest-McGlynn', 'vlazonby67@artisteer.com', 'China', 293);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (225, 'Corkery Group', 'blurner68@webeden.co.uk', 'Palestinian Territory', 498);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (226, 'Gleason, Boyle and Hansen', 'rheliet69@imageshack.us', 'Canada', 403);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (227, 'Schmitt, Gutmann and Batz', 'kthornewell6a@skyrock.com', 'Brazil', 675);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (228, 'Hintz-Flatley', 'grapson6b@yahoo.co.jp', 'Portugal', 866);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (229, 'Lakin-Toy', 'mthickins6c@ycombinator.com', 'France', 343);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (230, 'Howe-Turner', 'mkeighley6d@tamu.edu', 'China', 938);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (231, 'Lockman, Ebert and Zboncak', 'bamaya6e@fc2.com', 'Russia', 359);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (232, 'Satterfield, O''Connell and Schroeder', 'psappy6f@e-recht24.de', 'China', 11);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (233, 'O''Connell LLC', 'adundon6g@creativecommons.org', 'Portugal', 469);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (234, 'Wisozk-Jacobi', 'oclitheroe6h@eepurl.com', 'Sweden', 116);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (235, 'Rogahn and Sons', 'htoyer6i@chicagotribune.com', 'Russia', 325);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (236, 'Rohan Inc', 'traoul6j@netvibes.com', 'Spain', 710);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (237, 'Fay-Kunze', 'mwichard6k@independent.co.uk', 'Marshall Islands', 754);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (238, 'Schulist Group', 'gotterwell6l@live.com', 'Brazil', 665);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (239, 'Kirlin and Sons', 'rnestor6m@people.com.cn', 'Tajikistan', 199);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (240, 'D''Amore and Sons', 'rgraber6n@elegantthemes.com', 'New Zealand', 563);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (241, 'Homenick-Wehner', 'tdeddum6o@theglobeandmail.com', 'Russia', 184);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (242, 'Tremblay, Cruickshank and Murazik', 'nfarenden6p@sphinn.com', 'Indonesia', 370);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (243, 'Hudson Inc', 'pkleinlerer6q@nbcnews.com', 'Sweden', 881);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (244, 'Upton, Jacobson and Kiehn', 'mwingatt6r@nytimes.com', 'Argentina', 925);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (245, 'Hyatt-Lueilwitz', 'aakister6s@bloglines.com', 'Egypt', 889);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (246, 'Steuber LLC', 'jmeggison6t@studiopress.com', 'Ukraine', 386);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (247, 'Breitenberg and Sons', 'lheck6u@google.ca', 'Japan', 521);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (248, 'Howe Inc', 'opietron6v@jugem.jp', 'China', 659);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (249, 'Fritsch and Sons', 'sgleaves6w@twitter.com', 'Portugal', 780);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (250, 'Veum-Pfannerstill', 'egamell6x@lycos.com', 'China', 287);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (251, 'Renner-Pfeffer', 'sallden6y@w3.org', 'Japan', 3);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (252, 'Considine-Ruecker', 'faldin6z@spotify.com', 'China', 981);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (253, 'Zboncak-Fisher', 'ddudderidge70@homestead.com', 'Greece', 369);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (254, 'Kuhn and Sons', 'sgodmar71@people.com.cn', 'Syria', 381);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (255, 'Fisher-Nienow', 'kmicka72@sphinn.com', 'Indonesia', 731);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (256, 'Altenwerth-Wiza', 'jchestney73@nytimes.com', 'France', 204);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (257, 'Windler, Cremin and Huel', 'eambroisin74@ow.ly', 'Mexico', 373);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (258, 'Block and Sons', 'dbingle75@slideshare.net', 'China', 767);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (259, 'Crooks LLC', 'tmyford76@youku.com', 'Argentina', 36);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (260, 'Nicolas-Gleichner', 'lmarmyon77@google.com.au', 'Venezuela', 310);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (261, 'Hilpert-Huel', 'awandrey78@instagram.com', 'Laos', 601);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (262, 'Dare Inc', 'lstut79@woothemes.com', 'Russia', 691);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (263, 'Stanton LLC', 'agorelli7a@jigsy.com', 'China', 712);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (264, 'Okuneva-Crist', 'cneachell7b@a8.net', 'Brazil', 350);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (265, 'Kuhn, McClure and Leannon', 'hbrine7c@sfgate.com', 'China', 275);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (266, 'Denesik Inc', 'rleahair7d@goo.ne.jp', 'Philippines', 513);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (267, 'Simonis Group', 'lcurnucke7e@angelfire.com', 'Brazil', 919);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (268, 'Crooks-Willms', 'ybirchwood7f@addtoany.com', 'Philippines', 703);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (269, 'Botsford-Abernathy', 'mrehor7g@123-reg.co.uk', 'Poland', 507);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (270, 'Towne-Ruecker', 'fstennings7h@goo.gl', 'China', 470);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (271, 'Feest-Rosenbaum', 'agrayston7i@google.co.jp', 'Thailand', 702);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (272, 'Gusikowski and Sons', 'apersent7j@freewebs.com', 'Indonesia', 813);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (273, 'Jenkins, Tremblay and Connelly', 'eneiland7k@desdev.cn', 'Indonesia', 724);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (274, 'Jacobi, Rath and Bradtke', 'nboddington7l@is.gd', 'Netherlands', 551);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (275, 'Huel-Wuckert', 'lvobes7m@ezinearticles.com', 'Philippines', 30);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (276, 'Russel Group', 'mscowcroft7n@europa.eu', 'China', 623);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (277, 'Sporer Inc', 'agabotti7o@auda.org.au', 'United States', 372);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (278, 'Gaylord, Kiehn and Stamm', 'kbrittin7p@theatlantic.com', 'China', 792);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (279, 'Hilpert LLC', 'drowat7q@msu.edu', 'Macedonia', 432);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (280, 'Goldner, Fritsch and Cummings', 'sbalston7r@walmart.com', 'China', 485);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (281, 'Schmitt, Konopelski and O''Reilly', 'kfortman7s@instagram.com', 'Poland', 402);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (282, 'Emard LLC', 'iharms7t@opera.com', 'Poland', 542);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (283, 'DuBuque LLC', 'mnewe7u@cdbaby.com', 'China', 519);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (284, 'Watsica, Leuschke and Casper', 'tadamovicz7v@diigo.com', 'Thailand', 286);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (285, 'Leannon-Wilderman', 'dhopkynson7w@tuttocitta.it', 'China', 813);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (286, 'Lueilwitz-Kohler', 'rwisker7x@e-recht24.de', 'Bosnia and Herzegovina', 510);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (287, 'Lang Inc', 'hjardin7y@artisteer.com', 'Kenya', 810);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (288, 'Ebert, Abshire and Dare', 'cvahey7z@chron.com', 'Ukraine', 234);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (289, 'Koepp, Abbott and Bogisich', 'mduckett80@ezinearticles.com', 'Colombia', 418);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (290, 'Gerlach, Witting and Mann', 'adarth81@shinystat.com', 'Armenia', 40);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (291, 'Simonis, Paucek and Pacocha', 'ohobden82@unesco.org', 'Russia', 366);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (292, 'Sipes, Goldner and Kihn', 'hmarquez83@seattletimes.com', 'China', 478);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (293, 'Wolf, D''Amore and Huel', 'kfadden84@ezinearticles.com', 'Portugal', 542);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (294, 'Sauer, Homenick and Daniel', 'hanthona85@gov.uk', 'China', 553);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (295, 'Walsh, Reichel and Lueilwitz', 'crhelton86@pcworld.com', 'Philippines', 939);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (296, 'Russel-Gutkowski', 'slind87@scientificamerican.com', 'Indonesia', 200);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (297, 'Mante LLC', 'thindrich88@chron.com', 'Poland', 837);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (298, 'Collins-Huels', 'prielly89@wsj.com', 'China', 326);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (299, 'Gislason-Muller', 'alawleff8a@bizjournals.com', 'Canada', 761);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (300, 'Dietrich LLC', 'jstaubyn8b@dyndns.org', 'Sweden', 457);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (301, 'McDermott, Kautzer and Maggio', 'awhiley8c@usatoday.com', 'Portugal', 181);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (302, 'Connelly-Collier', 'cohallihane8d@moonfruit.com', 'Haiti', 399);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (303, 'Collier-Spencer', 'kedowes8e@nyu.edu', 'France', 247);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (304, 'Cummings-Larkin', 'gdoswell8f@yellowpages.com', 'Argentina', 358);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (305, 'Mayer, Ritchie and Hauck', 'atew8g@meetup.com', 'Zambia', 537);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (306, 'Heaney-Jacobs', 'dgaraghan8h@cnbc.com', 'Philippines', 713);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (307, 'Huels, Reinger and Rice', 'ashoard8i@marketwatch.com', 'United States', 328);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (308, 'Schultz-Schumm', 'vwehnerr8j@blogger.com', 'Argentina', 129);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (309, 'Ryan Inc', 'mtwitchett8k@cocolog-nifty.com', 'Pakistan', 404);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (310, 'Kilback, Wilderman and Skiles', 'lkettles8l@sciencedaily.com', 'Philippines', 59);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (311, 'Hirthe Group', 'hdiver8m@is.gd', 'Madagascar', 108);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (312, 'Hirthe LLC', 'awadman8n@elpais.com', 'Belarus', 363);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (313, 'Dickens LLC', 'praraty8o@walmart.com', 'China', 24);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (314, 'Cartwright and Sons', 'tenderwick8p@hibu.com', 'Iran', 30);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (315, 'Wilkinson, Davis and Pouros', 'galsina8q@clickbank.net', 'China', 232);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (316, 'Bins-Mraz', 'mgreeveson8r@eepurl.com', 'Russia', 789);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (317, 'Goldner-Rippin', 'mkrause8s@drupal.org', 'Brazil', 990);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (318, 'Sauer-Robel', 'lgiacomini8t@goo.gl', 'France', 440);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (319, 'Hoppe, Runolfsdottir and Willms', 'qmufford8u@newsvine.com', 'Brazil', 438);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (320, 'Auer and Sons', 'beastmond8v@gmpg.org', 'China', 126);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (321, 'Okuneva and Sons', 'rcharette8w@mozilla.org', 'Comoros', 324);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (322, 'Dare-Hilpert', 'rrankcom8x@imdb.com', 'France', 286);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (323, 'Hilpert, Nienow and Cummings', 'tungerer8y@i2i.jp', 'Ireland', 305);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (324, 'Raynor-Runolfsdottir', 'jdruhan8z@springer.com', 'Guam', 109);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (325, 'Lehner Inc', 'charmes90@usa.gov', 'Sweden', 103);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (326, 'D''Amore-Wehner', 'kfulop91@feedburner.com', 'Czech Republic', 771);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (327, 'Hettinger Inc', 'kshoebottom92@samsung.com', 'Belarus', 377);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (328, 'Keeling-Daugherty', 'dmerwede93@soundcloud.com', 'Greece', 791);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (329, 'Stark Inc', 'khollingdale94@phoca.cz', 'Macedonia', 217);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (330, 'Goldner Inc', 'pquinion95@unesco.org', 'Macedonia', 223);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (331, 'Hessel-Batz', 'kshergill96@multiply.com', 'Russia', 754);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (332, 'Abbott, Kohler and Feil', 'oskeeles97@businessweek.com', 'United States', 11);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (333, 'Jakubowski-Skiles', 'iborder98@blogs.com', 'Colombia', 948);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (334, 'Koch-Fritsch', 'kbeverley99@ning.com', 'United States', 668);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (335, 'Hilpert, Moen and Wiegand', 'msaller9a@va.gov', 'Ukraine', 107);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (336, 'Crona-Hahn', 'tvoase9b@businesswire.com', 'China', 922);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (337, 'Waelchi, Wilkinson and Kerluke', 'eballance9c@house.gov', 'Syria', 91);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (338, 'Jakubowski-Schimmel', 'drosenstock9d@nytimes.com', 'South Korea', 495);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (339, 'Kuvalis, Marvin and Morar', 'pmiles9e@lycos.com', 'Netherlands', 609);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (340, 'Adams Group', 'dcottell9f@utexas.edu', 'China', 686);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (341, 'Schinner, Kiehn and Kertzmann', 'nkerfut9g@cdc.gov', 'Poland', 549);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (342, 'Daugherty and Sons', 'jbrymham9h@youtube.com', 'China', 383);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (343, 'Thompson and Sons', 'dseth9i@devhub.com', 'Brazil', 266);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (344, 'Doyle, Herman and Wilkinson', 'gcorney9j@stumbleupon.com', 'China', 57);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (345, 'Armstrong, Veum and Medhurst', 'mrodie9k@redcross.org', 'Poland', 392);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (346, 'Kling Group', 'vcurner9l@chron.com', 'Argentina', 484);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (347, 'Hansen-Simonis', 'sfroude9m@ca.gov', 'Indonesia', 997);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (348, 'Jakubowski, Baumbach and Kunze', 'drawlison9n@plala.or.jp', 'Indonesia', 640);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (349, 'Leannon, Considine and Farrell', 'wnurdin9o@ezinearticles.com', 'Indonesia', 184);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (350, 'Glover LLC', 'alere9p@liveinternet.ru', 'Philippines', 2);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (351, 'Reichel Group', 'hgrestye9q@engadget.com', 'Slovenia', 45);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (352, 'Olson-Smith', 'atomalin9r@loc.gov', 'Indonesia', 112);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (353, 'Senger, Ankunding and Halvorson', 'jpatemore9s@google.ca', 'Russia', 446);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (354, 'Jacobs, Jerde and Paucek', 'dsongist9t@earthlink.net', 'Portugal', 632);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (355, 'Leuschke and Sons', 'bsealand9u@squarespace.com', 'Japan', 21);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (356, 'Bartoletti-Pagac', 'scaro9v@surveymonkey.com', 'China', 577);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (357, 'Littel, Pouros and Veum', 'cmaffioletti9w@discovery.com', 'Philippines', 518);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (358, 'Dicki-Nitzsche', 'nhilldrup9x@globo.com', 'United States', 688);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (359, 'Kovacek, Schroeder and Hackett', 'cbissiker9y@soundcloud.com', 'China', 310);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (360, 'Green-Collier', 'rdaveridge9z@rediff.com', 'Iran', 923);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (361, 'Bashirian-Hyatt', 'psowlea0@prlog.org', 'Brazil', 529);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (362, 'Weber, Gulgowski and Kilback', 'odunkerlya1@photobucket.com', 'Colombia', 739);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (363, 'Hessel, Wuckert and Herman', 'gclougha2@ustream.tv', 'Russia', 472);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (364, 'Ernser and Sons', 'eescofiera3@storify.com', 'Philippines', 74);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (365, 'Goldner Inc', 'tbonifacioa4@webmd.com', 'Israel', 656);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (366, 'Reichert Inc', 'jtorta5@gizmodo.com', 'Indonesia', 146);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (367, 'Wilderman-Hettinger', 'jduggona6@businessweek.com', 'Brazil', 905);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (368, 'Green, Mitchell and Frami', 'rlacroutza7@mail.ru', 'Ukraine', 19);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (369, 'Halvorson-Abernathy', 'dcreminsa8@photobucket.com', 'Denmark', 954);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (370, 'Nitzsche Inc', 'bcorbetta9@geocities.jp', 'Egypt', 386);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (371, 'Schumm, Marquardt and Treutel', 'lbradnockaa@mapquest.com', 'China', 519);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (372, 'Leffler-Cole', 'rsayerab@cisco.com', 'Azerbaijan', 9);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (373, 'Muller, Kertzmann and Paucek', 'cpurseyac@ted.com', 'France', 103);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (374, 'Schneider, Torp and Lebsack', 'rwescottad@blinklist.com', 'Thailand', 578);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (375, 'Kulas, Johnson and Runolfsdottir', 'mpalleae@miitbeian.gov.cn', 'Philippines', 124);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (376, 'Pouros, Dickens and Konopelski', 'mdeathridgeaf@answers.com', 'Colombia', 360);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (377, 'Baumbach, Johns and Emard', 'eheineag@sbwire.com', 'Russia', 722);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (378, 'Schulist, Vandervort and Medhurst', 'ptrowbridgeah@washingtonpost.com', 'Argentina', 554);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (379, 'Mante, Auer and Bernhard', 'ocossansai@pen.io', 'Sweden', 128);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (380, 'Wiza-Rempel', 'ppickerellaj@delicious.com', 'Greece', 106);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (381, 'Bartell-Cole', 'wguerraak@skype.com', 'Russia', 206);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (382, 'Bahringer-Rice', 'vpileal@theatlantic.com', 'Indonesia', 566);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (383, 'Hermiston-Hickle', 'csnedkeram@cnbc.com', 'Poland', 538);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (384, 'Mayer-Welch', 'spaunsfordan@flavors.me', 'Lebanon', 678);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (385, 'Haag, Raynor and Christiansen', 'sdewenao@jalbum.net', 'China', 267);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (386, 'Collier Group', 'bbodocsap@i2i.jp', 'Malaysia', 323);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (387, 'Morissette, Nitzsche and Pfannerstill', 'jwitsonaq@t.co', 'China', 811);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (388, 'Howell-Oberbrunner', 'ysollemear@scribd.com', 'Poland', 944);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (389, 'Legros and Sons', 'edockreyas@msn.com', 'Thailand', 113);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (390, 'Okuneva-Gutmann', 'zshippardat@ftc.gov', 'Croatia', 609);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (391, 'Rath-Schumm', 'oromainau@rambler.ru', 'China', 530);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (392, 'Metz, Grant and Cummings', 'akeileyav@ebay.co.uk', 'Serbia', 28);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (393, 'Kassulke-Renner', 'asinncockaw@cam.ac.uk', 'Paraguay', 695);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (394, 'Hills, Wintheiser and Willms', 'wbeardwellax@liveinternet.ru', 'China', 550);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (395, 'Brekke, Prosacco and Kub', 'lmeccoay@mayoclinic.com', 'China', 618);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (396, 'Lynch-Funk', 'asolaaz@redcross.org', 'Portugal', 139);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (397, 'Cartwright, Lynch and Batz', 'nhagstoneb0@ox.ac.uk', 'Poland', 643);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (398, 'Blick, Bogisich and Jacobi', 'cgoudgeb1@reference.com', 'China', 472);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (399, 'Kozey LLC', 'bprettymanb2@redcross.org', 'Slovenia', 937);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (400, 'Zboncak-Heaney', 'tshrigleyb3@hubpages.com', 'Indonesia', 191);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (401, 'Hahn Group', 'vmacrannellb4@narod.ru', 'Lebanon', 952);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (402, 'Kirlin-Streich', 'mbeamandb5@time.com', 'Malaysia', 720);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (403, 'Haley LLC', 'bgellb6@infoseek.co.jp', 'Russia', 229);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (404, 'Bechtelar LLC', 'rmalpasb7@wikimedia.org', 'China', 913);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (405, 'Koelpin-Schultz', 'shardawayb8@delicious.com', 'Brazil', 712);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (406, 'Wuckert, Pacocha and Emmerich', 'jboweringb9@goo.ne.jp', 'China', 952);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (407, 'Connelly and Sons', 'mlomazba@wikimedia.org', 'East Timor', 588);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (408, 'Ullrich, McClure and Runolfsson', 'jlanneybb@java.com', 'Greece', 341);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (409, 'Gutmann Group', 'mohoeybc@newyorker.com', 'Indonesia', 590);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (410, 'Walker LLC', 'nbarrusbd@linkedin.com', 'Vietnam', 109);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (411, 'Schuster-Cruickshank', 'mproskebe@google.com', 'Serbia', 780);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (412, 'O''Reilly, Green and Stroman', 'cgambellbf@cocolog-nifty.com', 'Indonesia', 824);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (413, 'Auer-Nikolaus', 'lpetcheybg@ftc.gov', 'Philippines', 11);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (414, 'Dooley Inc', 'twindrassbh@howstuffworks.com', 'United States', 420);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (415, 'Cormier Group', 'amerrellbi@dedecms.com', 'United States', 392);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (416, 'Veum, Dare and Weissnat', 'arampleybj@economist.com', 'China', 575);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (417, 'Gerlach-Thiel', 'hkobschbk@oaic.gov.au', 'Bolivia', 638);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (418, 'Stehr, Schoen and Hagenes', 'nmaccoughanbl@tmall.com', 'Pakistan', 562);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (419, 'Wiegand-Flatley', 'griccibm@sakura.ne.jp', 'Philippines', 366);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (420, 'Daugherty, Trantow and Ritchie', 'csnelbn@unicef.org', 'Madagascar', 369);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (421, 'Toy, Herman and Hamill', 'abennisonbo@hubpages.com', 'Canada', 13);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (422, 'Ferry, Pouros and Hilll', 'carmsbybp@people.com.cn', 'Uganda', 34);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (423, 'Olson-Kulas', 'mduddridgebq@google.cn', 'China', 159);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (424, 'Zulauf, Parker and Mertz', 'kruffybr@ft.com', 'Philippines', 485);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (425, 'Armstrong and Sons', 'gliddonbs@cargocollective.com', 'Poland', 689);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (426, 'Windler-Purdy', 'cquembybt@ibm.com', 'Russia', 718);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (427, 'Fritsch-Kozey', 'dstanelandbu@microsoft.com', 'Morocco', 852);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (428, 'Corwin-Gibson', 'ssallnowbv@dell.com', 'China', 488);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (429, 'Kessler-Orn', 'femsonbw@yahoo.co.jp', 'Gambia', 216);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (430, 'Erdman-Kilback', 'itatherbx@ustream.tv', 'Indonesia', 568);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (431, 'McLaughlin Inc', 'kaglioneby@adobe.com', 'Vietnam', 204);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (432, 'Graham, Rice and Mante', 'dpostgatebz@simplemachines.org', 'Iran', 262);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (433, 'Considine, Swift and Frami', 'mhelbeckc0@amazon.co.jp', 'China', 752);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (434, 'Okuneva, McDermott and McCullough', 'smcgraec1@icq.com', 'China', 435);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (435, 'Grimes-Haag', 'hmillmoec2@comcast.net', 'Philippines', 22);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (436, 'Swift, Berge and Bartell', 'sjakoubc3@privacy.gov.au', 'Gambia', 113);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (437, 'Lebsack-Kohler', 'eaggissc4@foxnews.com', 'Peru', 85);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (438, 'Gulgowski LLC', 'mskellonc5@statcounter.com', 'Philippines', 597);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (439, 'Pagac-DuBuque', 'gparlourc6@odnoklassniki.ru', 'Tonga', 244);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (440, 'Rodriguez, Kertzmann and Metz', 'rhildredc7@wiley.com', 'China', 648);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (441, 'Botsford, Kertzmann and Thiel', 'avanaccic8@geocities.jp', 'France', 761);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (442, 'Heathcote and Sons', 'eranscomec9@cdc.gov', 'Philippines', 407);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (443, 'Zboncak Inc', 'lbirdallca@apple.com', 'China', 408);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (444, 'Wilkinson LLC', 'wjeskinscb@feedburner.com', 'Brazil', 712);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (445, 'Legros and Sons', 'delrickcc@ovh.net', 'Indonesia', 197);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (446, 'Goldner LLC', 'dgowngecd@eepurl.com', 'Canada', 10);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (447, 'Wilkinson LLC', 'bdigglesce@reddit.com', 'Japan', 278);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (448, 'Kreiger Inc', 'hkinglesydcf@soundcloud.com', 'Ukraine', 244);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (449, 'Pouros Group', 'kwhitelawcg@sciencedirect.com', 'Philippines', 655);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (450, 'Christiansen LLC', 'nworkch@dyndns.org', 'China', 700);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (451, 'Kuhn-Skiles', 'sollandci@feedburner.com', 'Russia', 176);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (452, 'Okuneva, Kuhlman and Abernathy', 'ioffencj@msn.com', 'China', 723);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (453, 'Mueller, McCullough and Bogan', 'rlindborgck@stumbleupon.com', 'Albania', 928);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (454, 'Morissette, Kessler and Kutch', 'rmatiashvilicl@biglobe.ne.jp', 'China', 409);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (455, 'Prohaska, Schiller and Kuphal', 'spinorcm@blinklist.com', 'Sweden', 942);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (456, 'Fritsch Group', 'fdunderdalecn@behance.net', 'France', 712);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (457, 'Auer, Fritsch and Cummerata', 'hweyco@arstechnica.com', 'France', 250);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (458, 'McKenzie Inc', 'lbarnicottcp@mediafire.com', 'Indonesia', 884);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (459, 'Hauck, Gislason and Thiel', 'omcfarlandcq@ucoz.com', 'Mauritania', 1000);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (460, 'Harvey-Kuhlman', 'svaggerscr@flickr.com', 'Palestinian Territory', 257);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (461, 'Murray, Douglas and Schmeler', 'mbricketcs@columbia.edu', 'China', 196);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (462, 'Nitzsche, Fahey and Haag', 'mroskamsct@prweb.com', 'China', 90);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (463, 'Brakus-Schroeder', 'fmcilvaneycu@cdbaby.com', 'Indonesia', 718);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (464, 'Jacobson-Pfannerstill', 'gdraysoncv@webnode.com', 'Russia', 458);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (465, 'Smitham and Sons', 'mflecknesscw@illinois.edu', 'Indonesia', 680);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (466, 'Wilderman, Cole and Orn', 'mwratescx@posterous.com', 'Armenia', 702);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (467, 'Streich, Stamm and Waelchi', 'cskacelcy@icq.com', 'Philippines', 468);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (468, 'Terry-Terry', 'gloodycz@people.com.cn', 'Spain', 494);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (469, 'Legros, Huel and Ledner', 'ihantuschd0@japanpost.jp', 'Argentina', 240);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (470, 'Wiegand-Kuvalis', 'mcopasd1@wikipedia.org', 'Poland', 136);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (471, 'Howell-Muller', 'mwallengerd2@dyndns.org', 'China', 376);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (472, 'Predovic Group', 'bhansilld3@umich.edu', 'Canada', 86);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (473, 'Bosco, Homenick and Romaguera', 'wromad4@biblegateway.com', 'Norway', 731);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (474, 'Fadel, Vandervort and Schinner', 'laxtelld5@linkedin.com', 'Philippines', 797);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (475, 'Carroll Inc', 'eabelesd6@epa.gov', 'Croatia', 29);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (476, 'Haag Inc', 'sfebvred7@typepad.com', 'Brazil', 82);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (477, 'Schultz, Prohaska and Schuster', 'ehavilled8@google.com.au', 'Indonesia', 445);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (478, 'Terry and Sons', 'smckilroed9@shareasale.com', 'Czech Republic', 703);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (479, 'Jacobson, Douglas and Auer', 'cmussingtonda@xinhuanet.com', 'Canada', 184);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (480, 'Jakubowski LLC', 'atatedb@weather.com', 'Greece', 696);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (481, 'Stokes, Brekke and Runte', 'jpistoldc@about.me', 'Croatia', 39);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (482, 'Koss, Fisher and Dickinson', 'mtalkingtondd@pinterest.com', 'Indonesia', 176);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (483, 'Strosin LLC', 'dcrosfieldde@com.com', 'Indonesia', 431);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (484, 'Mertz Inc', 'mkainedf@naver.com', 'Indonesia', 949);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (485, 'Kshlerin, Heidenreich and Cartwright', 'grobesondg@mediafire.com', 'Guatemala', 138);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (486, 'Spinka-Rau', 'bbourkedh@whitehouse.gov', 'Philippines', 217);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (487, 'Friesen and Sons', 'rjoerningdi@phpbb.com', 'Indonesia', 719);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (488, 'Nitzsche-Crooks', 'ltyresdj@taobao.com', 'Poland', 394);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (489, 'Ryan, Hammes and Klocko', 'gferneyhoughdk@spiegel.de', 'Indonesia', 133);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (490, 'Donnelly, Rau and Hamill', 'ipashbeedl@creativecommons.org', 'Armenia', 483);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (491, 'Kassulke and Sons', 'mstablesdm@w3.org', 'Zambia', 430);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (492, 'Oberbrunner, Kassulke and Ledner', 'dshanedn@newyorker.com', 'Sweden', 2);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (493, 'Nitzsche-Carter', 'gderisleydo@woothemes.com', 'Russia', 914);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (494, 'Walker Group', 'etamburodp@yandex.ru', 'Argentina', 623);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (495, 'Schuster, Treutel and Wisoky', 'bdavysdq@answers.com', 'Japan', 732);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (496, 'Rodriguez-Heathcote', 'ncroandr@ca.gov', 'Vietnam', 523);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (497, 'Klocko, Yost and Thiel', 'sjansikds@guardian.co.uk', 'Peru', 961);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (498, 'Crist LLC', 'whusterdt@4shared.com', 'Sweden', 857);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (499, 'Cormier, Altenwerth and Gulgowski', 'nfoltindu@sun.com', 'Serbia', 734);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (500, 'Kerluke-Legros', 'mdavalldv@google.fr', 'Russia', 968);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (501, 'Lesch, Schulist and Torphy', 'traitiedw@ox.ac.uk', 'Ukraine', 787);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (502, 'Feil-Koch', 'gmackenneydx@mit.edu', 'China', 288);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (503, 'Kutch Group', 'bhevnerdy@bing.com', 'Tunisia', 980);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (504, 'Ward, Kiehn and Nienow', 'cwidmoordz@blogs.com', 'China', 478);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (505, 'Purdy LLC', 'ebennellicke0@cpanel.net', 'Indonesia', 442);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (506, 'Cummings-Kilback', 'tlawlane1@foxnews.com', 'China', 31);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (507, 'Terry-Williamson', 'ypyvise2@seesaa.net', 'Czech Republic', 655);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (508, 'Ziemann LLC', 'sgladwelle3@sakura.ne.jp', 'Sweden', 814);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (509, 'Simonis and Sons', 'rbragancae4@multiply.com', 'Indonesia', 387);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (510, 'VonRueden and Sons', 'ekinnare5@ucoz.com', 'Spain', 113);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (511, 'Pagac-Pfeffer', 'mfeirne6@angelfire.com', 'Yemen', 104);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (512, 'Orn, Dare and Schulist', 'didlee7@webnode.com', 'Colombia', 202);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (513, 'Paucek Inc', 'ksivyoure8@blinklist.com', 'Mexico', 782);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (514, 'Mann Group', 'equinneye9@github.com', 'Philippines', 203);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (515, 'Douglas, Botsford and Spinka', 'alidstoneea@ameblo.jp', 'Ukraine', 339);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (516, 'Gaylord and Sons', 'lwenderotheb@dion.ne.jp', 'Brazil', 612);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (517, 'Langworth-Will', 'rassandriec@bloomberg.com', 'Canada', 509);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (518, 'Adams-Weimann', 'rmatuskaed@accuweather.com', 'Philippines', 491);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (519, 'Luettgen-Kling', 'dhallihaneee@uol.com.br', 'Indonesia', 14);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (520, 'Rodriguez-Adams', 'twhithalghef@hhs.gov', 'Indonesia', 755);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (521, 'Kozey, Welch and Hamill', 'kcaunteg@networksolutions.com', 'Thailand', 653);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (522, 'Green LLC', 'ningredaeh@rediff.com', 'Philippines', 506);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (523, 'Greenfelder-O''Keefe', 'talansei@dailymail.co.uk', 'Indonesia', 121);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (524, 'Bruen Group', 'ldestoucheej@tinyurl.com', 'Indonesia', 527);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (525, 'Veum-Schowalter', 'ldowzellek@godaddy.com', 'Greece', 959);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (526, 'Fahey LLC', 'hseckomel@google.com', 'Mauritius', 6);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (527, 'Kuvalis, Auer and Brown', 'fettridgeem@go.com', 'Ukraine', 851);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (528, 'Parker, Carter and Sauer', 'gtheyeren@house.gov', 'China', 363);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (529, 'Kshlerin LLC', 'cgurdoneo@samsung.com', 'Czech Republic', 790);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (530, 'Mohr-Kirlin', 'rchristleyep@wikipedia.org', 'Poland', 153);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (531, 'Brown Inc', 'bgossarteq@surveymonkey.com', 'Russia', 208);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (532, 'Rempel, Prohaska and Huels', 'mkleinermaner@ed.gov', 'Brazil', 342);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (533, 'Flatley, Koepp and Oberbrunner', 'spapachristophoroues@yahoo.com', 'Guatemala', 642);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (534, 'Jakubowski-Stiedemann', 'ddallanet@narod.ru', 'Russia', 309);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (535, 'Dietrich Group', 'bcumoeu@wikispaces.com', 'France', 295);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (536, 'Towne, Cormier and Yundt', 'rlordonev@privacy.gov.au', 'China', 666);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (537, 'Nikolaus, Steuber and Huel', 'bgrinsteadew@nasa.gov', 'China', 595);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (538, 'Kris, Witting and Bernier', 'lklimusex@i2i.jp', 'Portugal', 676);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (539, 'Kulas LLC', 'gkittowey@icio.us', 'Poland', 499);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (540, 'Buckridge, Miller and Stracke', 'suppettez@sun.com', 'Indonesia', 232);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (541, 'Medhurst and Sons', 'coffaf0@noaa.gov', 'Indonesia', 198);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (542, 'Klein, Langworth and Rodriguez', 'rgutteridgef1@oakley.com', 'France', 604);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (543, 'O''Conner-Homenick', 'rlortzingf2@blogs.com', 'Philippines', 396);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (544, 'Harvey, Wisozk and Corwin', 'egoodounef3@deliciousdays.com', 'Indonesia', 525);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (545, 'Auer LLC', 'vkrysztofiakf4@cnet.com', 'Indonesia', 272);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (546, 'Paucek, Leannon and Blick', 'okornackif5@gmpg.org', 'Indonesia', 414);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (547, 'Connelly-Hermann', 'togeaneyf6@independent.co.uk', 'Russia', 363);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (548, 'Kovacek-Stanton', 'gbrandomf7@github.io', 'Poland', 569);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (549, 'Bode-Kreiger', 'sofarrellf8@geocities.jp', 'Poland', 261);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (550, 'Murphy Inc', 'jchurnf9@utexas.edu', 'Canada', 559);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (551, 'Ondricka and Sons', 'apotteryfa@sbwire.com', 'Kazakhstan', 886);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (552, 'Bode-Schultz', 'cbewsyfb@bloomberg.com', 'Czech Republic', 581);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (553, 'Emmerich-Roob', 'edrohanefc@eventbrite.com', 'Indonesia', 206);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (554, 'Kunde, Boyle and Jacobs', 'jdunnanfd@noaa.gov', 'China', 82);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (555, 'Prosacco, Blanda and Windler', 'btizardfe@ed.gov', 'Indonesia', 795);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (556, 'Prohaska, Vandervort and Powlowski', 'dminthorpeff@soundcloud.com', 'Indonesia', 641);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (557, 'O''Reilly Inc', 'amaccorkellfg@stumbleupon.com', 'Indonesia', 363);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (558, 'Klein-Gibson', 'groskeillyfh@blogspot.com', 'Estonia', 711);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (559, 'Dare, Prohaska and Carter', 'thazaelfi@yandex.ru', 'Poland', 125);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (560, 'Daugherty, Grimes and Williamson', 'calexanderfj@sohu.com', 'Philippines', 481);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (561, 'Metz-Halvorson', 'ktolsonfk@hugedomains.com', 'Vietnam', 669);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (562, 'Effertz and Sons', 'rmorettofl@rambler.ru', 'Norway', 485);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (563, 'McCullough-Johnson', 'sdrayefm@latimes.com', 'Indonesia', 949);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (564, 'Schumm-Grady', 'enewingfn@cafepress.com', 'Portugal', 625);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (565, 'Schuppe LLC', 'sfattorinifo@youku.com', 'Indonesia', 614);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (566, 'Rutherford-Franecki', 'galthropefp@tiny.cc', 'Belarus', 870);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (567, 'Rempel-Borer', 'bmooreyfq@aboutads.info', 'Canada', 36);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (568, 'Daugherty, Daniel and Douglas', 'hlattosfr@list-manage.com', 'Russia', 353);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (569, 'Schumm-Kassulke', 'lyeellfs@gmpg.org', 'Poland', 216);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (570, 'Powlowski-Fadel', 'emorfordft@fc2.com', 'Colombia', 552);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (571, 'Pfeffer and Sons', 'awyettfu@cafepress.com', 'Greece', 98);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (572, 'Lebsack-Ritchie', 'lmottonfv@apache.org', 'Morocco', 208);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (573, 'Miller-Waters', 'devittfw@hibu.com', 'Argentina', 990);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (574, 'Hagenes and Sons', 'cbeynfx@slate.com', 'United States', 673);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (575, 'Windler, Weimann and Schuster', 'ttraicefy@gov.uk', 'Ukraine', 482);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (576, 'Kilback LLC', 'bbokenfz@salon.com', 'Thailand', 74);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (577, 'VonRueden-Muller', 'bgavigang0@barnesandnoble.com', 'Lebanon', 563);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (578, 'Douglas-Schimmel', 'gmougetg1@google.pl', 'France', 106);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (579, 'Flatley-Howe', 'bbauldreyg2@123-reg.co.uk', 'China', 718);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (580, 'Gerlach, Schmitt and McLaughlin', 'tbarensg3@ustream.tv', 'Bulgaria', 307);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (581, 'VonRueden-Watsica', 'voheaneyg4@homestead.com', 'Poland', 187);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (582, 'Kemmer, Kuphal and Legros', 'srecherg5@wikispaces.com', 'Brazil', 318);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (583, 'Kirlin, Fadel and Bradtke', 'mcarslakeg6@livejournal.com', 'Brazil', 715);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (584, 'Huels, Glover and Satterfield', 'nchestnutg7@wordpress.org', 'China', 544);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (585, 'Howe-Sawayn', 'gcantig8@barnesandnoble.com', 'Jamaica', 452);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (586, 'Hagenes Group', 'borwing9@usda.gov', 'Poland', 980);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (587, 'Boyer-Dach', 'bpilleyga@sciencedirect.com', 'Russia', 372);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (588, 'Paucek, Boehm and Schimmel', 'mfrackiewiczgb@indiegogo.com', 'Brazil', 63);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (589, 'Rohan-Stracke', 'aburrasgc@nymag.com', 'China', 856);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (590, 'Huel-Oberbrunner', 'nsinyardgd@va.gov', 'China', 733);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (591, 'Morissette-Macejkovic', 'xdemicolige@deliciousdays.com', 'Philippines', 755);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (592, 'Bayer, Bogisich and Ryan', 'cturneuxgf@fotki.com', 'Slovenia', 572);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (593, 'Rice and Sons', 'lblakesleegg@google.com', 'Philippines', 978);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (594, 'Orn-Hilpert', 'aruzicgh@hugedomains.com', 'Canada', 298);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (595, 'Schultz-Jones', 'rbrethertongi@hibu.com', 'China', 644);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (596, 'Hamill LLC', 'pnortheastgj@netlog.com', 'Senegal', 682);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (597, 'Marks-Moore', 'tcanongk@usnews.com', 'China', 275);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (598, 'Jacobson, Smith and Spinka', 'cdelayglesiasgl@yahoo.co.jp', 'China', 173);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (599, 'Beier-Koelpin', 'svibertgm@vimeo.com', 'Canada', 112);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (600, 'Sauer LLC', 'htrimgn@free.fr', 'France', 933);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (601, 'Kunde, Franecki and Torphy', 'dvowellgo@forbes.com', 'United States', 436);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (602, 'Berge, Bailey and Ledner', 'rbishopgp@vistaprint.com', 'China', 949);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (603, 'Rice-Wiza', 'pbenthallgq@jalbum.net', 'Canada', 974);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (604, 'Hickle and Sons', 'lcollibergr@apache.org', 'China', 813);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (605, 'White, Towne and Deckow', 'ckystongs@wikipedia.org', 'China', 86);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (606, 'Jacobi LLC', 'amckombgt@simplemachines.org', 'Brazil', 887);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (607, 'Stehr-Bode', 'bstanlickgu@multiply.com', 'Colombia', 592);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (608, 'Ernser, Kshlerin and Steuber', 'bfennellygv@mediafire.com', 'Brazil', 747);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (609, 'Lehner, Bode and Purdy', 'spomphrettgw@pbs.org', 'Greece', 217);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (610, 'Mosciski Inc', 'kveldgx@unicef.org', 'China', 142);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (611, 'Brekke, Mueller and Rowe', 'bfiellergy@icio.us', 'Australia', 195);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (612, 'Jenkins, Reilly and Willms', 'emcduffygz@rakuten.co.jp', 'Togo', 779);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (613, 'Ruecker-Green', 'jtollerfieldh0@dot.gov', 'Indonesia', 223);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (614, 'Gaylord Inc', 'hfronksh1@umn.edu', 'China', 294);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (615, 'Blick, Walsh and Roberts', 'swillavoysh2@t.co', 'Indonesia', 135);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (616, 'Morar-Weber', 'rseagoodh3@bloomberg.com', 'Philippines', 584);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (617, 'Hilll and Sons', 'canersenh4@psu.edu', 'United States', 327);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (618, 'Breitenberg-Kilback', 'csmithiesh5@1und1.de', 'South Africa', 355);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (619, 'Murray LLC', 'dmarvelleyh6@ed.gov', 'North Korea', 659);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (620, 'McClure-Wehner', 'clambourneh7@ebay.co.uk', 'Nigeria', 674);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (621, 'Green, Heller and Weimann', 'bcarnachenh8@ucsd.edu', 'Indonesia', 795);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (622, 'Hagenes-Stoltenberg', 'eospellisseyh9@scribd.com', 'Indonesia', 298);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (623, 'Nolan LLC', 'bclaitonha@scientificamerican.com', 'China', 967);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (624, 'Hills-Bernhard', 'rbelliehb@yelp.com', 'China', 813);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (625, 'Ankunding, Spinka and Gleichner', 'lcaplenhc@weibo.com', 'Japan', 987);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (626, 'Littel Group', 'romarhd@cnet.com', 'Panama', 292);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (627, 'Feest, Ernser and Runolfsdottir', 'ablivenhe@cafepress.com', 'Russia', 534);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (628, 'Bailey, Mayer and Hessel', 'tbarnewellehf@shutterfly.com', 'Germany', 286);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (629, 'Cassin, Buckridge and Kris', 'rritchhg@scientificamerican.com', 'Portugal', 796);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (630, 'Paucek-Hegmann', 'djeschnerhh@google.nl', 'France', 760);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (631, 'Wisoky-Gusikowski', 'pchatreshi@gnu.org', 'French Polynesia', 787);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (632, 'Yundt-Bergnaum', 'sstothardhj@histats.com', 'Kosovo', 340);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (633, 'Hamill-Breitenberg', 'hjantothk@hatena.ne.jp', 'Indonesia', 252);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (634, 'Rau LLC', 'rpolsonhl@wikimedia.org', 'Yemen', 540);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (635, 'Bergstrom, King and Kutch', 'gcranstonehm@economist.com', 'Ukraine', 193);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (636, 'Moen LLC', 'ktaffshn@webmd.com', 'China', 523);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (637, 'Hettinger, Cremin and Thiel', 'ncrehanho@digg.com', 'Dominican Republic', 869);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (638, 'Fadel Group', 'hdorehp@yellowbook.com', 'China', 827);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (639, 'Pollich Inc', 'modeahq@delicious.com', 'South Africa', 848);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (640, 'McCullough-Stroman', 'spetcherhr@blogtalkradio.com', 'Indonesia', 343);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (641, 'Johnston, Abernathy and Schimmel', 'amaithhs@google.fr', 'France', 521);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (642, 'Kreiger-Langworth', 'traulstoneht@usnews.com', 'Portugal', 337);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (643, 'Mayert Group', 'tpaurhu@answers.com', 'Russia', 547);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (644, 'Wyman, Huels and Kovacek', 'klewsamhv@nps.gov', 'Russia', 441);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (645, 'Rowe LLC', 'cmoyehw@chicagotribune.com', 'France', 670);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (646, 'Hodkiewicz, Hamill and Walker', 'gdebeauchemphx@cnn.com', 'Philippines', 708);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (647, 'Reynolds-Thiel', 'mgumbhy@cargocollective.com', 'United States', 205);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (648, 'Carroll LLC', 'snazerhz@i2i.jp', 'China', 254);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (649, 'Bashirian Inc', 'nlargeni0@cnbc.com', 'Portugal', 142);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (650, 'Mills, Hansen and Gottlieb', 'eroothami1@wikimedia.org', 'Russia', 841);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (651, 'Barton and Sons', 'sfountainei2@twitter.com', 'Tanzania', 11);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (652, 'Gutmann, Orn and Terry', 'spothergilli3@squidoo.com', 'China', 732);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (653, 'Dickens and Sons', 'sshuardi4@ucoz.ru', 'Norway', 108);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (654, 'Crist-White', 'vtivolieri5@cisco.com', 'China', 725);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (655, 'Kerluke-Hermiston', 'dfleisi6@prnewswire.com', 'China', 626);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (656, 'Jacobi-Turner', 'chardacrei7@w3.org', 'Russia', 566);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (657, 'Reynolds-Nolan', 'gdadgei8@smugmug.com', 'Ivory Coast', 868);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (658, 'Lang LLC', 'smcmyleri9@dyndns.org', 'Thailand', 34);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (659, 'Koch-Fahey', 'ndenisckeia@addthis.com', 'Indonesia', 871);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (660, 'Koelpin-Lesch', 'ktrinkwonib@multiply.com', 'China', 916);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (661, 'Ortiz-Wiegand', 'dmorsleyic@wufoo.com', 'Russia', 887);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (662, 'Reichel, Paucek and Beer', 'tdenysid@people.com.cn', 'Brazil', 894);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (663, 'Kovacek-Hirthe', 'hriveie@odnoklassniki.ru', 'Poland', 809);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (664, 'Gibson-Mante', 'mgostridgeif@un.org', 'Russia', 608);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (665, 'Gusikowski Inc', 'fruddiforthig@myspace.com', 'Portugal', 934);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (666, 'Hegmann LLC', 'bdracoih@buzzfeed.com', 'Poland', 564);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (667, 'Nikolaus, Rippin and Sanford', 'ebeekmanii@hp.com', 'Brazil', 70);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (668, 'Schumm-Fadel', 'skingzettij@ibm.com', 'Somalia', 287);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (669, 'Deckow Inc', 'cmaccumiskeyik@ed.gov', 'Russia', 734);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (670, 'Hessel, Carter and Franecki', 'thenkeril@ca.gov', 'Greece', 629);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (671, 'Lindgren-Rutherford', 'dleftwichim@youtu.be', 'China', 428);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (672, 'Keeling and Sons', 'mmoralesin@yelp.com', 'Brazil', 18);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (673, 'Frami-Beier', 'athurgoodio@ft.com', 'Ukraine', 328);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (674, 'Oberbrunner Inc', 'ndoughteryip@europa.eu', 'Indonesia', 86);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (675, 'Nikolaus Inc', 'tgirardeauiq@soup.io', 'China', 803);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (676, 'Dickinson, Nolan and Toy', 'nheitonir@google.co.jp', 'China', 413);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (677, 'Hagenes-Monahan', 'njanusis@infoseek.co.jp', 'Nigeria', 591);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (678, 'Hackett-Lang', 'mgatleyit@theguardian.com', 'France', 447);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (679, 'McClure, O''Keefe and King', 'marnefieldiu@apple.com', 'Philippines', 140);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (680, 'Marquardt-Quitzon', 'fosuairdiv@issuu.com', 'Bosnia and Herzegovina', 622);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (681, 'Terry-Rohan', 'lmcphersoniw@chicagotribune.com', 'Cameroon', 790);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (682, 'Stanton LLC', 'charmestonix@miitbeian.gov.cn', 'Philippines', 631);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (683, 'White Inc', 'mcasterotiy@studiopress.com', 'Comoros', 890);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (684, 'Abshire-Auer', 'tthursbyiz@unesco.org', 'Philippines', 82);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (685, 'Hand-Ferry', 'eloughtonj0@hubpages.com', 'Portugal', 812);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (686, 'O''Connell, Dicki and Hegmann', 'jjeschnerj1@wikipedia.org', 'Argentina', 81);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (687, 'Koss Inc', 'techj2@jigsy.com', 'Czech Republic', 622);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (688, 'MacGyver LLC', 'cbailesj3@microsoft.com', 'Dominican Republic', 778);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (689, 'Berge and Sons', 'aallawyj4@fema.gov', 'Brazil', 585);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (690, 'Hartmann Group', 'mnovellij5@cnn.com', 'Indonesia', 747);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (691, 'Heaney, Breitenberg and Bechtelar', 'mjacobsj6@unicef.org', 'Indonesia', 614);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (692, 'Schimmel and Sons', 'hchristianj7@ezinearticles.com', 'Afghanistan', 225);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (693, 'Hettinger LLC', 'nhusbandj8@sfgate.com', 'Croatia', 853);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (694, 'Kling, Okuneva and Casper', 'rcorkhillj9@photobucket.com', 'Philippines', 378);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (695, 'Mayer Inc', 'hwrayja@prweb.com', 'Vietnam', 139);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (696, 'Jerde-Torphy', 'bsimpkissjb@newsvine.com', 'China', 180);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (697, 'O''Connell, Tremblay and Spencer', 'oaitonjc@state.gov', 'Czech Republic', 217);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (698, 'Kertzmann LLC', 'vkummerlowejd@npr.org', 'China', 59);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (699, 'Stanton, Osinski and Lemke', 'wmouginje@linkedin.com', 'Indonesia', 364);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (700, 'Balistreri LLC', 'jaytojf@people.com.cn', 'Indonesia', 52);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (701, 'Waelchi and Sons', 'rjimejg@earthlink.net', 'Argentina', 215);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (702, 'Schuster, Berge and Corkery', 'sfordhamjh@photobucket.com', 'China', 516);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (703, 'Kassulke, Kirlin and DuBuque', 'ndibbeji@alexa.com', 'Russia', 915);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (704, 'Prosacco LLC', 'ntomasuttijj@amazon.com', 'Iran', 211);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (705, 'Greenfelder and Sons', 'mmozzijk@nymag.com', 'Chile', 471);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (706, 'Collier Inc', 'gquinionjl@newsvine.com', 'China', 597);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (707, 'Auer-Glover', 'kglackinjm@hubpages.com', 'Brazil', 696);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (708, 'Dickinson, Ratke and Zboncak', 'gnancarrowjn@japanpost.jp', 'Sudan', 492);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (709, 'Gottlieb, Daniel and DuBuque', 'vmoldenjo@nytimes.com', 'Azerbaijan', 400);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (710, 'Schroeder-White', 'cmcallanjp@wikispaces.com', 'France', 487);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (711, 'Mills Inc', 'mquembyjq@cbslocal.com', 'Sweden', 935);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (712, 'Price-Ernser', 'edowardjr@google.pl', 'Philippines', 59);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (713, 'Cummings-Pacocha', 'duwinsjs@gizmodo.com', 'China', 933);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (714, 'Nolan-Haag', 'kobrienjt@homestead.com', 'China', 192);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (715, 'Crooks-O''Connell', 'njoyju@jiathis.com', 'China', 338);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (716, 'Beahan Inc', 'yairtonjv@ucoz.com', 'China', 398);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (717, 'Reichert-Keeling', 'dmclaejw@samsung.com', 'Philippines', 264);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (718, 'Miller and Sons', 'skelwayjx@dagondesign.com', 'Thailand', 799);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (719, 'Ward Inc', 'lrossbrookjy@google.de', 'China', 353);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (720, 'Rogahn Group', 'drudolphjz@hibu.com', 'Tanzania', 367);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (721, 'Hamill-Sipes', 'mleelek0@zdnet.com', 'Portugal', 819);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (722, 'Klein-Kerluke', 'pmacconnalk1@acquirethisname.com', 'Mexico', 397);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (723, 'Kunze Group', 'ejorezk2@earthlink.net', 'Russia', 493);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (724, 'Gerlach and Sons', 'mcoperk3@nyu.edu', 'Portugal', 218);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (725, 'Moore-Rau', 'sbamletk4@google.nl', 'China', 624);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (726, 'Rolfson, Abernathy and D''Amore', 'dgyfordk5@vkontakte.ru', 'Indonesia', 485);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (727, 'Paucek-Rowe', 'mpeceyk6@yolasite.com', 'Syria', 310);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (728, 'Denesik, Schneider and Hettinger', 'iblazewskik7@nytimes.com', 'Japan', 210);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (729, 'Hermiston, Deckow and Cummings', 'azarfatik8@eepurl.com', 'Greece', 673);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (730, 'Hudson, Gleason and Kautzer', 'mclaxtonk9@is.gd', 'Vietnam', 104);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (731, 'Prohaska-Green', 'rfurtadoka@delicious.com', 'Mongolia', 814);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (732, 'Weber, Champlin and Schoen', 'mtwohigkb@mysql.com', 'Indonesia', 330);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (733, 'White, Goldner and Baumbach', 'dpenhalurickkc@behance.net', 'China', 580);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (734, 'Howe, Cole and Reynolds', 'gmerittkd@sakura.ne.jp', 'China', 170);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (735, 'Goodwin Group', 'wclintke@sfgate.com', 'China', 640);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (736, 'Mayert-Huel', 'rolinkf@virginia.edu', 'Lebanon', 616);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (737, 'Stiedemann LLC', 'tdodswellkg@usgs.gov', 'Italy', 414);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (738, 'Wiegand LLC', 'fmckinleykh@theguardian.com', 'France', 28);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (739, 'Torp-Monahan', 'dnasseyki@bloomberg.com', 'Slovenia', 68);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (740, 'Huels, Funk and Maggio', 'mbiasionikj@diigo.com', 'China', 88);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (741, 'Ratke, Vandervort and Kiehn', 'bipwellkk@php.net', 'Poland', 41);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (742, 'DuBuque Group', 'wfinicjkl@friendfeed.com', 'Indonesia', 98);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (743, 'Romaguera, Nienow and Botsford', 'lbeckinsalekm@huffingtonpost.com', 'China', 27);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (744, 'Haley-Wehner', 'adechellekn@bigcartel.com', 'Philippines', 15);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (745, 'Brekke and Sons', 'abolverko@google.fr', 'Indonesia', 982);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (746, 'D''Amore Inc', 'emarkwelleykp@cpanel.net', 'Mexico', 929);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (747, 'Pfeffer-Labadie', 'rpetkenkq@wisc.edu', 'China', 668);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (748, 'Herzog, Lindgren and Streich', 'cbrachellkr@cloudflare.com', 'Philippines', 481);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (749, 'Schulist-Emmerich', 'dculyks@is.gd', 'China', 59);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (750, 'Watsica LLC', 'mferrantkt@taobao.com', 'Indonesia', 739);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (751, 'McGlynn, Emard and Donnelly', 'dvonasekku@quantcast.com', 'Uruguay', 290);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (752, 'Mills Inc', 'ttourrykv@cdc.gov', 'Indonesia', 47);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (753, 'McGlynn-Waelchi', 'wmccuddenkw@amazon.de', 'Philippines', 379);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (754, 'Bruen-Reilly', 'gedelerkx@prweb.com', 'China', 205);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (755, 'Stehr LLC', 'ssurgeonky@mayoclinic.com', 'Portugal', 828);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (756, 'Haag Inc', 'mchellkz@about.com', 'Indonesia', 351);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (757, 'Roberts, Herzog and Pollich', 'ntrowlel0@sourceforge.net', 'China', 574);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (758, 'Yundt Group', 'lsignoretl1@xrea.com', 'Poland', 199);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (759, 'Reichert-Little', 'sdamerelll2@cloudflare.com', 'Czech Republic', 449);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (760, 'Dietrich, Hermiston and Gislason', 'oyorstonl3@reverbnation.com', 'Kazakhstan', 80);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (761, 'Corkery Inc', 'jrickeardl4@wikia.com', 'Indonesia', 373);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (762, 'Kutch-VonRueden', 'hleydonl5@hao123.com', 'Greece', 930);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (763, 'Klocko Inc', 'abagel6@ted.com', 'El Salvador', 289);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (764, 'Padberg, Barton and Schultz', 'kbreesel7@sbwire.com', 'Greece', 482);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (765, 'Gusikowski Inc', 'ajuszczykl8@opera.com', 'Jamaica', 54);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (766, 'Grant-Dickinson', 'sgundersonl9@hc360.com', 'Poland', 194);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (767, 'Waelchi, Rohan and Purdy', 'bcambridgela@shareasale.com', 'Philippines', 603);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (768, 'Homenick-Kuphal', 'aselvesterlb@angelfire.com', 'Kyrgyzstan', 861);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (769, 'Kovacek, Zboncak and Huels', 'hlanelc@bloglovin.com', 'China', 104);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (770, 'Fisher-Zboncak', 'mgarrettsonld@networksolutions.com', 'Poland', 18);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (771, 'Mante, Lind and Kertzmann', 'cachesonle@yolasite.com', 'South Africa', 417);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (772, 'Mosciski Inc', 'ryushkinlf@tamu.edu', 'United States', 634);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (773, 'Upton Inc', 'tdalzelllg@typepad.com', 'Peru', 602);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (774, 'Padberg and Sons', 'mgapperlh@furl.net', 'Poland', 757);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (775, 'Hoeger, Leuschke and Schimmel', 'wmormanli@dmoz.org', 'Indonesia', 989);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (776, 'Douglas, Ruecker and O''Reilly', 'kvasyutochkinlj@flavors.me', 'Bulgaria', 863);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (777, 'Turner-Ortiz', 'ebetserlk@slideshare.net', 'China', 149);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (778, 'Morissette Group', 'hjansll@cbc.ca', 'Paraguay', 450);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (779, 'Rogahn Group', 'gmaffinlm@google.it', 'Ireland', 769);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (780, 'McGlynn-Glover', 'agrimwadln@domainmarket.com', 'Yemen', 569);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (781, 'Roberts LLC', 'frheaumelo@addtoany.com', 'Mayotte', 452);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (782, 'Hamill-Bergnaum', 'mdebernardislp@friendfeed.com', 'Serbia', 624);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (783, 'Hartmann, Considine and Conroy', 'fbetzlq@hexun.com', 'Russia', 432);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (784, 'Gulgowski Inc', 'acreboelr@behance.net', 'Dominican Republic', 39);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (785, 'Bode-Stiedemann', 'kfairbardls@issuu.com', 'Colombia', 999);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (786, 'Jones, Mills and Kshlerin', 'ppiolalt@behance.net', 'Vietnam', 377);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (787, 'Terry, McLaughlin and Walsh', 'jmcgowanlu@shop-pro.jp', 'Marshall Islands', 224);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (788, 'Mitchell, Runte and Kilback', 'rserjeantsonlv@vk.com', 'Pakistan', 482);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (789, 'Abbott, Streich and Parker', 'vdullardlw@psu.edu', 'Pakistan', 483);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (790, 'Goldner LLC', 'crzehorzlx@domainmarket.com', 'Nigeria', 532);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (791, 'Daniel, Pouros and Haley', 'rgibbyly@linkedin.com', 'Sri Lanka', 512);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (792, 'Smith-Gislason', 'ydehavenlz@uol.com.br', 'Poland', 981);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (793, 'Beatty, Kerluke and Padberg', 'sspatarom0@webnode.com', 'Uganda', 372);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (794, 'Kuvalis-Hoeger', 'smanzellm1@furl.net', 'Portugal', 421);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (795, 'Bartoletti and Sons', 'faskerm2@wisc.edu', 'France', 165);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (796, 'Hyatt Inc', 'cvermanm3@dedecms.com', 'Brazil', 632);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (797, 'Wuckert and Sons', 'dvanleijsm4@hao123.com', 'Portugal', 886);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (798, 'O''Connell and Sons', 'frosenbuschm5@fema.gov', 'Indonesia', 880);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (799, 'Klein, Larson and Steuber', 'jbesm6@infoseek.co.jp', 'China', 816);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (800, 'Hackett-Sawayn', 'hboordm7@miitbeian.gov.cn', 'Malawi', 840);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (801, 'Kautzer LLC', 'kebdonm8@icq.com', 'Vietnam', 151);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (802, 'Buckridge-Bogan', 'vmccaugheym9@wp.com', 'Philippines', 496);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (803, 'Hessel, Rath and Wisozk', 'zculpinma@apple.com', 'Peru', 475);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (804, 'Krajcik-Orn', 'evielmb@addtoany.com', 'China', 661);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (805, 'O''Keefe, Hammes and Bahringer', 'bkimbleymc@wisc.edu', 'Philippines', 716);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (806, 'Kozey Group', 'jrickesiesmd@blog.com', 'Angola', 28);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (807, 'Orn Group', 'sabbatuccime@youtube.com', 'Sweden', 559);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (808, 'Harris and Sons', 'bedworthyemf@mac.com', 'Indonesia', 323);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (809, 'Armstrong, Weissnat and Labadie', 'mhilldrupmg@jigsy.com', 'China', 112);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (810, 'Olson, Aufderhar and Kulas', 'bstreathermh@google.pl', 'Finland', 974);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (811, 'Schaden and Sons', 'ffalkmi@google.com.br', 'Ukraine', 908);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (812, 'Hilpert Inc', 'kabdenmj@behance.net', 'Poland', 967);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (813, 'Stracke-Hansen', 'ddinesmk@bloomberg.com', 'Brazil', 457);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (814, 'Johns, Herzog and Goyette', 'kbrecheml@icq.com', 'Indonesia', 493);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (815, 'Gusikowski and Sons', 'ykennedymm@zdnet.com', 'China', 867);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (816, 'Robel-Morar', 'akimblenmn@163.com', 'Russia', 77);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (817, 'Mueller, Maggio and McClure', 'dhavercroftmo@wikispaces.com', 'Philippines', 118);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (818, 'Hahn, Beahan and Mertz', 'mhenricssonmp@netvibes.com', 'China', 798);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (819, 'Little-Moen', 'jnicelymq@biglobe.ne.jp', 'China', 726);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (820, 'Trantow Group', 'fdaenmr@answers.com', 'China', 900);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (821, 'Goldner Group', 'ztirkinms@youtube.com', 'Brazil', 225);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (822, 'Quigley-Flatley', 'smaplesdenmt@dmoz.org', 'United States', 450);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (823, 'Reinger, Mante and Ondricka', 'qespinemu@mysql.com', 'Philippines', 996);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (824, 'Dare and Sons', 'agrimsdikemv@senate.gov', 'Indonesia', 474);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (825, 'Murazik-Jacobi', 'jmelvillemw@google.ca', 'Saudi Arabia', 353);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (826, 'Weimann-Predovic', 'kmulvanymx@latimes.com', 'Indonesia', 600);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (827, 'Larson, Schoen and Glover', 'bdessaurmy@lycos.com', 'Philippines', 222);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (828, 'Jacobs Group', 'claugheranemz@reference.com', 'Philippines', 263);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (829, 'Morar LLC', 'eslippern0@sphinn.com', 'Mayotte', 99);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (830, 'Feil, Crooks and Becker', 'leatttokn1@soup.io', 'Sweden', 253);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (831, 'Willms, Shanahan and Schuster', 'gjouanetn2@virginia.edu', 'China', 455);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (832, 'Adams and Sons', 'emorrisseyn3@yale.edu', 'Afghanistan', 648);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (833, 'Klocko-Blanda', 'pburnhilln4@redcross.org', 'Panama', 252);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (834, 'Grady, Kirlin and King', 'hhryskiewiczn5@sakura.ne.jp', 'Sweden', 525);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (835, 'Huel, Schamberger and Ruecker', 'kstennetn6@tuttocitta.it', 'Colombia', 718);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (836, 'Wilderman Inc', 'mmoxsteadn7@bbb.org', 'Sri Lanka', 159);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (837, 'Kuphal, Russel and Kshlerin', 'kmeakn8@privacy.gov.au', 'China', 880);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (838, 'Okuneva, Goyette and DuBuque', 'gtardiffn9@nbcnews.com', 'China', 204);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (839, 'Robel, Langworth and Stark', 'agabitesna@cargocollective.com', 'Armenia', 292);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (840, 'Ryan and Sons', 'pdemangeotnb@prlog.org', 'Panama', 38);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (841, 'Schmitt and Sons', 'wbodhamnc@google.de', 'Egypt', 866);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (842, 'Ward LLC', 'tmillbergnd@amazonaws.com', 'Russia', 860);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (843, 'Dickens, Dickinson and Feest', 'khailstonne@yandex.ru', 'China', 941);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (844, 'Walsh-VonRueden', 'gprenf@github.com', 'Australia', 441);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (845, 'Hills-Rath', 'eknivetonng@ft.com', 'South Africa', 526);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (846, 'Senger, Langworth and Corkery', 'jgiannottinh@ovh.net', 'Brazil', 854);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (847, 'Weber, Moore and Rau', 'mpengilleyni@vkontakte.ru', 'Canada', 354);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (848, 'Kihn Group', 'esumpnernj@newsvine.com', 'Russia', 853);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (849, 'Yundt LLC', 'gmariellenk@stanford.edu', 'Canada', 717);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (850, 'Zieme, Lesch and Turner', 'vbrixhamnl@simplemachines.org', 'Japan', 426);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (851, 'Brakus, Ritchie and Gislason', 'cwibrownm@salon.com', 'Japan', 281);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (852, 'Reynolds Group', 'ohusternn@a8.net', 'Oman', 768);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (853, 'Runte-Sauer', 'gilchenkono@ning.com', 'Russia', 50);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (854, 'Dare, Feeney and Durgan', 'dlavignenp@amazon.co.uk', 'Philippines', 104);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (855, 'O''Reilly-Hermann', 'hpenhaluricknq@posterous.com', 'Mauritius', 166);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (856, 'Kertzmann, Crooks and Boyle', 'hmiellnr@myspace.com', 'United States', 40);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (857, 'Torp and Sons', 'ritskovitzns@de.vu', 'China', 993);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (858, 'Auer, Wisozk and Willms', 'mdobrovolnynt@prnewswire.com', 'Ethiopia', 59);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (859, 'Block Inc', 'gsomerlienu@senate.gov', 'Czech Republic', 53);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (860, 'Toy LLC', 'jjereattnv@desdev.cn', 'Indonesia', 402);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (861, 'Fadel-Smith', 'tyarhamnw@edublogs.org', 'Panama', 542);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (862, 'McCullough-Jacobi', 'dcyplernx@ebay.com', 'Zimbabwe', 1000);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (863, 'Lakin, Klocko and Schiller', 'aullyottny@oracle.com', 'Afghanistan', 90);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (864, 'Reilly, Leffler and Aufderhar', 'dburbudgenz@dedecms.com', 'Nigeria', 594);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (865, 'Yost Group', 'sbatcocko0@cornell.edu', 'Indonesia', 740);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (866, 'Olson, Dicki and Boyle', 'dhowleo1@seesaa.net', 'Nicaragua', 657);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (867, 'Haley-Stoltenberg', 'agreenwayo2@51.la', 'China', 735);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (868, 'Wunsch, Lakin and Sanford', 'braecrofto3@cbsnews.com', 'Tajikistan', 754);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (869, 'Romaguera, Hackett and Dickens', 'macremano4@prlog.org', 'Philippines', 928);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (870, 'Beahan-Greenfelder', 'drewano5@ucla.edu', 'Canada', 487);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (871, 'Ward-Hessel', 'nnellero6@hibu.com', 'Afghanistan', 136);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (872, 'Dare-Frami', 'bferoo7@diigo.com', 'China', 335);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (873, 'Kuphal LLC', 'shubnero8@yale.edu', 'Peru', 461);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (874, 'Baumbach-Kautzer', 'jlyndo9@github.com', 'Indonesia', 796);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (875, 'Bins, Grady and Hickle', 'ntibbsoa@icq.com', 'Indonesia', 130);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (876, 'Bogisich Group', 'kragsdallob@ow.ly', 'Philippines', 569);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (877, 'Treutel LLC', 'fjohnstonoc@myspace.com', 'China', 488);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (878, 'Fadel-Morissette', 'nmuslimod@amazon.co.jp', 'Cambodia', 879);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (879, 'Rau-Rath', 'jgullifantoe@upenn.edu', 'Czech Republic', 388);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (880, 'Ledner, Stokes and Bruen', 'dferrottiof@theglobeandmail.com', 'Brazil', 336);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (881, 'Gorczany, Kuphal and Kunde', 'hoslarog@geocities.jp', 'Benin', 664);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (882, 'Thompson, King and Smitham', 'cbraghinioh@usda.gov', 'Portugal', 368);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (883, 'Wisoky-Fay', 'pboynoi@people.com.cn', 'Philippines', 27);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (884, 'Swift-Kulas', 'enibleyoj@sfgate.com', 'Mexico', 655);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (885, 'Dietrich-Maggio', 'ozorerok@google.es', 'Poland', 67);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (886, 'Lindgren Inc', 'gkinghol@arizona.edu', 'Russia', 619);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (887, 'Barrows-Olson', 'mcastanerom@timesonline.co.uk', 'China', 675);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (888, 'Herzog LLC', 'tgarrettsonon@csmonitor.com', 'Russia', 221);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (889, 'Schaden-Jacobi', 'ggauntlettoo@tripod.com', 'Brazil', 533);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (890, 'Leffler Group', 'pfirbyop@canalblog.com', 'Syria', 336);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (891, 'Koss-Mills', 'tpoonoq@twitpic.com', 'Indonesia', 328);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (892, 'Simonis Group', 'whanningor@dmoz.org', 'Sweden', 773);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (893, 'Feest-Cartwright', 'tswendellos@pinterest.com', 'Russia', 901);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (894, 'Bednar and Sons', 'ldevlinot@themeforest.net', 'Dominican Republic', 118);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (895, 'Cormier LLC', 'lswinfordou@webeden.co.uk', 'Albania', 42);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (896, 'Breitenberg, Mertz and Schultz', 'asobczakov@feedburner.com', 'Peru', 160);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (897, 'Bergstrom-Bashirian', 'ehabbonow@is.gd', 'Vietnam', 947);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (898, 'Pagac, Kiehn and Pfannerstill', 'ddoniox@sitemeter.com', 'China', 217);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (899, 'Rice-Nitzsche', 'efruchonoy@amazon.de', 'China', 450);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (900, 'O''Connell Group', 'eephgraveoz@bigcartel.com', 'Mexico', 299);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (901, 'Cruickshank Inc', 'mabeaup0@loc.gov', 'Brazil', 945);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (902, 'Waters, Schultz and Emmerich', 'gwhelanp1@howstuffworks.com', 'China', 777);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (903, 'Gibson-Jones', 'hcordeaup2@wordpress.com', 'Indonesia', 39);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (904, 'Williamson, Sipes and Orn', 'rsummerleyp3@xinhuanet.com', 'Philippines', 561);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (905, 'Parker, Bogisich and Wolf', 'chidderleyp4@delicious.com', 'Sweden', 280);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (906, 'Hansen LLC', 'gtockp5@skype.com', 'Nicaragua', 371);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (907, 'Morar-Nicolas', 'clovelandp6@archive.org', 'China', 191);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (908, 'Simonis Inc', 'wmcgibbonp7@google.co.jp', 'Indonesia', 14);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (909, 'Blick, Buckridge and Harber', 'tclacep8@simplemachines.org', 'Indonesia', 947);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (910, 'Hartmann Inc', 'kcopnellp9@booking.com', 'Sweden', 477);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (911, 'Anderson-Barrows', 'gkisbeypa@csmonitor.com', 'Brazil', 842);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (912, 'Lynch, White and Von', 'ysuartpb@imgur.com', 'Ukraine', 208);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (913, 'Murazik, Kreiger and Treutel', 'readdypc@godaddy.com', 'South Korea', 376);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (914, 'Fritsch, O''Keefe and Considine', 'nweirpd@hexun.com', 'China', 215);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (915, 'Gutmann, Schultz and Collier', 'mnorthernpe@macromedia.com', 'China', 15);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (916, 'Heller-Stamm', 'operrygopf@fema.gov', 'Yemen', 977);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (917, 'Zboncak Inc', 'kbartleetpg@sohu.com', 'Portugal', 296);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (918, 'Mitchell, Hudson and Goyette', 'xduganph@studiopress.com', 'Peru', 29);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (919, 'Hodkiewicz, Treutel and Rau', 'fpechanpi@yahoo.co.jp', 'Brazil', 523);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (920, 'Conn Group', 'ckemishpj@thetimes.co.uk', 'France', 289);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (921, 'Kirlin LLC', 'awarfieldpk@eventbrite.com', 'Poland', 850);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (922, 'Kling, Auer and Weimann', 'lfuzzenspl@reverbnation.com', 'France', 926);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (923, 'Larson and Sons', 'tdronpm@liveinternet.ru', 'China', 289);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (924, 'Wilkinson Group', 'bkellingpn@stumbleupon.com', 'Yemen', 423);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (925, 'Stoltenberg LLC', 'afontepo@scribd.com', 'Denmark', 704);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (926, 'Schamberger-Fahey', 'cflaunepp@chronoengine.com', 'Portugal', 837);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (927, 'Connelly Group', 'mganifordpq@opensource.org', 'Indonesia', 27);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (928, 'Grimes Inc', 'ahunnablepr@tuttocitta.it', 'Russia', 676);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (929, 'Jast, Lemke and Stehr', 'aowensps@timesonline.co.uk', 'China', 318);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (930, 'Schuster-Spencer', 'pdennettpt@com.com', 'China', 417);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (931, 'Schuster LLC', 'laldcornepu@php.net', 'Philippines', 598);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (932, 'Hintz, Hoppe and Huel', 'ttreacherpv@ebay.com', 'Japan', 176);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (933, 'Botsford-Johnston', 'rjillittpw@nbcnews.com', 'Russia', 374);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (934, 'Dicki Inc', 'mhartzenbergpx@baidu.com', 'China', 123);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (935, 'Sporer Inc', 'ckanwellpy@theglobeandmail.com', 'Philippines', 304);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (936, 'Denesik and Sons', 'nmalamorepz@ted.com', 'Nigeria', 98);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (937, 'Koss and Sons', 'sayreeq0@archive.org', 'China', 97);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (938, 'Davis, Wisoky and Jacobs', 'wbaselioq1@phoca.cz', 'Russia', 899);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (939, 'Hansen, Doyle and Tremblay', 'tkiffinq2@salon.com', 'China', 769);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (940, 'Hahn-Reilly', 'ehanstockq3@salon.com', 'Czech Republic', 344);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (941, 'Hyatt, Fay and Zboncak', 'mrounsivallq4@psu.edu', 'China', 581);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (942, 'Veum, O''Connell and Will', 'dtanzerq5@slashdot.org', 'Thailand', 367);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (943, 'Daniel and Sons', 'dpendreq6@shareasale.com', 'France', 214);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (944, 'Keebler and Sons', 'bohoganq7@zdnet.com', 'Philippines', 824);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (945, 'Fay-Abbott', 'mbrandonq8@miibeian.gov.cn', 'Sri Lanka', 779);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (946, 'Klein Inc', 'pokerinq9@eepurl.com', 'Egypt', 524);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (947, 'Kunde-Greenfelder', 'obikkerqa@npr.org', 'Cameroon', 417);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (948, 'Rogahn Group', 'bskermerqb@paypal.com', 'China', 76);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (949, 'Brekke-Greenholt', 'fbeneqc@nydailynews.com', 'China', 346);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (950, 'Collins LLC', 'aslessarqd@wired.com', 'Croatia', 839);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (951, 'Stark-Crist', 'akilmisterqe@lulu.com', 'Indonesia', 278);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (952, 'Herman LLC', 'nforderqf@topsy.com', 'Palestinian Territory', 493);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (953, 'Boyer and Sons', 'fhuggettqg@about.me', 'Poland', 967);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (954, 'Adams, Daugherty and Trantow', 'tdingsdaleqh@prnewswire.com', 'United States', 345);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (955, 'Mann-Morar', 'ktewkesberrieqi@cocolog-nifty.com', 'Russia', 843);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (956, 'Heaney, Champlin and Luettgen', 'rsandyfirthqj@guardian.co.uk', 'Indonesia', 941);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (957, 'Greenholt-Torphy', 'tburlqk@theatlantic.com', 'Indonesia', 763);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (958, 'Boyle-McLaughlin', 'achattersql@theglobeandmail.com', 'China', 311);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (959, 'Cassin, Bogan and Nienow', 'dnorthcoteqm@gnu.org', 'Brazil', 32);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (960, 'Wisoky-Wilderman', 'gwhetnallqn@npr.org', 'Philippines', 302);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (961, 'Heidenreich Inc', 'hsexonqo@umn.edu', 'Poland', 822);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (962, 'Wehner and Sons', 'amalloyqp@japanpost.jp', 'Philippines', 999);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (963, 'Hirthe-Littel', 'brultonqq@devhub.com', 'China', 835);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (964, 'Cartwright-Cassin', 'jmcinneryqr@artisteer.com', 'China', 662);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (965, 'Jakubowski and Sons', 'pjurasekqs@sfgate.com', 'China', 338);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (966, 'O''Connell, Huels and Jacobson', 'borysqt@springer.com', 'Ukraine', 811);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (967, 'Macejkovic-Lehner', 'aswinbournequ@cisco.com', 'Brazil', 347);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (968, 'Hills-Kertzmann', 'ckhomichqv@unc.edu', 'Malaysia', 422);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (969, 'Russel LLC', 'gricciardelloqw@cbslocal.com', 'Ukraine', 430);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (970, 'Kerluke and Sons', 'fplaiceqx@illinois.edu', 'Japan', 260);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (971, 'D''Amore LLC', 'hkelseyqy@tamu.edu', 'Portugal', 168);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (972, 'Hirthe, Erdman and Schmidt', 'lgrogonoqz@github.io', 'Zambia', 68);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (973, 'Lemke, Crooks and Gutmann', 'hdrippsr0@dell.com', 'Poland', 889);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (974, 'Rippin LLC', 'srumbelowr1@aboutads.info', 'Pakistan', 76);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (975, 'Denesik-Becker', 'tstrangwardr2@nps.gov', 'China', 157);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (976, 'Fritsch, Oberbrunner and Walker', 'hhatliffr3@wired.com', 'Denmark', 803);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (977, 'O''Kon-Hauck', 'npashr4@guardian.co.uk', 'Colombia', 340);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (978, 'Metz, O''Kon and Zemlak', 'bgodsmarkr5@jalbum.net', 'China', 101);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (979, 'Keebler LLC', 'fplesterr6@sitemeter.com', 'China', 558);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (980, 'Beer Inc', 'dperillor7@free.fr', 'Philippines', 567);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (981, 'Stroman, Herman and Krajcik', 'draikerr8@mapquest.com', 'Uzbekistan', 18);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (982, 'Jacobs LLC', 'jtoorr9@photobucket.com', 'Iran', 294);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (983, 'Thiel-Gerhold', 'achristinra@businessinsider.com', 'Palestinian Territory', 696);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (984, 'Jacobi Group', 'lsolomonrb@answers.com', 'Malaysia', 865);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (985, 'Daniel-Dare', 'nrillattrc@github.com', 'Tanzania', 651);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (986, 'Johns, Sanford and Heidenreich', 'fvitteryrd@umich.edu', 'Iran', 581);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (987, 'Ondricka-Kling', 'emagnayre@omniture.com', 'China', 642);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (988, 'Purdy-Cartwright', 'gmuglestonrf@salon.com', 'China', 99);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (989, 'Kautzer, Ortiz and Halvorson', 'rcecilrg@plala.or.jp', 'China', 522);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (990, 'Heller Group', 'kblazicrh@boston.com', 'Iceland', 312);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (991, 'Dibbert-Moore', 'csherrinri@earthlink.net', 'Vietnam', 351);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (992, 'Beer, Blick and Kuphal', 'amesserrj@bbc.co.uk', 'Philippines', 416);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (993, 'Walker, Cummerata and Nitzsche', 'uegdalrk@ox.ac.uk', 'Sweden', 475);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (994, 'Douglas, Cassin and Wiegand', 'ctrenouthrl@samsung.com', 'Indonesia', 575);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (995, 'Volkman LLC', 'brobardrm@sciencedirect.com', 'Indonesia', 269);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (996, 'Fahey and Sons', 'enickollrn@time.com', 'Indonesia', 43);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (997, 'Gusikowski-Rice', 'esetterfieldro@oaic.gov.au', 'Philippines', 278);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (998, 'Feil Group', 'cseidrp@deviantart.com', 'United States', 569);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (999, 'Bartoletti-Kovacek', 'cboguerq@telegraph.co.uk', 'Bulgaria', 936);
-insert into PROVEEDOR (codigo_proveedor, nombre_proveedor, correo, provincia, PRODUCTO_cod_producto) values (1000, 'Spencer Inc', 'rbricerr@vk.com', 'United States', 617);
+-- Cliente
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (1, 'Rickie', 'Rawsthorne', '164 707 8969', '4 Milwaukee Crossing');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (2, 'Goldie', 'Landa', '405 708 2385', '684 Banding Terrace');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (3, 'Ericka', 'Kach', '239 571 1382', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (4, 'Sashenka', 'Challicombe', '645 127 3468', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (5, 'Bennie', 'Fance', null, '38394 Sunnyside Point');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (6, 'Miranda', 'Luter', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (7, 'Malinda', 'Hartburn', '927 498 7861', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (8, 'Derrik', 'Bancroft', '362 351 7037', '464 Di Loreto Drive');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (9, 'Jennee', 'Surphliss', '574 941 8339', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (10, 'Kenn', 'Stout', '708 817 2758', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (11, 'Julee', 'Wardrop', '858 192 1637', '957 4th Crossing');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (12, 'Naomi', 'Macia', '559 627 1481', '1046 Esch Alley');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (13, 'Caty', 'Spary', '236 440 7552', '388 East Drive');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (14, 'Sancho', 'Bruni', '173 548 6408', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (15, 'Thorvald', 'Thoresby', '899 739 8751', '9 Delaware Crossing');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (16, 'Bonnibelle', 'Richford', '985 933 9389', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (17, 'Reinaldo', 'Batte', null, '53299 Susan Alley');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (18, 'Dalia', 'Cattrell', '590 858 0023', '6299 Brickson Park Parkway');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (19, 'Den', 'Ferenc', '786 764 9228', '78674 John Wall Pass');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (20, 'Stewart', 'Reinbach', '301 685 0023', '44801 Sugar Parkway');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (21, 'Roscoe', 'Sellen', '746 183 7868', '4 Talmadge Circle');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (22, 'Van', 'Amaya', '164 899 9467', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (23, 'Mireielle', 'Hunsworth', '363 467 6440', '336 Marcy Center');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (24, 'Lance', 'Giovannardi', null, '0 Riverside Hill');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (25, 'Mickie', 'Marris', '954 852 0631', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (26, 'Hulda', 'Lemerie', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (27, 'Ker', 'Kaubisch', '352 989 9349', '143 Russell Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (28, 'Auria', 'Deshon', '887 455 5444', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (29, 'Cort', 'Madoc-Jones', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (30, 'Orville', 'Berriman', '100 975 7168', '060 Waubesa Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (31, 'Loutitia', 'Stoving', '269 900 7781', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (32, 'Ky', 'Simchenko', '111 352 5445', '2351 Brickson Park Point');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (33, 'Farrand', 'Allmann', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (34, 'Cooper', 'Bradlaugh', null, '1911 Warrior Place');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (35, 'Corella', 'Braunle', '939 779 0562', '2686 Mcguire Pass');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (36, 'Franny', 'Hailey', null, '1879 Warrior Parkway');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (37, 'Priscilla', 'Crippill', '803 123 6720', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (38, 'Ariana', 'Pouton', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (39, 'Kristoforo', 'Pearl', '221 185 5565', '59 Cambridge Point');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (40, 'Urban', 'Mingus', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (41, 'Hersch', 'Waren', '844 985 7011', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (42, 'Mureil', 'Nickoll', null, '86 Vidon Trail');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (43, 'Karlik', 'Casaro', '716 253 2216', '39 Grayhawk Plaza');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (44, 'Mar', 'Trehearne', '560 391 8425', '7 Hoffman Pass');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (45, 'Noellyn', 'Blease', null, '7894 Cascade Trail');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (46, 'Ora', 'Dougharty', null, '92794 Green Park');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (47, 'Allene', 'Mancktelow', '109 423 1772', '06688 Granby Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (48, 'Kendrick', 'Mollin', '375 362 2958', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (49, 'Darby', 'Lemin', '334 506 0572', '734 Mcguire Plaza');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (50, 'Junette', 'Gladbach', '456 633 9365', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (51, 'Mallory', 'Vaisey', '216 687 2075', '64 Ludington Crossing');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (52, 'Karoly', 'Rotte', '621 136 8789', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (53, 'Mara', 'Kitchingman', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (54, 'Roy', 'Ziehm', '211 542 3876', '5 Oneill Terrace');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (55, 'Carol-jean', 'Bigglestone', '116 986 5949', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (56, 'Klement', 'Doche', '678 473 0664', '4597 Mariners Cove Road');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (57, 'Claire', 'Densumbe', '658 685 1894', '100 Pearson Alley');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (58, 'Birdie', 'Hackleton', '561 116 4069', '452 Acker Plaza');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (59, 'Hailee', 'Kunzelmann', '798 393 0762', '86690 Marquette Terrace');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (60, 'Liesa', 'Whight', '676 154 1078', '633 Magdeline Center');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (61, 'Bale', 'Brasseur', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (62, 'Mata', 'Crick', null, '6 Kennedy Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (63, 'Emmy', 'Aiers', '422 673 1221', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (64, 'Rora', 'Piggens', null, '81542 Oakridge Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (65, 'Eduard', 'Titley', '228 690 6155', '12 Hovde Park');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (66, 'Ingrid', 'Brisse', '480 532 8098', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (67, 'Tiebold', 'Leman', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (68, 'Turner', 'Trump', '504 487 9731', '10 Manitowish Street');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (69, 'Sherrie', 'Lawerence', null, '782 Old Gate Terrace');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (70, 'Brewster', 'McCaughey', '189 756 1109', '89687 Sunnyside Road');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (71, 'Angela', 'Leif', '825 705 7180', '93 Eastlawn Court');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (72, 'Reine', 'Scyone', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (73, 'Quentin', 'Conlon', '523 564 9874', '77804 Kinsman Hill');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (74, 'Weidar', 'Swate', '938 370 4073', '21 Darwin Court');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (75, 'Nevile', 'Catmull', '405 854 9738', '40 Golf Course Road');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (76, 'Trista', 'Tolomelli', '125 201 1909', '752 Lyons Alley');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (77, 'Burlie', 'Zettler', null, '63 Harbort Pass');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (78, 'Dorena', 'Tallis', '283 131 5756', '2 Mendota Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (79, 'Nedi', 'Bortolotti', '679 728 8780', '53 Lotheville Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (80, 'Gary', 'Sokell', null, '2747 Anhalt Trail');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (81, 'Jeri', 'Acreman', '331 795 2271', '41 Sachtjen Parkway');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (82, 'Dareen', 'McPhate', '183 617 7579', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (83, 'Meridel', 'Fossord', '907 303 3617', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (84, 'Adrienne', 'Mercik', null, '12262 Melody Circle');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (85, 'Phoebe', 'Barhams', '819 190 9534', '7258 Pankratz Park');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (86, 'Othello', 'Adamski', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (87, 'Jule', 'Bare', '131 825 5328', '1318 Stoughton Plaza');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (88, 'Berkeley', 'Gleder', '682 127 2499', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (89, 'Lorettalorna', 'Foulgham', '911 133 0548', '40037 Susan Parkway');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (90, 'Joya', 'Winley', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (91, 'Rip', 'Adger', '512 477 1217', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (92, 'Chrissy', 'Wabe', '516 545 9361', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (93, 'Nealson', 'Oehme', null, '1213 Petterle Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (94, 'Danice', 'Tallquist', '737 902 3775', '17 Rowland Drive');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (95, 'Roana', 'Girdler', '264 128 4832', '471 Hovde Point');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (96, 'Karlens', 'Cruikshank', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (97, 'Meggy', 'Sharrocks', '663 607 7743', '30251 Bluestem Hill');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (98, 'Karlens', 'Connor', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (99, 'Sharlene', 'Massot', '855 633 2015', '64 Shoshone Drive');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (100, 'Robb', 'Eldredge', '669 414 9944', '0 Spohn Terrace');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (101, 'Alberta', 'Palister', '381 858 8134', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (102, 'Olivier', 'Danjoie', '650 501 0258', '1 Stuart Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (103, 'Aleen', 'Rodolfi', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (104, 'Gavra', 'Hounsom', '719 318 1434', '2091 Waxwing Drive');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (105, 'Boote', 'Valler', '970 156 9741', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (106, 'Bobbette', 'Garner', '206 260 2903', '027 Commercial Lane');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (107, 'Francklin', 'Coche', '293 131 2755', '50 Spenser Point');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (108, 'Carroll', 'Pacher', '543 875 8871', '99273 Eastwood Trail');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (109, 'Ingemar', 'Glascott', '166 158 2028', '3 Colorado Street');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (110, 'Cordie', 'Bone', '950 318 3875', '89 Shoshone Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (111, 'Micaela', 'Hartridge', '341 602 0422', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (112, 'Letty', 'Greaser', '821 106 2067', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (113, 'Skipp', 'Tremellan', '772 835 5882', '854 Forster Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (114, 'Bria', 'Tethacot', null, '84 Quincy Center');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (115, 'Falito', 'Soppeth', '911 863 8848', '97529 Union Road');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (116, 'Anselm', 'MacEveley', '780 240 7183', '12 Talisman Park');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (117, 'Nicki', 'Salzberg', '137 362 7685', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (118, 'Isobel', 'Girardini', null, '88580 Arizona Street');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (119, 'Matteo', 'Shillum', '173 713 1024', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (120, 'Brandice', 'O''Mara', '936 422 3056', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (121, 'Hershel', 'Travis', '755 550 1444', '8 Merrick Circle');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (122, 'Quill', 'Catlin', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (123, 'Cesare', 'Brandoni', '361 100 8383', '97386 Buell Place');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (124, 'Cassaundra', 'Sprey', '766 532 8687', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (125, 'Prescott', 'Maken', '232 279 4342', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (126, 'Ursola', 'Dicty', '557 778 7697', '8082 Orin Parkway');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (127, 'Brett', 'Pauncefort', '894 176 7829', '31 Melvin Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (128, 'Madelle', 'Orrah', null, '6 Amoth Plaza');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (129, 'Sigvard', 'Adamovich', '977 191 0624', '2 Kings Parkway');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (130, 'Eugine', 'Whaley', null, '93 Florence Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (131, 'Mable', 'Starmore', '616 965 5056', '00957 Lindbergh Plaza');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (132, 'Borg', 'Ryhorovich', '986 790 1877', '842 Bayside Crossing');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (133, 'Myrah', 'Else', '222 224 4530', '906 Ramsey Pass');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (134, 'Ginevra', 'Gotcliffe', '760 596 5309', '68286 Canary Circle');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (135, 'Portia', 'Brooking', '251 960 3500', '165 Westend Circle');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (136, 'Christen', 'Pietri', '473 977 6698', '4825 Grayhawk Road');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (137, 'Joscelin', 'MacFarland', '393 925 7799', '64 Cambridge Plaza');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (138, 'Diann', 'Winkless', '738 705 0109', '0 Shopko Lane');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (139, 'Demetris', 'Gargett', '236 359 7981', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (140, 'Ashlin', 'Pietranek', '682 518 4344', '8645 Pleasure Crossing');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (141, 'Leanora', 'Carmo', null, '2777 Doe Crossing Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (142, 'Luke', 'Olyff', null, '66 Eliot Park');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (143, 'Elsi', 'De Zamudio', '701 506 6181', '70858 Mandrake Point');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (144, 'Gabriel', 'Ison', '287 753 2029', '519 Hanover Plaza');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (145, 'Emily', 'Puig', null, '6 Kropf Crossing');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (146, 'Keriann', 'Dreschler', '309 348 1283', '7962 Alpine Parkway');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (147, 'Sula', 'Mecchi', '296 718 9709', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (148, 'Ari', 'Dufaire', null, '088 Eagan Drive');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (149, 'Peg', 'Grevatt', '247 858 3095', '23609 Fremont Center');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (150, 'Talbot', 'Philott', '858 470 1414', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (151, 'Ellerey', 'Suttell', '602 130 8545', '296 Maple Park');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (152, 'Starla', 'Karus', null, '64 Northport Hill');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (153, 'Gavrielle', 'Paxforde', '170 583 9121', '1478 Warbler Circle');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (154, 'Leonhard', 'Stallan', null, '01808 Maryland Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (155, 'Bernita', 'Gimert', '180 845 0674', '6106 Michigan Crossing');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (156, 'Sumner', 'Tewkesberrie', '731 222 3863', '9 Mcbride Point');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (157, 'Jacquie', 'Bunney', '340 377 2123', '80188 Hudson Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (158, 'Deanna', 'Lamburne', '263 710 3498', '33727 Manley Street');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (159, 'Peta', 'Kleinmintz', '689 555 9245', '4567 Sauthoff Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (160, 'Elsie', 'Innocent', '789 826 8461', '10700 Crownhardt Circle');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (161, 'Alanah', 'Fernao', '690 896 4618', '02 Bayside Lane');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (162, 'Felice', 'Colvie', '206 873 4154', '864 Dixon Point');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (163, 'Dal', 'Prin', null, '1 Delaware Park');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (164, 'Hilary', 'Gemmill', '142 461 5349', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (165, 'Farris', 'Jeynes', '932 756 7213', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (166, 'Mozes', 'Doley', '857 286 9296', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (167, 'Sonnie', 'MacFadden', '289 804 2217', '8955 Dennis Plaza');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (168, 'Neda', 'Bridgwater', '882 768 0690', '3 Vermont Point');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (169, 'Conchita', 'Siemandl', null, '575 Sheridan Trail');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (170, 'Reider', 'Fishleigh', null, '5502 Katie Pass');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (171, 'Dagmar', 'Braundt', '159 855 1216', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (172, 'Juliana', 'Burd', '645 620 3917', '7 Mariners Cove Park');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (173, 'Ynez', 'Browning', '722 472 1860', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (174, 'Baryram', 'Golda', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (175, 'Michal', 'Yeardsley', '889 798 8788', '4366 Ridge Oak Parkway');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (176, 'Benjamin', 'Mullard', '893 623 2205', '98 Namekagon Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (177, 'Anastasia', 'Northcliffe', '945 756 8955', '0926 Hoepker Road');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (178, 'Leeland', 'Barnwill', '918 183 9469', '752 Sloan Park');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (179, 'Wyatan', 'Tortis', '805 193 0803', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (180, 'Trude', 'Demare', null, '16189 Caliangt Trail');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (181, 'Shandy', 'Leslie', '957 663 9569', '30573 Hovde Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (182, 'Dasha', 'Longhorne', '704 218 2607', '5 Browning Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (183, 'Ilise', 'Hemeret', '813 259 0250', '813 Ohio Crossing');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (184, 'Corty', 'Wickins', '224 119 5322', '79300 Grayhawk Pass');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (185, 'Milli', 'McJerrow', '473 648 7984', '4 South Road');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (186, 'Joelie', 'Figgins', '925 733 9904', '3621 Delaware Trail');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (187, 'Gale', 'Cathie', '824 316 9736', '25319 Helena Road');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (188, 'Tucker', 'Brimman', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (189, 'Dorella', 'Paine', '226 449 1323', '8 Lindbergh Alley');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (190, 'Sara-ann', 'Donovin', '926 288 5198', '26 Mosinee Terrace');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (191, 'Kile', 'Diggar', '586 961 7232', '07 Hermina Road');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (192, 'Swen', 'Baptie', '578 384 7516', '86122 Marquette Park');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (193, 'Abagael', 'Sherrott', '720 549 8419', '51693 Veith Street');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (194, 'Doe', 'Preddle', '669 392 9175', '20243 Eagan Center');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (195, 'Obie', 'Hasloch', '172 142 2631', '9636 Porter Parkway');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (196, 'Dana', 'Etchells', '747 749 6563', '02448 Ohio Center');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (197, 'Linnea', 'Calley', '542 558 1125', '8988 Walton Park');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (198, 'Patty', 'Teggart', null, '2 Sage Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (199, 'Jamaal', 'Ivatts', '726 285 4188', '42554 Vera Plaza');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (200, 'Clementina', 'Thewys', '976 359 0709', '5058 Kennedy Trail');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (201, 'Nathalie', 'Tidswell', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (202, 'Jere', 'Algar', '347 764 4478', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (203, 'Abel', 'Maingot', '699 227 2638', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (204, 'Hymie', 'Yearnes', '639 238 7269', '82139 Sloan Hill');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (205, 'Lindsey', 'Szymanzyk', '107 814 2998', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (206, 'Seka', 'Flitcroft', '118 718 9259', '1723 Elmside Alley');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (207, 'Sosanna', 'Nyles', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (208, 'Felicity', 'Brophy', '375 418 8642', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (209, 'Joscelin', 'Ply', '624 816 8237', '443 Maryland Circle');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (210, 'Selig', 'Bruty', null, '62215 Briar Crest Drive');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (211, 'Richard', 'Terzi', '318 255 7545', '45 Mosinee Plaza');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (212, 'Tootsie', 'Wavell', '508 611 0130', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (213, 'Arlinda', 'Salvadori', '707 756 2554', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (214, 'Loleta', 'Carrigan', null, '20 Di Loreto Terrace');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (215, 'Jonathon', 'Regorz', '338 913 5008', '3728 Spaight Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (216, 'Elinore', 'Cockill', '129 908 5864', '33332 Hagan Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (217, 'Bobbette', 'Tyas', '427 600 4615', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (218, 'Laurena', 'Hadden', '977 904 3461', '04235 Ryan Pass');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (219, 'Miller', 'Swadling', '430 451 9000', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (220, 'Austina', 'Ballefant', '106 128 1811', '7933 Dayton Lane');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (221, 'Misty', 'Battersby', '914 566 5848', '66 Monterey Hill');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (222, 'Gabriella', 'O''Fallowne', '912 345 2500', '175 New Castle Parkway');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (223, 'Emeline', 'Wollacott', '982 294 4360', '8765 Everett Circle');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (224, 'Diandra', 'Dunnico', '110 337 6915', '14523 Claremont Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (225, 'Blondell', 'Darnbrook', '692 821 5215', '2276 Milwaukee Pass');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (226, 'Herbie', 'Thams', '214 984 9610', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (227, 'Cindie', 'Collumbine', '410 726 3898', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (228, 'Veronique', 'Lanbertoni', '307 888 3231', '6832 Truax Pass');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (229, 'Kesley', 'Stephens', '996 273 6266', '13 Melvin Alley');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (230, 'Shayne', 'Cockerill', '327 757 6299', '2 Loomis Lane');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (231, 'Catina', 'Brothwell', null, '96 Sundown Trail');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (232, 'Hester', 'Sudran', '492 724 3596', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (233, 'Evy', 'Theuff', '182 468 3300', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (234, 'Alie', 'Kinner', '770 831 9072', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (235, 'Tilda', 'Phonix', '212 996 2006', '0153 Sunbrook Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (236, 'Elizabeth', 'Gitthouse', '393 784 6000', '68 Everett Pass');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (237, 'Keriann', 'Sealand', null, '30830 Maywood Parkway');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (238, 'Ignaz', 'Donson', '397 799 1398', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (239, 'Graig', 'Thayre', '353 235 8792', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (240, 'Palm', 'Jouen', '837 296 2755', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (241, 'Lucila', 'Domone', null, '600 Vermont Drive');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (242, 'Shelden', 'Aynscombe', '592 490 2350', '638 Di Loreto Point');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (243, 'Morie', 'Rochford', '676 140 2233', '25 Carey Street');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (244, 'Farrell', 'Cossey', '650 280 5148', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (245, 'Lynna', 'MacDuff', null, '82 Armistice Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (246, 'Agnella', 'Wragge', '909 645 0169', '5 Hoard Park');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (247, 'Glenden', 'Moore', null, '86 Clemons Park');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (248, 'Roseanne', 'Jendricke', '362 864 0869', '5 Fulton Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (249, 'Jeremias', 'Twallin', '443 458 4040', '981 Towne Place');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (250, 'Nathaniel', 'Baigrie', '654 120 8128', '29 Declaration Trail');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (251, 'Roshelle', 'Sussex', '751 901 6189', '8735 4th Alley');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (252, 'Jeanie', 'Kinglake', '781 699 7894', '4057 Stone Corner Plaza');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (253, 'Enriqueta', 'Karolowski', null, '01486 Heath Terrace');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (254, 'Gipsy', 'Bloom', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (255, 'Jerad', 'Lomax', '942 712 0117', '18 Mockingbird Court');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (256, 'Dennie', 'Meran', '129 468 0103', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (257, 'Dun', 'von Nassau', '684 296 7508', '056 Vidon Parkway');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (258, 'Edna', 'Trafford', '695 981 0339', '68 Independence Pass');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (259, 'Woodrow', 'Burgum', '680 897 8281', '2 Lake View Crossing');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (260, 'Winona', 'Brockhouse', '421 512 8249', '92849 Warrior Street');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (261, 'Charmain', 'Gonzalez', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (262, 'Ignazio', 'Novakovic', '674 525 1174', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (263, 'Jennilee', 'Dockery', '180 849 5502', '94 Charing Cross Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (264, 'Powell', 'Balcers', '856 484 9024', '26 Morrow Point');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (265, 'Zolly', 'Amiss', '746 387 4228', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (266, 'Brigid', 'Weedon', '114 913 9571', '88 Buena Vista Drive');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (267, 'Jerrilyn', 'Locket', '593 614 1153', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (268, 'Lovell', 'Brinkworth', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (269, 'Abbey', 'Weiser', '408 875 4332', '5465 Mallard Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (270, 'Cammie', 'Eburah', null, '0 Orin Hill');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (271, 'Aryn', 'Chartman', '921 179 2337', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (272, 'Teddi', 'O'' Cuolahan', '832 620 1643', '6069 Dayton Alley');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (273, 'Dov', 'Ander', '793 599 4481', '01 Corry Crossing');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (274, 'Lissie', 'Calan', '698 145 7025', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (275, 'Hallie', 'Bance', '439 531 9117', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (276, 'Douglas', 'Kleinmintz', '622 596 6343', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (277, 'Debera', 'Bambery', '234 243 3112', '52884 Fieldstone Crossing');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (278, 'Monique', 'Mennell', '204 964 0020', '38 Redwing Point');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (279, 'Minnie', 'Jago', '266 624 8069', '2 Gale Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (280, 'Tommie', 'Trousdell', '999 417 4865', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (281, 'Matias', 'Battelle', null, '39602 Maple Wood Terrace');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (282, 'Teresina', 'Laslett', '857 558 6127', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (283, 'Violette', 'Voelker', '880 720 0622', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (284, 'Berty', 'Baynon', '202 648 2471', '628 Warner Hill');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (285, 'Clerissa', 'MacGarvey', null, '392 8th Center');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (286, 'Aloisia', 'Gorler', '698 197 2540', '61 Luster Street');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (287, 'Gaye', 'Hofner', '180 752 8543', '07088 Westport Lane');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (288, 'Elane', 'Downton', '809 783 4989', '15 Fisk Alley');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (289, 'Dillie', 'Goodinge', '377 774 0270', '08 Independence Crossing');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (290, 'Paula', 'Rameaux', null, '4289 Heffernan Drive');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (291, 'Jeromy', 'Torfin', '624 542 9416', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (292, 'Mildrid', 'Du Barry', '616 962 0322', '58 Kennedy Court');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (293, 'Karla', 'Weatherall', '953 288 9926', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (294, 'Liesa', 'Abrahamian', '725 180 7059', '7302 Iowa Trail');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (295, 'Arri', 'Samwayes', null, '9 Muir Lane');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (296, 'Manda', 'Wilby', '457 848 8276', '7 Waxwing Road');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (297, 'Ebony', 'Mariet', null, '619 Oxford Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (298, 'Berkeley', 'Balogh', '192 769 8090', '1729 Maywood Parkway');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (299, 'Gilberte', 'Labbet', '554 961 4864', '1690 Melvin Parkway');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (300, 'Jaquelin', 'Fumagalli', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (301, 'Daren', 'Paulton', '496 477 9679', '4756 Cody Parkway');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (302, 'Merilyn', 'Chimienti', '923 525 9756', '556 Holmberg Center');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (303, 'Dillon', 'Dorant', null, '030 Merchant Pass');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (304, 'Elbertine', 'Balmforth', '419 110 2236', '666 Everett Terrace');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (305, 'Alexa', 'Baudone', '288 267 7249', '759 Oneill Street');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (306, 'Efrem', 'Dobbing', '968 571 8863', '5272 Lyons Crossing');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (307, 'Johna', 'Skune', null, '1 Thackeray Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (308, 'Baron', 'Cobello', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (309, 'Sybil', 'Urpeth', '337 507 0976', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (310, 'Andris', 'Worden', '638 143 3124', '94090 Center Pass');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (311, 'Thea', 'Rowlett', null, '86720 School Park');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (312, 'Alexandros', 'Gruszka', null, '667 Spohn Trail');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (313, 'Cristen', 'Kippling', '139 838 7017', '0 Golf Course Crossing');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (314, 'Harrison', 'Carlton', null, '0271 Veith Point');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (315, 'Stacia', 'Scurfield', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (316, 'Standford', 'Piddock', '879 939 5501', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (317, 'Tom', 'Le Teve', '582 151 3839', '508 Pine View Drive');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (318, 'Leonore', 'Cusick', null, '82 Dakota Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (319, 'Chaunce', 'Dacombe', '702 578 4339', '49173 Northport Trail');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (320, 'Morlee', 'Broz', null, '4610 Texas Alley');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (321, 'Catlin', 'Saintpierre', '153 831 1613', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (322, 'Britta', 'Philippet', '927 460 2124', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (323, 'Thornie', 'Coster', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (324, 'Anderea', 'Llewelly', '275 197 6410', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (325, 'Udale', 'Moult', '232 561 7617', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (326, 'Jocelyn', 'Morena', '424 681 9946', '28923 Fulton Trail');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (327, 'Malinde', 'Shinton', '727 435 4564', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (328, 'Kristin', 'Hazell', '228 869 6823', '32429 Carberry Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (329, 'Jacenta', 'Goady', '937 155 3572', '40 Division Court');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (330, 'Gerladina', 'Bernaert', '286 174 2156', '6848 Mendota Pass');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (331, 'Friedrich', 'McCurry', null, '51231 Morningstar Terrace');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (332, 'Issi', 'Losty', '160 665 6798', '7291 Sunnyside Road');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (333, 'Oralia', 'Ceney', '867 432 1374', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (334, 'Augustine', 'Filde', '996 527 0796', '5986 Mosinee Crossing');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (335, 'Rahal', 'Geraldi', null, '2 Superior Lane');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (336, 'Isabel', 'Alton', null, '53795 Corry Plaza');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (337, 'Anatol', 'Patterfield', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (338, 'Artemus', 'Wogden', '598 803 4602', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (339, 'Hastings', 'Bumpass', '534 416 2390', '32 Pond Place');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (340, 'Verne', 'Llewelyn', '574 793 6787', '85 Mcbride Plaza');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (341, 'Mei', 'Goldston', '751 594 0088', '624 Arkansas Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (342, 'Estell', 'Beardsley', '547 372 7619', '9 Thierer Trail');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (343, 'Elli', 'Scase', '650 479 5831', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (344, 'Ileana', 'Capes', null, '30517 Eastwood Lane');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (345, 'Jilli', 'Armal', null, '2270 Sachtjen Circle');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (346, 'Alisha', 'Donnett', null, '56 Melvin Place');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (347, 'Wildon', 'Suston', '598 777 8153', '8213 Mallory Lane');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (348, 'Kimberli', 'Schouthede', '878 939 7136', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (349, 'Ephrayim', 'Jillis', '605 267 4035', '80 Clarendon Crossing');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (350, 'Dion', 'Scramage', null, '04 Golden Leaf Circle');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (351, 'Hermy', 'Hordle', '659 287 3773', '2 Del Mar Center');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (352, 'Brigid', 'Cormode', '187 232 6898', '94 Cherokee Hill');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (353, 'Zolly', 'Smallcombe', '636 815 1467', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (354, 'Gunter', 'Bartalin', '766 736 3731', '29067 Acker Crossing');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (355, 'Shannen', 'Scothorne', '915 901 0245', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (356, 'Evangelin', 'O''Cullen', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (357, 'Susi', 'Brotherhed', '704 134 3728', '6 Forest Dale Plaza');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (358, 'Karee', 'Simpkin', '102 787 0103', '575 Loeprich Alley');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (359, 'Starlene', 'Guyot', '550 623 6129', '1767 Westend Terrace');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (360, 'Virgilio', 'Dyka', '867 145 6621', '719 Fallview Plaza');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (361, 'Albrecht', 'Gaven', null, '532 Hallows Court');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (362, 'Dania', 'Cunnington', null, '65 Pennsylvania Lane');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (363, 'Nappie', 'Leftbridge', '127 999 3790', '79 Springs Point');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (364, 'Estrella', 'Keppin', '971 926 0725', '4 2nd Alley');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (365, 'Adrea', 'Shipp', '937 509 5625', '00719 Sherman Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (366, 'Coleman', 'Berrick', null, '6 Columbus Terrace');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (367, 'Farly', 'Heymes', '661 240 0516', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (368, 'Rochella', 'Siegertsz', '412 444 5913', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (369, 'Lisetta', 'Presshaugh', '190 820 9694', '71 Debra Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (370, 'Eddie', 'Pirnie', '714 455 9044', '58814 Bellgrove Street');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (371, 'Lory', 'MacCoughan', '349 153 9045', '21 7th Crossing');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (372, 'Dewie', 'Prettyjohn', null, '28777 Schlimgen Parkway');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (373, 'Cece', 'Sebrens', '469 247 0844', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (374, 'Nobe', 'Tingey', '514 937 8786', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (375, 'Desdemona', 'Parfett', '455 596 0712', '87 Sommers Crossing');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (376, 'Tabatha', 'Bumphrey', '819 626 4336', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (377, 'Matthus', 'MacEntee', '248 422 9635', '1185 Maryland Terrace');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (378, 'Roseann', 'Harris', '480 716 1590', '226 Stephen Parkway');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (379, 'Joanna', 'Denney', '410 241 1942', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (380, 'Kizzee', 'Simmons', '837 387 3433', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (381, 'Helena', 'Kobelt', '935 716 8221', '561 Continental Plaza');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (382, 'Leonelle', 'Gorton', '164 917 8568', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (383, 'Ainsley', 'Inglese', '649 560 4587', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (384, 'Meg', 'Huitson', '773 714 7072', '084 Dryden Center');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (385, 'Lorita', 'Lemar', '549 875 3701', '7452 Walton Lane');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (386, 'Gan', 'Malacrida', '864 828 1520', '96570 American Ash Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (387, 'Charmane', 'Pauly', '894 676 5967', '18 Warbler Parkway');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (388, 'Cornela', 'Blanchard', '967 603 2205', '931 Boyd Plaza');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (389, 'Armando', 'Umpleby', '573 800 4537', '7404 Browning Crossing');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (390, 'Saleem', 'McCritichie', '995 402 7290', '526 Sunbrook Street');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (391, 'Maynard', 'Andrag', '692 996 4746', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (392, 'Magdalena', 'Tregoning', '303 969 0186', '8 Lyons Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (393, 'Tabbie', 'Duval', '310 513 4721', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (394, 'Lib', 'Dougan', '480 530 2696', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (395, 'Tamra', 'Harhoff', '493 795 7122', '01063 Toban Plaza');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (396, 'Sergeant', 'Kordova', '322 472 8156', '741 Ruskin Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (397, 'Shaughn', 'Willison', null, '06734 Merrick Park');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (398, 'Yoshi', 'Olphert', '770 377 4346', '6348 Butterfield Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (399, 'Inger', 'Sinclar', '451 229 1268', '45 Waywood Pass');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (400, 'Toiboid', 'Gerding', '247 332 2247', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (401, 'Leighton', 'Dobbs', '644 760 5866', '77 La Follette Road');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (402, 'Gabriell', 'Sealeaf', null, '210 Milwaukee Park');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (403, 'Kellsie', 'Flintiff', '465 378 4172', '14 Mayer Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (404, 'Lil', 'Prosser', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (405, 'Rivkah', 'Hincks', '183 713 5948', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (406, 'Salomi', 'Bartoloma', null, '8263 Lakewood Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (407, 'Imelda', 'Beckensall', '531 644 9260', '373 Roth Place');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (408, 'Carolann', 'McCaffrey', '784 604 9282', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (409, 'Sheeree', 'Vernazza', '555 926 4067', '70 Bunting Street');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (410, 'Evangelia', 'Robertz', '200 290 8791', '79 Lighthouse Bay Alley');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (411, 'Stevie', 'Brandsma', '613 330 4188', '05614 Summer Ridge Drive');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (412, 'Rosalinde', 'Robatham', '409 489 0679', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (413, 'Wren', 'Kelsell', '803 821 4195', '3 Grasskamp Circle');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (414, 'Manon', 'Janjic', '951 420 9600', '5470 Lakeland Road');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (415, 'Eamon', 'Gleadle', '336 598 2934', '59 Shelley Trail');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (416, 'Donna', 'Ludmann', '129 510 7556', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (417, 'Ranna', 'Swedeland', '514 739 8560', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (418, 'Shelby', 'Derrington', '708 292 8945', '16 Troy Crossing');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (419, 'Xymenes', 'Ceschini', '582 794 0052', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (420, 'Guinna', 'Styant', '174 382 1298', '48229 Haas Parkway');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (421, 'Cathy', 'De Angelo', '992 969 1502', '1709 Trailsway Lane');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (422, 'Ruttger', 'Conman', '659 490 3566', '21 Sunnyside Circle');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (423, 'Lizzy', 'O''Lochan', '584 882 1589', '0053 Derek Trail');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (424, 'Otis', 'Wattingham', '669 314 5004', '18405 Roth Road');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (425, 'Frannie', 'Andrault', '427 487 2845', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (426, 'Patsy', 'Bickerstaff', '912 989 0638', '721 Everett Circle');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (427, 'Raquel', 'Lavington', null, '4 Thackeray Trail');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (428, 'Hamid', 'Camock', '720 493 4791', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (429, 'Somerset', 'Vanyashkin', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (430, 'Doro', 'Hedderly', null, '11367 Moulton Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (431, 'Atlante', 'Croyden', '412 821 3566', '68 Russell Center');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (432, 'Giovanna', 'Pahl', '531 676 5605', '6296 6th Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (433, 'Nathan', 'Roycroft', '433 317 5744', '4 Scoville Alley');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (434, 'Shandeigh', 'Hellwich', '689 858 7681', '7 Talmadge Plaza');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (435, 'Rodina', 'Vere', '202 804 5507', '009 Gerald Road');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (436, 'Gretna', 'Drummond', '653 548 7333', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (437, 'Brew', 'Milbourn', null, '82875 Armistice Alley');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (438, 'Rochester', 'Fridlington', '761 414 1790', '0929 Sutherland Hill');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (439, 'Tallie', 'Goult', null, '6 Barnett Plaza');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (440, 'Faustina', 'Beesley', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (441, 'Carlynn', 'Lesurf', null, '624 Thackeray Road');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (442, 'Penelopa', 'Granham', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (443, 'Bab', 'Bahike', null, '048 Duke Drive');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (444, 'Christophorus', 'Nijssen', null, '46507 Lillian Pass');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (445, 'Deina', 'Lelievre', '116 954 8430', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (446, 'Cheri', 'Macon', '985 102 6103', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (447, 'Johny', 'Jeens', '304 707 2166', '1 Fairview Parkway');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (448, 'Aundrea', 'Goldbourn', '740 470 8833', '07 Melrose Park');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (449, 'Nicolas', 'Ullyatt', '561 160 4670', '17939 4th Drive');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (450, 'Austin', 'Dawbery', '209 545 2675', '79043 American Ash Circle');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (451, 'Joell', 'Kayzer', '106 528 0048', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (452, 'Randi', 'Underhill', '923 367 2829', '319 Eggendart Center');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (453, 'Dode', 'Gosnall', '240 881 1613', '8 Gerald Parkway');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (454, 'Frank', 'McDonell', null, '366 Reinke Drive');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (455, 'Alison', 'Deabill', '421 760 2049', '89 Amoth Point');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (456, 'Esmeralda', 'Setchfield', null, '6 Tennessee Road');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (457, 'Artair', 'Milverton', '133 521 4600', '885 Scoville Alley');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (458, 'Carolus', 'Damiral', '289 838 5914', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (459, 'Damaris', 'Halston', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (460, 'Haley', 'Treadgold', '586 341 1532', '4638 Stang Park');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (461, 'Erich', 'Lillie', '637 493 3964', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (462, 'Jo-ann', 'Estcot', '699 949 4595', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (463, 'Lira', 'Caldwall', null, '333 Shoshone Terrace');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (464, 'Jesse', 'Franseco', '248 178 8209', '37 Welch Trail');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (465, 'Justino', 'Begwell', '445 826 7792', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (466, 'Creight', 'Henrichs', '430 771 8721', '91307 Park Meadow Trail');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (467, 'Elysia', 'McCrorie', null, '910 Barnett Plaza');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (468, 'Zackariah', 'Osgar', '443 173 7149', '6154 Melody Point');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (469, 'Gayle', 'McCaskill', '732 297 4300', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (470, 'Cammy', 'Dobkin', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (471, 'Eal', 'Thormann', null, '8517 Golf View Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (472, 'Jarrid', 'Tradewell', '731 688 9859', '0683 Cardinal Place');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (473, 'Alair', 'Balch', null, '95 Muir Alley');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (474, 'Durante', 'Allsop', '769 276 9831', '8 Eliot Plaza');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (475, 'Kaylyn', 'Croan', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (476, 'Viviyan', 'Tatlock', '321 194 9003', '20 Mesta Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (477, 'Rey', 'Adamiak', '507 948 9678', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (478, 'Salli', 'Ranner', '711 901 8928', '602 Melody Hill');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (479, 'Levi', 'Burn', '766 750 0296', '7 Rigney Street');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (480, 'Tome', 'Sparway', '850 303 9465', '8 Butternut Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (481, 'Winni', 'Ubank', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (482, 'Oates', 'Romeo', '636 261 3636', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (483, 'Fanchon', 'Goatman', '980 406 7243', '9953 Texas Circle');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (484, 'Fabiano', 'Dominichetti', '225 544 7526', '1 Stoughton Park');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (485, 'Caprice', 'Leeuwerink', '225 132 4081', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (486, 'Tom', 'Gallant', '208 546 2836', '12 Forest Court');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (487, 'Elie', 'Flucker', '643 794 8257', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (488, 'Claretta', 'Leyfield', null, '669 Southridge Pass');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (489, 'Hermie', 'Wimlet', '554 205 7410', '213 Paget Hill');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (490, 'Niko', 'Essam', '682 144 8856', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (491, 'Carlene', 'Odgaard', '906 704 4942', '16 Manley Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (492, 'Millie', 'Hallett', '199 116 5079', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (493, 'Kristine', 'Howkins', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (494, 'Sergeant', 'Donavan', '595 133 6305', '04914 Old Gate Hill');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (495, 'Lezlie', 'Taudevin', '623 683 0573', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (496, 'Carla', 'Goghin', '492 201 7675', '63 Paget Court');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (497, 'Foss', 'Grandisson', '458 385 5138', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (498, 'Theadora', 'Tybalt', null, '02 Mayfield Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (499, 'Nell', 'Morad', '312 442 7434', '14001 Summer Ridge Park');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (500, 'Alasdair', 'Humphris', '909 996 8695', '3 Fulton Road');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (501, 'Saree', 'Geyton', '352 187 7431', '72114 Northwestern Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (502, 'Marlowe', 'Corsar', '796 532 0199', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (503, 'Reilly', 'Colhoun', '901 689 6407', '61376 Lakewood Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (504, 'Theresina', 'Clapp', '986 313 2077', '5 Lyons Terrace');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (505, 'Virginie', 'Crookshanks', '166 454 2469', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (506, 'Staci', 'Mollett', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (507, 'Heindrick', 'Buckthorp', '637 541 1920', '31156 Kingsford Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (508, 'Leilah', 'Gianullo', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (509, 'Joanna', 'Manktelow', '497 113 7871', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (510, 'Nobie', 'Wycliffe', '596 953 1340', '1891 Boyd Hill');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (511, 'Gilemette', 'Di Ruggiero', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (512, 'Stavro', 'Baldassi', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (513, 'Erwin', 'Lown', '544 802 6653', '97 Ridge Oak Drive');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (514, 'Ulrike', 'Rheubottom', null, '4 Dakota Point');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (515, 'Dory', 'Broadley', null, '9 Monument Trail');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (516, 'Cally', 'Starrs', '207 242 4906', '218 Blaine Circle');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (517, 'Constancy', 'Pridding', '313 706 4224', '47408 Green Circle');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (518, 'Frannie', 'Spear', '440 960 2910', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (519, 'Henrik', 'Hartzog', '978 291 0156', '75807 Anthes Park');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (520, 'Barrett', 'Sainer', null, '3468 Memorial Point');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (521, 'Natalie', 'Anniwell', '429 594 3821', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (522, 'Ulrica', 'Duxbarry', null, '83485 Bunker Hill Point');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (523, 'Boigie', 'Drage', null, '23 Brown Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (524, 'Iggie', 'Swales', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (525, 'Dirk', 'Kinner', '787 593 8755', '59081 Beilfuss Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (526, 'Petra', 'Meddings', '404 252 3886', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (527, 'Jarrad', 'Blazey', '806 286 1190', '367 Fulton Terrace');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (528, 'Caro', 'Ilyinykh', '607 730 0093', '497 Clyde Gallagher Lane');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (529, 'Liza', 'Fishbourne', '388 328 7757', '4821 Clemons Crossing');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (530, 'Thor', 'Ottee', '967 605 3745', '9 Lawn Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (531, 'Leroi', 'Rapi', '391 207 0682', '08816 Hudson Street');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (532, 'Errick', 'Vegas', '768 498 6501', '95 Carberry Road');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (533, 'Brittani', 'Vernazza', null, '73070 Messerschmidt Drive');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (534, 'Harbert', 'Jamrowicz', '943 295 1439', '4413 Morningstar Circle');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (535, 'Amalita', 'Schutt', '310 828 9929', '22 Weeping Birch Parkway');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (536, 'Sibeal', 'Gooderidge', '658 705 4170', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (537, 'Eddie', 'Sammut', null, '6 Green Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (538, 'Muhammad', 'Blenkinsop', null, '864 Anniversary Parkway');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (539, 'Sallyanne', 'Barrar', null, '49349 Merchant Plaza');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (540, 'Kerby', 'Heisman', '599 843 8607', '06551 Hudson Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (541, 'Carmon', 'O''Dea', '480 269 8303', '97148 Barnett Alley');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (542, 'Sherm', 'Reeson', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (543, 'Cornie', 'Ugoni', '595 429 4861', '18 Walton Plaza');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (544, 'Marcus', 'Halle', '256 130 3870', '0 Sage Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (545, 'Christel', 'Giroldo', '943 809 5897', '2 Heffernan Place');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (546, 'Norbie', 'Sanham', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (547, 'Melodee', 'Ritch', '344 934 7661', '5209 Ramsey Crossing');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (548, 'Del', 'Maben', null, '637 Mesta Court');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (549, 'Lacey', 'Haselden', '412 614 1381', '07494 Havey Plaza');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (550, 'Ferdie', 'McLeman', '377 443 4943', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (551, 'Verine', 'MacAlroy', '855 543 5427', '5 Reinke Court');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (552, 'Scot', 'Cleere', '539 345 1361', '193 Crest Line Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (553, 'Nada', 'Cogswell', '908 803 8241', '4 Sachs Plaza');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (554, 'Martica', 'Faers', '755 997 7100', '40244 Truax Hill');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (555, 'Netty', 'Blasl', '881 292 0120', '0447 Shasta Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (556, 'Mozelle', 'Arendsen', null, '222 Melrose Park');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (557, 'Agathe', 'Mease', '763 359 6952', '33 La Follette Terrace');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (558, 'Uta', 'Ropking', '722 144 9626', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (559, 'Marney', 'Upfold', '730 516 6637', '2855 Crescent Oaks Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (560, 'Abbey', 'Preddle', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (561, 'Dulcine', 'MacWilliam', '259 169 6779', '2796 Randy Terrace');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (562, 'Udell', 'Snoding', '204 330 6818', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (563, 'Bink', 'Scard', '128 737 2739', '03 East Court');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (564, 'Anna', 'Glossop', '468 890 7637', '86 Anzinger Point');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (565, 'Ralf', 'Smail', null, '48333 Lindbergh Pass');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (566, 'Nikaniki', 'Oxenham', '865 140 2533', '66720 Forest Run Lane');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (567, 'Eduino', 'Gillison', null, '092 Sunbrook Center');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (568, 'Seka', 'Bradforth', '766 178 3856', '55939 Stephen Trail');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (569, 'Rosalynd', 'Bullick', null, '7040 Victoria Center');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (570, 'Eugen', 'Outibridge', '537 908 1440', '41 Coleman Drive');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (571, 'Dimitri', 'Jansey', null, '5341 Roth Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (572, 'Vin', 'Pierse', '927 845 2365', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (573, 'Nolie', 'Scarlon', '772 441 1828', '0 Heffernan Trail');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (574, 'Niko', 'Shobbrook', '246 621 8183', '1854 Waywood Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (575, 'Putnam', 'Ludmann', null, '4194 Commercial Hill');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (576, 'Jacklin', 'McElmurray', '618 429 1810', '6 Coleman Plaza');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (577, 'Seth', 'Chamney', '595 330 9548', '5 Lotheville Parkway');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (578, 'Gaspard', 'Iacovucci', '379 170 6288', '1 Alpine Trail');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (579, 'Waring', 'Farnsworth', '668 557 4707', '54 Bayside Drive');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (580, 'Rriocard', 'Linch', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (581, 'Jolene', 'Biggs', '865 518 1477', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (582, 'Rockey', 'Plant', '780 986 6289', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (583, 'Chrisse', 'Stebbings', '211 453 8436', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (584, 'Debi', 'Letixier', '186 170 1976', '7907 Cambridge Court');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (585, 'Wilie', 'Arundel', '363 968 2938', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (586, 'Kaycee', 'Hallgarth', null, '1980 3rd Park');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (587, 'Christalle', 'Crosfield', '866 444 5792', '6 Nova Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (588, 'Doria', 'Kauble', '476 623 5521', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (589, 'Talbert', 'Ivy', '217 533 1939', '9 Ilene Drive');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (590, 'Hedi', 'Kondratenko', '942 792 2339', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (591, 'Ortensia', 'Dowtry', '782 949 9876', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (592, 'Wake', 'Shipperbottom', '363 975 8926', '9754 Bunting Parkway');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (593, 'Cele', 'Rochelle', null, '39447 Huxley Street');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (594, 'Hailey', 'Elwell', '210 447 6549', '24 Acker Alley');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (595, 'Dotti', 'Guerreru', '209 571 7391', '40666 Shoshone Court');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (596, 'Filbert', 'Pickerin', null, '56796 Stuart Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (597, 'Ware', 'Degue', '836 586 9455', '564 Dawn Court');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (598, 'Auberta', 'Levens', null, '1 Sheridan Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (599, 'Rosalind', 'Riepel', '380 926 3937', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (600, 'Jolie', 'Astling', '579 219 8529', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (601, 'Joli', 'Folbigg', '885 357 0498', '19 Burrows Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (602, 'Felicity', 'Josephson', '303 896 9847', '51 Gerald Road');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (603, 'Alric', 'Matuszyk', '139 581 1530', '50133 Jenna Hill');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (604, 'Emeline', 'Forder', '839 521 7026', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (605, 'Chaddie', 'Keyho', '378 707 4817', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (606, 'Simon', 'Elland', '875 216 6582', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (607, 'Olivia', 'Slee', '370 493 4312', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (608, 'Matty', 'Cordner', '185 115 3858', '7241 Tennessee Plaza');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (609, 'Euphemia', 'Strephan', '766 357 4187', '03096 Delaware Road');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (610, 'Kylila', 'Daveridge', '738 955 9220', '753 Lakeland Point');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (611, 'Adela', 'Fouldes', '929 123 4059', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (612, 'Augusto', 'Mayne', null, '430 Washington Place');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (613, 'Clevey', 'Hodges', '590 311 6069', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (614, 'Annnora', 'Petruskevich', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (615, 'Dani', 'Eynaud', '482 975 7072', '12751 Miller Circle');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (616, 'Dianna', 'Fydoe', '642 595 9014', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (617, 'Alex', 'Gettings', '478 570 0077', '495 Gulseth Point');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (618, 'Jonie', 'Ottee', '356 198 1194', '5 Golf Court');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (619, 'Constantine', 'Mcwhinney', '773 525 8806', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (620, 'Leslie', 'Docksey', null, '66899 Meadow Valley Hill');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (621, 'Herbert', 'Skeffington', null, '434 Brickson Park Crossing');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (622, 'Alameda', 'Ambrosio', '301 183 5087', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (623, 'Emlynne', 'McBlain', '379 789 6717', '92 Loeprich Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (624, 'Starlin', 'Strathe', '550 404 2832', '4 Kedzie Hill');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (625, 'Vinny', 'Bodley', '118 496 2359', '38 Doe Crossing Crossing');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (626, 'Nicoline', 'Balmer', '218 434 0879', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (627, 'Coraline', 'Di Maria', '312 811 6518', '9 Welch Center');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (628, 'Kiri', 'Blanchflower', '472 200 8219', '086 Bayside Point');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (629, 'Molly', 'Currom', '703 764 5718', '4 Valley Edge Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (630, 'Genia', 'Rubinovitch', null, '93 Little Fleur Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (631, 'Loydie', 'Clemmen', '106 441 8729', '608 Crownhardt Drive');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (632, 'Lorenza', 'Burchett', '969 390 2262', '5 Hallows Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (633, 'Estel', 'Ferie', '685 226 4699', '62620 Clemons Lane');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (634, 'Olag', 'Dalliwater', '915 750 1198', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (635, 'Sena', 'Arington', null, '2599 Bartelt Center');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (636, 'Conrade', 'Pear', '650 705 5075', '0 Gulseth Point');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (637, 'Ephraim', 'Attoc', '368 393 2110', '789 Redwing Lane');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (638, 'Goober', 'Tunna', '470 605 8933', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (639, 'Klarika', 'Hovington', '749 494 7923', '8556 Sutteridge Court');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (640, 'Karilynn', 'Grent', '317 483 2296', '8 Pierstorff Court');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (641, 'Marika', 'Fancutt', null, '00 Crescent Oaks Point');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (642, 'Beverlee', 'Clipsham', '659 922 5231', '13 Graceland Terrace');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (643, 'Fremont', 'Krzysztof', '137 713 0883', '584 Heffernan Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (644, 'Powell', 'Noddles', '322 792 4571', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (645, 'Ulick', 'Ellesworthe', '147 134 7255', '106 Mockingbird Place');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (646, 'Emmalynne', 'Ambage', '957 167 3668', '590 Prairieview Drive');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (647, 'Enrika', 'Diemer', '375 152 3082', '069 Cottonwood Terrace');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (648, 'Killy', 'Mouan', null, '672 Lake View Lane');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (649, 'Thadeus', 'Bridgement', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (650, 'Tricia', 'Josefsen', '740 635 0604', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (651, 'Kermy', 'Alesin', '763 678 6442', '1483 Fallview Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (652, 'Ebba', 'Burniston', '101 525 9718', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (653, 'Lorrin', 'Crickmoor', '967 679 3198', '7425 Hooker Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (654, 'Ricardo', 'Iacopetti', '306 969 2942', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (655, 'Norine', 'D''Souza', '721 798 1316', '015 Brickson Park Hill');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (656, 'Vania', 'Halpeine', '956 516 1997', '7691 Stoughton Street');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (657, 'Colleen', 'Rome', '971 866 0124', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (658, 'Jan', 'Trayling', '963 714 9227', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (659, 'Idalina', 'Dominique', '590 420 0849', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (660, 'Errol', 'Taysbil', '642 971 6889', '2066 Kennedy Plaza');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (661, 'Melosa', 'Genn', '290 969 1554', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (662, 'Boniface', 'Leathley', '563 652 3899', '775 Schiller Hill');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (663, 'Desi', 'McSorley', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (664, 'Merry', 'Pley', '952 982 4675', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (665, 'Xenos', 'Neames', '879 836 2296', '96 Ridgeview Center');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (666, 'Goddard', 'Magenny', '478 345 5514', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (667, 'Taffy', 'Loughman', '760 266 3693', '52707 Westend Street');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (668, 'Rubie', 'Cowles', '567 978 1900', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (669, 'Francklyn', 'Lethbrig', '301 676 8834', '60225 Lillian Alley');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (670, 'Fayette', 'Finessy', '875 918 5385', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (671, 'Jonathon', 'Iskower', '365 890 9088', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (672, 'Aksel', 'Dainton', '922 273 9075', '25 Burning Wood Parkway');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (673, 'Clareta', 'McElhinney', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (674, 'Eryn', 'Westwell', '854 436 3772', '894 Mesta Hill');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (675, 'Othilia', 'Bowstead', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (676, 'Devina', 'Verny', '158 944 7767', '218 Meadow Vale Trail');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (677, 'Noelle', 'Surgey', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (678, 'Horacio', 'Clyne', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (679, 'Constanta', 'O''Coskerry', '817 161 7356', '7 Havey Hill');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (680, 'Elsi', 'Lardeux', '615 393 7733', '67 Emmet Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (681, 'Kyle', 'O''Day', '242 633 2145', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (682, 'Franzen', 'MacGaughie', '294 968 0693', '9883 Mallory Park');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (683, 'Derron', 'Blondel', '286 921 4222', '2 Northwestern Terrace');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (684, 'Mercedes', 'Gumby', '495 755 4107', '3 Springview Court');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (685, 'Fancy', 'Perrottet', '183 258 1143', '8 Bunting Lane');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (686, 'Morgun', 'Neilson', '769 462 0397', '19480 Dorton Terrace');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (687, 'Jemmy', 'Adamkiewicz', null, '19 Northfield Trail');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (688, 'Malissia', 'Ugoni', '242 508 8022', '2 Del Mar Road');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (689, 'Josiah', 'Lesly', '744 676 8314', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (690, 'Timoteo', 'Maypes', '359 218 5941', '42 Caliangt Center');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (691, 'Hakim', 'Rzehor', '393 159 6509', '3 Hoard Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (692, 'Kenon', 'Moulin', '610 460 6620', '97 Golf Center');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (693, 'Nessa', 'Clarycott', '932 698 4759', '50 Marcy Parkway');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (694, 'Jennie', 'Cremen', '367 380 5065', '69 Moland Center');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (695, 'Matthus', 'Aulds', '464 601 0238', '20 Corscot Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (696, 'Donall', 'Coppens', '400 101 8768', '930 Carpenter Lane');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (697, 'Dew', 'Tolomei', '231 905 1074', '0031 Reindahl Center');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (698, 'Jaime', 'Suddick', '125 211 8406', '4393 Harbort Road');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (699, 'Ole', 'Ballingal', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (700, 'Eachelle', 'Zecchi', '198 231 1675', '54000 Lunder Crossing');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (701, 'Annemarie', 'Murrill', '341 161 1620', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (702, 'Rickard', 'Byram', '536 301 4414', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (703, 'Krispin', 'Hullin', null, '46 Sunnyside Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (704, 'Nessy', 'Springford', '311 192 7025', '6441 Sachs Point');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (705, 'Cullin', 'North', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (706, 'Brenna', 'Drinkhill', '698 646 9682', '929 Fulton Parkway');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (707, 'Thomasine', 'Vallerine', '201 255 7514', '568 6th Center');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (708, 'Tucker', 'Danielli', '863 811 6018', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (709, 'Dominique', 'Gutridge', '806 486 8263', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (710, 'Ashbey', 'Baiden', '959 797 1324', '5259 School Place');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (711, 'Ugo', 'Matskevich', '234 604 3382', '1 Nevada Park');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (712, 'Kandace', 'Yakutin', '632 894 9286', '2518 Columbus Hill');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (713, 'Almeria', 'MacGill', '426 412 0324', '3052 Browning Place');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (714, 'Prince', 'Coldbreath', '151 701 7359', '2 Fair Oaks Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (715, 'Claiborn', 'MacGuigan', '599 384 1025', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (716, 'Hillary', 'Broadwell', '388 341 0548', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (717, 'Rudy', 'MacWilliam', '363 469 3073', '721 Everett Drive');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (718, 'Harriott', 'Haborn', null, '95 Cherokee Hill');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (719, 'Boyce', 'Frayling', '379 351 2553', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (720, 'Waverley', 'Henrichsen', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (721, 'Catherin', 'Dew', '950 566 8695', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (722, 'Pauline', 'Thomkins', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (723, 'Pru', 'Ander', '533 538 0214', '49484 Monica Court');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (724, 'Coop', 'Grote', '353 897 9676', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (725, 'Rivalee', 'Macewan', '254 624 0836', '93 Truax Trail');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (726, 'Dewey', 'Braine', '207 467 2816', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (727, 'Katalin', 'Mapother', '614 772 3563', '35 Shopko Road');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (728, 'Zorine', 'Phonix', '166 997 5492', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (729, 'Ivy', 'Knappen', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (730, 'Velvet', 'Maypole', '747 466 3736', '4 Myrtle Parkway');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (731, 'Barton', 'Newbury', '305 788 6175', '4571 Crescent Oaks Crossing');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (732, 'Dyna', 'Linsey', null, '2161 Del Mar Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (733, 'Jarred', 'Sparke', '950 485 0780', '40978 Westerfield Road');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (734, 'Noam', 'McGiveen', '538 327 6514', '4 Warner Park');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (735, 'Vaughan', 'Wedderburn', '443 509 1563', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (736, 'Jorge', 'Shank', null, '1361 Delladonna Court');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (737, 'Ginevra', 'Simonelli', '719 929 0210', '2 Pepper Wood Lane');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (738, 'Danella', 'Dowse', '175 437 3509', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (739, 'Flynn', 'Plaskitt', null, '0 Hooker Drive');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (740, 'Laney', 'Ternott', null, '6 Eastwood Trail');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (741, 'Darcey', 'Tellenbrook', null, '101 Onsgard Lane');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (742, 'Kurt', 'Biggans', '405 138 9095', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (743, 'Loralyn', 'Ondrasek', '544 210 1026', '8 Swallow Trail');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (744, 'Maxim', 'Clother', '295 864 2234', '89 Arrowood Street');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (745, 'Randell', 'Truluck', '800 105 5660', '573 Mccormick Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (746, 'Corene', 'Yeend', '756 177 1173', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (747, 'Eugene', 'Presho', '866 913 4723', '54071 Mallard Pass');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (748, 'Lauryn', 'Hambatch', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (749, 'Carlotta', 'Deaville', '449 373 5927', '723 Cardinal Plaza');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (750, 'Sheree', 'Westney', '147 657 7852', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (751, 'Sully', 'Rowntree', null, '42 Lake View Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (752, 'Merell', 'Stamps', null, '2768 Brickson Park Park');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (753, 'Woodie', 'Boschmann', null, '405 Division Circle');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (754, 'Nealon', 'Knight', '657 943 6234', '72174 Westend Pass');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (755, 'Karleen', 'Trewartha', '655 417 2909', '3 Hooker Plaza');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (756, 'Barton', 'Kernock', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (757, 'Lulita', 'Viste', '559 358 8975', '5 Upham Park');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (758, 'Akim', 'Maffi', '968 505 9537', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (759, 'Roberto', 'Johl', null, '483 Ridge Oak Circle');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (760, 'Chaddy', 'McCamish', '796 274 9255', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (761, 'Gerard', 'Baudino', '259 236 2951', '042 Hovde Circle');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (762, 'Risa', 'Evemy', '957 657 4385', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (763, 'Rhett', 'Chicco', null, '13356 John Wall Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (764, 'Lannie', 'Boorn', '595 893 9465', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (765, 'Julita', 'Rhelton', '424 615 8241', '49353 Sachs Lane');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (766, 'Barbe', 'Zorn', '617 534 7351', '41 Petterle Place');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (767, 'Sloan', 'Sawnwy', '823 478 6309', '6340 Holmberg Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (768, 'Ingrid', 'Jekel', '818 562 7210', '7205 Roxbury Drive');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (769, 'Kristoffer', 'MacRonald', '611 981 5888', '74901 Pond Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (770, 'Geoffry', 'Lagadu', '860 824 1658', '80 Monica Drive');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (771, 'Kurtis', 'Hensmans', '379 816 7972', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (772, 'Abraham', 'Vasyushkhin', null, '9 Commercial Terrace');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (773, 'Cyndia', 'Deans', '421 537 8611', '9541 Thackeray Drive');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (774, 'Chrissy', 'Mundell', '299 472 8830', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (775, 'Frayda', 'Brideau', '440 814 5007', '657 Chinook Parkway');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (776, 'Mariel', 'July', '435 582 6384', '399 Cascade Drive');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (777, 'Brittani', 'Joel', '254 848 7362', '41 Susan Place');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (778, 'Hadria', 'Attreed', '513 427 3090', '87 Service Road');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (779, 'Jaquelin', 'Edlyne', '117 206 6291', '9 Manitowish Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (780, 'Claretta', 'Thacker', '990 811 8625', '164 Havey Parkway');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (781, 'Gilbert', 'Rickets', null, '45336 Merry Pass');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (782, 'Deirdre', 'Ingarfield', '879 941 3867', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (783, 'Lawton', 'Dodle', '477 995 1255', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (784, 'Orrin', 'Pilipets', '558 408 0387', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (785, 'Fergus', 'Toffetto', '928 642 2290', '013 Monica Terrace');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (786, 'Guenna', 'Malham', '179 902 9746', '4480 Delladonna Drive');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (787, 'Riordan', 'Ferrao', '838 158 2685', '5747 Norway Maple Center');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (788, 'Ginny', 'Calderon', '759 506 1313', '81515 Vera Pass');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (789, 'Daphene', 'Bagger', '663 335 7655', '1 Acker Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (790, 'Milli', 'Roj', '775 213 8082', '46 Moose Center');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (791, 'Marsha', 'Perroni', '789 469 9159', '70000 Kings Park');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (792, 'Chen', 'Righy', '268 954 8482', '5 Cambridge Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (793, 'Melodee', 'Search', null, '43 Mitchell Alley');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (794, 'Matthias', 'Chadwick', '615 462 7840', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (795, 'Lesly', 'Axford', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (796, 'Abey', 'Belshaw', null, '1787 Mayer Alley');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (797, 'King', 'Ellingford', '240 335 3095', '8575 4th Circle');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (798, 'Niven', 'MacPaden', '260 823 8503', '6670 Farwell Point');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (799, 'Harrietta', 'Yancey', '219 633 8991', '63 Roxbury Park');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (800, 'Monro', 'Forty', '730 837 8100', '92689 Birchwood Circle');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (801, 'Leicester', 'Crabb', null, '11 Sunbrook Street');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (802, 'Ines', 'Wilton', '578 521 9156', '5 Heath Trail');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (803, 'Jacquenetta', 'Addionizio', '163 935 4747', '6496 Buena Vista Lane');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (804, 'Jackie', 'Iorio', '755 797 9961', '0298 Lakewood Gardens Terrace');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (805, 'Stacee', 'Rubes', '248 820 5815', '2778 Thierer Crossing');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (806, 'Debera', 'Chadderton', null, '03833 Canary Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (807, 'Mireille', 'Inglish', null, '80768 Lunder Street');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (808, 'Lynde', 'Mears', '190 314 2379', '4 International Crossing');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (809, 'Vernice', 'Roddick', null, '898 Anderson Pass');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (810, 'Rafael', 'Klimuk', '401 932 1580', '57865 Cascade Place');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (811, 'Dulcy', 'Lacrouts', '914 263 3323', '04735 Elka Pass');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (812, 'Shalom', 'Deverson', '984 915 8120', '9 Lien Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (813, 'Floria', 'Sheran', '899 198 7297', '88 Northwestern Road');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (814, 'Wiley', 'Yetman', null, '36134 Manley Alley');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (815, 'Lexy', 'Soff', '225 588 4716', '2 Lindbergh Park');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (816, 'Hakim', 'Starten', '596 518 6293', '5 Almo Center');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (817, 'Valina', 'Normanvill', '541 980 2636', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (818, 'Ravid', 'Lynam', '142 924 5440', '093 Marquette Place');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (819, 'Danita', 'Gibbin', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (820, 'Nanci', 'McGrirl', '222 579 4021', '25 Pearson Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (821, 'Shelton', 'Keese', '649 676 0402', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (822, 'Blanch', 'Riches', '609 993 6738', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (823, 'Blane', 'Clue', '753 174 9540', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (824, 'Conway', 'Rylance', '499 349 7798', '74018 Sheridan Trail');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (825, 'Jolee', 'Merlin', '320 497 0671', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (826, 'Kristel', 'Kick', '598 377 6635', '5 Gateway Plaza');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (827, 'Rob', 'Ambrosini', '625 542 4354', '25 Toban Circle');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (828, 'Nikolaus', 'Piborn', '477 669 0719', '241 Alpine Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (829, 'Earvin', 'Lamy', null, '834 Vahlen Terrace');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (830, 'Boote', 'Vinden', null, '8644 Lighthouse Bay Center');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (831, 'Gregg', 'Brindley', '403 785 8564', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (832, 'Sabine', 'Morefield', '658 762 0233', '78 Lien Court');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (833, 'Ruthy', 'Gurge', '145 844 2425', '498 Stoughton Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (834, 'Sabine', 'Cotterrill', null, '3148 Shelley Plaza');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (835, 'Felice', 'Syred', '748 854 3605', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (836, 'Jackelyn', 'Izakson', '392 680 4694', '6 Nova Terrace');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (837, 'Reena', 'MacAskie', '320 460 5659', '194 Havey Alley');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (838, 'Merell', 'Livoir', '440 227 6753', '3653 Mayer Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (839, 'Trent', 'Tant', null, '54517 Ronald Regan Point');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (840, 'Lind', 'Hiseman', '920 263 5737', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (841, 'Ettore', 'Pellew', '417 707 2695', '8417 Loomis Parkway');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (842, 'Giffie', 'Jorio', '424 929 4014', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (843, 'Dale', 'd''Escoffier', null, '31 Stone Corner Parkway');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (844, 'Arel', 'Chene', '447 394 8735', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (845, 'Anastassia', 'Krollman', '515 888 7706', '391 Oak Road');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (846, 'Amalle', 'Reilingen', null, '61 Manitowish Circle');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (847, 'Araldo', 'Dorset', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (848, 'Harlene', 'Manford', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (849, 'Lockwood', 'Heather', '801 314 5062', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (850, 'Thomas', 'Heathwood', '243 858 5863', '05926 Jenifer Circle');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (851, 'Addison', 'Ghiraldi', '254 404 7016', '1 Basil Crossing');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (852, 'Karlens', 'Gerard', '610 401 2559', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (853, 'Emmalee', 'Kilgrew', '926 727 9725', '509 American Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (854, 'Murdoch', 'Mordey', null, '5 Mallory Point');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (855, 'Moreen', 'Bridewell', '751 728 5919', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (856, 'Myrvyn', 'Bridge', '500 845 6006', '1 8th Street');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (857, 'Shana', 'Marqyes', '780 370 5197', '4732 Bowman Terrace');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (858, 'Arlena', 'Codlin', '904 968 3633', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (859, 'Arielle', 'Loncaster', '539 384 6812', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (860, 'Dewain', 'Jorioz', '479 225 7483', '0603 Rieder Park');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (861, 'Shirl', 'McAlarney', '897 285 5472', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (862, 'Shirleen', 'Saiger', '769 254 5765', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (863, 'Wilie', 'Trouncer', '992 377 5775', '1120 Green Ridge Terrace');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (864, 'Panchito', 'Dodgson', '763 858 9028', '1017 Forest Run Place');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (865, 'Darbee', 'Malden', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (866, 'Marsiella', 'Ferrulli', null, '551 American Ash Center');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (867, 'Binny', 'Sloane', '930 683 0548', '5 Corben Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (868, 'Isidro', 'Fendt', '502 471 2444', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (869, 'Randall', 'Anfusso', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (870, 'Erinn', 'Wheal', null, '87426 Alpine Pass');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (871, 'West', 'Barriball', null, '641 Schurz Alley');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (872, 'Cherin', 'Guntrip', '138 393 4831', '332 Golf Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (873, 'Sean', 'O''Kieran', '663 543 4010', '39 Eggendart Place');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (874, 'Loria', 'Sargant', '945 222 7536', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (875, 'Alix', 'Caughte', '558 913 7908', '71 Springs Pass');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (876, 'Bartlet', 'Muskett', '719 674 7899', '9636 Ridge Oak Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (877, 'Alfred', 'Schulke', '653 764 6206', '49194 Havey Court');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (878, 'Derby', 'Haistwell', '397 428 7275', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (879, 'Munmro', 'Buckenham', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (880, 'Sabrina', 'Hubane', '855 828 9597', '7 Crowley Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (881, 'Denis', 'Grieswood', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (882, 'Glyn', 'Probart', '795 965 8631', '4959 Oakridge Plaza');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (883, 'Wakefield', 'Antuoni', '828 108 2518', '102 American Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (884, 'Genevra', 'Millard', null, '477 7th Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (885, 'Merwyn', 'Sweett', '149 709 6854', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (886, 'Phillipe', 'Bunten', '382 702 3492', '8061 Helena Place');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (887, 'Jania', 'Keson', '484 409 5277', '081 Talmadge Alley');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (888, 'Marilee', 'McCaffrey', null, '0 Drewry Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (889, 'Curran', 'Gawler', '955 482 2952', '4016 Ilene Street');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (890, 'Jabez', 'Simonou', '756 320 5712', '9 4th Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (891, 'Antone', 'Twaits', '956 616 0722', '3183 Northfield Road');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (892, 'Adore', 'Westell', '519 814 6506', '3 Rowland Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (893, 'Karlene', 'Oldfield', '539 240 3814', '40 Fuller Lane');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (894, 'Pace', 'Yerrill', '718 982 4385', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (895, 'Erena', 'Spellworth', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (896, 'Carley', 'Tellenbroker', '887 650 6598', '16 Porter Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (897, 'Saudra', 'Raffan', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (898, 'Crosby', 'Oels', null, '6065 Burrows Park');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (899, 'Sollie', 'Baniard', '134 605 8606', '7546 Pankratz Court');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (900, 'Judy', 'Arnecke', '319 234 9312', '94 Ohio Street');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (901, 'Delmor', 'Robez', null, '08095 American Ash Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (902, 'Jyoti', 'Tordiffe', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (903, 'Anallise', 'Charopen', '988 513 0052', '13648 Rieder Plaza');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (904, 'Bettine', 'Wickson', '744 696 0540', '2 Eastlawn Place');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (905, 'Mindy', 'Thompson', '269 303 9793', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (906, 'Maryl', 'Lampet', '173 923 5285', '3309 Bluestem Street');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (907, 'Rudie', 'Garn', null, '667 Caliangt Park');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (908, 'Heath', 'Masson', '341 392 9882', '4 Butterfield Street');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (909, 'Reamonn', 'Kipping', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (910, 'Frants', 'Bissill', '202 530 0489', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (911, 'Ursuline', 'Cudbird', '163 233 6277', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (912, 'Langston', 'Farre', '415 693 0921', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (913, 'Noah', 'Chrismas', '758 847 3312', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (914, 'Gertrude', 'Milmore', '222 513 7738', '72560 Rieder Place');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (915, 'Clara', 'Roomes', '816 150 2857', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (916, 'Calv', 'Colliver', '159 544 6541', '2 Barnett Point');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (917, 'Lucienne', 'Franzoli', '832 575 6016', '9 Spaight Road');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (918, 'Sylvia', 'McMurdo', null, '20557 Graedel Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (919, 'Jacklin', 'Rosenfelder', '202 681 4316', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (920, 'Ainslee', 'Kissock', '779 292 4032', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (921, 'Pet', 'McGawn', '157 729 7966', '0618 Dovetail Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (922, 'Damaris', 'Kilmurry', '210 892 3049', '2 Springs Plaza');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (923, 'Aurelia', 'Lambert', '214 720 5459', '780 Declaration Alley');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (924, 'Abagail', 'Tiernan', '851 820 2484', '5273 Walton Terrace');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (925, 'Matt', 'Sweett', '382 851 0737', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (926, 'Gerek', 'Rayment', '596 172 8927', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (927, 'Renate', 'Treace', '489 676 7898', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (928, 'Jeanelle', 'Durrett', '170 665 3899', '8151 Glendale Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (929, 'Tessa', 'Voaden', null, '605 Vernon Plaza');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (930, 'Grace', 'Smeal', '133 702 7731', '116 Fisk Trail');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (931, 'Giusto', 'Welds', '781 596 9872', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (932, 'Wynn', 'Filgate', '434 683 2169', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (933, 'Brewer', 'Becarra', null, '99732 Myrtle Drive');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (934, 'Nickie', 'Summers', null, '23172 Muir Center');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (935, 'Carmella', 'Cumberland', '105 554 8477', '14077 Morningstar Drive');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (936, 'Theresa', 'Harrington', '914 203 9084', '64 Eastlawn Crossing');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (937, 'Brina', 'Marriott', '988 680 8535', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (938, 'Moyna', 'Fausset', '652 469 9390', '005 Hooker Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (939, 'Henriette', 'Georgeau', '963 621 7295', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (940, 'Charlena', 'Rase', '216 919 1550', '3369 Forest Dale Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (941, 'Sylas', 'Arnull', '852 919 9000', '593 Bluejay Crossing');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (942, 'Theodoric', 'Thrower', '805 448 5100', '1 Gateway Trail');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (943, 'Clemmy', 'Ethridge', '377 498 0296', '5804 Brentwood Place');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (944, 'Mariska', 'Shieber', '331 350 2429', '36 Beilfuss Circle');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (945, 'Carmina', 'Ciardo', '831 433 8863', '36022 Anzinger Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (946, 'Anjela', 'Parkes', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (947, 'Karil', 'Fairbairn', '503 520 5877', '26288 Carpenter Parkway');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (948, 'Merrill', 'Westwater', '264 354 9966', '9 Del Sol Alley');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (949, 'Jemie', 'Noble', '683 643 4185', '8840 Sachs Center');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (950, 'Manfred', 'McKall', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (951, 'Barney', 'Giacovelli', '704 582 4850', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (952, 'Mikel', 'Borrell', '602 710 4931', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (953, 'Carmon', 'Stronge', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (954, 'Gill', 'Barclay', '543 717 3837', '95 John Wall Point');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (955, 'Babita', 'Maunders', '812 849 6139', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (956, 'Darrel', 'Speariett', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (957, 'Clerissa', 'Beamont', '461 948 3499', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (958, 'Werner', 'Humphris', '687 933 5797', '38 Eagle Crest Court');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (959, 'Valentine', 'Buff', '650 176 9092', '906 Hanson Point');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (960, 'Kirby', 'Jendrich', '293 620 1131', '04 Spohn Center');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (961, 'Marrissa', 'Versey', '723 180 7263', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (962, 'Annamarie', 'Spoerl', null, '62 Morning Drive');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (963, 'Creight', 'MacParland', '678 951 3539', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (964, 'Rubi', 'Roddie', '218 588 9398', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (965, 'Lucia', 'Proud', '586 455 8486', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (966, 'Garrot', 'Cullivan', null, '22 Westerfield Lane');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (967, 'Vernice', 'Kleen', '622 187 3346', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (968, 'Wallis', 'Quilliam', '774 903 3062', '5631 Sycamore Way');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (969, 'Claudia', 'Arnott', '523 801 0069', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (970, 'Dana', 'Mundford', '560 489 7391', '60353 Melvin Lane');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (971, 'Debora', 'Charlot', '373 312 4138', '57 Bartillon Park');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (972, 'Hobart', 'Halsey', '562 934 0679', '20733 Eagan Drive');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (973, 'Bartlett', 'Franzetti', null, '4684 Arkansas Parkway');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (974, 'Rockwell', 'McKerrow', '436 767 7803', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (975, 'Stella', 'Klossek', '434 541 6507', '74984 Mitchell Circle');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (976, 'Marketa', 'Goold', null, '66 Duke Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (977, 'Emilio', 'Finlayson', '548 284 4311', '418 Merrick Court');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (978, 'Anthea', 'Huster', '357 805 2895', '60 Kensington Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (979, 'Flss', 'Ilyinykh', '318 914 6666', '615 Golf View Hill');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (980, 'Kimberly', 'Beazleigh', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (981, 'Shelden', 'Lenin', '257 794 4653', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (982, 'Becky', 'Glasspool', null, null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (983, 'Art', 'Andersen', '516 475 7850', '669 Amoth Avenue');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (984, 'Clementina', 'Hobbema', '367 173 3399', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (985, 'Emalia', 'Pallin', null, '0728 Kensington Drive');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (986, 'Artur', 'Libbie', '562 859 4963', '3 Bay Place');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (987, 'Norma', 'Stronough', '455 103 1179', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (988, 'Clemmy', 'Twidle', '425 388 8126', '98 Doe Crossing Drive');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (989, 'Dalton', 'Pinnocke', '156 626 4026', '4150 Alpine Hill');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (990, 'Evvy', 'Oliver-Paull', '970 397 5794', '4354 Fisk Lane');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (991, 'Glen', 'Doudney', '890 784 3494', '3 Service Road');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (992, 'Ferdinanda', 'Saltman', '123 481 6207', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (993, 'Dave', 'Fackrell', '800 455 3668', '490 Ronald Regan Pass');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (994, 'Marchelle', 'Durrett', '709 524 9289', '1 Merry Hill');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (995, 'Tamar', 'McPhelim', '138 992 7791', null);
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (996, 'Sada', 'Taplow', '835 248 9079', '49031 North Junction');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (997, 'Clay', 'Hebblethwaite', null, '2362 North Trail');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (998, 'Boy', 'Gorthy', '899 850 2048', '16 Warrior Point');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (999, 'Artair', 'Brankley', null, '0364 Bluejay Alley');
+insert into cliente (codigo_cliente, nombre, apellido, telefono, direccion) values (1000, 'Raoul', 'Climo', '116 253 8287', '87223 Bobwhite Lane');
 
--- datos producto
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (1,'DKNY Unisex Black & Grey Printed Medium Trolley Bag','Unisex','DKNY',11745,' Black',97),
-	 (2,'EthnoVogue Women Beige & Grey Made to Measure Custom Made Kurta Set with Jacket','Women','EthnoVogue',5810,' Beige',98),
-	 (3,'SPYKAR Women Pink Alexa Super Skinny Fit High-Rise Clean Look Stretchable Cropped Jeans','Women','SPYKAR',899,' Pink',24),
-	 (4,'Raymond Men Blue Self-Design Single-Breasted Bandhgala Suit','Men','Raymond',5599,'Blue',39),
-	 (5,'Parx Men Brown & Off-White Slim Fit Printed Casual Shirt','Men','Parx',759,' White',81),
-	 (6,'SHOWOFF Men Brown Solid Slim Fit Regular Shorts','Men','SHOWOFF',791,' Brown',37),
-	 (7,'Parx Men Blue Slim Fit Checked Casual Shirt','Men','Parx',719,'Blue',55),
-	 (8,'SPYKAR Women Burgundy Alexa Super Skinny Fit High-Rise Clean Look Stretchable Ankle Jeans','Women','SPYKAR',899,' Burgundy',25),
-	 (9,'Parx Men Brown Tapered Fit Solid Regular Trousers','Men','Parx',664,' Red',37),
-	 (10,'DKNY Unisex Black Large Trolley Bag','Unisex','DKNY',17360,' Black',33);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (11,'Kenneth Cole Women Navy Blue Solid Backpack','Women','Kenneth Cole',2463,'Blue',46),
-	 (12,'Parx Men Green Printed Polo Collar T-shirt','Men','Parx',629,' Green',57),
-	 (13,'Police Men To Be The King Eau De Toilette 125 ml','Men','Police',2695,'red',56),
-	 (14,'Vishudh Women Maroon Printed Kurta with Palazzos','Women','Vishudh',892,' Maroon',33),
-	 (15,'Parx Men Red Slim Fit Checked Casual Shirt','Men','Parx',752,' Red',32),
-	 (16,'Being Human Clothing Navy Printed Casual Slim Shirt','Men','Being Human',1079,' Navy',69),
-	 (17,'Homesake Gold-Toned & White Solid Handcrafted Table Lamp with Shade','Unisex','Homesake',1620,' White',25),
-	 (18,'SEJ by Nisha Gupta Set of 6 Mustard & Blue Printed Table Placemats','Unisex','SEJ by Nisha Gupta',899,'Blue',96),
-	 (19,'YAK YAK Men Camel Brown Solid Polo Collar T-shirt','Men','YAK YAK',599,' Brown',39),
-	 (20,'PARFAIT Plus Size Black Striped Non-Wired Lightly Padded T-shirt Bra P5252','Women','PARFAIT',1749,' Red',29);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (21,'Michael Kors Women Sexy Amber Eau de Parfum 100ml','Women','Michael Kors',7920,'red',40),
-	 (22,'HIGHLANDER Men Mustard & Black Slim Fit Checked Casual Shirt','Men','HIGHLANDER',699,' Black',54),
-	 (23,'SEJ by Nisha Gupta Set of 6 Multicoloured Printed Table Placemats','Unisex','SEJ by Nisha Gupta',899,' Red',54),
-	 (24,'SPYKAR Women Blue Adora Skinny Fit Mid-Rise Clean Look Stretchable Ankle Jeans','Women','SPYKAR',1199,'Blue',90),
-	 (25,'JEWEL JUNCTION Gold-Toned Square Cufflinks','Men','JEWEL JUNCTION',539,' Gold',63),
-	 (26,'ID Men Tan Brown Fisherman Leather Sandals','Men','ID',2385,' Brown',6),
-	 (27,'Story@home Multicoloured Geometric 210TC Cotton 1 King Bedsheet with 2 Pillow Covers','Unisex','Story@home',1199,' Red',39),
-	 (28,'Raymond Men Blue Slim Fit Printed Formal Shirt','Men','Raymond',1079,'Blue',38),
-	 (29,'Gini and Jony Boys Navy Blue Regular Fit Solid Casual Shirt','Boys','Gini and Jony',699,'Blue',76),
-	 (30,'SEJ by Nisha Gupta Set of 6 Printed Table Placemats','Unisex','SEJ by Nisha Gupta',899,'red',66);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (31,'Sera Women Blue Printed Kurta with Palazzos','Women','Sera',1437,'Blue',24),
-	 (32,'AccessHer Women Gold-Toned & Pink Gold-Plated AD-Studded Maang Tikka','Women','AccessHer',979,' Pink',43),
-	 (33,'Parx Men Blue Slim Fit Printed Casual Shirt','Men','Parx',779,'Blue',99),
-	 (34,'Alcis Women Yellow & Blue Colorblocked Tights','Women','Alcis',749,'Blue',38),
-	 (35,'ID Men Brown Leather Formal Slip-Ons','Men','ID',956,' Brown',86),
-	 (36,'Difference of Opinion Men Navy Blue Solid Round Neck T-shirt With Side Strip Detail','Men','Difference of Opinion',499,'Blue',21),
-	 (37,'Parx Men Blue Slim Fit Checked Casual Shirt','Men','Parx',769,'Blue',51),
-	 (38,'Michael Kors Extreme Blue For Men Edt 70 ml','Men','Michael Kors',4275,'Blue',9),
-	 (39,'Tokyo Talkies Women Off-White & Pink Floral Print Fit and Flare Dress','Women','Tokyo Talkies',499,' White',48),
-	 (40,'ANNA SUI Women La Vie De Boheme EDT 75ml','Women','ANNA SUI',4600,'red',64);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (41,'HIGHLANDER Men Navy Blue & Maroon Slim Fit Checked Casual Shirt','Men','HIGHLANDER',699,'Blue',43),
-	 (42,'her by invictus Women Brown Solid Cushioned Mules','Women','her by invictus',1044,' Brown',75),
-	 (43,'ID Men Beige Leather Derbys','Men','ID',2685,' Beige',14),
-	 (44,'SPYKAR Women Blue Adora Skinny Fit Mid-Rise Low Distress Ankle-length Stretchable Jeans','Women','SPYKAR',1124,'Blue',72),
-	 (45,'SPYKAR Women Blue Adora Skinny Fit Mid-Rise Clean Look Ankle-Length Stretchable Jeans','Women','SPYKAR',989,'Blue',40),
-	 (46,'Soie Nude-Coloured Solid Non-Wired Non Padded Maternity Bra CB-331NUDE','Women','Soie',750,' Red',72),
-	 (47,'Lara Karen Women Black Solid Maxi Satin Skirt','Women','Lara Karen',1999,' Black',6),
-	 (48,'Gini and Jony Girls Yellow Fit and Flare Embellished Dress','Girls','Gini and Jony',1619,' Yellow',68),
-	 (49,'Story@home Off-White & Blue Geometric 210TC Cotton 1 King Bedsheet with 2 Pillow Covers','Unisex','Story@home',1199,'Blue',100),
-	 (50,'PARFAIT Plus Size Blue Solid Underwired Lightly Padded Plunge Bra 2801','Women','PARFAIT',1189,'Blue',20);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (51,'Urban Dog Men Grey Solid Regular Fit Sports Shorts','Men','Urban Dog',399,' Grey',6),
-	 (52,'ahilya Sterling Silver Textured Bangle','Women','ahilya',9756,' Red',40),
-	 (53,'PARFAIT Plus Size Blue Solid Underwired Lightly Padded T-shirt Bra P5441','Women','PARFAIT',1609,'Blue',29),
-	 (54,'VASTRAMAY Boys Navy Blue & Maroon Solid Kurta with Dhoti Pants & Jacket','Boys','VASTRAMAY',1469,'Blue',8),
-	 (55,'Difference of Opinion Men Grey Melange Printed Round Neck T-shirt','Men','Difference of Opinion',499,' Grey',7),
-	 (56,'Campus Sutra Men White & Blue Regular Fit Colourblocked Casual Shirt','Men','Campus Sutra',479,'Blue',37),
-	 (57,'FIDO DIDO Men White Printed Round Neck T-shirt','Men','FIDO DIDO',449,' White',17),
-	 (58,'MIAH Decor Beige & Black Indian Art Printed Set of 4 Ceramic Bowls','Unisex','MIAH Decor',1469,' Black',45),
-	 (59,'JEWEL JUNCTION Gold-Toned Geometric Cufflinks','Men','JEWEL JUNCTION',539,' Gold',21),
-	 (60,'Vishudh Women Off-White & Green Floral Print A-Line Dress','Women','Vishudh',1299,' Green',11);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (61,'Urban Dog Men Grey Printed Regular Fit Sports Shorts','Men','Urban Dog',399,' Grey',51),
-	 (62,'PARFAIT Plus Size Women Navy Blue  White Solid Low-Rise Bikini Brief PP303','Women','PARFAIT',499,'Blue',13),
-	 (63,'SEJ by Nisha Gupta Set of 6 Yellow & Blue Printed Table Placemats','Unisex','SEJ by Nisha Gupta',899,'Blue',12),
-	 (64,'ID Men Brown Leather Loafers','Men','ID',1218,' Brown',43),
-	 (65,'PARFAIT Plus Size Red Solid Underwired Lightly Padded T-shirt Bra P5391','Women','PARFAIT',1609,' Red',88),
-	 (66,'SPYKAR Women Blue Adora Skinny Fit Mid-Rise Mildly Distressed Stretchable Cropped Jeans','Women','SPYKAR',1214,'Blue',71),
-	 (67,'SPYKAR Women Blue Adora Skinny Fit Mid-Rise Clean Look Stretchable Cropped Jeans','Women','SPYKAR',899,'Blue',78),
-	 (68,'Raymond Men Blue Regular Fit Self Design Formal Shirt','Men','Raymond',1154,'Blue',45),
-	 (69,'BuckleUp Women Multicoloured Printed Belt','Women','BuckleUp',449,' Red',73),
-	 (70,'Peter England Men Black Briefs PIWBK9146012','Men','Peter England',266,' Black',39);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (71,'AIGNER Men Platinum Eau De Toilette Perfume 100 ml','Men','AIGNER',3640,' Platinum',14),
-	 (72,'Gini and Jony Girls Blue Solid Jacket','Girls','Gini and Jony',1189,'Blue',31),
-	 (73,'Homesake Gold-Toned Solid Handcrafted Table Lamp with Shade','Unisex','Homesake',1836,' Gold',58),
-	 (74,'Campus Sutra Men Black Solid Round Neck Faux Leather T-shirt','Men','Campus Sutra',699,' Black',71),
-	 (75,'MIAH Decor Set of 3 Blue & Off-White Handpainted Kitchen Storage Jars with Lids','Unisex','MIAH Decor',3116,'Blue',36),
-	 (76,'Gini and Jony Girls Peach-Coloured Floral Embroidered Fit & Flare Dress','Girls','Gini and Jony',1484,' Red',77),
-	 (77,'SEJ by Nisha Gupta Blue & Green Printed Wooden Open Dry Bin','Unisex','SEJ by Nisha Gupta',999,'Blue',26),
-	 (78,'Parx Men Blue Slim Fit Checked Casual Shirt','Men','Parx',859,'Blue',6),
-	 (79,'PARFAIT Plus Size Black Lace Non-Wired Non Padded Everyday Bra P5482','Women','PARFAIT',1679,' Red',100),
-	 (80,'Parx Men Blue Slim Fit Checked Casual Shirt','Men','Parx',939,'Blue',32);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (81,'Lady Lyka Women Pack of 2 Beginners Bras TEENAGER-WHT-BLK','Women','Lady Lyka',425,'red',40),
-	 (82,'SEJ by Nisha Gupta Set of 4 Multicoloured Printed Table Placemats','Unisex','SEJ by Nisha Gupta',799,' Red',36),
-	 (83,'her by invictus Women Red Cushioned Loafers','Women','her by invictus',1299,' Red',40),
-	 (84,'JEWEL JUNCTION Gold-Toned & Black Round Cufflinks','Men','JEWEL JUNCTION',539,' Black',30),
-	 (85,'PARFAIT Plus Size Black Solid Non-Wired Non Padded Sports Bra P5542','Women','PARFAIT',1749,' Red',22),
-	 (86,'her by invictus Women Tan Brown Cushioned Slip-on Shoes','Women','her by invictus',949,' Brown',72),
-	 (87,'DKNY Unisex Black Medium Trolley Bag','Unisex','DKNY',13320,' Black',7),
-	 (88,'Parx Men Yellow & Off-White Slim Fit Checked Casual Shirt','Men','Parx',647,' Yellow',25),
-	 (89,'Story@home Mauve & Grey Geometric 210 TC Cotton 1 King Bedsheet with 2 Pillow Covers','Unisex','Story@home',1799,' Grey',19),
-	 (90,'Parx Men Blue & Off-White Slim Fit Printed Casual Shirt','Men','Parx',779,'Blue',86);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (91,'her by invictus Women Green Cushioned Slip-Ons','Women','her by invictus',1999,' Green',99),
-	 (92,'Park Avenue Women Blue Skinny Fit Mid-Rise Clean Look Jeans','Women','Park Avenue',569,'Blue',13),
-	 (93,'Roadster Women Black Textured Open Toe Flats','Women','Roadster',1699,' Red',6),
-	 (94,'her by invictus Women Black Textured Cushioned Flats','Women','her by invictus',944,' Red',98),
-	 (95,'U.S. Polo Assn. Denim Co. Men Navy Blue Solid Bomber Jacket','Men','U.S. Polo Assn. Denim Co.',3499,'Blue',77),
-	 (96,'SEJ by Nisha Gupta Set of 6 Pink Printed Table Placemats','Unisex','SEJ by Nisha Gupta',899,' Pink',53),
-	 (97,'Gini and Jony Girls Navy Blue Washed Denim Jacket','Girls','Gini and Jony',1329,'Blue',31),
-	 (98,'Sweet Dreams Men Navy Blue Solid Straight-Fit Trackpants','Men','Sweet Dreams',699,'Blue',25),
-	 (99,'Kazo Women Yellow Floral Print Shirt Dress','Women','Kazo',1345,' Yellow',54),
-	 (100,'Gini and Jony Boys Red & Grey Melange Solid Varsity Jacket with Applique Detail','Boys','Gini and Jony',649,' Red',7);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (101,'PARFAIT Plus Size Beige Solid Underwired Lightly Padded Plunge Bra 2801','Women','PARFAIT',1189,' Red',24),
-	 (102,'Parx Men Blue Slim Fit Checked Casual Shirt','Men','Parx',839,'Blue',95),
-	 (103,'Parx Men Black & Red Slim Fit Checked Casual Shirt','Men','Parx',577,' Red',80),
-	 (104,'ID Men Tan Brown Formal Leather Oxfords','Men','ID',1432,' Brown',19),
-	 (105,'Stylo Bug Girls Turquoise Blue A-Line Dress','Girls','Stylo Bug',698,'Blue',2),
-	 (106,'PARFAIT Plus Size Women Black  Red Printed Lace Detail Hipster Brief 2805','Women','PARFAIT',899,' Red',77),
-	 (107,'MIAH Decor Set Of 5 Handcrafted Ceramic Kulladhs','Unisex','MIAH Decor',865,'red',83),
-	 (108,'JEWEL JUNCTION Gold-Toned Geometric Cufflinks','Men','JEWEL JUNCTION',539,' Gold',4),
-	 (109,'Tokyo Talkies Women Black & Red Floral Print Fit and Flare Dress','Women','Tokyo Talkies',499,' Red',96),
-	 (110,'SEJ by Nisha Gupta Set of 6 Printed Table Placemats','Unisex','SEJ by Nisha Gupta',899,'red',94);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (111,'Sera Women Black Printed Loose Fit Regular Shorts','Women','Sera',547,' Black',28),
-	 (112,'Gini and Jony Boys Black & Grey Embroidered Regular Fit Shorts','Boys','Gini and Jony',839,' Red',44),
-	 (113,'AccessHer Gold-Plated & Black Multistrand Head Chain','Women','AccessHer',559,' Black',38),
-	 (114,'Bvlgari Women Splendida Iris D''Or Eau De Parfum 100 ml','Women','Bvlgari',10950,'red',5),
-	 (115,'ahilya Sterling Silver Statement Ring','Women','ahilya',3875,' Silver',36),
-	 (116,'SPYKAR Women Blue Alexa Super Skinny Fit High-Rise Clean Look Stretchable Cropped Jeans','Women','SPYKAR',1214,'Blue',92),
-	 (117,'FIDO DIDO Men Grey & Black Printed Colourblocked Polo Collar T-shirt','Men','FIDO DIDO',599,' Black',21),
-	 (118,'Parx Men Pink Slim Fit Solid Casual Shirt','Men','Parx',739,' Pink',43),
-	 (119,'Parx Men Navy Blue Slim Fit Printed Casual Shirt','Men','Parx',739,'Blue',13),
-	 (120,'Sera Women White Self Design Top','Women','Sera',714,' White',4);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (121,'Bvlgari Women Omnia Crystalline Eau De Toilette 40 ml','Women','Bvlgari',5650,'red',21),
-	 (122,'ID Men Grey Solid Thong Flip-Flops','Men','ID',1685,' Grey',61),
-	 (123,'JEWEL JUNCTION Silver-Toned Geometric Cufflinks','Men','JEWEL JUNCTION',539,' Silver',34),
-	 (124,'DKNY Unisex Gold & White Printed Cabin Trolley Bag','Unisex','DKNY',14400,' White',90),
-	 (125,'Parx Men Khaki Slim Fit Solid Regular Trousers','Men','Parx',839,' Khaki',74),
-	 (126,'Qraa Men Pack of 2 Face And Beard Wash 100gm each','Men','Qraa Men',336,'red',20),
-	 (127,'PARFAIT Plus Size Blue Lace Underwired Lightly Padded Plunge Bra P5351','Women','PARFAIT',1749,'Blue',68),
-	 (128,'Lady Lyka Women Peach and Burgundy Pack of 2 Everyday Bras ENTIZER11-PCH-WHN','Women','Lady Lyka',510,' Burgundy',47),
-	 (129,'Difference of Opinion Men Olive Green Printed Round Neck T-shirt','Men','Difference of Opinion',499,' Green',24),
-	 (130,'Michael Kors Women Eau de Toilette 50 ml','Women','Michael Kors',5715,'red',43);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (131,'Homesake Gold-Toned & White Solid Handcrafted Table Lamp with Shade','Unisex','Homesake',1732,' White',54),
-	 (132,'ID Men Black Leather Formal Derbys','Men','ID',1627,' Black',86),
-	 (133,'Soie Brown Underwired Non Padded full coverage Everyday Bra FB-610CRIMSON','Women','Soie',693,' Red',62),
-	 (134,'GAS Women Navy Blue Regular Fit Mid-Rise Clean Look Stretchable Jeans','Women','GAS',3595,'Blue',78),
-	 (135,'Homesake Gold-Toned & Navy Blue Solid Handcrafted Table Lamp with Shade','Unisex','Homesake',1890,'Blue',38),
-	 (136,'HIGHLANDER Men Navy Blue & Grey Slim Fit Striped Regular Trousers','Men','HIGHLANDER',1299,'Blue',96),
-	 (137,'WITH Men Black Slim Fit Solid Casual Shirt','Men','WITH',684,' Black',31),
-	 (138,'ID Men Black Leather Formal Derbys','Men','ID',2685,' Black',26),
-	 (139,'SPYKAR Women White Alexa Super Skinny Fit High-Rise Clean Look Stretchable Ankle Jeans','Women','SPYKAR',1999,' White',77),
-	 (140,'ZUSH Plus Size Women Black Regular Fit Mid-Rise Clean Look Jeans','Women','ZUSH',1299,' Black',63);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (141,'Story@home Mustard Floral 210 TC Cotton 1 King Bedsheet with 2 Pillow Covers','Unisex','Story@home',1199,' Mustard',3),
-	 (142,'DKNY Unisex Gold & White Printed Large Trolley Bag','Unisex','DKNY',16225,' White',14),
-	 (143,'Campus Sutra Men Green & Navy Blue Regular Fit Checked Casual Shirt','Men','Campus Sutra',511,'Blue',18),
-	 (144,'Campus Sutra Men Navy & Grey Melange Standard Regular Fit Colourblocked Casual Shirt','Men','Campus Sutra',1299,' Grey',65),
-	 (145,'Parx Men Blue Slim Fit Checked Casual Shirt','Men','Parx',699,'Blue',6),
-	 (146,'JBN Creation Boys Maroon & Brown Sherwani Set','Boys','JBN Creation',1154,' Brown',63),
-	 (147,'U.S. Polo Assn. Kids Boys Navy Hooded Sweatshirt','Boys','U.S. Polo Assn. Kids',1234,' Navy',92),
-	 (148,'Bvlgari Women Omnia Paraiba Eau De Toilette Perfume 65 ml','Women','Bvlgari',7000,'red',40),
-	 (149,'PARFAIT Plus Size Black Solid Underwired Lightly Padded Everyday Bra P5011','Women','PARFAIT',1819,' Red',49),
-	 (150,'PARFAIT Plus Size Beige Self Design Underwired Non Padded Minimizer Bra P5272','Women','PARFAIT',1749,' Red',63);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (151,'JEWEL JUNCTION Silver-Toned Geometric Cufflinks','Men','JEWEL JUNCTION',539,' Silver',17),
-	 (152,'DKNY Unisex Black Large Trolley Bag','Unisex','DKNY',13995,' Black',4),
-	 (153,'DressBerry Off-White Sequinned Top','Women','DressBerry',699,' White',56),
-	 (154,'Parx Men Blue Slim Fit Checked Casual Shirt','Men','Parx',734,'Blue',9),
-	 (155,'BuckleUp Women Blue Textured Belt','Women','BuckleUp',449,'Blue',89),
-	 (156,'Gini and Jony Boys Black & White Regular Fit Printed Trousers','Boys','Gini and Jony',1049,' Black',94),
-	 (157,'PARFAIT Plus Size Women Lavender Lace Boy Shorts 2805','Women','PARFAIT',899,' Lavender',48),
-	 (158,'Bvlgari Goldea Women The Roman Night Eau De Parfum 75 ml','Women','Bvlgari',9750,' Gold',29),
-	 (159,'Parx Men Maroon Slim Fit Printed Casual Shirt','Men','Parx',717,' Maroon',39),
-	 (160,'ColorPlus Men Blue Regular Fit Checked Formal Trousers','Men','ColorPlus',1199,'Blue',48);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (161,'Parx Men Off-White & Blue Slim Fit Printed Casual Shirt','Men','Parx',764,'Blue',40),
-	 (162,'HIGHLANDER Men Grey Slim Fit Self Design Regular Trousers','Men','HIGHLANDER',1299,' Grey',37),
-	 (163,'Parx Men Beige Slim Fit Solid Regular Trousers','Men','Parx',919,' Beige',90),
-	 (164,'Tokyo Talkies Women Green Solid Top','Women','Tokyo Talkies',699,' Green',47),
-	 (165,'BuckleUp Women Tan Textured Belt','Women','BuckleUp',449,' Red',43),
-	 (166,'SPYKAR Women Black Alexa Super Skinny Fit High-Rise Clean Look Stretchable Jeans','Women','SPYKAR',1999,' Black',31),
-	 (167,'MIAH Decor Set Of 2 Ceramic Bowls','Unisex','MIAH Decor',989,'red',12),
-	 (168,'Lakme Absolute Matte Melt Liquid Lip Color - 21 Mauve Mix 6 ml','Women','Lakme',400,' Matte',56),
-	 (169,'Campus Sutra Men Blue & White Ombre-Dyed Henley Neck T-shirt','Men','Campus Sutra',699,'Blue',57),
-	 (170,'Allen Solly Woman Women White Printed Top','Women','Allen Solly Woman',740,' White',27);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (171,'Palm Tree Girls Pink Solid Bomber Jacket','Girls','Palm Tree',1499,' Pink',58),
-	 (172,'PARFAIT Plus Size Purple  Pink Lace Underwired Lightly Padded T-shirt Bra P5581','Women','PARFAIT',1189,' Red',7),
-	 (173,'Arrow Taupe Tapered Fit Formal Trousers','Men','Arrow',1169,' Red',29),
-	 (174,'JEWEL JUNCTION Silver-Toned Geometric Cufflinks','Men','JEWEL JUNCTION',539,' Silver',56),
-	 (175,'Difference of Opinion Men Mustard Yellow Solid Round Neck T-shirt with Printed Detailing','Men','Difference of Opinion',499,' Yellow',42),
-	 (176,'AccessHer Women Gold-Plated & White Kundan-Studded Flower-Shaped Nosepin','Women','AccessHer',267,' White',46),
-	 (177,'HIGHLANDER Men Grey & Black Striped Round Neck T-shirt','Men','HIGHLANDER',699,' Black',31),
-	 (178,'Lady Lyka Women Pack of 2 Beginners Bras TEENAGER-RED-WHT','Women','Lady Lyka',425,' Red',35),
-	 (179,'DKNY Unisex Silver Medium Trolley Bag','Unisex','DKNY',12375,' Silver',33),
-	 (180,'Raymond Men Green Printed Polo Collar T-shirt','Men','Raymond',944,' Green',43);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (181,'Lakme Absolute Matte Melt Liquid Lip Color - 23 Pink Poison 6 ml','Women','Lakme',400,' Pink',18),
-	 (182,'Lakme Absolute Mattreal Mousse Concealer - Caramel 04 9 g','Women','Lakme',480,'red',26),
-	 (183,'DAVID BECKHAM Men Respect Eau De Toilette 90 ml','Men','DAVID BECKHAM',1740,'red',24),
-	 (184,'AccessHer Gold-Toned & Yellow Classic Drop Earrings','Women','AccessHer',540,' Yellow',60),
-	 (185,'MANGO Women Black & Yellow Floral Print Layered Top','Women','MANGO',1596,' Red',2),
-	 (186,'Park Avenue Women Maroon Self Design Top','Women','Park Avenue',569,' Maroon',69),
-	 (187,'ahilya Maroon Gold-Plated Sterling Silver Hoop Earrings','Women','ahilya',5998,' Maroon',12),
-	 (188,'AccessHer Gold-Plated & Black Beaded Mangalsutra','Women','AccessHer',320,' Black',84),
-	 (189,'Lady Lyka Women Beige and White Pack of 2 Beginners Bras ATHLETE-SKN-WHT-Multi','Women','Lady Lyka',425,' White',73),
-	 (190,'Story@home Blue & Pink Floral 210 TC Cotton 1 King Bedsheet with 2 Pillow Covers','Unisex','Story@home',1199,'Blue',35);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (191,'Urban Dog Men Charcoal Black Printed Regular Fit Sports Shorts','Men','Urban Dog',399,' Black',94),
-	 (192,'ID Men Beige Solid Leather Mid-Top Flat Boots','Men','ID',3285,' Beige',54),
-	 (193,'Carrera Men Tan Brown Flat Boots','Men','Carrera',5299,' Brown',77),
-	 (194,'Story@home Olive Green & Grey Geometric 210 TC Cotton 1 King Bedsheet with 2 Pillow Covers','Unisex','Story@home',1399,' Green',69),
-	 (195,'Campus Sutra Men Red & Black Standard Regular Fit Checked Casual Shirt','Men','Campus Sutra',699,' Red',67),
-	 (196,'Gini and Jony Boys Black Regular Fit Solid Chinos','Boys','Gini and Jony',839,' Black',27),
-	 (197,'Story@home Green & White Floral 210 TC Cotton 1 King Bedsheet with 2 Pillow Covers','Unisex','Story@home',1199,' Green',63),
-	 (198,'DKNY Unisex Maroon Solid Leather Backpack with Pouch','Unisex','DKNY',9765,' Maroon',78),
-	 (199,'Parx Men Khaki Tapered Fit Solid Regular Trousers','Men','Parx',804,' Red',28),
-	 (200,'Soie Green Self Design Underwired Non Padded Everyday Bra FB-610','Women','Soie',728,' Green',72);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (201,'Raymond Men Maroon Striped Polo Collar T-shirt','Men','Raymond',999,' Maroon',58),
-	 (202,'Lakme Absolute Matte Melt Liquid Lip Color - 15 Rose Love 6 ml','Women','Lakme',400,' Matte',21),
-	 (203,'Gini and Jony Girls Navy Blue Denim Striped Pinafore Dress','Girls','Gini and Jony',1539,'Blue',37),
-	 (204,'PARFAIT Plus Size Black Solid Underwired Lightly Padded Everyday Bra 4815','Women','PARFAIT',1609,' Red',26),
-	 (205,'Parx Men White & Blue Slim Fit Printed Casual Shirt','Men','Parx',639,'Blue',71),
-	 (206,'Urban Dog Men Black Printed Regular Fit Sports Shorts','Men','Urban Dog',399,' Black',51),
-	 (207,'Campus Sutra Men Blue Standard Regular Fit Checked Casual Shirt','Men','Campus Sutra',599,'Blue',52),
-	 (208,'EthnoVogue Women Coral Pink & Orange Printed Made to Measure Printed Maxi Dress','Women','EthnoVogue',4573,' Pink',51),
-	 (209,'PARFAIT Plus Size Black Solid Underwired Lightly Padded T-shirt Bra 4812','Women','PARFAIT',1609,' Red',87),
-	 (210,'Lady Lyka Women Brown and Grey Pack of 2 Everyday Bras COULOUR-POP-BRN-GRY','Women','Lady Lyka',425,' Brown',47);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (211,'PARFAIT Plus Size Women Navy Blue Solid Hipster Brief P5645','Women','PARFAIT',899,'Blue',65),
-	 (212,'Tokyo Talkies Women Burgundy Solid Top','Women','Tokyo Talkies',293,' Burgundy',15),
-	 (213,'Parx Men Blue & Yellow Slim Fit Checked Casual Shirt','Men','Parx',839,'Blue',80),
-	 (214,'ROMEE Grey & Red Floral AC Room 300 GSM Single Bed Dohar','Unisex','ROMEE',1999,' Red',81),
-	 (215,'ZUSH Plus Size Women Black Regular Fit Mid-Rise Clean Look Jeans','Women','ZUSH',1249,' Black',58),
-	 (216,'Lady Lyka Women Maroon and Beige Pack of 2 Everyday Bras MONALISA-MRN-SKN-Multi','Women','Lady Lyka',593,' Beige',35),
-	 (217,'TAYHAA White Solid Rectangular Photo Frame','Unisex','TAYHAA',350,' White',17),
-	 (218,'Gini and Jony Boys Navy Blue Slim Fit Printed Regular Trousers','Boys','Gini and Jony',1189,'Blue',20),
-	 (219,'Ishin Women Red & Gold-Toned Hem Design Wide Leg Palazzos','Women','Ishin',524,' Red',63),
-	 (220,'Shoe Couture Women White & Black Applique Detail Sneakers','Women','Shoe Couture',1214,' Black',29);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (221,'MIAH Decor Multicoloured Coffee Mugs Cum Serving Tea Cups Set','Unisex','MIAH Decor',974,' Red',41),
-	 (222,'Parx Men Red & Blue Slim Fit Checked Casual Shirt','Men','Parx',779,'Blue',74),
-	 (223,'WITH Men Pack of 2 Printed Pure Cotton Boxers WB43-WB54','Men','WITH',612,'red',63),
-	 (224,'PARFAIT Plus Size Red Lace Underwired Non Padded Everyday Bra P5392','Women','PARFAIT',1679,' Red',46),
-	 (225,'PARFAIT Plus Size Women Navy Blue  White Solid Bikini Briefs PP503','Women','PARFAIT',499,'Blue',42),
-	 (226,'HARBORNBAY Men Navy Blue & Grey Striped Henley Neck T-shirt','Men','HARBORNBAY',448,'Blue',13),
-	 (227,'Difference of Opinion Men Black Printed Round Neck T-shirt','Men','Difference of Opinion',499,' Black',61),
-	 (228,'SPYKAR Women Blue Alicia Super Skinny Fit Low-Rise Clean Look Stretchable Cropped Jeans','Women','SPYKAR',989,'Blue',37),
-	 (229,'Parx Men Blue Slim Fit Self Design Regular Trousers','Men','Parx',879,'Blue',40),
-	 (230,'Lady Lyka Women Beige and White Pack of 2 Everyday Bras SONAL-SKN-WHT-Multi','Women','Lady Lyka',678,' White',31);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (231,'Gini and Jony Boys Navy Blue Dyed Printed Round Neck T-shirt','Boys','Gini and Jony',699,'Blue',89),
-	 (232,'Palm Tree Girls Cream-Coloured & Yellow Floral Print A-Line Dress with Belt','Girls','Palm Tree',629,' Red',51),
-	 (233,'Raymond Men Grey Slim Fit Solid Formal Trousers','Men','Raymond',1299,' Grey',26),
-	 (234,'JEWEL JUNCTION Gold-Toned Geometric Cufflinks','Men','JEWEL JUNCTION',539,' Gold',2),
-	 (235,'Story@home Multicoloured Geometric 210TC Cotton 1 King Bedsheet with 2 Pillow Covers','Unisex','Story@home',1399,' Red',64),
-	 (236,'Palm Tree Boys White & Grey Printed Polo Collar T-shirt','Boys','Palm Tree',629,' White',90),
-	 (237,'SPYKAR Women Blue Elissa Bootcut High-Rise Clean Look Stretchable Ankle Jeans','Women','SPYKAR',1099,'Blue',99),
-	 (238,'ID Men Beige Leather Derbys','Men','ID',2985,' Beige',12),
-	 (239,'Keds Women Multicoloured Iridescent Effect Slip-On Sneakers','Women','Keds',3899,' Red',43),
-	 (240,'Parx Men Blue Slim Fit Colourblocked Casual Shirt','Men','Parx',759,'Blue',101);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (241,'Parx Men Grey Solid Sweater','Men','Parx',944,' Grey',5),
-	 (242,'Homesake Gold-Toned & Navy Blue Solid Handcrafted Table Lamp with Shade','Unisex','Homesake',1732,'Blue',30),
-	 (243,'Parx Men Grey Slim Fit Printed Casual Shirt','Men','Parx',759,' Grey',44),
-	 (244,'SEJ by Nisha Gupta Blue & Pink Printed Wooden Open Dry Bin','Unisex','SEJ by Nisha Gupta',999,'Blue',90),
-	 (245,'Rozia Women Hair Dryer HC8307','Women','Rozia',1091,'red',86),
-	 (246,'ID Men Olive Green Leather Derbys','Men','ID',2985,' Green',47),
-	 (247,'Gini and Jony Girls Blue Printed Round Neck T-shirt','Girls','Gini and Jony',629,'Blue',2),
-	 (248,'her by invictus Women Red Cushioned Slip-Ons','Women','her by invictus',944,' Red',96),
-	 (249,'HARBORNBAY Women Red & Silver Printed Round Neck T-shirt','Women','HARBORNBAY',401,' Red',23),
-	 (250,'Aj DEZInES Boys Red Printed Kurta with Pyjamas','Boys','Aj DEZInES',389,' Red',65);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (251,'Gini and Jony Boys Blue Regular Fit Mid-Rise Clean Look Stretchable Jeans','Boys','Gini and Jony',979,'Blue',65),
-	 (252,'AccessHer Gold-Plated & Blue Geometric Drop Earrings','Women','AccessHer',443,'Blue',60),
-	 (253,'Monte Carlo Women Navy Blue Skinny Fit Mid-Rise Clean Look Jeans','Women','Monte Carlo',1501,'Blue',89),
-	 (254,'Lady Lyka Women Pack of 2 Beginners Bras TEENAGER-SKN-BLK','Women','Lady Lyka',425,'red',88),
-	 (255,'ID Men Tan Brown Comfort Sandals','Men','ID',1785,' Brown',81),
-	 (256,'Parx Men Khaki Slim Fit Solid Regular Trousers','Men','Parx',839,' Khaki',51),
-	 (257,'PARFAIT Plus Size Nude-Coloured Solid Underwired Lightly Padded Balconette Bra P5011','Women','PARFAIT',1819,' Red',90),
-	 (258,'Lady Lyka Women Black and Beige Pack of 2 Everyday Bras MONALISA-BLK-SKN','Women','Lady Lyka',593,' Black',99),
-	 (259,'PARFAIT Plus Size Beige Solid Underwired Lightly Padded Plunge Bra P5490','Women','PARFAIT',1679,' Red',59),
-	 (260,'Gini and Jony Boys Blue Slim Fit Mid-Rise Clean Look Jeans','Boys','Gini and Jony',1019,'Blue',57);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (261,'ahilya Imperial Filigree Collection Gold-Plated Sterling Silver Drop Earrings','Women','ahilya',6120,' Gold',28),
-	 (262,'Parx Men White Printed Polo Collar T-shirt','Men','Parx',679,' White',63),
-	 (263,'Parx Men Navy Blue Slim Fit Printed Casual Shirt','Men','Parx',719,'Blue',89),
-	 (264,'SPYKAR Women Blue Alexa Super Skinny Fit High-Rise Clean Look Stretchable Jeans','Women','SPYKAR',999,'Blue',71),
-	 (265,'SEJ by Nisha Gupta Mustard & Blue Printed Wooden Open Dry Bin','Unisex','SEJ by Nisha Gupta',999,'Blue',29),
-	 (266,'SEJ by Nisha Gupta Orange & Pink Printed Wooden Open Dry Bin','Unisex','SEJ by Nisha Gupta',999,' Pink',14),
-	 (267,'Tokyo Talkies Women Teal Floral Printed Peplum Top','Women','Tokyo Talkies',699,'red',7),
-	 (268,'JEWEL JUNCTION Silver-Toned Geometric Cufflinks','Men','JEWEL JUNCTION',539,' Silver',64),
-	 (269,'Gini and Jony Girls Chambray Blue & White Printed Chambray Top with Shorts','Girls','Gini and Jony',1469,'Blue',94),
-	 (270,'Bvlgari Women Rose Goldea Eau De Perfume 90 ml','Women','Bvlgari',10950,' Gold',28);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (271,'Urban Dog Men Navy Blue Printed Regular Fit Sports Shorts','Men','Urban Dog',399,'Blue',60),
-	 (272,'HIGHLANDER Men Purple & Beige Slim Fit Printed Casual Shirt','Men','HIGHLANDER',699,' Beige',55),
-	 (273,'VASTRAMAY Boys Brown & Blue Solid Kurta with Churidar & Jacket','Boys','VASTRAMAY',1469,'Blue',51),
-	 (274,'DKNY Unisex Black & Grey Printed Cabin Trolley Bag','Unisex','DKNY',10800,' Black',74),
-	 (275,'SEJ by Nisha Gupta Set of 4 Green & Blue Printed Table Placemats','Unisex','SEJ by Nisha Gupta',799,'Blue',95),
-	 (276,'Palm Tree Girls Burgundy Printed Round Neck T-shirt','Girls','Palm Tree',349,' Burgundy',35),
-	 (277,'Bvlgari Splendida Women Rose Eau De Parfum 50 ml','Women','Bvlgari',7650,' Rose',11),
-	 (278,'Parx Men Pink & Blue Striped Polo Collar T-shirt','Men','Parx',559,'Blue',92),
-	 (279,'even Men Grey Woven Design Nehru Jacket','Men','even',1039,' Grey',19),
-	 (280,'PARFAIT Plus Size Beige Solid Underwired Lightly Padded T-shirt Bra 4812','Women','PARFAIT',1609,' Red',86);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (281,'ID Men Tan Brown Solid Comfort Leather Sandals','Men','ID',1785,' Brown',40),
-	 (282,'Parx Men White & Orange Slim Fit Checked Casual Shirt','Men','Parx',699,' White',14),
-	 (283,'ether Women Maroon Solid Suede Finish Open Toe Flats','Women','ether',1399,' Maroon',60),
-	 (284,'Crimsoune Club Men Orange & White Slim Fit Checked Casual Shirt','Men','Crimsoune Club',1599,' White',4),
-	 (285,'SEJ by Nisha Gupta Red & Blue Printed Wooden Open Dry Bin','Unisex','SEJ by Nisha Gupta',999,'Blue',33),
-	 (286,'Urban Dog Men Navy Blue Solid Regular Fit Sports Shorts','Men','Urban Dog',399,'Blue',27),
-	 (287,'Carrera Men Grey Sneakers','Men','Carrera',4499,' Grey',33),
-	 (288,'Aj DEZInES Boys Peach-Coloured & Brown Solid Kurta with Pyjamas','Boys','Aj DEZInES',539,' Red',98),
-	 (289,'PARFAIT Plus Size Beige Solid Underwired Lightly Padded Everyday Bra 6901','Women','PARFAIT',1609,' Red',100),
-	 (290,'JEWEL JUNCTION Men Silver-Toned & Blue Geometric Cufflinks','Men','JEWEL JUNCTION',539,'Blue',94);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (291,'Gini and Jony Boys Grey & White Embroidered Round Neck T-shirt with Applique Detail','Boys','Gini and Jony',489,' Red',16),
-	 (292,'JEWEL JUNCTION Men Gold-Toned Geometric Cufflinks','Men','JEWEL JUNCTION',539,' Gold',28),
-	 (293,'Homesake Gold-Toned & White Solid Handcrafted Table Lamp with Shade','Unisex','Homesake',1836,' White',58),
-	 (294,'U.S. Polo Assn. Kids Boys Yellow Hooded Sweatshirt','Boys','U.S. Polo Assn. Kids',899,' Yellow',7),
-	 (295,'HIGHLANDER Men White & Grey Slim Fit Striped Casual Shirt','Men','HIGHLANDER',699,' White',16),
-	 (296,'SEJ by Nisha Gupta Set of 4 Multicoloured Printed Table Placemats','Unisex','SEJ by Nisha Gupta',799,' Red',11),
-	 (297,'her by invictus Women Black Solid Cushioned Smart Casual Derbys','Women','her by invictus',1999,' Black',61),
-	 (298,'Lakme 9To5 Eye Quartet Eyeshadow - Royal Peacock 7 g','Women','Lakme',520,'red',63),
-	 (299,'Homesake Gold-Toned & Red Solid Handcrafted Table Lamp with Shade','Unisex','Homesake',1620,' Red',6),
-	 (300,'SPYKAR Women Blue Adora Skinny Fit High-Rise Low Distressed Stretchable Ankle Jeans','Women','SPYKAR',1079,'Blue',64);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (301,'Russell Athletic Black Printed Hooded Sweatshirt','Women','Russell Athletic',2999,' Black',95),
-	 (302,'Gini and Jony Girls Peach-Coloured & Blue Embroidered Top','Girls','Gini and Jony',559,'Blue',56),
-	 (303,'Sera Women Green & Blue Printed Kurta with Palazzos','Women','Sera',1317,'Blue',39),
-	 (304,'MIMOSA Navy Blue & Red Art Silk Woven Design Kanjeevaram Saree','Women','MIMOSA',1195,'Blue',5),
-	 (305,'Kazo Women Green Smocked Peplum Top','Women','Kazo',1690,' Green',8),
-	 (306,'Gini and Jony Girls Blue Regular Fit Mid-Rise Clean Look Stretchable Jeans','Girls','Gini and Jony',699,'Blue',89),
-	 (307,'SEJ by Nisha Gupta Pink & Black Printed Wooden Open Dry Bin','Unisex','SEJ by Nisha Gupta',999,' Black',30),
-	 (308,'Goldea Edp 90Ml','Women','Bvlgari',10950,' Gold',72),
-	 (309,'Vishudh Women Mustard Orange & Pink Floral Print Maxi Dress','Women','Vishudh',1999,' Pink',89),
-	 (310,'Gini and Jony Boys Navy Blue Regular Fit Mid-Rise Clean Look Stretchable Jeans','Boys','Gini and Jony',1049,'Blue',82);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (311,'Puma Men Blue Sneakers','Men','Puma',1799,'Blue',57),
-	 (312,'Raymond Men Grey Solid Single-Breasted Formal Blazer','Men','Raymond',3149,' Grey',24),
-	 (313,'ahilya Sterling Silver Bangle','Women','ahilya',4220,' Silver',99),
-	 (314,'ID Men Tan Brown Leather Loafers','Men','ID',1218,' Brown',29),
-	 (315,'MIAH Decor Brown Set of 3 Printed Ceramic Art Storage Jar','Unisex','MIAH Decor',3116,' Brown',48),
-	 (316,'ether Women Beige Solid Open Toe Flats','Women','ether',599,' Beige',29),
-	 (317,'Peter England Men Pink & Blue Striped Briefs PIWBPH9186011','Men','Peter England',266,'Blue',86),
-	 (318,'Campus Sutra Men Maroon Ombre-Dyed Henley Neck T-shirt','Men','Campus Sutra',699,' Maroon',13),
-	 (319,'Parx Men Cream-Coloured Tapered Fit Solid Regular Trousers','Men','Parx',959,' Red',89),
-	 (320,'Parx Men Blue Slim Fit Checked Casual Shirt','Men','Parx',679,'Blue',92);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (321,'AIGNER Men Blue Eau de Toilette 125 ml','Men','AIGNER',4350,'Blue',46),
-	 (322,'SPYKAR Women Black Alexa Super Skinny Fit High-Rise Clean Look Stretchable Ankle Jeans','Women','SPYKAR',1214,' Black',29),
-	 (323,'Campus Sutra Men Blue Colourblocked Round Neck T-shirt','Men','Campus Sutra',699,'Blue',32),
-	 (324,'Campus Sutra Men Blue & Black Standard Regular Fit Checked Casual Shirt','Men','Campus Sutra',449,'Blue',11),
-	 (325,'Gini and Jony Girls Red Printed Regular Fit Shorts','Girls','Gini and Jony',559,' Red',54),
-	 (326,'Gini and Jony Girls Peach-Coloured Embroidered Top','Girls','Gini and Jony',419,' Red',5),
-	 (327,'Soie Black Solid Non-Wired Non Padded Everyday Bra CB-332BLACK','Women','Soie',552,' Red',10),
-	 (328,'Parx Men Red & Black Slim Fit Printed Casual Shirt','Men','Parx',639,' Red',85),
-	 (329,'ether Women Green Solid Open Toe Flats','Women','ether',1199,' Green',72),
-	 (330,'Difference of Opinion Men Black Solid Round Neck T-shirt with Side Stripes','Men','Difference of Opinion',499,' Black',77);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (331,'Blackberrys Black Single-Breasted Slim Fit Formal Blazer','Men','Blackberrys',3597,' Black',33),
-	 (332,'Difference of Opinion Men Navy Blue Printed Round Neck T-shirt','Men','Difference of Opinion',499,'Blue',90),
-	 (333,'MIAH Decor Off-White & Green Set of 2 Handpainted Ceramic Coffee Mugs','Unisex','MIAH Decor',1079,' Green',100),
-	 (334,'Campus Sutra Men Grey & Blue Regular Fit Checked Casual Shirt','Men','Campus Sutra',599,'Blue',55),
-	 (335,'SEJ by Nisha Gupta Set of 6 Multicoloured Printed Table Placemats','Unisex','SEJ by Nisha Gupta',899,' Red',49),
-	 (336,'PARFAIT Plus Size Black Lace Underwired Non Padded Everyday Bra 3102','Women','PARFAIT',1749,' Red',100),
-	 (337,'Parx Men Red Slim Fit Checked Casual Shirt','Men','Parx',949,' Red',8),
-	 (338,'HIGHLANDER Men Navy Blue & Grey Slim Fit Striped Regular Trousers','Men','HIGHLANDER',1299,'Blue',81),
-	 (339,'Story@home Beige Floral 210 TC Cotton 1 King Bedsheet with 2 Pillow Covers','Unisex','Story@home',1399,' Beige',39),
-	 (340,'Parx Men Grey Striped Sweater','Men','Parx',559,' Grey',15);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (341,'Playdate Girls Black Striped Top','Girls','Playdate',659,' Black',9),
-	 (342,'Parx Men Red & Navy Blue Slim Fit Checked Casual Shirt','Men','Parx',854,'Blue',60),
-	 (343,'Difference of Opinion Men Olive Green Solid Round Neck T-shirt With Side Strip Detail','Men','Difference of Opinion',499,' Green',56),
-	 (344,'Rocia Women Black & Silver-Toned Wedges','Women','Rocia',1512,' Black',97),
-	 (345,'DAVID BECKHAM Men Beyond Eau De Toilette 90 ml','Men','DAVID BECKHAM',1740,'red',58),
-	 (346,'JEWEL JUNCTION Gold-Toned Rectangle Cufflinks','Men','JEWEL JUNCTION',539,' Gold',14),
-	 (347,'ID Men Tan Brown Leather Sneakers','Men','ID',2685,' Brown',81),
-	 (348,'JEWEL JUNCTION Silver-Toned Quirky Cufflinks','Men','JEWEL JUNCTION',539,' Silver',85),
-	 (349,'SEJ by Nisha Gupta Green & Blue Printed Wooden Open Dry Bin','Unisex','SEJ by Nisha Gupta',999,'Blue',63),
-	 (350,'MIAH Decor Multicoloured Kitchen Storage Jar with Lid','Unisex','MIAH Decor',1199,' Red',17);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (351,'AccessHer Gold-Plated Embellished Nose Ring with Chain','Women','AccessHer',559,' Gold',27),
-	 (352,'Marvel by Wear Your Mind Boys White Printed Round Neck T-shirt','Boys','Marvel by Wear Your Mind',549,' White',46),
-	 (353,'Palm Tree Boys Blue Regular Fit Washed Chambray Shirt','Boys','Palm Tree',839,'Blue',24),
-	 (354,'HIGHLANDER Men Coral & White Slim Fit Checked Casual Shirt','Men','HIGHLANDER',699,' White',34),
-	 (355,'Parx Men Mauve Slim Fit Printed Casual Shirt','Men','Parx',594,'red',74),
-	 (356,'ID Men Black Solid Leather Thong Flip-Flops','Men','ID',1195,' Black',54),
-	 (357,'Park Avenue Women Blue Solid Single-Breasted Blazer','Women','Park Avenue',1439,'Blue',91),
-	 (358,'Gini and Jony Girls Pink & White Printed Top','Girls','Gini and Jony',629,' White',19),
-	 (359,'Difference of Opinion Men Grey Printed Round Neck T-shirt','Men','Difference of Opinion',499,' Grey',90),
-	 (360,'Gini and Jony Boys Black Slim Fit Printed Regular Trousers','Boys','Gini and Jony',1329,' Black',95);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (361,'HIGHLANDER Men White & Blue Slim Fit Checked Casual Shirt','Men','HIGHLANDER',699,'Blue',42),
-	 (362,'Parx Men Blue Slim Fit Checked Casual Shirt','Men','Parx',752,'Blue',16),
-	 (363,'ID Men Navy Blue Solid Leather Mid-Top Sneakers','Men','ID',1286,'Blue',46),
-	 (364,'Urban Dog Men Charcoal Printed Regular Fit Sports Shorts','Men','Urban Dog',399,' Charcoal',74),
-	 (365,'Annabelle By Pantaloons Off-White Sleeveless Top','Women','Annabelle by Pantaloons',999,' White',58),
-	 (366,'Park Avenue Men Red Solid Jacket','Men','Park Avenue',1749,' Red',2),
-	 (367,'Lady Lyka Women Fuschia and Turquoise Blue Pack of 2 T-shirt Bras HAPPY-MOODS-FCA-SKY','Women','Lady Lyka',848,'Blue',98),
-	 (368,'AccessHer Women Gold-Plated American Diamond & Ruby Studded Jewelry Set','Women','AccessHer',4880,' Gold',47),
-	 (369,'Homesake Gold-Toned Solid Handcrafted Table Lamp with Shade','Unisex','Homesake',1620,' Gold',4),
-	 (370,'Sera Women Sea Green & Maroon Printed Kurta with Palazzos','Women','Sera',1317,' Green',19);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (371,'ether Women Black Solid Slip-Ons','Women','ether',559,' Black',101),
-	 (372,'SEJ by Nisha Gupta Set of 6 Yellow & Multicoloured Printed Table Placemats','Unisex','SEJ by Nisha Gupta',899,' Red',50),
-	 (373,'AccessHer Gold-Plated & Red Meenakari Maang Tika','Women','AccessHer',845,' Red',88),
-	 (374,'Sera Women Yellow & Off-White Printed Kurta with Palazzos','Women','Sera',1477,' Yellow',38),
-	 (375,'TAYHAA Black & White Square Photo Frame','Unisex','TAYHAA',450,' Black',89),
-	 (376,'Park Avenue Women Blue Solid A-Line Top','Women','Park Avenue',509,'Blue',37),
-	 (377,'her by invictus Women Pink Solid Cushioned Smart Casual Derbys','Women','her by invictus',1999,' Pink',25),
-	 (378,'Palm Tree Boys Off-White & Grey Printed Polo Collar T-shirt','Boys','Palm Tree',419,' White',5),
-	 (379,'berrytree Girls Pink A-Line Organic Cotton Sustainable Dress','Girls','berrytree',499,' Pink',13),
-	 (380,'SIMON CARTER LONDON Men Blue & Pink Slim Fit Printed Casual Shirt','Men','SIMON CARTER LONDON',1019,'Blue',76);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (381,'MIAH Decor Multicoloured Set Of 6 Printed Khullad Cups','Unisex','MIAH Decor',865,' Red',76),
-	 (382,'Parx Men Grey Solid Sweater','Men','Parx',804,' Grey',10),
-	 (383,'DKNY Unisex Black Medium Trolley Bag','Unisex','DKNY',24800,' Black',49),
-	 (384,'Gini and Jony Boys Blue Slim Fit Mid-Rise Clean Look Stretchable Jeans','Boys','Gini and Jony',1329,'Blue',7),
-	 (385,'SEJ by Nisha Gupta Set of 4 Printed Table Placemats','Unisex','SEJ by Nisha Gupta',799,'red',18),
-	 (386,'ID Men Black Leather Formal Slip-Ons','Men','ID',1192,' Black',99),
-	 (387,'Soie Women Black Slim Fit Striped Cigarette Trousers','Women','Soie',1112,' Black',37),
-	 (388,'ID Men Brown Leather Loafers','Men','ID',2685,' Brown',79),
-	 (389,'MIAH Decor Off-White & Navy Blue Set of 2 Handpainted Ceramic Coffee Mugs','Unisex','MIAH Decor',1079,'Blue',28),
-	 (390,'DKNY Unisex Purple Medium Trolley Bag','Unisex','DKNY',24800,' Purple',55);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (391,'EthnoVogue Women Coral Pink & Yellow Printed Made to Measure Printed Maxi Dress','Women','EthnoVogue',6289,' Yellow',33),
-	 (392,'SPYKAR Women Blue Alicia Super Skinny Fit Low-Rise Low Distress Stretchable Jeans','Women','SPYKAR',2399,'Blue',68),
-	 (393,'SEJ by Nisha Gupta Pink & Green Printed Wooden Open Dry Bin','Unisex','SEJ by Nisha Gupta',999,' Green',76),
-	 (394,'Vishudh Women Off-White & Brown Floral Printed Kurta','Women','Vishudh',1299,' White',65),
-	 (395,'Parx Men White Slim Fit Printed Casual Shirt','Men','Parx',822,' White',48),
-	 (396,'Soie Nude-Coloured lace Underwired Non Padded full coverage Everyday Bra FB-610','Women','Soie',728,' Red',89),
-	 (397,'Parx Men Khaki Slim Fit Solid Regular Trousers','Men','Parx',769,' Khaki',2),
-	 (398,'Soie Green lace Underwired Non Padded full coverage Everyday Bra FB-610','Women','Soie',693,' Green',42),
-	 (399,'Gini and Jony Boys Rust Red & Navy Striped Round Neck T-shirt','Boys','Gini and Jony',299,' Red',52),
-	 (400,'Tokyo Talkies Women Mustard Solid Top','Women','Tokyo Talkies',699,' Mustard',53);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (401,'Parx Men Blue Striped Polo Collar T-shirt','Men','Parx',384,'Blue',99),
-	 (402,'DKNY Women Nectar Love Eau de Toilette 50 ml','Women','DKNY',2860,'red',37),
-	 (403,'Raymond Men Maroon Slim Fit Solid Formal Shirt','Men','Raymond',769,' Maroon',60),
-	 (404,'Campus Sutra Men Black & Grey Melange Printed Round Neck T-shirt','Men','Campus Sutra',699,' Black',36),
-	 (405,'Parx Men White Printed Round Neck T-shirt','Men','Parx',349,' White',46),
-	 (406,'Vishudh Women Blue & White Floral Embroidered Straight Kurta','Women','Vishudh',412,'Blue',75),
-	 (407,'FIDO DIDO Men Navy Blue Printed Polo Collar T-shirt','Men','FIDO DIDO',1299,'Blue',14),
-	 (408,'Gini and Jony Boys Blue Regular Fit Solid Casual Shirt','Boys','Gini and Jony',649,'Blue',58),
-	 (409,'her by invictus Women Black Textured Cushioned Flats','Women','her by invictus',1999,' Red',13),
-	 (410,'Soie Nude Lace Non-Wired Non Padded full coverage Everyday Bra FB-705nude','Women','Soie',988,' Red',51);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (411,'HIGHLANDER Men White & Blue Slim Fit Striped Casual Shirt','Men','HIGHLANDER',699,'Blue',91),
-	 (412,'ID Men Brown Solid Leather Mid-Top Sneakers','Men','ID',1286,' Brown',98),
-	 (413,'Raymond Men Yellow Solid Polo Collar T-shirt','Men','Raymond',999,' Yellow',76),
-	 (414,'PARFAIT Plus Size Black Solid Non-Wired Non Padded Everyday Bra P5641','Women','PARFAIT',1609,' Red',43),
-	 (415,'PARFAIT Plus Size Women Navy Blue Solid Low-Rise Hipsters P5395','Women','PARFAIT',999,'Blue',16),
-	 (416,'Beli Women Black & Blue Woven Design Heels','Women','Beli',849,'Blue',47),
-	 (417,'Lady Lyka Women Pack of 2 Beginners Bras TEENAGER-RED-SKN','Women','Lady Lyka',425,' Red',21),
-	 (418,'Homesake Gold-Toned & White Solid Handcrafted Table Lamp with Shade','Unisex','Homesake',1890,' White',99),
-	 (419,'HIGHLANDER Men Coral & Navy Blue Slim Fit Checked Casual Shirt','Men','HIGHLANDER',699,'Blue',89),
-	 (420,'Parx Men Grey Slim Fit Printed Casual Shirt','Men','Parx',779,' Grey',33);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (421,'Raymond Men Brown Self Design Polo Collar T-shirt','Men','Raymond',892,' Brown',48),
-	 (422,'Blackberrys Navy Single-Breasted Slim Fit Formal Blazer','Men','Blackberrys',2997,' Black',4),
-	 (423,'HIGHLANDER Men Rust Slim Fit Printed Casual Shirt','Men','HIGHLANDER',699,'red',52),
-	 (424,'SEJ by Nisha Gupta Set of 4 Printed Table Placemats','Unisex','SEJ by Nisha Gupta',799,'red',68),
-	 (425,'ahilya Gold-Plated Sterling Silver Hoop Earrings','Women','ahilya',8356,' Gold',76),
-	 (426,'Parx Men Blue Slim Fit Checked Casual Shirt','Men','Parx',752,'Blue',61),
-	 (427,'Parx Men Peach-Coloured Solid Round Neck T-shirt','Men','Parx',489,' Red',70),
-	 (428,'DKNY Unisex Silver Cabin Trolley Bag','Unisex','DKNY',13365,' Silver',2),
-	 (429,'Soie Maroon Lace Non-Wired Non Padded full coverage Everyday Bra FB-705','Women','Soie',988,' Red',56),
-	 (430,'Roadster Women Beige Woven Design One Toe Flats','Women','Roadster',1199,' Beige',4);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (431,'SPYKAR Women Blue Adora Skinny Fit Mid-Rise Low Distress Stretchable Ankle-Length Jeans','Women','SPYKAR',1079,'Blue',22),
-	 (432,'Gini and Jony Boys White & Grey Dyed Round Neck T-shirt','Boys','Gini and Jony',559,' White',96),
-	 (433,'Michael Kors Women Wonderlust Sensual Essence Eau De Parfum Spray 100 ml','Women','Michael Kors',7920,'red',61),
-	 (434,'Homesake Gold-Toned & Navy Blue Solid Handcrafted Table Lamp with Shade','Unisex','Homesake',1890,'Blue',76),
-	 (435,'Gini and Jony Girls Yellow & Grey Printed Top with Shorts','Girls','Gini and Jony',419,' Yellow',37),
-	 (436,'Story@home Off-White & Olive Green Floral 210 TC Cotton 1 KingBedsheet with 2 Pillow Covers','Unisex','Story@home',1399,' Green',68),
-	 (437,'Police Men Imperial Patchouli Eau de Toilette 100 ml','Men','Police',2095,'red',89),
-	 (438,'Homesake Red & Gold-Toned Solid Handcrafted Table Lamp with Shade','Unisex','Homesake',1732,' Red',1),
-	 (439,'Brown Solid Casual Jacket','Men','U.S. Polo Assn. Denim Co.',3499,' Brown',77),
-	 (440,'JEWEL JUNCTION Gold-Toned Geometric Cufflinks','Men','JEWEL JUNCTION',539,' Gold',43);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (441,'Campus Sutra Men Grey & Black Standard Regular Fit Checked Casual Shirt','Men','Campus Sutra',479,' Black',84),
-	 (442,'Raymond Men Grey & Blue Striped Polo Collar T-shirt','Men','Raymond',1249,'Blue',72),
-	 (443,'Parx Men Navy Blue & Green Slim Fit Printed Casual Shirt','Men','Parx',959,'Blue',64),
-	 (444,'Nautica Men Voyage Sport Eau De Toilette 100 ml','Men','Nautica',1830,'red',98),
-	 (445,'Gini and Jony Girls Yellow & Green Pure Cotton Printed Top','Girls','Gini and Jony',489,' Green',39),
-	 (446,'PARFAIT Plus Size Nude-Coloured Solid Underwired Lightly Padded Balconette Bra 4815','Women','PARFAIT',1609,' Red',34),
-	 (447,'Park Avenue Women Yellow & Red Printed Linen Sheath Dress','Women','Park Avenue',1079,' Red',35),
-	 (448,'PARFAIT Plus Size Black Solid Underwired Non Padded Everyday Bra P5412','Women','PARFAIT',1679,' Red',80),
-	 (449,'Raymond Men Grey Solid Woven Nehru Jacket','Men','Raymond',1749,' Grey',6),
-	 (450,'Raymond Men Brown Self-Checked Single-Breasted Formal Suit','Men','Raymond',6649,' Brown',90);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (451,'SPYKAR Women Blue Alexa Super Skinny Fit High-Rise Clean Look Stretchable Jeans','Women','SPYKAR',999,'Blue',63),
-	 (452,'SEJ by Nisha Gupta Set of 6 Pink & Green Printed Table Placemats','Unisex','SEJ by Nisha Gupta',899,' Green',65),
-	 (453,'Jn Joy Navy Sheer Top','Women','Jn Joy',2399,' Navy',96),
-	 (454,'SEJ by Nisha Gupta Set of 4 Multicoloured Printed Table Placemats','Unisex','SEJ by Nisha Gupta',799,' Red',92),
-	 (455,'PARFAIT Plus Size Maroon Solid Underwired Lightly Padded Plunge Bra 2801','Women','PARFAIT',1189,' Red',43),
-	 (456,'Qraa Men Set of 2 Intense Acne Clearing Face Wash 100gm each','Men','Qraa Men',576,'red',94),
-	 (457,'DKNY Unisex Black Solid Leather Backpack with Pouch','Unisex','DKNY',13020,' Black',44),
-	 (458,'Lady Lyka Women Black and Beige Pack of 2 Beginners Bras ATHLETE-SKN-BLK-Multi','Women','Lady Lyka',425,' Black',100),
-	 (459,'ahilya Oxidised Sterling Silver Ring','Women','ahilya',4275,' Silver',82),
-	 (460,'BuckleUp Women Black Textured Belt','Women','BuckleUp',449,' Red',51);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (461,'Lady Lyka Women Pack of 2 Beginners Bras TEENAGER-FCA-SKN','Women','Lady Lyka',425,'red',8),
-	 (462,'Tokyo Talkies Women Red Maxi Dress','Women','Tokyo Talkies',1299,' Red',7),
-	 (463,'Marvel by Wear Your Mind Boys Black Printed Round Neck T-shirt','Boys','Marvel by Wear Your Mind',549,' Black',82),
-	 (464,'Bvlgari Men Black Eau De Toilette 40 ml','Men','Bvlgari',3500,' Black',60),
-	 (465,'THE SILHOUETTE STORE Women Black Solid Dhoti Jumpsuit with Belt','Women','THE SILHOUETTE STORE',839,' Black',29),
-	 (466,'Parx Men Brown Original Slim Fit Solid Regular Trousers','Men','Parx',874,' Brown',19),
-	 (467,'Campus Sutra Men Blue Solid Round Neck T-shirt','Men','Campus Sutra',699,'Blue',78),
-	 (468,'PARFAIT Plus Size Charcoal Grey Lace Detail Underwired Non Padded Everyday Bra P5022','Women','PARFAIT',1679,' Red',59),
-	 (469,'Gini and Jony Boys Navy Blue Slim Fit Solid Regular Trousers','Boys','Gini and Jony',1119,'Blue',68),
-	 (470,'Lady Lyka Women Black and Fuschia Pack of 2 Beginners Bras ATHLETE-BLK-FCA-Multi','Women','Lady Lyka',425,' Black',89);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (471,'DKNY Unisex Purple Large Trolley Bag','Unisex','DKNY',31100,' Purple',46),
-	 (472,'ID Men Brown Fisherman Leather Sandals','Men','ID',1197,' Brown',53),
-	 (473,'Puma Men Navy Blue Sneakers','Men','Puma',1959,'Blue',3),
-	 (474,'HIGHLANDER Men Maroon Striped Round Neck T-shirt','Men','HIGHLANDER',699,' Maroon',5),
-	 (475,'Russell Athletic Black Hooded Sweatshirt','Women','Russell Athletic',3499,' Black',47),
-	 (476,'JEWEL JUNCTION Silver-Toned Geometric Cufflinks','Men','JEWEL JUNCTION',539,' Silver',59),
-	 (477,'ID Men Brown Leather Oxfords','Men','ID',2685,' Brown',52),
-	 (478,'Blackberrys Men Navy Blue Solid Chambray Slim-Fit Jacket','Men','Blackberrys',2924,'Blue',59),
-	 (479,'DKNY Unisex Black Medium Trolley Bag','Unisex','DKNY',12375,' Black',99),
-	 (480,'Russell Athletic Grey Melange Hooded Sweatshirt','Women','Russell Athletic',2799,' Grey',54);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (481,'Xpose Women Blue Camouflage Print Skinny Fit Regular Shorts','Women','Xpose',734,'Blue',99),
-	 (482,'Gini and Jony Girls Red & White Printed Regular Shorts','Girls','Gini and Jony',629,' Red',22),
-	 (483,'HIGHLANDER Men Navy Blue & Red Slim Fit Checked Casual Shirt','Men','HIGHLANDER',699,'Blue',46),
-	 (484,'ID Men Navy Blue Leather Derbys','Men','ID',2685,'Blue',40),
-	 (485,'PARFAIT Plus Size Blue  Beige Lace Underwired Non Padded Everyday Bra P5392','Women','PARFAIT',1679,'Blue',44),
-	 (486,'HIGHLANDER Men White & Navy Blue Slim Fit Printed Casual Shirt','Men','HIGHLANDER',699,'Blue',96),
-	 (487,'MIAH Decor Set Of 2 Printed Serving Bowl Set','Unisex','MIAH Decor',1799,'red',48),
-	 (488,'Sera Women Orange & White Printed Kurta with Palazzos','Women','Sera',1317,' White',7),
-	 (489,'Parx Men Maroon Slim Fit Printed Casual Shirt','Men','Parx',734,' Maroon',20),
-	 (490,'Parx Men Blue Slim Fit Printed Casual Shirt','Men','Parx',759,'Blue',16);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (491,'Gini and Jony Boys Blue Regular Fit Faded Chambray Casual Shirt','Boys','Gini and Jony',1049,'Blue',96),
-	 (492,'Homesake Gold-Toned & Navy Blue Solid Handcrafted Table Lamp with Shade','Unisex','Homesake',1620,'Blue',66),
-	 (493,'Campus Sutra Men Blue & White Standard Regular Fit Dyed Casual Shirt','Men','Campus Sutra',599,'Blue',29),
-	 (494,'Carrera Men Black Sneakers','Men','Carrera',5199,' Black',72),
-	 (495,'Homesake Gold-Toned & White Solid Handcrafted Table Lamp with Shade','Unisex','Homesake',1620,' White',35),
-	 (496,'Puma Men Blue Sneakers','Men','Puma',1749,'Blue',15),
-	 (497,'SPYKAR Women Blue & White Striped Adora Skinny Fit Mid-Rise Clean Look Ankle Jeans','Women','SPYKAR',1034,'Blue',65),
-	 (498,'DKNY Unisex Black & Grey Printed Large Trolley Bag','Unisex','DKNY',13275,' Black',64),
-	 (499,'Parx Men Pink Slim Fit Solid Casual Shirt','Men','Parx',612,' Pink',48),
-	 (500,'Soie Black Solid Non-Wired Non Padded Maternity Bra CB-331','Women','Soie',655,' Red',18);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (501,'Parx Men White Printed Round Neck T-shirt','Men','Parx',454,' White',70),
-	 (502,'Soie Nude-Coloured Solid Non-Wired Non Padded Minimizer Bra','Women','Soie',632,' Red',5),
-	 (503,'Gini and Jony Boys Black & Grey Printed Polo Collar T-shirt','Boys','Gini and Jony',629,' Black',59),
-	 (504,'Sera Women Mustard Floral Printed Maxi Top','Women','Sera',1097,' Mustard',74),
-	 (505,'DKNY Unisex Silver Medium Trolley Bag','Unisex','DKNY',15540,' Silver',16),
-	 (506,'Campus Sutra Men Grey Dyed Henley Neck T-shirt','Men','Campus Sutra',699,' Grey',19),
-	 (507,'Playdate Girls Black Striped Tank Top','Girls','Playdate',599,' Black',81),
-	 (508,'ID Men Tan Brown Leather Formal Derbys','Men','ID',1627,' Brown',34),
-	 (509,'AccessHer German Silver and Gold Plating Jewellery Set','Women','AccessHer',1251,' Gold',63),
-	 (510,'SEJ by Nisha Gupta Set of 4 Multicoloured Printed Table Placemats','Unisex','SEJ by Nisha Gupta',799,' Red',88);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (511,'Soie Nude-Coloured Solid Non-Wired Non Padded Maternity Bra CB-331NUDE','Women','Soie',655,' Red',64),
-	 (512,'MBE Navy Blue & Gold-Toned Printed Dupatta','Women','MBE',699,'Blue',100),
-	 (513,'PARFAIT Plus Size Women Black Solid Lace Detail Hipster Briefs P5395','Women','PARFAIT',999,' Black',42),
-	 (514,'PARFAIT Plus Size Women Blue  Black Colourblocked Underwired Lightly Padded Sports Bra P5541','Women','PARFAIT',1609,'Blue',12),
-	 (515,'Parx Men Brown Tapered Fit Solid Regular Trousers','Men','Parx',839,' Red',99),
-	 (516,'Story@home Cream-Coloured Abstract 210TC Cotton 1 King Bedsheet with 2 Pillow Covers','Unisex','Story@home',1799,' Red',36),
-	 (517,'Park Avenue Women Grey Sheath Dress','Women','Park Avenue',809,' Grey',52),
-	 (518,'HIGHLANDER Men Blue & White Slim Fit Colourblocked Casual Shirt','Men','HIGHLANDER',699,'Blue',78),
-	 (519,'SPYKAR Women White Adora Skinny Fit Mid-Rise Clean Look Stretchable Jeans','Women','SPYKAR',899,' White',27),
-	 (520,'SEJ by Nisha Gupta Set of 4 Multicoloured Printed Table Placemats','Unisex','SEJ by Nisha Gupta',799,' Red',43);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (521,'Park Avenue Women Blue Solid Shirt Style Top','Women','Park Avenue',503,'Blue',50),
-	 (522,'Sweet Dreams Men Navy Blue Solid Straight-Fit Trackpants','Men','Sweet Dreams',699,'Blue',100),
-	 (523,'Lakme Absolute Matte Melt Liquid Lip Color Rhythmic Red 20','Women','Lakme',400,' Red',57),
-	 (524,'HIGHLANDER Men Brown & Black Slim Fit Checked Casual Shirt','Men','HIGHLANDER',699,' Black',7),
-	 (525,'ahilya Gold-Plated Sterling Silver Jhumka Earrings','Women','ahilya',11137,' Gold',30),
-	 (526,'Gini and Jony Boys Brown Solid Regular Fit Shorts','Boys','Gini and Jony',629,' Brown',1),
-	 (527,'SEJ by Nisha Gupta Set of 6 Green & Blue Printed Table Placemats','Unisex','SEJ by Nisha Gupta',899,'Blue',35),
-	 (528,'SPYKAR Women Blue Alicia Super Skinny Fit Low-Rise Mildly Distressed Ankle-length Jeans','Women','SPYKAR',1079,'Blue',84),
-	 (529,'PARFAIT Plus Size Women Beige Solid Hipster Briefs 4805','Women','PARFAIT',899,' Beige',63),
-	 (530,'PARFAIT Plus Size Women Black Lace Detail Solid Hipster Briefs 2803','Women','PARFAIT',899,' Black',43);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (531,'Vishudh Women Olive Green Floral Embroidered Straight Kurta','Women','Vishudh',1299,' Green',32),
-	 (532,'ID Men Tan Brown Solid Comfort Leather Sandals','Men','ID',1685,' Brown',31),
-	 (533,'Parx Men Blue Slim Fit Printed Casual Shirt','Men','Parx',839,'Blue',14),
-	 (534,'Gini and Jony Boys Brown Solid Regular Fit Shorts','Boys','Gini and Jony',559,' Brown',100),
-	 (535,'Gini and Jony Girls Black Solid Semi-Sheer Net A-Line Skirt','Girls','Gini and Jony',839,' Black',68),
-	 (536,'ID Men Brown Shoe-Style Leather Sandals','Men','ID',2385,' Brown',68),
-	 (537,'Parx Men Blue Slim Fit Mid-Rise Clean Look Jeans','Men','Parx',804,'Blue',72),
-	 (538,'her by invictus Women Tan Solid Cushioned Mules','Women','her by invictus',1044,'red',68),
-	 (539,'Parx Men Grey Checked Mandarin Collar T-shirt','Men','Parx',594,' Grey',37),
-	 (540,'ID Men Blue Leather Sneakers','Men','ID',1210,'Blue',101);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (541,'SPYKAR Women Black Adora Skinny Fit Mid-Rise Clean Look Stretchable Ankle Jeans','Women','SPYKAR',1079,' Black',97),
-	 (542,'Lakme Absolute Matte Melt Liquid Lip Color 12 Natural Nude','Women','Lakme',400,' Matte',91),
-	 (543,'SEJ by Nisha Gupta Set of 6 Blue & Green Printed Table Placemats','Unisex','SEJ by Nisha Gupta',899,'Blue',56),
-	 (544,'HIGHLANDER Men Blue & Black Slim Fit Printed Casual Shirt','Men','HIGHLANDER',699,'Blue',82),
-	 (545,'Campus Sutra Men Blue & Grey Regular Fit Checked Casual Shirt','Men','Campus Sutra',599,'Blue',10),
-	 (546,'her by invictus Women Nude-Coloured Slip-On Cushioned Sneakers','Women','her by invictus',1299,' Red',58),
-	 (547,'Parx Men White & Orange Slim Fit Checked Casual Shirt','Men','Parx',717,' White',101),
-	 (548,'AccessHer Gold-Plated Enamelled Jewellery Set','Women','AccessHer',1064,' Gold',49),
-	 (549,'Urban Dog Men Charcoal Grey Printed Regular Fit Sports Shorts','Men','Urban Dog',399,' Grey',36),
-	 (550,'Puma Unisex Blue Sneakers','Unisex','Puma',2999,'Blue',41);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (551,'her by invictus Women Charcoal Grey Cushioned Slip-Ons','Women','her by invictus',1299,' Grey',69),
-	 (552,'AccessHer Black & Gold-Plated Mangalsutra','Women','AccessHer',348,' Black',86),
-	 (553,'AccessHer Women Gold-Plated & Off-White Kundan & Pearl Embellished Maang Tikka','Women','AccessHer',1107,' White',4),
-	 (554,'Kenneth Cole Women Pink Solid Backpack','Women','Kenneth Cole',2463,' Pink',89),
-	 (555,'Roadster Women Olive Green Solid One Toe Flats','Women','Roadster',1299,' Green',100),
-	 (556,'Beli Women Black Textured Heels','Women','Beli',974,' Red',51),
-	 (557,'Urban Dog Men White & Black Striped Boxers UDBX160','Men','Urban Dog',699,' Black',71),
-	 (558,'MIAH Decor Beige & Black Set of 2 Handpainted Ceramic Coffee Mugs','Unisex','MIAH Decor',1079,' Black',5),
-	 (559,'Russell Athletic Grey Melange Printed Sweatshirt','Women','Russell Athletic',2599,' Grey',72),
-	 (560,'Parx Men Blue Slim Fit Printed Casual Shirt','Men','Parx',759,'Blue',46);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (561,'SPYKAR Women Blue Alicia Super Skinny Fit Low-Rise Clean Look Ankle-Length Jeans','Women','SPYKAR',899,'Blue',42),
-	 (562,'Lakme Absolute Matte Melt Liquid Lip Color - 22 Pink Heels 6 ml','Women','Lakme',400,' Pink',7),
-	 (563,'Parx Men Blue & Off-White Slim Fit Printed Casual Shirt','Men','Parx',594,'Blue',19),
-	 (564,'Sera Women Off-White & Black Printed Kurta with Palazzos','Women','Sera',1357,' Black',18),
-	 (565,'Lady Lyka Women Pack of 2 Beginners Bras TEENAGER-FCA-PPL','Women','Lady Lyka',425,'red',29),
-	 (566,'Parx Men Green Solid Polo Collar T-shirt','Men','Parx',539,' Green',81),
-	 (567,'Mast & Harbour Women Maroon Solid Open Toe Flats','Women','Mast & Harbour',1599,' Maroon',35),
-	 (568,'PARFAIT Plus Size Black  Grey Lace Underwired Non Padded Everyday Bra P5612','Women','PARFAIT',1679,' Red',66),
-	 (569,'Parx Men White & Blue Slim Fit Printed Casual Shirt','Men','Parx',647,'Blue',82),
-	 (570,'MIAH Decor Blue & Beige Handpainted Mughal Art Large Storage Jar','Unisex','MIAH Decor',1499,'Blue',25);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (571,'Sera Women Pink & Maroon A-Line Dress','Women','Sera',1099,' Pink',10),
-	 (572,'SEJ by Nisha Gupta Set of 6 Green & Pink Printed Table Placemats','Unisex','SEJ by Nisha Gupta',899,' Green',18),
-	 (573,'Campus Sutra Men Black & White Self Design Round Neck T-shirt','Men','Campus Sutra',299,' Black',35),
-	 (574,'JEWEL JUNCTION Gold-Toned Geometric Cufflinks','Men','JEWEL JUNCTION',539,' Gold',26),
-	 (575,'SPYKAR Women Navy Blue Elissa Bootcut High-Rise Clean Look Stretchable Jeans','Women','SPYKAR',999,'Blue',89),
-	 (576,'Mast & Harbour Women Pink Solid Mules','Women','Mast & Harbour',1299,' Pink',51),
-	 (577,'Parx Men Red & Navy Blue Slim Fit Checked Casual Shirt','Men','Parx',779,'Blue',29),
-	 (578,'JEWEL JUNCTION Silver-Toned Geometric Cufflinks','Men','JEWEL JUNCTION',539,' Silver',21),
-	 (579,'Campus Sutra Men Blue & White Standard Regular Fit Checked Casual Shirt','Men','Campus Sutra',599,'Blue',15),
-	 (580,'AccessHer Gold-Plated Kundan-Studded Flower-Shaped Nosepin','Women','AccessHer',267,' Gold',8);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (581,'AccessHer Blue & Gold-Plated Enamelled Circular Drop Earrings','Women','AccessHer',595,'Blue',42),
-	 (582,'ether Women Coffee Brown Solid Open Toe Flats','Women','ether',699,' Brown',76),
-	 (583,'JEWEL JUNCTION Gold-Toned Geometric Cufflinks','Men','JEWEL JUNCTION',539,' Gold',29),
-	 (584,'DKNY Unisex Purple Cabin Trolley Bag','Unisex','DKNY',22100,' Purple',59),
-	 (585,'MIAH Decor Brown Art Storage Jar','Unisex','MIAH Decor',1499,' Brown',61),
-	 (586,'Roadster Women Red Printed Sweatshirt','Women','Roadster',699,' Red',88),
-	 (587,'ahilya Gold-Plated Sterling Silver Drop Earrings','Women','ahilya',9333,' Gold',96),
-	 (588,'Parx Men Blue Slim Fit Checked Casual Shirt','Men','Parx',752,'Blue',9),
-	 (589,'ID Men Tan Sandals','Men','ID',1197,'red',17),
-	 (590,'Campus Sutra Men Blue Standard Regular Fit Checked Chambray Casual Shirt','Men','Campus Sutra',511,'Blue',89);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (591,'SPYKAR Women Blue Adora Skinny Fit Mid-Rise Mildly Distressed Stretchable Ankle Jeans','Women','SPYKAR',1304,'Blue',51),
-	 (592,'Parx Men Green Slim Fit Checked Casual Shirt','Men','Parx',664,' Green',34),
-	 (593,'PARFAIT Plus Size Fuchsia Pink Lace Underwired Lightly Padded Plunge Bra P5351','Women','PARFAIT',1749,' Red',13),
-	 (594,'Campus Sutra Men Green Dyed Henley Neck T-shirt','Men','Campus Sutra',699,' Green',8),
-	 (595,'Parx Men White Printed Polo Collar T-shirt','Men','Parx',594,' White',58),
-	 (596,'ahilya Gold-Plated Sterling Silver & Green Hoop Earrings','Women','ahilya',5998,' Green',49),
-	 (597,'Gini and Jony Boys Black & Grey Printed Polo Collar T-shirt','Boys','Gini and Jony',699,' Black',86),
-	 (598,'ahilya Dakshin Collection Gold-Plated Sterling Silver Hoop Earrings','Women','ahilya',6340,' Gold',19),
-	 (599,'SEJ by Nisha Gupta Set of 4 Printed Table Placemats','Unisex','SEJ by Nisha Gupta',799,'red',60),
-	 (600,'Park Avenue Women Blue Solid A-Line Top','Women','Park Avenue',503,'Blue',69);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (601,'SEJ by Nisha Gupta Set of 4 Yellow & Blue Printed Table Placemats','Unisex','SEJ by Nisha Gupta',799,'Blue',86),
-	 (602,'VASTRAMAY Boys Gold-Coloured & Maroon Solid Kurta with Churidar & Jacket','Boys','VASTRAMAY',1469,' Red',9),
-	 (603,'PARFAIT Plus Size Maroon Lace Underwired Lightly Padded Balconette Bra P5231','Women','PARFAIT',1539,' Red',24),
-	 (604,'SEJ by Nisha Gupta Set of 4 Multicoloured Printed Table Placemats','Unisex','SEJ by Nisha Gupta',799,' Red',70),
-	 (605,'Raymond Men Maroon Woven-Design Single-Breasted Bandhgala','Men','Raymond',3599,' Maroon',25),
-	 (606,'Raymond Men Blue Checked Single-Breasted Formal Suit','Men','Raymond',3999,'Blue',51),
-	 (607,'AccessHer Handcrafted Rose Gold-Plated Jewellery Set','Women','AccessHer',4040,' Gold',100),
-	 (608,'Parx Men White Slim Fit Printed Casual Shirt','Men','Parx',659,' White',20),
-	 (609,'JC Collection Women Mustard Yellow Lace Wrap Dress','Women','JC Collection',5590,' Yellow',8),
-	 (610,'GUESS Girl Belle Eau de Toilette 100 ml','Women','GUESS',1982,'red',3);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (611,'Allen Solly Woman Women Navy Blue Regular Fit Printed Casual Shirt','Women','Allen Solly Woman',685,'Blue',39),
-	 (612,'PARFAIT Plus Size Black Self Design Underwired Lightly Padded Plunge Bra P5411','Women','PARFAIT',1679,' Red',93),
-	 (613,'HIGHLANDER Men Black & Grey Slim Fit Checked Regular Trousers','Men','HIGHLANDER',1299,' Black',31),
-	 (614,'SEJ by Nisha Gupta Set of 6 Multicoloured Printed Table Placemats','Unisex','SEJ by Nisha Gupta',899,' Red',26),
-	 (615,'Homesake Gold-Toned & Navy Blue Solid Handcrafted Table Lamp with Shade','Unisex','Homesake',1732,'Blue',10),
-	 (616,'SEJ by Nisha Gupta Pink & Blue Printed Wooden Open Dry Bin','Unisex','SEJ by Nisha Gupta',999,'Blue',95),
-	 (617,'Soie Off-White Solid Non-Wired Non Padded Everyday Bra CB-332','Women','Soie',552,' Red',39),
-	 (618,'Lady Lyka Women Pack of 2 Beginners Bras TEENAGER-PPL-RED','Women','Lady Lyka',425,' Red',51),
-	 (619,'SPYKAR Women Blue Alexa Super Skinny Fit High-Rise Clean Look Stretchable Jeans','Women','SPYKAR',999,'Blue',36),
-	 (620,'Russell Athletic Black Sweatshirt','Women','Russell Athletic',2999,' Black',2);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (621,'Campus Sutra Men Grey Printed Round Neck T-shirt','Men','Campus Sutra',699,' Grey',69),
-	 (622,'HARBORNBAY Women Navy Blue & White Striped Round Neck T-shirt','Women','HARBORNBAY',395,'Blue',3),
-	 (623,'JEWEL JUNCTION Men Gold-Toned Geometric Cufflinks','Men','JEWEL JUNCTION',539,' Gold',29),
-	 (624,'Raymond Men Maroon Regular Fit Self Design Formal Shirt','Men','Raymond',1079,' Maroon',4),
-	 (625,'AccessHer Women Gold-Plated & Off-White Oxidised Stone & Pearl Embellished Nose Ring','Women','AccessHer',512,' White',51),
-	 (626,'ahilya Gold-Plated Sterling Silver Drop Earrings','Women','ahilya',4410,' Gold',39),
-	 (627,'SPYKAR Women Black Alexa Super Skinny Fit High-Rise Clean Look Stretchable Ankle Jeans','Women','SPYKAR',1079,' Black',57),
-	 (628,'Qraa Men Intense Acne Therapy Kit','Men','Qraa Men',815,'red',94),
-	 (629,'HIGHLANDER Men Navy Blue & White Slim Fit Printed Casual Shirt','Men','HIGHLANDER',699,'Blue',3),
-	 (630,'Campus Sutra Men Charcoal Grey & Black Colourblocked Round Neck T-shirt','Men','Campus Sutra',699,' Black',77);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (631,'SEJ by Nisha Gupta Pink & Blue Printed Wooden Open Dry Bin','Unisex','SEJ by Nisha Gupta',999,'Blue',40),
-	 (632,'PARFAIT Plus Size Mauve  Pink Printed Underwired Lightly Padded Plunge Bra 2801','Women','PARFAIT',1189,' Red',83),
-	 (633,'Parx Men Green Printed Polo Collar T-shirt','Men','Parx',594,' Green',71),
-	 (634,'JEWEL JUNCTION Silver-Toned Geometric Cufflinks','Men','JEWEL JUNCTION',539,' Silver',73),
-	 (635,'Soie Nude-Coloured lace Underwired Non Padded full coverage Everyday Bra FB-610','Women','Soie',693,' Red',8),
-	 (636,'JEWEL JUNCTION Silver-Toned Geometric Cufflinks','Men','JEWEL JUNCTION',539,' Silver',65),
-	 (637,'SEJ by Nisha Gupta Set of 4 Mustard & Green Printed Table Placemats','Unisex','SEJ by Nisha Gupta',799,' Green',73),
-	 (638,'Blackberrys Black Single-Breasted Linen Slim Ethnic Blazer','Men','Blackberrys',3147,' Black',69),
-	 (639,'ID Men Brown Formal Leather Derbys','Men','ID',1036,' Brown',75),
-	 (640,'Gini and Jony Girls White & Pink Tie & Dye Kaftan Top','Girls','Gini and Jony',779,' White',44);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (641,'Homesake Gold-Toned Solid Handcrafted Table Lamp with Shade','Unisex','Homesake',1890,' Gold',94),
-	 (642,'ID Men Black Solid Formal Leather Derbys','Men','ID',956,' Black',98),
-	 (643,'Homesake Gold-Toned & Purple Solid Handcrafted Table Lamp with Shade','Unisex','Homesake',1836,' Gold',35),
-	 (644,'PARFAIT Plus Size Women Black Solid Hipster Briefs 4803','Women','PARFAIT',999,' Black',21),
-	 (645,'Park Avenue Women Blue Shirt Dress','Women','Park Avenue',869,'Blue',50),
-	 (646,'Lady Lyka Women Pink and Burgundy Pack of 2 Everyday Bras MONALISA-PNK-WHN-Multi','Women','Lady Lyka',593,' Pink',61),
-	 (647,'SPYKAR Women Blue Elissa Bootcut High-Rise Clean Look Stretchable Ankle Jeans','Women','SPYKAR',2699,'Blue',59),
-	 (648,'Gini and Jony Girls Pink Net Embroidered Fit & Flare Dress with Studded Detail','Girls','Gini and Jony',1499,' Red',46),
-	 (649,'NEUDIS Grey Set of 2 Striped Square Cushion Covers','Unisex','NEUDIS',349,' Grey',58),
-	 (650,'PARFAIT Plus Size Women Charcoal Grey Solid Hipster Briefs P5025','Women','PARFAIT',999,' Grey',79);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (651,'Gini and Jony Boys Black Solid Joggers with Printed Detail','Boys','Gini and Jony',734,' Black',80),
-	 (652,'PARFAIT Plus Size Pink  Grey Printed Underwired Lightly Padded Balconette Bra 6901','Women','PARFAIT',1609,' Red',80),
-	 (653,'MIAH Decor Red & Grey Art Storage Jar','Unisex','MIAH Decor',883,' Red',12),
-	 (654,'PARFAIT Plus Size Women Beige Lace Detail Solid Hipster Brief P5025','Women','PARFAIT',999,' Beige',67),
-	 (655,'AccessHer Gold-Plated & Off-White Kundan & Pearl Embellished Maang Tikka','Women','AccessHer',621,' White',22),
-	 (656,'Gini and Jony Girls White & Pink Loose Fit Checked Culottes','Girls','Gini and Jony',559,' White',93),
-	 (657,'Stylo Bug Girls Turquoise Blue Butterfly Print A-Line Dress','Girls','Stylo Bug',768,'Blue',87),
-	 (658,'BuckleUp Women Multicoloured Printed Belt','Women','BuckleUp',449,' Red',54),
-	 (659,'AccessHer Women Gold-Plated & Off-White Oxidised Kundan & Pearl Embellished Maang Tikka','Women','AccessHer',523,' White',3),
-	 (660,'Gini and Jony Girls Blue Dyed Printed Round Neck T-shirt','Girls','Gini and Jony',489,'Blue',67);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (661,'Vishudh Women Pink & Orange Maxi Dress','Women','Vishudh',1299,' Pink',27),
-	 (662,'Parx Men Grey Slim Fit Printed Casual Shirt','Men','Parx',612,' Grey',24),
-	 (663,'SPYKAR Women Blue Adora Skinny Fit Mid-Rise Clean Look Stretchable Jeans','Women','SPYKAR',2499,'Blue',85),
-	 (664,'Parx Men Pink & Off-White Slim Fit Printed Casual Shirt','Men','Parx',699,' White',100),
-	 (665,'AccessHer Pink & Gold-Plated Enamelled Geometric Drop Earrings','Women','AccessHer',520,' Pink',9),
-	 (666,'Raymond Men Blue Solid Polo Collar T-shirt','Men','Raymond',809,'Blue',75),
-	 (667,'AccessHer Gold-Plated Meenakari Jewellery Set','Women','AccessHer',1064,' Gold',73),
-	 (668,'SEJ by Nisha Gupta Yellow & White Printed Wooden Open Dry Bin','Unisex','SEJ by Nisha Gupta',999,' Yellow',86),
-	 (669,'Vishudh Women Peach-Coloured Printed Straight Kurta','Women','Vishudh',542,' Red',4),
-	 (670,'StyleStone Women Cream-Coloured & Orange Printed Top','Women','StyleStone',584,' Red',51);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (671,'AccessHer Gold-Plated & White Pearl Embellished Swan-Shaped Brooch','Women','AccessHer',264,' White',99),
-	 (672,'SASSAFRAS Women Black Regular Fit Semi-Sheer Solid Jodhpuris','Women','SASSAFRAS',699,' Black',44),
-	 (673,'HIGHLANDER Men Black & Grey Slim Fit Self Design Regular Trousers','Men','HIGHLANDER',1299,' Black',10),
-	 (674,'United Colors of Benetton Girls Black Floral Print Sheath Dress','Girls','United Colors of Benetton',1999,' Black',55),
-	 (675,'Parx Men Khaki Tapered Fit Solid Regular Trousers','Men','Parx',839,' Red',50),
-	 (676,'Playdate Girls White & Navy Blue Solid A-Line Dress','Girls','Playdate',839,'Blue',51),
-	 (677,'Marvel by Wear Your Mind Boys Black Printed Round Neck T-shirt','Boys','Marvel by Wear Your Mind',539,' Black',13),
-	 (678,'Glam Jasmine Edp 50Ml','Women','Michael Kors',5715,'red',1),
-	 (679,'Parx Men Blue Slim Fit Printed Casual Shirt','Men','Parx',759,'Blue',69),
-	 (680,'Bvlgari Women Splendida Iris D''Or Eau De Parfum 50 ml','Women','Bvlgari',7650,'red',6);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (681,'Gini and Jony Boys Khaki Slim Fit Solid Regular Trousers','Boys','Gini and Jony',1119,' Khaki',20),
-	 (682,'Blackberrys Men Charcoal Grey Single-Breasted Slim Fit Formal Blazer','Men','Blackberrys',3597,' Black',40),
-	 (683,'Lady Lyka Women Black and Beige Pack of 2 Everyday Bras SONAL-BLK-SKN-Multi','Women','Lady Lyka',678,' Black',94),
-	 (684,'Lady Lyka Women Pack of 2 Beginners Bras TEENAGER-BLK-RED','Women','Lady Lyka',425,' Red',54),
-	 (685,'Parx Men Blue Slim Fit Solid Casual Shirt','Men','Parx',874,'Blue',6),
-	 (686,'Vishudh Women Blue Solid Straight Kurta','Women','Vishudh',1299,'Blue',31),
-	 (687,'Marvel by Wear Your Mind Boys White Printed Round Neck T-shirt','Boys','Marvel by Wear Your Mind',539,' White',48),
-	 (688,'Marvel by Wear Your Mind Boys Red & Black Printed Round Neck T-shirt','Boys','Marvel by Wear Your Mind',549,' Red',101),
-	 (689,'Parx Men Navy Blue Slim Fit Printed Casual Shirt','Men','Parx',612,'Blue',39),
-	 (690,'PARFAIT Plus Size White Solid Underwired Lightly Padded Everyday Bra P5011','Women','PARFAIT',1819,' Red',71);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (691,'Peter England Men Set of 2 Briefs PIWBBKGM9016001','Men','Peter England',266,'red',37),
-	 (692,'Lady Lyka Women Maroon and Burgundy Pack of 2 Everyday Bras MONALISA-MRN-WHN-Multi','Women','Lady Lyka',593,' Burgundy',11),
-	 (693,'Blackberrys Men Black Solid Quilted Jacket','Men','Blackberrys',4499,' Black',40),
-	 (694,'ID Men Black Formal Leather Oxfords','Men','ID',1432,' Black',44),
-	 (695,'Parx Men Pink Slim Fit Checked Casual Shirt','Men','Parx',647,' Pink',50),
-	 (696,'MIAH Decor Orange & Brown Kitchen Storage Jar with Lid','Unisex','MIAH Decor',1199,' Brown',2),
-	 (697,'Bvlgari Women Splendida Jasmin Noir EDP 50 ml','Women','Bvlgari',7650,'red',96),
-	 (698,'HIGHLANDER Men Blue & Grey Slim Fit Checked Regular Trousers','Men','HIGHLANDER',1299,'Blue',40),
-	 (699,'Parx Men Blue Original Tapered Fit Solid Regular Trousers','Men','Parx',734,'Blue',83),
-	 (700,'BuckleUp Women Brown Solid Belt','Women','BuckleUp',449,' Brown',6);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (701,'Gini and Jony Boys Black Regular Fit Solid Chinos with Belt','Boys','Gini and Jony',979,' Black',90),
-	 (702,'U.S. Polo Assn. Kids Boys Yellow Hooded Sweatshirt','Boys','U.S. Polo Assn. Kids',1699,' Yellow',75),
-	 (703,'Raymond Men Blue Regular Fit Self Design Formal Shirt','Men','Raymond',1484,'Blue',5),
-	 (704,'Parx Men Pink & Blue Striped Polo Collar T-shirt','Men','Parx',489,'Blue',82),
-	 (705,'Parx Men Blue & Yellow Slim Fit Checked Casual Shirt','Men','Parx',859,'Blue',14),
-	 (706,'Gini and Jony Boys Navy Blue Printed Round Neck T-shirt','Boys','Gini and Jony',734,'Blue',11),
-	 (707,'Vishudh Women Pink & Red Floral Print Maxi Dress','Women','Vishudh',1999,' Red',29),
-	 (708,'ahilya Sterling Silver Statement Ring','Women','ahilya',5283,' Silver',25),
-	 (709,'ID Men Black Leather Formal Slip-Ons','Men','ID',1219,' Black',96),
-	 (710,'VLCC 7X Ultra Whitening and Brightening Charcoal Peel Off Mask 100 g','Unisex','VLCC',348,' White',88);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (711,'SEJ by Nisha Gupta Set of 6 Multicoloured Printed Table Placemats','Unisex','SEJ by Nisha Gupta',899,' Red',89),
-	 (712,'Marvel by Wear Your Mind Boys Red & Black Printed Round Neck T-shirt','Boys','Marvel by Wear Your Mind',539,' Red',92),
-	 (713,'Police Men Frozen Eau De Toilette 100 ml','Men','Police',2095,'red',67),
-	 (714,'Kazo Women Black Maxi Dress','Women','Kazo',2995,' Black',95),
-	 (715,'Homesake Gold-Toned & Blue Solid Handcrafted Table Lamp with Shade','Unisex','Homesake',1836,'Blue',23),
-	 (716,'Urban Dog Men Charcoal Grey Solid Regular Fit Sports Shorts','Men','Urban Dog',399,' Grey',36),
-	 (717,'AccessHer Gold-Plated & Off-White Kundan & Pearl Embellished Maang Tikka','Women','AccessHer',468,' White',80),
-	 (718,'Urban Dog Men Black Solid Regular Fit Sports Shorts','Men','Urban Dog',399,' Black',31),
-	 (719,'Parx Men Brown Slim Fit Printed Casual Shirt','Men','Parx',779,' Brown',77),
-	 (720,'Kook N Keech Disney Blue Printed Crop Jacket','Women','Kook N Keech Disney',839,'Blue',72);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (721,'ROMEE Grey & Red Floral AC Room 300 GSM Double Bed Dohar','Unisex','ROMEE',1574,' Red',55),
-	 (722,'Parx Men Blue Slim Fit Checked Casual Shirt','Men','Parx',787,'Blue',71),
-	 (723,'JEWEL JUNCTION Silver-Toned Geometric Cufflinks','Men','JEWEL JUNCTION',539,' Silver',40),
-	 (724,'Lady Lyka Women White and Fuschia Pack of 2 Beginners Bras ATHLETE-WHT-FCA-Multi','Women','Lady Lyka',425,' White',43),
-	 (725,'HIGHLANDER Men Blue Slim Fit Printed Casual Shirt','Men','HIGHLANDER',699,'Blue',51),
-	 (726,'SHOWOFF Men Grey Printed Slim Fit Regular Shorts','Men','SHOWOFF',835,' Grey',8),
-	 (727,'Gini and Jony Boys Navy Solid Regular Fit Reversible Shorts','Boys','Gini and Jony',979,' Navy',91),
-	 (728,'Michael Kors Women Wonderlust Eau De Toilette 100 ml','Women','Michael Kors',7920,'red',97),
-	 (729,'MBE Women Orange Checked Dupatta','Women','MBE',623,' Orange',57),
-	 (730,'SEJ by Nisha Gupta Mustard Yellow & Blue Printed Wooden Open Dry Bin','Unisex','SEJ by Nisha Gupta',999,'Blue',43);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (731,'AccessHer Gold-Plated & Green Embellished Kundan Maang Tika','Women','AccessHer',349,' Green',72),
-	 (732,'Sera Women Navy Blue & Off-White Printed Kurta with Trousers','Women','Sera',1437,'Blue',82),
-	 (733,'Park Avenue Women Yellow Solid Top','Women','Park Avenue',506,' Yellow',93),
-	 (734,'DKNY Women Be Tempted Eau De Parfum 50 ml','Women','DKNY',2665,'red',16),
-	 (735,'Palm Tree Boys Red Printed Round Neck T-shirt','Boys','Palm Tree',349,' Red',61),
-	 (736,'Parx Men Navy Blue Slim Fit Solid Regular Trousers','Men','Parx',804,'Blue',43),
-	 (737,'Parx Men Pink Solid Polo Collar T-shirt','Men','Parx',559,' Pink',56),
-	 (738,'Raymond Men Red Printed Sweatshirt','Men','Raymond',1214,' Red',7),
-	 (739,'ahilya Charcoal Grey Sterling Silver Drop Earrings','Women','ahilya',4531,' Grey',30),
-	 (740,'Gini and Jony Boys Blue Regular Fit Mid-Rise Clean Look Stretchable Jeans','Boys','Gini and Jony',1049,'Blue',25);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (741,'Parx Men Blue Slim Fit Printed Casual Shirt','Men','Parx',779,'Blue',100),
-	 (742,'Soie Maroon Solid Non-Wired Non Padded Everyday Bra CB-329DEEP','Women','Soie',790,' Red',36),
-	 (743,'Parx Men Blue & Off-White Slim Fit Checked Casual Shirt','Men','Parx',764,'Blue',72),
-	 (744,'Parx Men Blue Slim Fit Checked Casual Shirt','Men','Parx',699,'Blue',79),
-	 (745,'Parx Men Blue Printed Polo Collar T-shirt','Men','Parx',489,'Blue',2),
-	 (746,'Parx Men Blue Slim Fit Printed Casual Shirt','Men','Parx',664,'Blue',65),
-	 (747,'Park Avenue Women Maroon Solid Sheath Dress','Women','Park Avenue',779,' Maroon',20),
-	 (748,'AccessHer Gold-Plated & Red Enamelled Geometric Drop Earrings','Women','AccessHer',577,' Red',21),
-	 (749,'SEJ by Nisha Gupta Set of 4 Blue & Green Printed Table Placemats','Unisex','SEJ by Nisha Gupta',799,'Blue',99),
-	 (750,'Story@home Green Floral 210 TC Cotton 1 King Bedsheet with 2 Pillow Covers','Unisex','Story@home',1799,' Green',7);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (751,'Sera Women Maroon Solid Wrap Top','Women','Sera',711,' Maroon',93),
-	 (752,'Campus Sutra Men Black & Off-White Standard Regular Fit Checked Casual Shirt','Men','Campus Sutra',599,' Black',46),
-	 (753,'PARFAIT Plus Size Nude-Coloured Solid Underwired Lightly Padded T-shirt Bra P5441','Women','PARFAIT',1609,' Red',49),
-	 (754,'Parx Men Maroon Slim Fit Printed Casual Shirt','Men','Parx',752,' Maroon',65),
-	 (755,'her by invictus Women Beige & Brown Solid Cushioned Slip-On Shoes','Women','her by invictus',1379,' Brown',82),
-	 (756,'SEJ by Nisha Gupta Set of 4 Pink Printed Table Placemats','Unisex','SEJ by Nisha Gupta',799,' Pink',43),
-	 (757,'ID Men Brown Comfort Sandals','Men','ID',956,' Brown',59),
-	 (758,'SEJ by Nisha Gupta Red & Black Printed Wooden Open Dry Bin','Unisex','SEJ by Nisha Gupta',999,' Red',98),
-	 (759,'Parx Men Blue Slim Fit Checked Casual Shirt','Men','Parx',734,'Blue',81),
-	 (760,'Bubblegummers Girls Beige Embellished Open Toe Flats','Girls','Bubblegummers',399,' Beige',58);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (761,'JBN Creation Boys Green & Brown Sherwani Set','Boys','JBN Creation',1154,' Green',60),
-	 (762,'Gini and Jony Boys Navy Blue Printed Round Neck T-shirt','Boys','Gini and Jony',629,'Blue',20),
-	 (763,'DKNY Unisex Silver-Toned Textured Cabin Trolley Bag','Unisex','DKNY',14040,' Red',28),
-	 (764,'PARFAIT Plus Size Beige Self Design Underwired Lightly Padded Plunge Bra','Women','PARFAIT',1679,' Red',1),
-	 (765,'JC Collection Women Black And Red Floral Printed Fit and Flare Dress','Women','JC Collection',6206,' Red',81),
-	 (766,'Homesake Gold-Toned Solid Handcrafted Table Lamp with Shade','Unisex','Homesake',1890,' Gold',71),
-	 (767,'Rozia Deep Professions Hair Curler HR783','Women','Rozia',1043,'red',69),
-	 (768,'her by invictus Women Black Cushioned Slip-On Shoes','Women','her by invictus',1299,' Black',67),
-	 (769,'Puma Unisex White Smash Perf Sneakers','Unisex','Puma',2399,' White',24),
-	 (770,'Hoopers Men Black Textured Mid-Top Sneakers','Men','Hoopers',1679,' Red',9);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (771,'Lady Lyka Women Red and White Pack of 2 Beginners Bras ATHLETE-RED-WHT-Multi','Women','Lady Lyka',425,' Red',22),
-	 (772,'Difference of Opinion Men Black & Grey Colourblocked Round Neck T-shirt','Men','Difference of Opinion',499,' Black',26),
-	 (773,'Peter England Casuals Men Blue & White Slim Fit Printed Casual Shirt','Men','Peter England Casuals',832,'Blue',17),
-	 (774,'Lady Lyka Women Beige and Brown Pack of 2 Everyday Bras ENTIZER11-SKN-BRN-Multi','Women','Lady Lyka',510,' Brown',83),
-	 (775,'Bubblegummers Boys Purple Printed Sports Sandals','Boys','Bubblegummers',699,' Purple',70),
-	 (776,'Parx Men Navy Blue & Green Slim Fit Printed Casual Shirt','Men','Parx',979,'Blue',35),
-	 (777,'Honey by Pantaloons Women White Striped Shirt Style Top','Women','Honey by Pantaloons',359,' White',3),
-	 (778,'SPYKAR Women Blue Alexa Super Skinny Fit High-Rise Low Distress Stretchable Jeans','Women','SPYKAR',1304,'Blue',8),
-	 (779,'SPYKAR Women Blue Adora Skinny Fit Mid-Rise Clean Look Stretchable Jeans','Women','SPYKAR',899,'Blue',94),
-	 (780,'Gini and Jony Girls White & Blue Printed A-Line Dress','Girls','Gini and Jony',734,'Blue',46);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (781,'HIGHLANDER Men Black Slim Fit Checked Regular Trousers','Men','HIGHLANDER',1299,' Black',58),
-	 (782,'HIGHLANDER Men Olive Green Striped Round Neck T-shirt','Men','HIGHLANDER',699,' Green',12),
-	 (783,'MANGO Women Black Slim Fit Solid Cargos','Women','MANGO',1716,' Black',87),
-	 (784,'Difference of Opinion Men Mustard Yellow Solid Round Neck T-shirt With Side Strip Detail','Men','Difference of Opinion',499,' Yellow',64),
-	 (785,'ID Men Black Solid Formal Leather Derbys','Men','ID',1416,' Black',40),
-	 (786,'Police Women Exotic Eau De Toilette 100 ml','Women','Police',1257,'red',19),
-	 (787,'JEWEL JUNCTION Black Geometric Cufflinks','Men','JEWEL JUNCTION',539,' Black',82),
-	 (788,'Pink Cow Girls Blue Fit and Flare Dress','Girls','Pink Cow',3800,'Blue',98),
-	 (789,'her by invictus Women Dark Brown Solid Cushioned Mules','Women','her by invictus',1799,' Brown',81),
-	 (790,'Raymond Men Blue Solid Polo Collar T-shirt','Men','Raymond',899,'Blue',75);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (791,'Xpose Women Olive Green Camouflage Print Skinny Fit Regular Shorts','Women','Xpose',734,' Green',74),
-	 (792,'Parx Men Blue Slim Fit Printed Casual Shirt','Men','Parx',804,'Blue',90),
-	 (793,'Michael Kors Men Extreme Night Eau De Toilette Perfume 120 ml','Men','Michael Kors',5715,'red',78),
-	 (794,'Campus Sutra Men Grey Solid Mandarin Collar T-shirt','Men','Campus Sutra',1299,' Grey',15),
-	 (795,'Crimsoune Club Men Navy Blue Slim Fit Mid-Rise Clean Look Jeans','Men','Crimsoune Club',2299,'Blue',48),
-	 (796,'Parx Men Yellow Slim Fit Solid Casual Shirt','Men','Parx',612,' Yellow',67),
-	 (797,'Parx Men Blue Slim Fit Checked Casual Shirt','Men','Parx',739,'Blue',12),
-	 (798,'PARFAIT Plus Size Off-White Lace Non-Wired Non Padded Bralette P5482','Women','PARFAIT',1679,' Red',19),
-	 (799,'Parx Men Purple Slim Fit Self Design Casual Shirt','Men','Parx',647,' Purple',12),
-	 (800,'Gini and Jony Boys Black Regular Fit Solid Formal Trousers','Boys','Gini and Jony',1119,' Black',88);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (801,'Lakme Absolute Matte Melt Liquid Lip Color 13 Pink Silk','Women','Lakme',400,' Pink',31),
-	 (802,'HIGHLANDER Men Off-White & Yellow Slim Fit Checked Casual Shirt','Men','HIGHLANDER',699,' Yellow',65),
-	 (803,'TAYHAA Black & White Square Photo Frame','Unisex','TAYHAA',450,' Black',18),
-	 (804,'Shoe Couture Women Peach-Coloured Self-Striped Sneakers','Women','Shoe Couture',1439,' Red',78),
-	 (805,'Spray Vaporisateur Women Edp 100Ml','Women','Michael Kors',7920,'red',58),
-	 (806,'HIGHLANDER Men White & Blue Slim Fit Striped Casual Shirt','Men','HIGHLANDER',699,'Blue',41),
-	 (807,'DAVID BECKHAM Men Classic Blue Eau De Toilette 90ml','Men','DAVID BECKHAM',1740,'Blue',39),
-	 (808,'JEWEL JUNCTION Men Silver-Toned Geometric Cufflinks','Men','JEWEL JUNCTION',539,' Silver',49),
-	 (809,'Gini and Jony Girls Blue & White Printed Round Neck T-shirt','Girls','Gini and Jony',559,'Blue',42),
-	 (810,'Homesake Gold-Toned & White Solid Handcrafted Table Lamp with Shade','Unisex','Homesake',1732,' White',61);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (811,'Rozia Hair Crimper Corn Styler HR780','Women','Rozia',799,'red',38),
-	 (812,'SHOWOFF Men Khaki Solid Slim Fit Regular Shorts','Men','SHOWOFF',791,' Khaki',7),
-	 (813,'Vishudh Women Coral Embroidered Kurta with Palazzos','Women','Vishudh',1139,' Red',52),
-	 (814,'Parx Men Green Tapered Fit Solid Regular Trousers','Men','Parx',804,' Green',6),
-	 (815,'Blue Solid Pullover','Men','GAS',3294,'Blue',58),
-	 (816,'PARFAIT Plus Size Navy Blue Solid Non-Wired Non Padded Everyday Bra P5641','Women','PARFAIT',1609,'Blue',101),
-	 (817,'Gini and Jony Boys Grey Solid Regular Fit Regular Shorts','Boys','Gini and Jony',384,' Grey',58),
-	 (818,'Campus Sutra Men Black & Grey Melange Standard Regular Fit Colourblocked Casual Shirt','Men','Campus Sutra',449,' Black',22),
-	 (819,'ColorPlus Men Grey & Blue Regular Fit Checked Casual Shirt','Men','ColorPlus',1279,'Blue',19),
-	 (820,'Urban Dog Men Grey Solid Regular Fit Sports Shorts','Men','Urban Dog',399,' Grey',35);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (821,'PARFAIT Plus Size Women Burgundy Lace Boy Shorts 2805','Women','PARFAIT',899,' Burgundy',78),
-	 (822,'JEWEL JUNCTION Silver-Toned Geometric Cufflinks','Men','JEWEL JUNCTION',539,' Silver',16),
-	 (823,'SEJ by Nisha Gupta Yellow & Pink Printed Wooden Open Dry Bin','Unisex','SEJ by Nisha Gupta',999,' Yellow',63),
-	 (824,'Ishin Women Pink & White Block Print Kurta with Palazzos','Women','Ishin',1474,' White',89),
-	 (825,'FIDO DIDO Men Grey Colourblocked Polo Collar T-shirt','Men','FIDO DIDO',1299,' Grey',40),
-	 (826,'DKNY Unisex Black Cabin Trolley Bag','Unisex','DKNY',13365,' Black',25),
-	 (827,'PARFAIT Plus Size Navy Blue  Grey Printed Underwired Non Padded Everyday Bra P5372','Women','PARFAIT',1749,'Blue',82),
-	 (828,'Lady Lyka Women White and Black Pack of 2 Everyday Bras MONALISA-WHT-BLK-Multi','Women','Lady Lyka',593,' Black',87),
-	 (829,'Soie Green Lace Non-Wired Non Padded full coverage Everyday Bra FB-705 Green','Women','Soie',988,' Green',76),
-	 (830,'Homesake Gold-Toned & Green Solid Handcrafted Table Lamp with Shade','Unisex','Homesake',1732,' Green',18);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (831,'Lady Lyka Women Pack of 2 Beginners Bras TEENAGER-PPL-SKN','Women','Lady Lyka',425,'red',53),
-	 (832,'MIMOSA Beige Art Silk Woven Design Kanjeevaram Saree','Women','MIMOSA',1195,' Beige',65),
-	 (833,'SPYKAR Women Blue Alexa Super Skinny Fit High-Rise Clean Look Stretchable Striped Jeans','Women','SPYKAR',1124,'Blue',99),
-	 (834,'Tokyo Talkies Women Teal & Red Floral Print Maxi Dress','Women','Tokyo Talkies',1299,' Red',29),
-	 (835,'Lady Lyka Women Beige and Burgundy Pack of 2 Everyday Bras ENTIZER11-SKN-WHN-Multi','Women','Lady Lyka',510,' Beige',73),
-	 (836,'VASTRAMAY Boys Gold-Toned Self Design Kurta with Churidar & Jacket','Boys','VASTRAMAY',1469,' Gold',47),
-	 (837,'her by invictus Women Nude-Coloured Cushioned Monks','Women','her by invictus',839,' Red',79),
-	 (838,'Raymond Men Orange Solid Polo Collar T-shirt','Men','Raymond',809,' Orange',54),
-	 (839,'Vishudh Women Peach-Coloured Floral Print Fit and Flare Dress','Women','Vishudh',1299,' Red',26),
-	 (840,'Parx Men Green Printed Round Neck T-shirt','Men','Parx',503,' Green',77);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (841,'Campus Sutra Men White & Blue Regular Fit Colourblocked Casual Shirt','Men','Campus Sutra',1299,'Blue',50),
-	 (842,'ID Men Brown Leather Sneakers','Men','ID',1192,' Brown',82),
-	 (843,'DOROTHY PERKINS Women Burgundy Solid A-Line Skirt','Women','DOROTHY PERKINS',1299,' Burgundy',22),
-	 (844,'HIGHLANDER Men Black Slim Fit Striped Regular Trousers','Men','HIGHLANDER',1299,' Black',42),
-	 (845,'JEWEL JUNCTION Gold-Toned Rectangle Cufflinks','Men','JEWEL JUNCTION',539,' Gold',43),
-	 (846,'VASTRAMAY Men Coffee Brown Striped Straight Kurta','Men','VASTRAMAY',824,' Brown',78),
-	 (847,'AccessHer Gold-Plated & Green Embellished Goddess Lakshmi-Shaped Brooch','Women','AccessHer',625,' Green',20),
-	 (848,'Gini and Jony Boys Navy Blue Regular Fit Solid Casual Shirt','Boys','Gini and Jony',719,'Blue',100),
-	 (849,'MIMOSA Coral Pink Poly Crepe Checked Kanjeevaram Saree','Women','MIMOSA',1709,' Pink',82),
-	 (850,'MBE Black & Gold-Toned Printed Dupatta','Women','MBE',701,' Black',68);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (851,'Homesake Gold-Toned & White Solid Handcrafted Table Lamp with Shade','Unisex','Homesake',1836,' White',84),
-	 (852,'Gini and Jony Boys Rust Red & Navy Blue Striped Round Neck T-shirt with Applique Detail','Boys','Gini and Jony',329,'Blue',56),
-	 (853,'HIGHLANDER Men Off-White & Grey Slim Fit Checked Regular Trousers','Men','HIGHLANDER',1299,' White',91),
-	 (854,'DKNY Unisex Gold-Toned & White Striped Medium Trolley Bag','Unisex','DKNY',14355,' White',88),
-	 (855,'Kenneth Cole Women Brown Solid Backpack','Women','Kenneth Cole',2274,' Brown',74),
-	 (856,'Puma Unisex Black Sneakers','Unisex','Puma',3199,' Black',99),
-	 (857,'Park Avenue Women Coral Solid A-Line Top','Women','Park Avenue',509,'red',8),
-	 (858,'Parx Men Blue Slim Fit Printed Casual Shirt','Men','Parx',822,'Blue',10),
-	 (859,'SEJ by Nisha Gupta Set of 4 Turquoise Blue & Pink Printed Table Placemats','Unisex','SEJ by Nisha Gupta',799,'Blue',87),
-	 (860,'Gini and Jony Girls White & Pink Cinched Waist Top','Girls','Gini and Jony',899,' White',16);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (861,'SEJ by Nisha Gupta Set of 6 Mustard & Pink Printed Table Placemats','Unisex','SEJ by Nisha Gupta',899,' Pink',95),
-	 (862,'AccessHer Gold-Plated & Green Embellished Kundan & Enamel Maang Tika','Women','AccessHer',259,' Green',30),
-	 (863,'Parx Men Blue Slim Fit Checked Casual Shirt','Men','Parx',699,'Blue',44),
-	 (864,'Parx Men Blue Tapered Fit Solid Regular Trousers','Men','Parx',919,'Blue',88),
-	 (865,'Black Synthetic Sandals','Women','Beli',974,' Black',5),
-	 (866,'Gini and Jony Girls Peach-Coloured Embellished Top','Girls','Gini and Jony',489,' Red',72),
-	 (867,'Parx Men Pink Slim Fit Printed Casual Shirt','Men','Parx',679,' Pink',45),
-	 (868,'Campus Sutra Men Black Solid Round Neck T-shirt','Men','Campus Sutra',699,' Black',91),
-	 (869,'MIAH Decor Set Of 5 Printed Handcrafted Kulladh Set','Unisex','MIAH Decor',865,'red',39),
-	 (870,'SEJ by Nisha Gupta Pink & Orange Printed Wooden Open Dry Bin','Unisex','SEJ by Nisha Gupta',999,' Pink',33);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (871,'Gini and Jony Boys Black Embellished Classic Regular Fit Chino Shorts','Boys','Gini and Jony',979,' Black',44),
-	 (872,'Vishudh Women Black & Maroon Embroidered Straight Kurta','Women','Vishudh',503,' Red',75),
-	 (873,'Gini and Jony Boys Maroon Regular Fit Solid Casual Shirt','Boys','Gini and Jony',539,' Maroon',86),
-	 (874,'AccessHer Gold-Plated Stone-Studded Maang Tika','Women','AccessHer',1399,' Gold',4),
-	 (875,'Raymond Men Blue Solid Polo Collar T-shirt','Men','Raymond',1249,'Blue',34),
-	 (876,'Story@home Pink Floral 210 TC Cotton 1 King Bedsheet with 2 Pillow Covers','Unisex','Story@home',1399,' Pink',92),
-	 (877,'Lady Lyka Women Black and Burgundy Pack of 2 Everyday Bras MONALISA-WHN-BLK-Multi','Women','Lady Lyka',593,' Black',87),
-	 (878,'Gini and Jony Boys Khaki Regular Fit Solid Chinos','Boys','Gini and Jony',839,' Khaki',27),
-	 (879,'Parx Men Blue Slim Fit Solid Casual Shirt','Men','Parx',759,'Blue',7),
-	 (880,'Parx Men Black Printed Round Neck T-shirt','Men','Parx',489,' Black',19);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (881,'MBE Women Black & White Printed Dupatta','Women','MBE',623,' Black',74),
-	 (882,'Crew STREET Men White Perforated Mid-Top Sneakers','Men','Crew STREET',2899,' White',71),
-	 (883,'Sera Women Off-White & Blue Printed Kurta with Palazzos','Women','Sera',1357,'Blue',57),
-	 (884,'Lakme Absolute Matte Melt Liquid Lip Color - 18 Coral Flip 6 ml','Women','Lakme',400,' Matte',6),
-	 (885,'Bhama Couture Women Mustard Yellow Solid A-Line Top','Women','Bhama Couture',593,' Yellow',59),
-	 (886,'Vishudh Women Pink Embroidered Straight Kurta','Women','Vishudh',1299,' Red',42),
-	 (887,'Zippo Men Original Blue Tourquoise Edt 50 ml','Men','Zippo',2900,'Blue',89),
-	 (888,'Homesake Gold-Toned & Green Solid Handcrafted Table Lamp with Shade','Unisex','Homesake',1890,' Green',74),
-	 (889,'PARFAIT Plus Size Navy Blue Lace Underwired Non Padded Everyday Bra P5632','Women','PARFAIT',1679,'Blue',29),
-	 (890,'Homesake Gold-Toned & Peach-Coloured Solid Handcrafted Table Lamp with Shade','Unisex','Homesake',1836,' Red',35);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (891,'Parx Men Maroon Self Design Pullover','Men','Parx',919,' Maroon',64),
-	 (892,'Park Avenue Women Black Sheath Dress','Women','Park Avenue',749,' Black',41),
-	 (893,'MIMOSA Rust Red & Yellow Art Silk Woven Design Kanjeevaram Saree','Women','MIMOSA',1574,' Red',36),
-	 (894,'ID Men Tan Brown Solid Comfort Leather Sandals','Men','ID',1394,' Brown',26),
-	 (895,'ID Men Black Solid Comfort Leather Sandals','Men','ID',1885,' Black',86),
-	 (896,'JEWEL JUNCTION Silver-Toned Geometric Cufflinks','Men','JEWEL JUNCTION',539,' Silver',29),
-	 (897,'Campus Sutra Men Black & Grey Standard Regular Fit Striped Casual Shirt','Men','Campus Sutra',599,' Black',76),
-	 (898,'Campus Sutra Men Black Solid Henley Neck T-shirt','Men','Campus Sutra',699,' Black',80),
-	 (899,'SPYKAR Women Blue Adora Skinny Fit Mid-Rise Slash Knee Stretchable Ankle Jeans','Women','SPYKAR',1214,'Blue',63),
-	 (900,'Puma Women Black Sneakers','Women','Puma',3499,' Black',39);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (901,'Parx Men Blue Striped Polo Collar T-shirt','Men','Parx',489,'Blue',15),
-	 (902,'Urban Dog Men Navy Blue Striped Regular Fit Sports Shorts','Men','Urban Dog',399,'Blue',52),
-	 (903,'Gini and Jony Boys Navy Blue Slim Fit Printed Formal Trousers','Boys','Gini and Jony',1329,'Blue',12),
-	 (904,'PARFAIT Plus Size Pink  Black Solid Underwired Non Padded Everyday Bra P5522','Women','PARFAIT',1189,' Red',82),
-	 (905,'JEWEL JUNCTION Rose Gold-Toned Contemporary Cufflinks','Men','JEWEL JUNCTION',539,' Gold',101),
-	 (906,'Raymond Men Blue Checked Polo Collar T-shirt','Men','Raymond',2549,'Blue',25),
-	 (907,'Extreme Night Edt 70Ml','Men','Michael Kors',4275,'red',42),
-	 (908,'Daffodils Girls White Printed Fit and Flare Dress','Girls','Daffodils',738,' White',63),
-	 (909,'Homesake Gold-Toned & Green Solid Handcrafted Table Lamp with Shade','Unisex','Homesake',1836,' Green',52),
-	 (910,'SEJ by Nisha Gupta Set of 4 Blue & Pink Printed Table Placemats','Unisex','SEJ by Nisha Gupta',799,'Blue',38);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (911,'Campus Sutra Men Grey & Black Printed Round Neck T-shirt','Men','Campus Sutra',699,' Black',94),
-	 (912,'EthnoVogue Women Burgundy Solid Made to Measure Printed Cocktail Gown','Women','EthnoVogue',4355,' Burgundy',46),
-	 (913,'JEWEL JUNCTION Silver-Toned Geometric Cufflinks','Men','JEWEL JUNCTION',539,' Silver',65),
-	 (914,'JEWEL JUNCTION Gold-Toned Geometric Cufflinks','Men','JEWEL JUNCTION',539,' Gold',61),
-	 (915,'WITH Men Pack of 2 Printed Pure Cotton Boxers WB25-WB26','Men','WITH',612,'red',56),
-	 (916,'berrytree Girls Pink A-Line Organic Cotton Sustainable Dress','Girls','berrytree',599,' Pink',24),
-	 (917,'SEJ by Nisha Gupta Set of 6 Multicoloured Printed Table Placemats','Unisex','SEJ by Nisha Gupta',899,' Red',87),
-	 (918,'PARFAIT Plus Size Burgundy Lace Underwired Lightly Padded Plunge Bra P5351','Women','PARFAIT',1749,' Red',79),
-	 (919,'GAS Men Maroon & Navy Blue Slim Fit Printed Casual Shirt','Men','GAS',3990,'Blue',20),
-	 (920,'Homesake Gold-Toned Solid Handcrafted Table Lamp with Shade','Unisex','Homesake',1732,' Gold',92);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (921,'HIGHLANDER Men Maroon & White Slim Fit Printed Casual Shirt','Men','HIGHLANDER',699,' White',77),
-	 (922,'ID Men Tan Leather Casual Shoes','Men','ID',2685,'red',21),
-	 (923,'HIGHLANDER Men Black Slim Fit Striped Regular Trousers','Men','HIGHLANDER',1299,' Black',29),
-	 (924,'ahilya Gold-Plated Sterling Silver Drop Earrings','Women','ahilya',6403,' Gold',7),
-	 (925,'Peter England Men Maroon Solid Briefs PIWBMR9166012','Men','Peter England',266,' Maroon',63),
-	 (926,'PARFAIT Plus Size Nude-Coloured Striped Underwired Lightly Padded T-shirt Bra P5251','Women','PARFAIT',1749,' Red',18),
-	 (927,'ahilya Gold Plated Cut-Out Sterling Silver Drop Earrings','Women','ahilya',6174,' Gold',78),
-	 (928,'Gini and Jony Girls Yellow Printed Top','Girls','Gini and Jony',559,' Yellow',63),
-	 (929,'Marvel by Wear Your Mind Boys Black Printed Round Neck T-shirt','Boys','Marvel by Wear Your Mind',549,' Black',13),
-	 (930,'aramis Men Classic Eau De Toilette Spray Concentree Perfume 110ml','Men','aramis',3800,'red',39);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (931,'Vishudh Women Green & Mustard Yellow Printed Kurta with Palazzos','Women','Vishudh',1999,' Green',46),
-	 (932,'Parx Men Peach-Coloured Solid Polo Collar T-shirt','Men','Parx',489,' Red',97),
-	 (933,'Park Avenue Women Grey Checked Pencil Skirt','Women','Park Avenue',659,' Grey',32),
-	 (934,'Gini and Jony Girls White & Blue Printed T-shirt with Shorts','Girls','Gini and Jony',629,'Blue',71),
-	 (935,'Gini and Jony Girls Navy Blue Striped Denim Pinafore Dress','Girls','Gini and Jony',1399,'Blue',2),
-	 (936,'HIGHLANDER Men Green & White Slim Fit Checked Casual Shirt','Men','HIGHLANDER',699,' Green',20),
-	 (937,'Homesake Gold-Toned & Green Solid Handcrafted Table Lamp with Shade','Unisex','Homesake',1620,' Green',88),
-	 (938,'Vishudh Women Off-White & Green Printed Straight Kurta','Women','Vishudh',619,' Green',78),
-	 (939,'PARFAIT Plus Size Beige Solid Underwired Non Padded Everyday Bra P5022','Women','PARFAIT',1679,' Red',92),
-	 (940,'VASTRAMAY Boys Cream-Coloured Self Design Kurta with Churidar & Jacket','Boys','VASTRAMAY',1469,' Red',40);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (941,'Parx Men Blue Slim Fit Solid Casual Shirt','Men','Parx',779,'Blue',99),
-	 (942,'Park Avenue Women Peach-Coloured Solid Top','Women','Park Avenue',506,' Red',21),
-	 (943,'Raymond Men Green Solid Polo Collar T-shirt','Men','Raymond',629,' Green',20),
-	 (944,'Homesake Gold-Toned Solid Handcrafted Table Lamp with Shade','Unisex','Homesake',1836,' Gold',95),
-	 (945,'ether Women Cream-Coloured Solid Peep Toe Flats','Women','ether',449,' Red',5),
-	 (946,'Puma Unisex Black TSUGI Cage Premium Puma-Whisper Wh','Unisex','Puma',6299,' Black',41),
-	 (947,'Lakme Absolute Matte Melt Liquid Lip Colour 19 Red Vibe','Women','Lakme',400,' Red',13),
-	 (948,'C9 AIRWEAR Women Coral-Coloured Solid Track Pants','Women','C9 AIRWEAR',623,' Red',72),
-	 (949,'PARFAIT Plus Size Dusty Pink Solid Underwired Non Padded Everyday Bra P5412','Women','PARFAIT',1679,' Red',9),
-	 (950,'JEWEL JUNCTION Gold-Toned Geometric Cufflinks','Men','JEWEL JUNCTION',539,' Gold',72);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (951,'SPYKAR Women Blue Alicia Super Skinny Fit Low-Rise Clean Look Stretchable Ankle Jeans','Women','SPYKAR',899,'Blue',9),
-	 (952,'Lady Lyka Women Red and Beige Pack of 2 Beginners Bras ATHLETE-RED-SKN-Multi','Women','Lady Lyka',425,' Red',90),
-	 (953,'Campus Sutra Men Grey & White Standard Regular Fit Camouflage Print Casual Shirt','Men','Campus Sutra',1299,' White',24),
-	 (954,'DKNY Unisex Black Cabin Trolley Bag','Unisex','DKNY',22100,' Black',81),
-	 (955,'Bubblegummers Boys Pink Printed Comfort Sandals','Boys','Bubblegummers',699,' Pink',27),
-	 (956,'her by invictus Women Red Solid Cushioned Mules','Women','her by invictus',1999,' Red',75),
-	 (957,'JEWEL JUNCTION Black Geometric Cufflinks','Men','JEWEL JUNCTION',539,' Black',83),
-	 (958,'Parx Men Charcoal Grey Slim Fit Printed Casual Shirt','Men','Parx',577,' Grey',12),
-	 (959,'DKNY Unisex Silver Large Trolley Bag','Unisex','DKNY',17105,' Silver',96),
-	 (960,'Soie Off-White Solid Non-Wired Non Padded Minimizer Bra CB-333IVORY','Women','Soie',632,' Red',62);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (961,'DKNY Unisex Black & Grey Printed Large Trolley Bag','Unisex','DKNY',31100,' Black',56),
-	 (962,'Raymond Men Brown Solid Polo Collar T-shirt','Men','Raymond',804,' Brown',78),
-	 (963,'Urban Dog Men Black Solid Regular Fit Sports Shorts','Men','Urban Dog',399,' Black',42),
-	 (964,'Oxolloxo Women Pink Printed Top','Women','Oxolloxo',512,' Pink',7),
-	 (965,'Black Slim Fit Mid-Rise Clean Look Jeans','Women','MANGO',1570,' Black',69),
-	 (966,'Homesake Gold-Toned Solid Handcrafted Table Lamp with Shade','Unisex','Homesake',1732,' Gold',64),
-	 (967,'ID Men Blue Slip-On Leather Sneakers','Men','ID',2685,'Blue',73),
-	 (968,'ID Men Brown Derbys','Men','ID',956,' Brown',29),
-	 (969,'Parx Men Grey Regular Fit Solid Regular Trousers','Men','Parx',919,' Grey',100),
-	 (970,'AccessHer Gold-Plated Embellished Nose Ring with Chain','Women','AccessHer',559,' Gold',40);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (971,'Story@home Blue & Grey Geometric 210 TC Cotton 1 King Bedsheet with 2 Pillow Covers','Unisex','Story@home',1399,'Blue',85),
-	 (972,'ID Men Tan Brown Leather Formal Derbys','Men','ID',2685,' Brown',22),
-	 (973,'Gini and Jony Boys Red & Off-White Regular Fit Dyed Casual Shirt','Boys','Gini and Jony',699,' Red',27),
-	 (974,'ahilya Gold-Plated Sterling Silver Drop Earrings','Women','ahilya',4630,' Gold',30),
-	 (975,'Homesake Gold-Toned & Purple Solid Handcrafted Table Lamp with Shade','Unisex','Homesake',1620,' Gold',95),
-	 (976,'Lady Lyka Women Peach Pack of 2 Everyday Bras ENTIZER11-PCH-PLM','Women','Lady Lyka',510,' Peach',41),
-	 (977,'Homesake Gold-Toned & White Solid Handcrafted Table Lamp with Shade','Unisex','Homesake',1620,' White',40),
-	 (978,'JEWEL JUNCTION Black Square Cufflinks','Men','JEWEL JUNCTION',539,' Black',92),
-	 (979,'Gini and Jony Girls Yellow Net Sequinned Fit & Flare Dress','Girls','Gini and Jony',1379,' Yellow',80),
-	 (980,'Carrera Men Blue Sneakers','Men','Carrera',4499,'Blue',3);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (981,'SEJ by Nisha Gupta Green & Orange Printed Table Runner','Unisex','SEJ by Nisha Gupta',699,' Green',18),
-	 (982,'Parx Men Cream-Coloured Slim Fit Solid Casual Shirt','Men','Parx',647,' Red',61),
-	 (983,'Soumya Set of 6 Red & Off White Printed Diwan Set','Unisex','Soumya',1455,' Red',33),
-	 (984,'PARFAIT Plus Size Purple Lace Underwired Non Padded Everyday Bra P5612','Women','PARFAIT',1679,' Red',50),
-	 (985,'Park Avenue Men Grey Solid Bomber Jacket','Men','Park Avenue',1609,' Grey',39),
-	 (986,'Kazo Women Grey Maxi Dress','Women','Kazo',3245,' Grey',40),
-	 (987,'Crocs Kadee  Women Multicoloured Printed Slip-On','Women','Crocs',1491,' Red',22),
-	 (988,'Soumya Cream-Coloured & Green Set of 5 Floral Square Cushion Covers','Unisex','Soumya',882,' Green',38),
-	 (989,'SEJ by Nisha Gupta Pink & Green Printed Table Runner','Unisex','SEJ by Nisha Gupta',699,' Green',75),
-	 (990,'Carlton London Women Dusty Pink Wrap Top','Women','Carlton London',640,' Pink',69);
-INSERT INTO ataviada.producto (cod_producto,nombre_producto,categoria_por_sexo,marca,precio,color,MODO_PAGO_codigo_cuenta) VALUES
-	 (991,'HERE&NOW Men Teal Blue & Black Striped Round Neck T-shirt','Men','HERE&NOW',699,'Blue',92),
-	 (992,'French Connection White & Blue Printed Casual Shirt','Men','French Connection',1559,'Blue',84),
-	 (993,'Next Look Men Maroon Regular Fit Printed Casual Shirt','Men','Next Look',549,' Maroon',30),
-	 (994,'XYXX Men Printed Pack of 2 Remix Pure Cotton Boxer XYBOX2PCKN154','Men','XYXX',670,'red',28),
-	 (995,'shaze Women Silver-Plated CZ-Studded Finger Ring','Women','shaze',2420,' Silver',33),
-	 (996,'Bitiya by Bhama Girls Blue Solid Chambray Fit and Flare Dress','Girls','Bitiya by Bhama',739,'Blue',47),
-	 (997,'Geox Men Burgundy Suede Loafers','Men','Geox',5999,' Burgundy',52),
-	 (998,'Tulsattva Women Brown & Red Solid Kurta with Palazzos','Women','Tulsattva',1347,' Red',9),
-	 (999,'HERE&NOW Women Teal Green Solid Crop Sweatshirt','Women','HERE&NOW',1299,' Green',26),
-	 (1000,'ExclusiveLane Brown Set of Single Geometric Square Cushion Covers','Unisex','ExclusiveLane',499,' Brown',101);
+-- Pago
+insert into pago (codigo_transaccion, forma_pago, fecha_pago, total) values (1, 'efectivo', '2021-08-22', 83.34);
+insert into pago (codigo_transaccion, forma_pago, fecha_pago, total) values (2, 'tarjeta', '2022-12-25', 92.7);
+insert into pago (codigo_transaccion, forma_pago, fecha_pago, total) values (3, 'efectivo', '2022-08-14', 68.48);
+insert into pago (codigo_transaccion, forma_pago, fecha_pago, total) values (4, 'efectivo', '2023-02-07', 37.23);
+insert into pago (codigo_transaccion, forma_pago, fecha_pago, total) values (5, 'tarjeta', '2022-04-18', 17.57);
+insert into pago (codigo_transaccion, forma_pago, fecha_pago, total) values (6, 'efectivo', '2021-06-07', 87.87);
+insert into pago (codigo_transaccion, forma_pago, fecha_pago, total) values (7, 'tarjeta', '2022-03-18', 54.35);
+insert into pago (codigo_transaccion, forma_pago, fecha_pago, total) values (8, 'efectivo', '2022-03-17', 56.61);
+insert into pago (codigo_transaccion, forma_pago, fecha_pago, total) values (9, 'tarjeta', '2021-12-08', 84.68);
+insert into pago (codigo_transaccion, forma_pago, fecha_pago, total) values (10, 'tarjeta', '2023-05-29', 11.18);
 
--- datos cliente
-insert into cliente (codigo_cliente, nombre, apellido, telefono, DNI, direccion, CLIENTE_codigo_cliente_invitado, descuento) values (1, 'Gabriele', 'McCowen', '3684127427', 32544290, 'Heffernan', null, false);
-insert into cliente (codigo_cliente, nombre, apellido, telefono, DNI, direccion, CLIENTE_codigo_cliente_invitado, descuento) values (2, 'Humberto', 'Campanelli', '6006699613', 45276826, 'Luster', null, false);
-insert into cliente (codigo_cliente, nombre, apellido, telefono, DNI, direccion, CLIENTE_codigo_cliente_invitado, descuento) values (3, 'Dewey', 'Kibblewhite', '7435351440', 35833861, 'Lakewood Gardens', null, true);
-insert into cliente (codigo_cliente, nombre, apellido, telefono, DNI, direccion, CLIENTE_codigo_cliente_invitado, descuento) values (4, 'Olin', 'Comer', '5992615213', 79477586, 'Green', 9, false);
-insert into cliente (codigo_cliente, nombre, apellido, telefono, DNI, direccion, CLIENTE_codigo_cliente_invitado, descuento) values (5, 'Linzy', 'Gatiss', '7919356837', 12264675, null, 3, true);
-insert into cliente (codigo_cliente, nombre, apellido, telefono, DNI, direccion, CLIENTE_codigo_cliente_invitado, descuento) values (6, 'Alica', 'Themann', '8347674316', 88156907, 'Grayhawk', null, true);
-insert into cliente (codigo_cliente, nombre, apellido, telefono, DNI, direccion, CLIENTE_codigo_cliente_invitado, descuento) values (7, 'Alexio', 'Stute', '7448531933', 99383127, 'Grayhawk', null, false);
-insert into cliente (codigo_cliente, nombre, apellido, telefono, DNI, direccion, CLIENTE_codigo_cliente_invitado, descuento) values (8, 'Clevie', 'Guiet', '9722399030', 90132324, 'Northridge', null, false);
-insert into cliente (codigo_cliente, nombre, apellido, telefono, DNI, direccion, CLIENTE_codigo_cliente_invitado, descuento) values (9, 'Cheston', 'Kinlock', '7441208227', 98916029, 'Menomonie', 10, true);
-insert into cliente (codigo_cliente, nombre, apellido, telefono, DNI, direccion, CLIENTE_codigo_cliente_invitado, descuento) values (10, 'Eb', 'Fairlam', '8574745090', 97664256, 'Hovde', 7, false);
+-- Proveedor
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (1, 'Five Star Senior Living Inc.', 'eroust0@youku.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (2, 'NuStar Logistics, L.P.', 'jhinkens1@e-recht24.de');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (3, 'CBO (Listing Market - NYSE - Networks A/E)', 'faizikovitch2@usgs.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (4, 'TPG Pace Energy Holdings Corp.', 'bdaspar3@wordpress.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (5, 'Grupo Aval Acciones y Valores S.A.', 'cclawsley4@sakura.ne.jp');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (6, 'New Germany Fund, Inc. (The)', 'gpermain5@answers.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (7, 'Silver Run Acquisition Corporation II', 'gduns6@diigo.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (8, 'Viper Energy Partners LP', 'ahardan7@yahoo.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (9, 'Peak Resorts, Inc.', 'mroseby8@mozilla.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (10, 'FTI Consulting, Inc.', 'ocasserley9@cbc.ca');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (11, 'Ever-Glory International Group, Inc.', 'cgrigorinia@alibaba.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (12, 'Saban Capital Acquisition Corp.', 'iendersb@netvibes.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (13, '51job, Inc.', 'fbenc@webnode.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (14, 'SkyWest, Inc.', 'mdiemd@ameblo.jp');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (15, 'BlackRock Utility and Infrastructure Trust', 'jpoltune@weather.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (16, 'Kemper Corporation', 'pcraxfordf@adobe.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (17, 'First Trust Mega Cap AlphaDEX Fund', 'cslopierg@yolasite.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (18, 'IQ Chaikin U.S. Small Cap ETF', 'kodriscoleh@mediafire.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (19, 'GigaMedia Limited', 'fmcnabi@cyberchimps.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (20, 'Textron Inc.', 'citscowicsj@bloglovin.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (21, 'Teva Pharmaceutical Industries Limited', 'wfergysonk@cornell.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (22, 'Western Asset Mortgage Defined Opportunity Fund Inc', 'stattaml@va.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (23, 'UBS AG', 'cballintimem@wix.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (24, 'B. Riley Financial, Inc.', 'bannesleyn@amazon.co.jp');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (25, 'Nortech Systems Incorporated', 'tfawberto@behance.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (26, 'RGC Resources Inc.', 'aopyp@narod.ru');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (27, 'Texas Capital Bancshares, Inc.', 'pportigallq@drupal.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (28, 'Liberty Media Corporation', 'kwarrer@istockphoto.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (29, 'iShares 0-5 Year Investment Grade Corporate Bond ETF', 'ssillys@ustream.tv');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (30, 'Nuveen New Jersey Quality Municipal Income Fund', 'acoveyt@imgur.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (31, 'Roka Bioscience, Inc.', 'wpattissonu@ow.ly');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (32, 'Gap, Inc. (The)', 'drisbiev@51.la');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (33, 'Haynes International, Inc.', 'brozenbaumw@bloglovin.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (34, 'Canadian Natural Resources Limited', 'nevittsx@seattletimes.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (35, 'ClearSign Combustion Corporation', 'ascuttery@nba.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (36, 'Welbilt, Inc.', 'jgittensz@nsw.gov.au');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (37, 'Medley Capital Corporation', 'arisso10@opensource.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (38, 'Meritor, Inc.', 'grastall11@t-online.de');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (39, 'Barrick Gold Corporation', 'hkuhle12@github.io');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (40, 'Uranium Resources, Inc.', 'schaffen13@hhs.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (41, 'First Majestic Silver Corp.', 'kmontes14@phpbb.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (42, 'Systemax Inc.', 'hbayns15@ucsd.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (43, 'HCI Group, Inc.', 'tstandering16@chicagotribune.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (44, 'Tupperware Brands Corporation', 'bgooderridge17@tmall.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (45, 'XBiotech Inc.', 'gwoollett18@unc.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (46, 'SLM Corporation', 'fwoodnutt19@hugedomains.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (47, 'Royal Gold, Inc.', 'btrunchion1a@psu.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (48, 'Briggs & Stratton Corporation', 'fdenk1b@1und1.de');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (49, 'Ovid Therapeutics Inc.', 'djedrys1c@netlog.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (50, 'Voya Infrastructure, Industrials and Materials Fund', 'ihedau1d@intel.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (51, 'FIRST REPUBLIC BANK', 'arosengren1e@ezinearticles.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (52, 'China HGS Real Estate, Inc.', 'bkuhlmey1f@guardian.co.uk');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (53, 'FMC Corporation', 'cpercifull1g@prnewswire.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (54, 'Gladstone Investment Corporation', 'ldidomenico1h@youtube.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (55, 'China Advanced Construction Materials Group, Inc.', 'mlyngsted1i@sciencedaily.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (56, 'First Trust BICK Index Fund', 'ptweddle1j@archive.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (57, 'PennantPark Investment Corporation', 'lellsworthe1k@house.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (58, 'Allied Motion Technologies, Inc.', 'mdarbon1l@bizjournals.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (59, 'Carnival Corporation', 'vwinstanley1m@ftc.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (60, 'Central European Media Enterprises Ltd.', 'rkasting1n@aboutads.info');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (61, 'Alexandria Real Estate Equities, Inc.', 'bmulvenna1o@usatoday.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (62, 'J. Alexander''s Holdings, Inc.', 'mrichardon1p@wix.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (63, 'J. W. Mays, Inc.', 'skantor1q@hhs.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (64, 'MiMedx Group, Inc', 'jkenson1r@mayoclinic.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (65, 'Invesco Municipal Opportunity Trust', 'wcavnor1s@mlb.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (66, 'Newtek Business Services Corp.', 'jwinfrey1t@freewebs.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (67, 'Rite Aid Corporation', 'gmompesson1u@tmall.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (68, 'Cardiovascular Systems, Inc.', 'wlavies1v@meetup.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (69, 'Taiwan Semiconductor Manufacturing Company Ltd.', 'lnajara1w@bigcartel.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (70, 'Energizer Holdings, Inc.', 'tmouth1x@squarespace.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (71, 'First Trust SSI Strategic Convertible Securities ETF', 'tsprade1y@jimdo.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (72, 'Gladstone Capital Corporation', 'kswanson1z@multiply.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (73, 'VelocityShares 3x Long Gold ETN', 'ocathesyed20@japanpost.jp');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (74, 'Saban Capital Acquisition Corp.', 'cmellings21@so-net.ne.jp');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (75, 'Pioneer Municipal High Income Advantage Trust', 'kbottom22@uiuc.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (76, 'Akari Therapeutics Plc', 'ckovacs23@huffingtonpost.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (77, 'Johnson Outdoors Inc.', 'edebeauchamp24@clickbank.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (78, 'Omega Flex, Inc.', 'lhughes25@hibu.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (79, 'ANSYS, Inc.', 'vhayen26@purevolume.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (80, 'Gabelli Dividend', 'ltrowbridge27@technorati.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (81, 'FlexShares STOXX US ESG Impact Index Fund', 'wlesaunier28@latimes.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (82, 'Exa Corporation', 'jbonelle29@google.nl');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (83, 'DHI Group, Inc.', 'sread2a@ca.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (84, 'DarioHealth Corp.', 'lmckevin2b@gov.uk');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (85, 'America Movil, S.A.B. de C.V.', 'cpaik2c@edublogs.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (86, 'Image Sensing Systems, Inc.', 'nnenci2d@taobao.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (87, 'Panera Bread Company', 'gsyratt2e@ucoz.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (88, 'XO Group, Inc.', 'ldury2f@jiathis.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (89, 'JM Global Holding Company', 'twhittaker2g@jigsy.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (90, 'Diamond Hill Investment Group, Inc.', 'kmichael2h@mapy.cz');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (91, 'China Distance Education Holdings Limited', 'icocozza2i@usgs.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (92, 'Avenue Therapeutics, Inc.', 'abodycomb2j@w3.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (93, 'Altria Group', 'gledwidge2k@harvard.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (94, 'Dril-Quip, Inc.', 'mskaif2l@youtu.be');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (95, 'Vanguard Russell 2000 ETF', 'ndecourcey2m@qq.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (96, 'MarketAxess Holdings, Inc.', 'cwrotchford2n@pagesperso-orange.fr');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (97, 'Cerus Corporation', 'mfipp2o@etsy.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (98, 'MB Financial Inc.', 'rtodor2p@angelfire.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (99, 'First Community Financial Partners, Inc.', 'eesom2q@acquirethisname.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (100, 'InterDigital, Inc.', 'kconyer2r@deliciousdays.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (101, 'NV5 Global, Inc.', 'tdunlop2s@macromedia.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (102, 'Genetic Technologies Ltd', 'tbeckers2t@gnu.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (103, 'OvaScience Inc.', 'mkasman2u@msu.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (104, 'Preferred Apartment Communities, Inc.', 'mbromidge2v@nyu.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (105, 'Royal Bank Scotland plc (The)', 'dmcvee2w@dyndns.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (106, 'Bridge Bancorp, Inc.', 'thessay2x@printfriendly.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (107, 'Commercial Vehicle Group, Inc.', 'chanigan2y@phoca.cz');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (108, 'National Grid Transco, PLC', 'rfoux2z@youtube.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (109, 'Diamond Hill Investment Group, Inc.', 'toattes30@businessweek.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (110, 'USG Corporation', 'bleconte31@deliciousdays.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (111, 'Blackrock New York Municipal Income Quality Trust', 'vwallington32@paypal.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (112, 'Zoetis Inc.', 'vbehagg33@forbes.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (113, 'LaSalle Hotel Properties', 'ssyddon34@mysql.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (114, 'Nexeo Solutions, Inc.', 'lellum35@diigo.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (115, 'ONEOK, Inc.', 'flammin36@bing.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (116, 'Global X MSCI SuperDividend EAFE ETF', 'jtitterington37@icio.us');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (117, 'UGI Corporation', 'fbiggam38@cocolog-nifty.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (118, 'Templeton Emerging Markets Fund', 'mmayworth39@amazon.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (119, 'Benitec Biopharma Limited', 'ecrickmore3a@jimdo.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (120, 'StoneMor Partners L.P.', 'daronovitz3b@nsw.gov.au');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (121, 'MSG Networks Inc.', 'djewar3c@slate.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (122, 'Annaly Capital Management Inc', 'pscarff3d@webeden.co.uk');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (123, 'Federated Premier Municipal Income Fund', 'cleeman3e@xing.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (124, 'National Holdings Corporation', 'adenisyuk3f@google.cn');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (125, 'Biohaven Pharmaceutical Holding Company Ltd.', 'amaccartney3g@hao123.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (126, 'OCI Partners LP', 'aygoe3h@xinhuanet.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (127, 'Neuralstem, Inc.', 'rsaphin3i@arizona.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (128, 'Dollar Tree, Inc.', 'middenden3j@washington.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (129, 'AveXis, Inc.', 'qkisbey3k@gov.uk');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (130, 'Lincoln Educational Services Corporation', 'msyphas3l@google.ca');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (131, 'NanoString Technologies, Inc.', 'mmehew3m@nps.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (132, 'Sapiens International Corporation N.V.', 'nbattin3n@arstechnica.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (133, 'Astronics Corporation', 'gpeachment3o@ameblo.jp');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (134, 'Harmony Merger Corp.', 'edunkerly3p@indiatimes.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (135, 'Ichor Holdings', 'mhaliburton3q@nydailynews.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (136, 'Raytheon Company', 'fhallick3r@stumbleupon.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (137, 'Ashford Hospitality Trust Inc', 'lgowthrop3s@chronoengine.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (138, 'Quinpario Acquisition Corp. 2', 'rlandeg3t@vkontakte.ru');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (139, 'Hydrogenics Corporation', 'bdelap3u@whitehouse.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (140, 'BLACKROCK INTERNATIONAL, LTD.', 'acasarini3v@behance.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (141, 'Inseego Corp.', 'mstuttman3w@jiathis.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (142, 'Blackhawk Network Holdings, Inc.', 'icartledge3x@adobe.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (143, 'Regions Financial Corporation', 'bpragnell3y@rambler.ru');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (144, 'KAR Auction Services, Inc', 'ciacovolo3z@yolasite.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (145, 'Statoil ASA', 'hburling40@tripadvisor.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (146, 'Wayfair Inc.', 'ehefferon41@dion.ne.jp');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (147, 'HCI Group, Inc.', 'arosenfeld42@sfgate.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (148, 'Argo Group International Holdings, Ltd.', 'jkigelman43@timesonline.co.uk');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (149, 'iShares Morningstar Mid-Cap ETF', 'amcilwrick44@mashable.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (150, 'Ellie Mae, Inc.', 'gkernes45@boston.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (151, 'E.I. du Pont de Nemours and Company', 'jtheuff46@qq.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (152, 'Destination Maternity Corporation', 'ocoare47@skype.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (153, 'Kirkland''s, Inc.', 'iarnaudot48@go.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (154, 'EnLink Midstream Partners, LP', 'hfilppetti49@discuz.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (155, 'Entergy Arkansas, Inc.', 'jwillcock4a@soup.io');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (156, 'Stag Industrial, Inc.', 'tfeare4b@indiatimes.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (157, 'MSCI Inc', 'pbasten4c@wunderground.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (158, 'j2 Global, Inc.', 'rmadrell4d@wiley.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (159, 'Stamps.com Inc.', 'dbarkaway4e@skype.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (160, 'Customers Bancorp, Inc', 'anapoli4f@nymag.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (161, 'Hoegh LNG Partners LP', 'hgooderson4g@amazon.de');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (162, 'Covenant Transportation Group, Inc.', 'lsweynson4h@creativecommons.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (163, 'SeaSpine Holdings Corporation', 'kshore4i@nsw.gov.au');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (164, 'Audentes Therapeutics, Inc.', 'dclout4j@macromedia.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (165, 'TravelCenters of America LLC', 'nfarnill4k@digg.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (166, 'Phibro Animal Health Corporation', 'jalbone4l@umn.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (167, 'Farmland Partners Inc.', 'lmoye4m@illinois.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (168, 'BSB Bancorp, Inc.', 'lyateman4n@moonfruit.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (169, 'Forestar Group Inc', 'pborrett4o@slate.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (170, 'Titan Pharmaceuticals, Inc.', 'ssevers4p@apache.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (171, 'CDK Global, Inc.', 'cagiolfinger4q@i2i.jp');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (172, 'Corning Incorporated', 'tpavlata4r@marketwatch.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (173, 'USANA Health Sciences, Inc.', 'oswanborrow4s@t.co');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (174, 'Pyxis Tankers Inc.', 'gflanigan4t@pen.io');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (175, 'Nuveen Municipal Credit Income Fund', 'mmerrigan4u@cbsnews.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (176, 'Air Products and Chemicals, Inc.', 'rfardon4v@bloglovin.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (177, 'Coca-Cola European Partners plc', 'rdewett4w@ftc.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (178, 'State Street Corporation', 'fguinn4x@biglobe.ne.jp');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (179, 'Duff & Phelps Global Utility Income Fund Inc.', 'chogben4y@icq.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (180, 'Cabot Microelectronics Corporation', 'rfarriar4z@about.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (181, 'Global Brass and Copper Holdings, Inc.', 'arudram50@gravatar.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (182, 'Apollo Endosurgery, Inc.', 'rgolsthorp51@cocolog-nifty.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (183, 'Geron Corporation', 'mcrowdace52@eepurl.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (184, 'Public Storage', 'pjowitt53@slate.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (185, 'Nuveen Quality Municipal Income Fund', 'gderyebarrett54@mashable.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (186, 'Cleantech Solutions International, Inc.', 'dchristou55@ning.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (187, 'TerraForm Global, Inc.', 'dknellen56@slideshare.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (188, 'Stone Harbor Emerging Markets Total Income Fund', 'lhurrion57@shutterfly.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (189, 'HSBC Holdings plc', 'veagger58@networkadvertising.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (190, 'Level 3 Communications, Inc.', 'dhovenden59@umn.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (191, 'Fly Leasing Limited', 'rcossum5a@va.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (192, 'The Dixie Group, Inc.', 'kbyard5b@npr.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (193, 'Air Transport Services Group, Inc', 'csharville5c@comsenz.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (194, 'Apollo Commercial Real Estate Finance', 'jmuge5d@unesco.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (195, 'Arrow Financial Corporation', 'uoxtaby5e@wikispaces.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (196, 'Huttig Building Products, Inc.', 'rhubane5f@army.mil');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (197, 'Axalta Coating Systems Ltd.', 'dtownby5g@ycombinator.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (198, 'Hibbett Sports, Inc.', 'dead5h@cdc.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (199, 'Ericsson', 'jcraighead5i@sourceforge.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (200, 'Gildan Activewear, Inc.', 'bojeda5j@eventbrite.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (201, 'SiteOne Landscape Supply, Inc.', 'eessex5k@linkedin.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (202, 'National Retail Properties', 'ihollyard5l@yale.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (203, 'Tortoise Power and Energy Infrastructure Fund, Inc', 'aginnety5m@mayoclinic.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (204, 'Western Asset Mortgage Capital Corporation', 'zknutsen5n@twitpic.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (205, 'Fairmount Santrol Holdings Inc.', 'aklimp5o@apache.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (206, 'Lattice Semiconductor Corporation', 'sjohnsee5p@privacy.gov.au');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (207, 'FlexShares STOXX Global ESG Impact Index Fund', 'rbridgen5q@goodreads.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (208, 'Petroleo Brasileiro S.A.- Petrobras', 'marnely5r@eepurl.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (209, 'Alabama Power Company', 'lholbarrow5s@sakura.ne.jp');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (210, 'Southwest Gas Holdings, Inc.', 'wcawthron5t@about.me');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (211, 'Kayne Anderson Energy Development Company', 'dmishow5u@miitbeian.gov.cn');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (212, 'Bank of America Corporation', 'mgirdwood5v@google.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (213, 'Blackrock MuniEnhanced Fund, Inc.', 'ktucker5w@etsy.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (214, 'CA Inc.', 'vclaydon5x@sourceforge.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (215, 'Natural Health Trends Corp.', 'jlytton5y@discovery.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (216, 'Coeur Mining, Inc.', 'dgreatland5z@columbia.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (217, 'VEREIT Inc.', 'fcohn60@amazon.co.jp');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (218, 'BioTelemetry, Inc.', 'ktinklin61@fotki.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (219, 'CounterPath Corporation', 'kwarde62@altervista.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (220, 'Marten Transport, Ltd.', 'ataggerty63@wunderground.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (221, 'Bloomin'' Brands, Inc.', 'tskryne64@stumbleupon.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (222, 'PNC Financial Services Group, Inc. (The)', 'dsheals65@skyrock.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (223, 'Bed Bath & Beyond Inc.', 'wmarrian66@jalbum.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (224, 'Leaf Group Ltd.', 'alivock67@harvard.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (225, 'Dynavax Technologies Corporation', 'lbridat68@soundcloud.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (226, 'Landcadia Holdings, Inc.', 'herricker69@comcast.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (227, 'Avinger, Inc.', 'fsharman6a@noaa.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (228, 'Dominion Energy, Inc.', 'egapper6b@globo.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (229, 'MIND C.T.I. Ltd.', 'ecotherill6c@livejournal.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (230, 'CafePress Inc.', 'mstaden6d@deliciousdays.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (231, 'Rogers Communication, Inc.', 'vgallaher6e@scientificamerican.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (232, 'PowerShares DWA Developed Markets Momentum Portfolio', 'mwiddowson6f@netvibes.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (233, 'Avenue Income Credit Strategies Fund', 'asayles6g@europa.eu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (234, 'Geo Group Inc (The)', 'sridehalgh6h@washingtonpost.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (235, 'Citigroup Inc.', 'llints6i@taobao.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (236, 'First Busey Corporation', 'kbichard6j@123-reg.co.uk');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (237, 'RCM Technologies, Inc.', 'oanderson6k@mayoclinic.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (238, 'PowerShares Russell 1000 Low Beta Equal Weight Portfolio', 'ccardnell6l@indiatimes.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (239, 'PowerShares FTSE International Low Beta Equal Weight Portfolio', 'dondracek6m@symantec.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (240, 'Helen of Troy Limited', 'prawlyns6n@imdb.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (241, 'Radware Ltd.', 'sbelin6o@instagram.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (242, 'Pacific American Income Shares, Inc.', 'lgimenez6p@springer.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (243, 'Lakeland Industries, Inc.', 'ddabney6q@over-blog.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (244, 'BB&T Corporation', 'oneilands6r@telegraph.co.uk');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (245, 'Brady Corporation', 'cspear6s@canalblog.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (246, 'First Busey Corporation', 'mstockey6t@about.me');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (247, 'Morningstar, Inc.', 'nscapelhorn6u@cnet.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (248, 'The Ensign Group, Inc.', 'daizikovich6v@wordpress.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (249, 'Unum Group', 'okennion6w@instagram.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (250, 'Nuveen Senior Income Fund', 'swattinham6x@jugem.jp');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (251, 'Skyline Medical Inc.', 'ljersh6y@indiatimes.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (252, 'Nexvet Biopharma plc', 'aoxterby6z@nytimes.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (253, 'DASAN Zhone Solutions, Inc.', 'sgauson70@symantec.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (254, 'ProShares Ultra Nasdaq Biotechnology', 'lstanaway71@alibaba.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (255, 'Forward Air Corporation', 'gtorel72@istockphoto.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (256, 'Cable One, Inc.', 'wkennerley73@dedecms.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (257, 'Novan, Inc.', 'kmeggison74@indiegogo.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (258, 'Harmony Gold Mining Company Limited', 'trobottom75@ftc.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (259, 'SPX Corporation', 'nmacvey76@tumblr.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (260, 'BiondVax Pharmaceuticals Ltd.', 'loconnell77@aboutads.info');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (261, 'Harvest Capital Credit Corporation', 'mgorden78@comcast.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (262, 'J P Morgan Chase & Co', 'cshallcross79@ocn.ne.jp');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (263, 'Capitol Acquisition Corp. III', 'gbunney7a@yelp.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (264, 'SunTrust Banks, Inc.', 'jdoust7b@list-manage.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (265, 'J P Morgan Chase & Co', 'brichardeau7c@phoca.cz');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (266, 'CABCO Series 2004-101 Trust', 'ksaynor7d@oakley.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (267, 'Installed Building Products, Inc.', 'wcolvie7e@economist.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (268, 'Amec Plc Ord', 'wcameron7f@vk.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (269, 'Halyard Health, Inc.', 'apython7g@weebly.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (270, 'Applied DNA Sciences Inc', 'aswait7h@moonfruit.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (271, 'Banco Bradesco Sa', 'swoodrow7i@google.ru');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (272, 'The Priceline Group Inc. ', 'emullenger7j@google.com.br');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (273, 'Vantage Energy Acquisition Corp.', 'sbiernacki7k@last.fm');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (274, 'Advanced Accelerator Applications S.A.', 'ggrzegorek7l@fda.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (275, 'Penns Woods Bancorp, Inc.', 'dmarquet7m@slideshare.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (276, 'Digital Ally, Inc.', 'ecausby7n@e-recht24.de');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (277, 'VictoryShares US 500 Enhanced Volatility Wtd ETF', 'adeares7o@who.int');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (278, 'Blackrock MuniYield Investment Fund', 'scuttle7p@topsy.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (279, 'Kimberly-Clark Corporation', 'lfenny7q@nsw.gov.au');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (280, 'TCF Financial Corporation', 'amcvicker7r@zdnet.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (281, 'Community First Bancshares, Inc.', 'vpuckett7s@epa.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (282, 'One Liberty Properties, Inc.', 'alamanby7t@xinhuanet.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (283, 'Collegium Pharmaceutical, Inc.', 'jjackson7u@etsy.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (284, 'Simpson Manufacturing Company, Inc.', 'jgiraudeau7v@uol.com.br');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (285, 'MV Oil Trust', 'kaddlestone7w@addthis.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (286, 'Crawford & Company', 'ztuddall7x@tumblr.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (287, 'Public Storage', 'tmaggi7y@e-recht24.de');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (288, 'Triple-S Management Corporation', 'vwensley7z@desdev.cn');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (289, 'Century Bancorp, Inc.', 'bensor80@youtu.be');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (290, 'Roka Bioscience, Inc.', 'eharburtson81@foxnews.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (291, 'Mack-Cali Realty Corporation', 'cohearn82@home.pl');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (292, 'Federal Signal Corporation', 'hrysdale83@goodreads.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (293, 'Bank of America Corporation', 'nmossman84@woothemes.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (294, 'Gores Holdings II, Inc.', 'emorgan85@goodreads.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (295, 'Histogenics Corporation', 'ppanswick86@tripod.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (296, 'BioScrip, Inc.', 'adyson87@amazon.co.jp');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (297, 'Highland/iBoxx Senior Loan ETF', 'dmews88@multiply.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (298, 'Allied Healthcare Products, Inc.', 'hhatter89@g.co');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (299, 'Pharmerica Corporation', 'jdeighan8a@fema.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (300, 'HNI Corporation', 'mcerith8b@unicef.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (301, 'Harley-Davidson, Inc.', 'rvallentin8c@facebook.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (302, 'Orion Group Holdings, Inc.', 'ctowl8d@twitter.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (303, 'First Trust TCW Opportunistic Fixed Income ETF', 'atheunissen8e@scribd.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (304, 'NICE Ltd', 'fbene8f@bloglovin.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (305, 'Synergy Pharmaceuticals, Inc.', 'cboig8g@pagesperso-orange.fr');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (306, 'WesBanco, Inc.', 'bhebron8h@biglobe.ne.jp');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (307, 'RLJ Lodging Trust', 'rkauscher8i@stanford.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (308, 'Golden Entertainment, Inc.', 'corto8j@examiner.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (309, 'Royal Bank Scotland plc (The)', 'ggillespie8k@prweb.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (310, 'GP Investments Acquisition Corp.', 'lportal8l@stanford.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (311, 'EVINE Live Inc.', 'mtesmond8m@un.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (312, 'QuickLogic Corporation', 'hpoolman8n@purevolume.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (313, 'Uranium Resources, Inc.', 'jdehoogh8o@1688.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (314, 'CBL & Associates Properties, Inc.', 'jkarpets8p@ucla.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (315, 'First Bancorp', 'awigfield8q@bandcamp.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (316, 'Andina Acquisition Corp. II', 'bdalwood8r@boston.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (317, 'Synaptics Incorporated', 'lkonertz8s@ocn.ne.jp');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (318, 'Tower International, Inc.', 'mgethin8t@google.ru');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (319, 'STARWOOD PROPERTY TRUST, INC.', 'ccunliffe8u@prnewswire.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (320, 'Lions Gate Entertainment Corporation', 'ctampling8v@netvibes.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (321, 'Oppenheimer Holdings, Inc.', 'vberthe8w@devhub.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (322, 'Valhi, Inc.', 'mgitthouse8x@sciencedirect.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (323, 'XPO Logistics, Inc.', 'tlovegrove8y@forbes.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (324, 'Adams Natural Resources Fund, Inc.', 'vmapplebeck8z@desdev.cn');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (325, 'Michael Kors Holdings Limited', 'tjewers90@unblog.fr');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (326, 'Boyd Gaming Corporation', 'anabbs91@pbs.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (327, 'Vanguard Short-Term Corporate Bond ETF', 'ltrussman92@discovery.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (328, 'Eaton Vance Enhanced Equity Income Fund II', 'zbilsford93@apple.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (329, 'Matlin & Partners Acquisition Corporation', 'rgoodlud94@google.cn');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (330, 'GP Investments Acquisition Corp.', 'ehabershaw95@cbslocal.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (331, 'Sapiens International Corporation N.V.', 'rglendzer96@apache.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (332, 'Franklin Electric Co., Inc.', 'ssarjeant97@symantec.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (333, 'Nuveen S&P 500 Buy-Write Income Fund', 'rcicconettii98@bravesites.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (334, 'Park Electrochemical Corporation', 'nscarrisbrick99@harvard.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (335, 'Kemet Corporation', 'mfurmagier9a@bandcamp.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (336, 'Hess Corporation', 'simlach9b@linkedin.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (337, 'Innophos Holdings, Inc.', 'wmckinie9c@spiegel.de');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (338, 'First Trust Strategic High Income Fund II', 'mrosenblum9d@uol.com.br');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (339, 'Cenveo Inc', 'tamar9e@xrea.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (340, 'Neonode Inc.', 'nmoggie9f@discovery.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (341, 'Sun Communities, Inc.', 'gbuddles9g@archive.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (342, 'Donegal Group, Inc.', 'dmardell9h@meetup.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (343, 'Gyrodyne , LLC', 'adimitru9i@opera.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (344, 'First Trust MLP and Energy Income Fund', 'yhek9j@php.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (345, 'Kinder Morgan, Inc.', 'gupex9k@rambler.ru');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (346, 'John Hancock Hedged Equity & Income Fund', 'chaslen9l@creativecommons.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (347, 'Eaton Vance Municipal Income Trust', 'eromme9m@nationalgeographic.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (348, 'Costamare Inc.', 'htoppas9n@spotify.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (349, 'Matlin & Partners Acquisition Corporation', 'zcrebo9o@sciencedirect.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (350, 'Immunomedics, Inc.', 'ppell9p@state.tx.us');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (351, 'Cerulean Pharma Inc.', 'tjayne9q@blog.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (352, 'First Trust Nasdaq Food & Beverage ETF', 'aselwyne9r@google.com.hk');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (353, 'Helix Energy Solutions Group, Inc.', 'rdubble9s@nydailynews.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (354, 'Owens & Minor, Inc.', 'gsolland9t@baidu.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (355, 'Westlake Chemical Corporation', 'cfrango9u@narod.ru');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (356, 'Two Harbors Investments Corp', 'fgoch9v@utexas.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (357, 'Omeros Corporation', 'ksagg9w@hubpages.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (358, 'Arbor Realty Trust', 'etitterington9x@toplist.cz');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (359, 'Cinedigm Corp', 'aclackers9y@chicagotribune.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (360, 'Universal Forest Products, Inc.', 'mgomes9z@gizmodo.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (361, 'Vanguard Russell 1000 Value ETF', 'sfyldesa0@wikispaces.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (362, 'Cohen & Steers Total Return Realty Fund, Inc.', 'wjouhandeaua1@joomla.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (363, 'Transportadora De Gas Sa Ord B', 'bofiellya2@hatena.ne.jp');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (364, 'Flowers Foods, Inc.', 'wmuskera3@utexas.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (365, 'Multi-Color Corporation', 'amustona4@wix.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (366, 'LSI Industries Inc.', 'dmecoa5@reverbnation.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (367, 'Oasmia Pharmaceutical AB', 'iblodga6@opensource.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (368, 'Customers Bancorp, Inc', 'sboddicea7@biblegateway.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (369, 'Motif Bio plc', 'gschilda8@kickstarter.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (370, 'Universal Technical Institute Inc', 'mblowera9@intel.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (371, 'Allied Motion Technologies, Inc.', 'rscurreyaa@dot.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (372, 'Nuveen Diversified Dividend and Income Fund', 'kcharityab@flavors.me');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (373, 'Whirlpool Corporation', 'ocrowleyac@reference.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (374, 'Madrigal Pharmaceuticals, Inc.', 'alilleymanad@dailymotion.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (375, 'Putnam High Income Bond Fund', 'jreginaae@simplemachines.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (376, 'The Finish Line, Inc.', 'kbuchettaf@networkadvertising.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (377, 'America First Multifamily Investors, L.P.', 'whuittag@whitehouse.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (378, 'Insteel Industries, Inc.', 'sdemezaah@dot.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (379, 'AmeriServ Financial Inc.', 'fcasaccioai@wordpress.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (380, 'Juniper Pharmaceuticals, Inc.', 'rtracyaj@imdb.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (381, 'Republic Bancorp, Inc.', 'ghorlickak@cafepress.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (382, 'Mid-America Apartment Communities, Inc.', 'pdooreyal@google.com.hk');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (383, 'Optical Cable Corporation', 'mgibbesonam@dot.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (384, 'Arotech Corporation', 'rgillingan@theglobeandmail.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (385, 'Enstar Group Limited', 'ppoynserao@google.com.hk');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (386, 'Babson Global Short Duration High Yield Fund', 'nlapadulaap@dion.ne.jp');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (387, 'Fox Factory Holding Corp.', 'avalentaaq@creativecommons.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (388, 'VTTI Energy Partners LP', 'amundenar@lulu.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (389, 'Western Asset Emerging Markets Debt Fund Inc', 'pspringallas@4shared.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (390, 'Eaton Vance Corporation', 'lhabberjamat@yandex.ru');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (391, 'MKS Instruments, Inc.', 'mpaolinelliau@tiny.cc');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (392, 'Jazz Pharmaceuticals plc', 'nstenhouseav@umich.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (393, 'BullMark LatAm Select Leaders ETF', 'cislesaw@symantec.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (394, 'VTTI Energy Partners LP', 'lmacdonaghax@umn.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (395, 'Intrexon Corporation', 'tfryattay@odnoklassniki.ru');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (396, 'Extreme Networks, Inc.', 'edoogueaz@clickbank.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (397, 'PennantPark Investment Corporation', 'alindeboomb0@psu.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (398, 'Children''s Place, Inc. (The)', 'sskeldonb1@zimbio.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (399, 'Sumitomo Mitsui Financial Group Inc', 'vandreassenb2@pinterest.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (400, 'Jernigan Capital, Inc.', 'bthumimb3@blogs.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (401, 'AeroVironment, Inc.', 'bwhoolehanb4@house.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (402, 'Eagle Point Credit Company Inc.', 'agiannonib5@nhs.uk');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (403, 'Vanguard Emerging Markets Government Bond ETF', 'ejagiellob6@berkeley.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (404, 'Transcat, Inc.', 'pmantb7@umich.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (405, 'CytomX Therapeutics, Inc.', 'skneelb8@google.cn');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (406, 'Walker & Dunlop, Inc.', 'gorrittb9@statcounter.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (407, 'Commerce Union Bancshares, Inc.', 'qmayteba@amazon.co.uk');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (408, 'Burcon NutraScience Corp', 'abuggsbb@ebay.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (409, 'Meritor, Inc.', 'bcucuzzabc@squidoo.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (410, 'Perry Ellis International Inc.', 'sscritchbd@cyberchimps.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (411, 'Acco Brands Corporation', 'amacelanebe@trellian.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (412, 'Vanguard International High Dividend Yield ETF', 'jbrahanbf@techcrunch.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (413, 'Middlefield Banc Corp.', 'rharrybg@spotify.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (414, 'Sunstone Hotel Investors, Inc.', 'cbeggibh@google.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (415, 'Iconix Brand Group, Inc.', 'nmcateerbi@timesonline.co.uk');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (416, 'Ohio Valley Banc Corp.', 'lcarlbj@over-blog.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (417, 'Lydall, Inc.', 'scailbk@usda.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (418, 'Eagle Bancorp, Inc.', 'ngalliverbl@gov.uk');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (419, 'Gamco Investors, Inc.', 'vmcconnelbm@google.it');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (420, 'Nuveen Virginia Quality Municipal Income Fund', 'mgrissbn@skyrock.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (421, 'Seaspan Corporation', 'dmalyanbo@prnewswire.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (422, 'Algonquin Power & Utilities Corp.', 'rbosmanbp@friendfeed.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (423, 'Container Store (The)', 'ccarlbq@sbwire.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (424, 'Avenue Therapeutics, Inc.', 'elorencebr@jalbum.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (425, 'AVEO Pharmaceuticals, Inc.', 'jkelbiebs@upenn.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (426, 'Semtech Corporation', 'vmccarrickbt@hubpages.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (427, 'TOR Minerals International Inc', 'mburrisbu@w3.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (428, 'Andina Acquisition Corp. II', 'jadamolibv@state.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (429, 'Elkhorn Commodity Rotation Strategy ETF', 'hhedgemanbw@toplist.cz');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (430, 'TRI Pointe Group, Inc.', 'drolingsonbx@indiegogo.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (431, 'Canadian Pacific Railway Limited', 'kmattusovby@businessweek.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (432, 'First Connecticut Bancorp, Inc.', 'mtockellbz@eepurl.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (433, 'Medtronic plc', 'fodeoranc0@feedburner.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (434, 'AvalonBay Communities, Inc.', 'adukesburyc1@yandex.ru');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (435, 'Vanguard Russell 1000 Growth ETF', 'manderlc2@exblog.jp');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (436, 'Invesco Credit Opportunities Fund', 'seatc3@mail.ru');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (437, 'Lantronix, Inc.', 'bbooyc4@bandcamp.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (438, 'Monolithic Power Systems, Inc.', 'sgildeac5@shop-pro.jp');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (439, 'Yum! Brands, Inc.', 'mmcdonoghc6@mac.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (440, 'EQT Midstream Partners, LP', 'akinanec7@ted.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (441, 'Washington Trust Bancorp, Inc.', 'tguinanc8@lycos.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (442, 'Energy Focus, Inc.', 'hpettiec9@gravatar.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (443, 'Fluidigm Corporation', 'bbrunica@aboutads.info');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (444, 'Lakeland Financial Corporation', 'wcouzenscb@tumblr.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (445, 'Valeritas Holdings, Inc.', 'lgiovannillicc@cnet.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (446, 'First Horizon National Corporation', 'cealdencd@discuz.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (447, 'Nustar Energy L.P.', 'gzavatteroce@linkedin.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (448, 'Westlake Chemical Partners LP', 'swardingtoncf@intel.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (449, 'OMNOVA Solutions Inc.', 'fmccafferkycg@about.me');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (450, 'Summit Materials, Inc.', 'tjennemannch@facebook.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (451, 'Duff & Phelps Utilities Tax-Free Income, Inc.', 'halcoranci@pagesperso-orange.fr');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (452, 'Cosan Limited', 'bdaniaucj@hao123.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (453, 'Eagle Bulk Shipping Inc.', 'dghelardonick@macromedia.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (454, 'WPX Energy, Inc.', 'oborgescl@yale.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (455, 'Gorman-Rupp Company (The)', 'ggibbenscm@php.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (456, 'WSI Industries Inc.', 'lspybycn@usa.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (457, 'Customers Bancorp, Inc', 'kedwardsonco@chron.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (458, 'Forum Merger Corporation', 'lroughcp@indiegogo.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (459, 'Cloud Peak Energy Inc', 'dtymcq@instagram.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (460, 'Paramount Group, Inc.', 'agascarcr@canalblog.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (461, 'Jabil Inc.', 'ngetcliffecs@yellowpages.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (462, 'Alliance One International, Inc.', 'sdurnellct@eventbrite.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (463, 'Calavo Growers, Inc.', 'rtansliecu@google.es');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (464, 'Applied DNA Sciences Inc', 'oannellcv@guardian.co.uk');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (465, 'City Office REIT, Inc.', 'kbarockcw@fc2.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (466, 'Maiden Holdings, Ltd.', 'emacleodcx@independent.co.uk');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (467, 'Pieris Pharmaceuticals, Inc.', 'bwynchcy@upenn.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (468, 'S&W Seed Company', 'rfilipcz@home.pl');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (469, 'Lockheed Martin Corporation', 'bcamillettid0@google.co.uk');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (470, 'Bel Fuse Inc.', 'nfilpod1@techcrunch.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (471, 'Omeros Corporation', 'etuerenad2@squidoo.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (472, 'Merrill Lynch & Co., Inc.', 'wyggod3@cyberchimps.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (473, 'Allstate Corporation (The)', 'istegersd4@buzzfeed.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (474, 'Tortoise Power and Energy Infrastructure Fund, Inc', 'jkristofferssond5@samsung.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (475, 'Great Ajax Corp.', 'bdavidoviczd6@guardian.co.uk');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (476, 'BSB Bancorp, Inc.', 'bpitcockd7@merriam-webster.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (477, 'Whitestone REIT', 'dgodneyd8@nhs.uk');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (478, 'Old Second Bancorp, Inc.', 'mlevinsd9@dailymail.co.uk');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (479, 'Ossen Innovation Co., Ltd.', 'dgreenwayda@google.com.br');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (480, 'Huntington Bancshares Incorporated', 'emasodb@amazon.co.jp');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (481, 'The Cheesecake Factory Incorporated', 'wdradeydc@tiny.cc');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (482, 'BioShares Biotechnology Products Fund', 'esmithsondd@mtv.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (483, 'Packaging Corporation of America', 'eblackhallde@jalbum.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (484, 'GlaxoSmithKline PLC', 'ybodleydf@twitter.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (485, 'China Natural Resources, Inc.', 'cshovelindg@t-online.de');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (486, 'ING Group, N.V.', 'clannendh@ezinearticles.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (487, 'Summit Therapeutics plc', 'ggreenmandi@senate.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (488, 'The Cheesecake Factory Incorporated', 'fwaskettdj@typepad.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (489, 'OFG Bancorp', 'gguidonidk@kickstarter.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (490, 'WSFS Financial Corporation', 'ameekingdl@nature.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (491, 'First Majestic Silver Corp.', 'esemeradovadm@youtu.be');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (492, 'NACCO Industries, Inc.', 'bdanddn@wsj.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (493, 'Texas Pacific Land Trust', 'emabondo@hibu.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (494, 'Easterly Government Properties, Inc.', 'hsedwickdp@jugem.jp');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (495, 'TheStreet, Inc.', 'vrowcliffedq@devhub.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (496, 'Enbridge Energy, L.P.', 'mdodgsondr@example.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (497, 'Bank of America Corporation', 'cpleavinds@yelp.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (498, 'PowerShares DWA SmallCap Momentum Portfolio', 'jberksdt@ameblo.jp');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (499, 'DMC Global Inc.', 'mbrodheaddu@creativecommons.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (500, 'PowerShares DWA Basic Materials Momentum Portfolio', 'sguideradv@51.la');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (501, 'Advanced Disposal Services, Inc.', 'aivanichevdw@about.me');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (502, 'iPath US Treasury 5-year Bear ETN', 'ssidarydx@flickr.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (503, 'First Trust Europe AlphaDEX Fund', 'svogellerdy@about.me');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (504, 'Rexford Industrial Realty, Inc.', 'khinchamdz@feedburner.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (505, 'Dominion Energy, Inc.', 'kspoonere0@gravatar.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (506, 'Vishay Precision Group, Inc.', 'brichense1@wp.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (507, 'Post Holdings, Inc.', 'avittlee2@usgs.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (508, 'First Internet Bancorp', 'acardenozae3@state.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (509, 'Fusion Telecommunications International, Inc.', 'iwhale4@webs.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (510, 'Anthem, Inc.', 'shuggille5@icio.us');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (511, 'Glu Mobile Inc.', 'dfeechume6@arstechnica.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (512, 'Blackrock Global', 'bhabbershone7@eventbrite.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (513, 'Taiwan Fund, Inc. (The)', 'aberrowe8@cornell.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (514, 'Visa Inc.', 'bpringuere9@google.es');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (515, 'Xplore Technologies Corp', 'bguichardea@ftc.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (516, 'Carolina Trust BancShares, Inc.', 'mtunkineb@parallels.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (517, 'Cencosud S.A.', 'kzuannec@flavors.me');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (518, 'Cerus Corporation', 'rmumbyed@va.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (519, 'Yum China Holdings, Inc.', 'cbrogiee@xrea.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (520, 'SunPower Corporation', 'bpickervanceef@hc360.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (521, 'NTT DOCOMO, Inc', 'wcamamileeg@infoseek.co.jp');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (522, 'MediWound Ltd.', 'ablasdaleeh@dropbox.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (523, 'VCA Inc. ', 'bgawthropei@skyrock.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (524, 'Synergy Pharmaceuticals, Inc.', 'tsmylieej@sogou.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (525, 'Juniper Networks, Inc.', 'tgooderhamek@dyndns.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (526, 'InfraREIT, Inc.', 'kmclurgel@xinhuanet.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (527, 'First Bancorp, Inc (ME)', 'skellieem@webs.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (528, 'Barrett Business Services, Inc.', 'tsantarellien@bluehost.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (529, 'Advanced Energy Industries, Inc.', 'bsegoteo@oracle.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (530, 'Cotiviti Holdings, Inc.', 'rarchbuttep@opera.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (531, 'Blackrock Municipal Bond Trust', 'aosaneq@youku.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (532, 'Bank of South Carolina Corp.', 'wcranstoner@goo.gl');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (533, 'Oxford Immunotec Global PLC', 'asellackes@mayoclinic.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (534, 'Hartford Financial Services Group, Inc. (The)', 'lsymeset@sbwire.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (535, 'Alliance Holdings GP, L.P.', 'jofinaneu@deliciousdays.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (536, 'China Commercial Credit, Inc.', 'imaherev@mac.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (537, 'World Acceptance Corporation', 'zprahlew@theglobeandmail.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (538, 'Resolute Energy Corporation', 'hchanderex@nationalgeographic.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (539, 'BRT Apartments Corp.', 'kwasteneyey@eepurl.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (540, 'Teekay Corporation', 'dmcelreeez@microsoft.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (541, 'Francesca''s Holdings Corporation', 'brichardtf0@unesco.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (542, 'Fresh Del Monte Produce, Inc.', 'jhouchenf1@cpanel.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (543, 'AMC Entertainment Holdings, Inc.', 'nvasilikf2@sun.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (544, 'Deltic Timber Corporation', 'nthirlwellf3@ask.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (545, 'Juno Therapeutics, Inc.', 'wsapeyf4@gmpg.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (546, 'Charter Financial Corp.', 'lmaillardf5@phpbb.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (547, 'The First of Long Island Corporation', 'arotchellf6@soup.io');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (548, 'CM Finance Inc', 'dhackwellf7@facebook.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (549, 'PennantPark Investment Corporation', 'verswellf8@dmoz.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (550, 'Cinedigm Corp', 'tshortonf9@geocities.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (551, 'Amplify Online Retail ETF', 'ebonhomefa@istockphoto.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (552, 'Kayne Anderson Acquisition Corp.', 'lenevoldfb@marriott.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (553, 'Royce Value Trust, Inc.', 'aattlefc@usatoday.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (554, 'Andina Acquisition Corp. II', 'afrankefd@dagondesign.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (555, 'Union Bankshares, Inc.', 'aoakshottfe@ftc.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (556, 'Pacific Biosciences of California, Inc.', 'obeethamff@squidoo.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (557, 'RCM Technologies, Inc.', 'slawsonfg@typepad.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (558, 'Kingsway Financial Services, Inc.', 'rhealdfh@shutterfly.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (559, 'General Finance Corporation', 'ptardifffi@blinklist.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (560, 'Allegiant Travel Company', 'icaugheyfj@webeden.co.uk');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (561, 'Royal Dutch Shell PLC', 'aeuesdenfk@go.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (562, 'XO Group, Inc.', 'epitchfordfl@oakley.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (563, 'MIND C.T.I. Ltd.', 'mmenezesfm@histats.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (564, 'Pentair plc.', 'ddowbekinfn@cnet.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (565, 'Navistar International Corporation', 'etuckettfo@go.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (566, 'Johnson & Johnson', 'kgrolmannfp@latimes.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (567, 'Salesforce.com Inc', 'alorainefq@bandcamp.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (568, 'Encore Capital Group Inc', 'nbibbiefr@columbia.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (569, 'Oclaro, Inc.', 'bhampefs@sun.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (570, 'Express Scripts Holding Company', 'tblumfieldft@umn.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (571, 'Neovasc Inc.', 'vpeacockefu@marketwatch.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (572, 'Builders FirstSource, Inc.', 'beglesefv@ihg.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (573, 'Automatic Data Processing, Inc.', 'spennickfw@e-recht24.de');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (574, 'MarineMax, Inc.', 'bgullifantfx@addthis.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (575, 'Eclipse Resources Corporation', 'vcallissfy@latimes.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (576, 'Apollo Endosurgery, Inc.', 'fwallettfz@ifeng.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (577, 'Morgan Stanley Emerging Markets Fund, Inc.', 'hguidellig0@mapquest.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (578, 'Highwoods Properties, Inc.', 'umellodyg1@si.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (579, 'National Energy Services Reunited Corp.', 'swalworthg2@ycombinator.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (580, 'Digi International Inc.', 'grulteng3@eepurl.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (581, 'AAR Corp.', 'acurnickg4@addtoany.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (582, 'Apollo Commercial Real Estate Finance', 'jgianolinig5@canalblog.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (583, 'SunTrust Banks, Inc.', 'acliffeg6@smh.com.au');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (584, 'Adverum Biotechnologies, Inc.', 'aduforeg7@hugedomains.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (585, 'SEACOR Marine Holdings Inc.', 'adriuzzig8@themeforest.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (586, 'Logitech International S.A.', 'gkonertg9@omniture.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (587, 'Nuveen High Income 2020 Target Term Fund', 'kfahertyga@narod.ru');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (588, 'DDR Corp.', 'mlibbeygb@51.la');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (589, 'Ares Dynamic Credit Allocation Fund, Inc.', 'sangelgc@guardian.co.uk');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (590, 'Eaton Vance Municipal Income Trust', 'rmiddiffgd@biblegateway.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (591, 'Stericycle, Inc.', 'dclendennenge@state.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (592, 'Global Medical REIT Inc.', 'jmuxworthygf@simplemachines.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (593, 'Frequency Electronics, Inc.', 'mkalinowskygg@photobucket.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (594, 'Heritage-Crystal Clean, Inc.', 'dokillgh@google.ru');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (595, 'Dimension Therapeutics, Inc.', 'spryddengi@narod.ru');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (596, 'Renren Inc.', 'tgiabuccigj@sphinn.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (597, 'Inovio Pharmaceuticals, Inc.', 'bwilkinsongk@apache.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (598, 'W.R. Berkley Corporation', 'rlynnettgl@sfgate.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (599, 'Matrix Service Company', 'dormstongm@sbwire.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (600, 'Woori Bank', 'sdollgn@home.pl');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (601, 'Celadon Group, Inc.', 'vworsfieldgo@ning.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (602, 'CONMED Corporation', 'lrobathongp@xinhuanet.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (603, 'R1 RCM Inc.', 'tgiacomuccigq@reverbnation.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (604, 'C&F Financial Corporation', 'aoutramgr@walmart.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (605, 'Landec Corporation', 'kmcguanegs@webmd.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (606, 'J P Morgan Chase & Co', 'gzmitrichenkogt@indiatimes.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (607, 'Array BioPharma Inc.', 'cjantongu@si.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (608, 'Zendesk, Inc.', 'kvidineevgv@typepad.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (609, 'Canon, Inc.', 'sheathcottgw@blogs.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (610, 'PolarityTE, Inc.', 'ecollymoregx@bravesites.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (611, 'Entergy Arkansas, Inc.', 'gfreegardgy@skyrock.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (612, 'Trecora Resources', 'cculverhousegz@comsenz.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (613, 'SecureWorks Corp.', 'bbevissh0@hud.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (614, 'Stratasys, Ltd.', 'mmarkelh1@eventbrite.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (615, 'Tennessee Valley Authority', 'cporth2@unesco.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (616, 'Regency Centers Corporation', 'ckielyh3@columbia.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (617, 'China Natural Resources, Inc.', 'mwillertonh4@nasa.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (618, 'Textron Inc.', 'earkillh5@dagondesign.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (619, 'Boulevard Acquisition Corp. II', 'fpittendreighh6@epa.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (620, 'Morgan Stanley', 'kheersmah7@amazon.de');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (621, 'Merrimack Pharmaceuticals, Inc.', 'dhewellh8@sun.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (622, 'Allete, Inc.', 'wleemanh9@seesaa.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (623, 'Federal Realty Investment Trust', 'npetrushkaha@theguardian.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (624, 'Geospace Technologies Corporation', 'jlangmeadhb@shinystat.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (625, 'PJT Partners Inc.', 'lbarrackhc@netscape.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (626, 'Snyder''s-Lance, Inc.', 'mlavalliehd@examiner.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (627, 'Huron Consulting Group Inc.', 'gtumiltyhe@irs.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (628, 'Clean Harbors, Inc.', 'jpoweleehf@privacy.gov.au');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (629, 'Shopify Inc.', 'gfaudriehg@nydailynews.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (630, 'VOXX International Corporation', 'rhoythh@technorati.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (631, 'Multi-Color Corporation', 'idaniellothi@hud.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (632, 'Monster Digital, Inc.', 'dsyddonhj@mlb.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (633, 'Payment Data Systems, Inc.', 'rwhaleshk@thetimes.co.uk');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (634, 'Astec Industries, Inc.', 'rburletonhl@salon.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (635, 'W.R. Grace & Co.', 'sdavidescohm@wordpress.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (636, 'Henry Schein, Inc.', 'idanevhn@cam.ac.uk');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (637, 'Biohaven Pharmaceutical Holding Company Ltd.', 'wvautreho@nps.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (638, 'Harte-Hanks, Inc.', 'mheintzschhp@multiply.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (639, 'Summer Infant, Inc.', 'mvellahq@angelfire.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (640, 'Phillips 66', 'ptrevascushr@washington.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (641, 'Nexvet Biopharma plc', 'jvalenciahs@archive.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (642, 'New York Community Bancorp, Inc.', 'mkirscheht@comsenz.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (643, 'Synalloy Corporation', 'nszwarchu@mediafire.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (644, 'P & F Industries, Inc.', 'tpulmanhv@amazon.de');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (645, 'Eagle Pharmaceuticals, Inc.', 'mneyhw@people.com.cn');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (646, 'First Trust Europe AlphaDEX Fund', 'nolivellohx@alexa.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (647, 'MetLife, Inc.', 'hgronaverhy@cyberchimps.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (648, 'Randgold Resources Limited', 'jkadarhz@elegantthemes.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (649, 'GasLog Partners LP', 'elicciardielloi0@wordpress.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (650, 'Sprouts Farmers Market, Inc.', 'jkirschei1@indiegogo.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (651, 'China Cord Blood Corporation', 'asleenyi2@phoca.cz');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (652, 'Roka Bioscience, Inc.', 'dchoulesi3@comcast.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (653, 'Eldorado Gold Corporation', 'wnoadesi4@weather.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (654, 'Peregrine Pharmaceuticals Inc.', 'mmctrustyi5@gravatar.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (655, 'Nationstar Mortgage Holdings Inc.', 'mshillingtoni6@reddit.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (656, 'Clearside Biomedical, Inc.', 'csharvilli7@yandex.ru');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (657, 'Nymox Pharmaceutical Corporation', 'eraui8@dyndns.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (658, 'Dynagas LNG Partners LP', 'twellingsi9@msu.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (659, 'Nuveen S&P 500 Dynamic Overwrite Fund', 'nloggieia@usnews.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (660, 'Cascadian Therapeutics, Inc.', 'egolightlyib@ihg.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (661, 'Telecom Italia S.P.A.', 'gbleackleyic@springer.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (662, 'ServiceSource International, Inc.', 'cfarfalameevid@arizona.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (663, 'Becton, Dickinson and Company', 'vsterrickie@nih.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (664, 'State Street Corporation', 'odinniesif@google.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (665, 'CIT Group Inc (DEL)', 'pellinig@ucsd.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (666, 'Hallmark Financial Services, Inc.', 'wiacobassiih@accuweather.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (667, 'Asia Pacific Fund, Inc. (The)', 'ccrabii@who.int');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (668, 'Halozyme Therapeutics, Inc.', 'hcartyij@alibaba.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (669, 'Antero Midstream GP LP', 'tsoppik@reddit.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (670, 'Community Healthcare Trust Incorporated', 'ayvensil@printfriendly.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (671, 'Delta Air Lines, Inc.', 'lcomerfordim@cbslocal.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (672, 'Northwest Natural Gas Company', 'amilroyin@squidoo.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (673, 'Southern California Edison Company', 'jbrownlowio@boston.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (674, 'Manhattan Bridge Capital, Inc', 'mfoskewip@linkedin.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (675, 'Hovnanian Enterprises Inc', 'cwhilesiq@buzzfeed.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (676, 'Sun Hydraulics Corporation', 'lcarleir@omniture.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (677, 'New York Mortgage Trust, Inc.', 'wbirchillis@discuz.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (678, 'Timberland Bancorp, Inc.', 'aeyckelbergit@360.cn');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (679, 'LCI Industries ', 'tellamsiu@weebly.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (680, 'Salesforce.com Inc', 'taventiv@reverbnation.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (681, 'Williams Companies, Inc. (The)', 'jskeermeriw@intel.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (682, 'Vishay Precision Group, Inc.', 'smcgowingix@bizjournals.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (683, 'Pacific Gas & Electric Co.', 'ceddsiy@whitehouse.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (684, 'MSC Industrial Direct Company, Inc.', 'gfeyeriz@aboutads.info');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (685, 'Shenandoah Telecommunications Co', 'egoudyj0@angelfire.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (686, 'Synovus Financial Corp.', 'rrennej1@joomla.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (687, 'CME Group Inc.', 'rquinj2@mozilla.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (688, 'Banco Santander, S.A.', 'mramshayj3@upenn.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (689, 'Hersha Hospitality Trust', 'hlivelyj4@reuters.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (690, 'Acuity Brands Inc', 'dgonsalvoj5@independent.co.uk');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (691, 'Goldman Sachs MLP Income Opportunities Fund', 'kpickersailj6@netvibes.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (692, 'Fortuna Silver Mines Inc.', 'bhaddonj7@chicagotribune.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (693, 'FLIR Systems, Inc.', 'cgrahamslawj8@tuttocitta.it');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (694, 'Central Garden & Pet Company', 'gpentercostj9@illinois.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (695, 'ALPS/Dorsey Wright Sector Momentum ETF', 'dhughsonja@discuz.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (696, 'VSE Corporation', 'lrappjb@aol.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (697, 'Philip Morris International Inc', 'kpropjc@artisteer.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (698, 'Pioneer Floating Rate Trust', 'tkedwelljd@washington.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (699, 'Bel Fuse Inc.', 'cverryanje@blogs.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (700, 'Black Knight Financial Services, Inc.', 'mmarconijf@nps.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (701, 'Comtech Telecommunications Corp.', 'rshemmansjg@google.pl');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (702, 'Tuttle Tactical Management Multi-Strategy Income ETF', 'fstensonjh@livejournal.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (703, 'Standex International Corporation', 'cmarkwelleyji@studiopress.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (704, 'Commerce Bancshares, Inc.', 'fironsidejj@sun.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (705, 'Scudder Multi-Market Income Trust', 'nnokejk@google.com.hk');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (706, 'Synalloy Corporation', 'gbrockwayjl@earthlink.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (707, 'FCB Financial Holdings, Inc.', 'rvlachjm@nature.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (708, 'Nuveen Core Equity Alpha Fund', 'hbowlandsjn@alibaba.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (709, 'Ion Geophysical Corporation', 'aphilpotjo@histats.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (710, 'Andina Acquisition Corp. II', 'brossonjp@scribd.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (711, 'FedEx Corporation', 'stugmanjq@netlog.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (712, 'Monotype Imaging Holdings Inc.', 'sfoldesjr@slashdot.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (713, 'First Trust NASDAQ Global Auto Index Fund', 'mlaunchburyjs@utexas.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (714, 'Steel Dynamics, Inc.', 'aberettajt@nymag.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (715, 'Rentech, Inc.', 'lsnodingju@bravesites.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (716, 'Domino''s Pizza Inc', 'mcoggelljv@marriott.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (717, 'iPath US Treasury 5-year Bear ETN', 'bferenczjw@shop-pro.jp');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (718, 'Cincinnati Bell Inc', 'ebeastalljx@nhs.uk');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (719, 'Teladoc, Inc.', 'ffostersmithjy@xinhuanet.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (720, 'QAD Inc.', 'ewailesjz@mashable.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (721, 'Chesapeake Energy Corporation', 'iraithbiek0@desdev.cn');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (722, 'Hydrogenics Corporation', 'bjallandk1@naver.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (723, 'American Financial Group, Inc.', 'wcoursk2@behance.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (724, 'VictoryShares Emerging Market Volatility Wtd ETF', 'csoutark3@tinyurl.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (725, 'Highway Holdings Limited', 'lwimmsk4@virginia.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (726, 'Gap, Inc. (The)', 'fsplevink5@reference.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (727, 'First Trust BICK Index Fund', 'tscreenk6@pinterest.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (728, 'Wal-Mart Stores, Inc.', 'rchastelk7@mlb.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (729, 'GigaMedia Limited', 'dfalcok8@wikia.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (730, 'Editas Medicine, Inc.', 'tdifrancecshik9@hostgator.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (731, 'BlackRock New Jersey Municipal Income Trust', 'morrowka@360.cn');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (732, 'Global Sources Ltd.', 'lpargiterkb@constantcontact.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (733, 'Vulcan Materials Company', 'amillichapkc@xinhuanet.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (734, 'Invesco Bond Fund', 'sdufferkd@theglobeandmail.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (735, 'Helen of Troy Limited', 'wramsbothamke@washingtonpost.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (736, 'MutualFirst Financial Inc.', 'tpratorkf@nps.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (737, 'Reading International Inc', 'givanishchevkg@ameblo.jp');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (738, 'Lianluo Smart Limited', 'mocannavankh@goodreads.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (739, 'Limbach Holdings, Inc.', 'sfroudeki@imgur.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (740, 'U.S. Energy Corp.', 'rbartzenkj@utexas.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (741, 'Scudder Strategic Municiple Income Trust', 'jbuzinkk@last.fm');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (742, 'Equus Total Return, Inc.', 'lspightkl@tumblr.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (743, 'State Street Corporation', 'ghazlehurstkm@wikispaces.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (744, 'Range Resources Corporation', 'tglaveskn@techcrunch.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (745, 'Standard Motor Products, Inc.', 'mtuffieldko@tripadvisor.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (746, 'Summit Therapeutics plc', 'atryekp@cdc.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (747, 'NewStar Financial, Inc.', 'gcasazzakq@sciencedirect.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (748, 'Prana Biotechnology Ltd', 'vfalkouskr@seesaa.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (749, 'China Recycling Energy Corporation', 'bcolvineks@amazon.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (750, 'Brightcove Inc.', 'cmenatkt@joomla.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (751, 'Loews Corporation', 'hglencroscheku@mit.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (752, 'Sykes Enterprises, Incorporated', 'mheeliskv@fc2.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (753, 'Barnes Group, Inc.', 'srowleykw@netlog.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (754, 'Alaska Communications Systems Group, Inc.', 'gsmaleskx@theguardian.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (755, 'Magellan Midstream Partners L.P.', 'sratteryky@dailymotion.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (756, 'Radware Ltd.', 'rmanketellkz@scientificamerican.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (757, 'Green Bancorp, Inc.', 'bnenol0@clickbank.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (758, 'Winmark Corporation', 'kgheerhaertl1@addtoany.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (759, 'Pebblebrook Hotel Trust', 'epaschekl2@utexas.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (760, 'VALE S.A.', 'ccarnl3@comsenz.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (761, 'Telecom Italia S.P.A.', 'nantliffl4@bbc.co.uk');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (762, 'PIMCO New York Municipal Income Fund', 'abrodwayl5@last.fm');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (763, 'Capital One Financial Corporation', 'pduddenl6@wiley.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (764, 'Phibro Animal Health Corporation', 'kingreml7@cocolog-nifty.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (765, 'Novus Therapeutics, Inc.', 'vpressdeel8@usnews.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (766, 'BioAmber Inc.', 'kchaplinl9@examiner.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (767, 'Natural Grocers by Vitamin Cottage, Inc.', 'tenticottla@webmd.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (768, 'Rogers Communication, Inc.', 'esummerrelllb@macromedia.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (769, 'Huntsman Corporation', 'mpennellslc@surveymonkey.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (770, 'FlexShopper, Inc.', 'gfarensld@nbcnews.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (771, 'PGT Innovations, Inc.', 'cbartlamle@ihg.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (772, 'Depomed, Inc.', 'djuppelf@opera.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (773, 'CNOOC Limited', 'fchardinlg@sourceforge.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (774, 'Nomura Holdings Inc ADR', 'rmedlenlh@pinterest.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (775, 'State Street Corporation', 'kgreatlandli@tripod.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (776, 'Novus Therapeutics, Inc.', 'rjanaslj@mayoclinic.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (777, 'Vornado Realty Trust', 'mpicardolk@sbwire.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (778, 'BioLineRx Ltd.', 'mpauntonll@berkeley.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (779, 'Sevcon, Inc.', 'gelgoodlm@themeforest.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (780, 'Graham Holdings Company', 'mostridgeln@zimbio.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (781, 'Sina Corporation', 'bsherifflo@cdc.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (782, 'Blackstone GSO Senior Floating Rate Term Fund', 'jcawdronlp@rediff.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (783, 'Chesapeake Utilities Corporation', 'clilbournelq@w3.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (784, 'Brookfield Property Partners L.P.', 'beinchcombelr@people.com.cn');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (785, 'Grupo Aeroportuario del Sureste, S.A. de C.V.', 'mkettls@phoca.cz');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (786, 'TravelCenters of America LLC', 'istorrarlt@usa.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (787, 'PNC Financial Services Group, Inc. (The)', 'fpeatheyjohnslu@bbc.co.uk');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (788, 'Sutherland Asset Management Corporation', 'planderslv@dot.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (789, 'D/B/A Chubb Limited New', 'gadolfsenlw@umich.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (790, 'J P Morgan Chase & Co', 'mayerslx@sciencedaily.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (791, 'Freeport-McMoran, Inc.', 'dreinbachly@squidoo.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (792, 'Macquarie Infrastructure Company', 'dnormadelllz@4shared.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (793, 'Gladstone Commercial Corporation', 'thurnem0@redcross.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (794, 'Kayne Anderson MLP Investment Company', 'kivinsm1@e-recht24.de');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (795, 'Morgan Stanley', 'tdalmeidam2@taobao.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (796, 'Conifer Holdings, Inc.', 'ckeatm3@facebook.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (797, 'Ultra Petroleum Corp.', 'askettlesm4@imdb.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (798, 'Las Vegas Sands Corp.', 'whanabym5@fema.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (799, 'Korea Fund, Inc. (The)', 'shayem6@phpbb.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (800, 'Woori Bank', 'plunom7@blogtalkradio.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (801, 'e.l.f. Beauty, Inc.', 'klambertonm8@arstechnica.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (802, 'Fresh Del Monte Produce, Inc.', 'dwhelanm9@typepad.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (803, 'Mattersight Corporation', 'yfannonma@mapquest.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (804, 'Shake Shack, Inc.', 'csalemb@auda.org.au');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (805, 'Calamos Convertible and High Income Fund', 'bclaringboldmc@ucla.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (806, 'Torchmark Corporation', 'kferrymd@eventbrite.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (807, 'Andina Acquisition Corp. II', 'sstamperme@is.gd');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (808, 'Civitas Solutions, Inc.', 'jklambtmf@drupal.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (809, 'Grupo Aeroportuario del Centro Norte S.A.B. de C.V.', 'asuggatemg@themeforest.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (810, 'National Holdings Corporation', 'gwilcockemh@feedburner.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (811, 'Celgene Corporation', 'grubkemi@rediff.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (812, 'PennyMac Mortgage Investment Trust', 'cbinglemj@purevolume.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (813, 'Bridgepoint Education, Inc.', 'othameltmk@people.com.cn');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (814, 'Performance Food Group Company', 'bdossetterml@rakuten.co.jp');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (815, 'Ebix, Inc.', 'rcaldayroumm@exblog.jp');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (816, 'Facebook, Inc.', 'lmunnismn@cisco.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (817, 'Camden National Corporation', 'ewilloughbymo@ow.ly');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (818, '51job, Inc.', 'agrcicmp@bloglovin.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (819, 'Great Elm Capital Group, Inc. ', 'yvonderemptenmq@who.int');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (820, 'GP Strategies Corporation', 'vathowmr@yellowpages.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (821, 'FMC Corporation', 'asanneyms@163.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (822, 'First Trust NASDAQ-100- Technology Index Fund', 'bboddingtonmt@storify.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (823, 'CatchMark Timber Trust, Inc.', 'lbaggsmu@flickr.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (824, 'B. Riley Financial, Inc.', 'ablaisdalemv@ow.ly');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (825, 'Fusion Telecommunications International, Inc.', 'hdudingmw@seesaa.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (826, 'US Foods Holding Corp.', 'mboshiermx@wordpress.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (827, 'Charter Communications, Inc.', 'eselmanmy@go.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (828, 'Fossil Group, Inc.', 'nrheubottommz@prnewswire.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (829, 'Cardtronics plc', 'jvanarsdalenn0@imgur.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (830, 'PennTex Midstream Partners, LP', 'cwillingalen1@slate.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (831, 'LINE Corporation', 'bartern2@kickstarter.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (832, 'Arbutus Biopharma Corporation', 'sladen3@who.int');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (833, 'M I Acquisitions, Inc.', 'abritlandn4@comcast.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (834, 'PIMCO Strategic Income Fund, Inc.', 'lfistn5@a8.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (835, 'QCR Holdings, Inc.', 'jknotonn6@buzzfeed.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (836, 'Alcentra Capital Corp.', 'dturnelln7@bloglines.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (837, 'Principal Price Setters Index ETF', 'rabbaten8@chronoengine.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (838, 'United Continental Holdings, Inc.', 'eransomen9@discuz.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (839, 'Thai Fund, Inc. (The)', 'gblemingsna@hud.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (840, 'Energen Corporation', 'lstormnb@last.fm');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (841, 'Schmitt Industries, Inc.', 'tbyllamnc@soundcloud.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (842, 'XG Technology, Inc', 'mmorphewnd@xing.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (843, 'Alliance HealthCare Services, Inc.', 'abrufordne@zimbio.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (844, 'Iridium Communications Inc', 'cmillottnf@woothemes.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (845, 'Nutraceutical International Corporation', 'jlindbladng@dot.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (846, 'Quinpario Acquisition Corp. 2', 'deaklynh@usnews.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (847, 'Gigamon Inc.', 'gmidgleyni@google.es');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (848, 'Farmers & Merchants Bancorp, Inc.', 'rrawstornenj@shop-pro.jp');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (849, 'MFC Bancorp Ltd.', 'zskeletonnk@uiuc.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (850, 'Syngenta AG', 'obunclarknl@webs.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (851, 'Hudson Global, Inc.', 'rczaplanm@latimes.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (852, 'Kelly Services, Inc.', 'btaklenn@networksolutions.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (853, 'HollyFrontier Corporation', 'ckingstonno@mayoclinic.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (854, 'Comstock Holding Companies, Inc.', 'pchewternp@4shared.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (855, 'BlackRock Income Trust Inc. (The)', 'mgrollenq@google.fr');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (856, 'Granite Construction Incorporated', 'dvecknr@github.io');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (857, 'Baytex Energy Corp', 'hallberryns@dell.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (858, 'ClearBridge Dividend Strategy ESG ETF', 'dhinrichsnt@reference.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (859, 'UNITIL Corporation', 'sfurmagiernu@newsvine.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (860, 'XPO Logistics, Inc.', 'khathornnv@etsy.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (861, 'Bel Fuse Inc.', 'sbrowettnw@alexa.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (862, 'The Middleby Corporation', 'jgeramnx@cnet.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (863, 'The Navigators Group, Inc.', 'rneseyny@networksolutions.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (864, 'Euroseas Ltd.', 'avamplusnz@yahoo.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (865, 'WisdomTree Japan Hedged SmallCap Equity Fund', 'hbennellicko0@ibm.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (866, 'DDR Corp.', 'jcovendono1@statcounter.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (867, 'Valeritas Holdings, Inc.', 'estaleyo2@mashable.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (868, 'GCP Applied Technologies Inc.', 'ssterlingo3@moonfruit.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (869, 'Qumu Corporation', 'amcluckyo4@google.co.jp');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (870, 'First Community Bancshares, Inc.', 'yinghamo5@people.com.cn');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (871, 'QIWI plc', 'scolloffo6@sfgate.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (872, 'Hersha Hospitality Trust', 'tsappsono7@abc.net.au');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (873, 'Nuveen Massachusetts Municipal Income Fund', 'hflugero8@people.com.cn');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (874, 'Eagle Materials Inc', 'ddarbyshireo9@eepurl.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (875, 'Wheeler Real Estate Investment Trust, Inc.', 'recclestoneoa@upenn.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (876, 'ESSA Bancorp, Inc.', 'kcamidgeob@surveymonkey.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (877, 'Sunoco LP', 'lbrashieroc@infoseek.co.jp');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (878, 'Matador Resources Company', 'afilipyevod@amazonaws.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (879, 'TAL Education Group', 'dgehrtzoe@princeton.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (880, 'Royal Bank Of Canada', 'rwynnof@webeden.co.uk');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (881, 'Willis Lease Finance Corporation', 'poluneyog@ycombinator.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (882, 'Trupanion, Inc.', 'rfluckeroh@huffingtonpost.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (883, 'Manhattan Bridge Capital, Inc', 'mdaguannooi@etsy.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (884, 'Beneficial Bancorp, Inc.', 'asapsfordeoj@twitpic.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (885, 'The Charles Schwab Corporation', 'gpazok@xing.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (886, 'iShares Fallen Angels USD Bond ETF', 'obeneixol@netscape.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (887, 'Eleven Biotherapeutics, Inc.', 'gcaneom@barnesandnoble.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (888, 'PNM Resources, Inc. (Holding Co.)', 'rburlayon@whitehouse.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (889, 'First Trust Eurozone AlphaDEX ETF', 'cdawtreyoo@gravatar.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (890, 'PPG Industries, Inc.', 'mussherop@typepad.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (891, 'Orange', 'wkilfeatheroq@yelp.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (892, 'Blackrock MuniYield Michigan Quality Fund, Inc.', 'lhuttor@hubpages.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (893, 'E*TRADE Financial Corporation', 'iconradsenos@army.mil');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (894, 'Webster Financial Corporation', 'cdericutot@sfgate.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (895, 'BGC Partners, Inc.', 'kbuckelou@ow.ly');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (896, 'Granite Real Estate Inc.', 'gcunniffeov@nih.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (897, 'Cone Midstream Partners LP', 'omcalindonow@reddit.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (898, 'Walt Disney Company (The)', 'lgoodliffeox@fc2.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (899, 'Permian Basin Royalty Trust', 'dhainesoy@loc.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (900, 'Inspired Entertainment, Inc.', 'vlangfordoz@nih.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (901, 'Babcock', 'bpurkessp0@furl.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (902, 'Extraction Oil & Gas, Inc.', 'ebothenp1@xinhuanet.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (903, 'Albany International Corporation', 'rjointp2@ezinearticles.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (904, 'Teekay Offshore Partners L.P.', 'zmuellerp3@ustream.tv');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (905, 'iShares MSCI EAFE ESG Optimized ETF', 'bvashchenkop4@purevolume.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (906, 'Equity Lifestyle Properties, Inc.', 'colennikovp5@amazon.co.uk');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (907, 'Apollo Senior Floating Rate Fund Inc.', 'nburlep6@yellowbook.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (908, 'WGL Holdings Inc', 'sjephcottp7@google.cn');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (909, 'Emergent Biosolutions, Inc.', 'dpettusp8@sun.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (910, 'Cesca Therapeutics Inc.', 'myanelep9@shop-pro.jp');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (911, 'Blackrock New York Municipal 2018 Term Trust', 'wvidapa@fastcompany.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (912, 'Petroleo Brasileiro S.A.- Petrobras', 'epetrowskypb@bizjournals.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (913, 'eGain Corporation', 'awolpertpc@biblegateway.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (914, 'First Internet Bancorp', 'bswinpd@t-online.de');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (915, 'Medovex Corp.', 'boshevlinpe@fotki.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (916, 'Advaxis, Inc.', 'wsvanettipf@latimes.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (917, 'NAPCO Security Technologies, Inc.', 'tmacgillreichpg@tuttocitta.it');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (918, 'First Trust Capital Strength ETF', 'lfisbyph@disqus.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (919, 'AMC Networks Inc.', 'linsworthpi@4shared.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (920, 'Bank of South Carolina Corp.', 'tbroxtonpj@illinois.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (921, 'Bridgepoint Education, Inc.', 'rkinchleapk@google.fr');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (922, 'United States Steel Corporation', 'nharvisonpl@sohu.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (923, 'Peoples Financial Services Corp. ', 'edavidovicpm@vimeo.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (924, 'EPR Properties', 'ibouskillpn@statcounter.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (925, 'WisdomTree Barclays Interest Rate Hedged U.S. Aggregate Bond F', 'mcaddingpo@wikipedia.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (926, 'Capital Senior Living Corporation', 'cgravattpp@msu.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (927, 'Seneca Foods Corp.', 'bmacneicepq@tinyurl.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (928, 'Vornado Realty Trust', 'soloughanepr@so-net.ne.jp');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (929, 'NeoPhotonics Corporation', 'beastbrookps@tripod.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (930, 'Sypris Solutions, Inc.', 'pjaegarpt@go.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (931, 'Chuy''s Holdings, Inc.', 'mbettlespu@goo.ne.jp');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (932, 'NeoPhotonics Corporation', 'ewillimotpv@msu.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (933, 'TPI Composites, Inc.', 'nhinkleypw@a8.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (934, 'Allstate Corporation (The)', 'pkarpetspx@hhs.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (935, 'BorgWarner Inc.', 'adurrettpy@nba.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (936, 'Mercantile Bank Corporation', 'brutledgepz@china.com.cn');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (937, 'QuinStreet, Inc.', 'callenq0@yelp.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (938, 'Navios Maritime Midstream Partners LP', 'wdozdillq1@foxnews.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (939, 'The Intergroup Corporation', 'mmargrieq2@goo.ne.jp');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (940, 'Banco Santander, S.A.', 'dlunamq3@baidu.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (941, 'Zayo Group Holdings, Inc.', 'ccrookeq4@senate.gov');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (942, 'Westbury Bancorp, Inc.', 'hlhommeq5@blinklist.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (943, 'Park City Group, Inc.', 'kcortezq6@techcrunch.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (944, 'ProShares UltraPro QQQ', 'mveyseyq7@wordpress.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (945, 'Farmers & Merchants Bancorp, Inc.', 'mhaslenq8@unc.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (946, 'NVE Corporation', 'tlineq9@bbc.co.uk');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (947, 'Kayne Anderson Energy Total Return Fund, Inc.', 'dbellhamqa@bravesites.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (948, 'CTS Corporation', 'dblackbroughqb@cbc.ca');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (949, 'Cerecor Inc.', 'cdebrettqc@behance.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (950, 'Franco-Nevada Corporation', 'cjirucaqd@dailymotion.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (951, 'Nuveen Maryland Quality Municipal Income Fund', 'lnormanvilleqe@sohu.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (952, 'AmTrust Financial Services, Inc.', 'flifeqf@prweb.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (953, 'Conn''s, Inc.', 'gfollenqg@facebook.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (954, 'Viper Energy Partners LP', 'mwindlessqh@ustream.tv');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (955, 'General Electric Company', 'sstoddqi@over-blog.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (956, 'Nuveen Credit Opportunities 2022 Target Term Fund', 'euptonqj@1und1.de');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (957, 'Delphi Automotive plc', 'hluisqk@dyndns.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (958, 'Web.com Group, Inc.', 'mmccreadieql@exblog.jp');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (959, 'Myers Industries, Inc.', 'arivettqm@wsj.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (960, 'First Trust Switzerland AlphaDEX Fund', 'bhulkesqn@behance.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (961, 'Tortoise MLP Fund, Inc.', 'dlamasnaqo@bbc.co.uk');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (962, 'Comcast Corporation', 'ameneuxqp@jimdo.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (963, 'CHS Inc', 'hmattessenqq@tumblr.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (964, 'Dollar General Corporation', 'iroukeqr@php.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (965, 'Community Healthcare Trust Incorporated', 'mhadwickqs@merriam-webster.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (966, 'The Rubicon Project, Inc.', 'vrowntreeqt@amazonaws.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (967, 'Chuy''s Holdings, Inc.', 'mimmingsqu@ycombinator.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (968, 'PolarityTE, Inc.', 'gschultzeqv@sakura.ne.jp');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (969, 'Lion Biotechnologies, Inc.', 'bkreberqw@360.cn');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (970, 'Nuveen High Income November 2021 Target Term Fund', 'ahutchenceqx@psu.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (971, 'Raytheon Company', 'efloydqy@github.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (972, 'IDEXX Laboratories, Inc.', 'mroocroftqz@icq.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (973, 'Mattel, Inc.', 'kcluittr0@adobe.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (974, 'KKR Financial Holdings LLC', 'wmacenellyr1@virginia.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (975, 'Nuveen Tax-Advantaged Total Return Strategy Fund', 'jsamsonsenr2@issuu.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (976, 'PowerShares Nasdaq Internet Portfolio', 'sdeguerrer3@redcross.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (977, 'Tribune Media Company', 'lmullearyr4@delicious.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (978, 'CABCO Series 2004-101 Trust', 'acalveleyr5@webeden.co.uk');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (979, 'Five9, Inc.', 'sgarsider6@skyrock.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (980, 'Xcerra Corporation', 'goubridger7@arizona.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (981, 'Clearfield, Inc.', 'bmcphadenr8@scientificamerican.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (982, 'Banco Latinoamericano de Comercio Exterior, S.A.', 'eglowackir9@nydailynews.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (983, 'Wells Fargo & Company', 'bciscora@msn.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (984, 'Patheon N.V.', 'lebbuttrb@dailymail.co.uk');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (985, 'US Foods Holding Corp.', 'rsircomberc@umn.edu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (986, 'First Trust United Kingdom AlphaDEX Fund', 'pglencrashrd@goo.gl');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (987, 'Templeton Emerging Markets Fund', 'jhryniewickire@toplist.cz');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (988, 'First Trust Nasdaq Transportation ETF', 'sbarrackrf@comsenz.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (989, 'Brink''s Company (The)', 'adelicaterg@techcrunch.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (990, 'First Trust New Opportunities MLP & Energy Fund', 'plivingstonerh@de.vu');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (991, 'Urstadt Biddle Properties Inc.', 'speterffyri@joomla.org');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (992, 'Ruth''s Hospitality Group, Inc.', 'smccorryrj@a8.net');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (993, 'MFS Intermediate Income Trust', 'dnuttenrk@blogspot.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (994, 'Take-Two Interactive Software, Inc.', 'ssheerrl@hp.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (995, 'Hewlett Packard Enterprise Company', 'sdavydochrm@hugedomains.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (996, 'Magal Security Systems Ltd.', 'onestorrn@guardian.co.uk');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (997, 'The Trade Desk, Inc.', 'jtwitchingsro@bloglines.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (998, 'Great Elm Capital Group, Inc. ', 'cmacneilrp@ustream.tv');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (999, 'Booz Allen Hamilton Holding Corporation', 'bnelissenrq@dell.com');
+insert into proveedor (codigo_proveedor, nombre_proveedor, correo) values (1000, 'Select Energy Services, Inc.', 'ashorthillrr@abc.net.au');
 
--- datos modo pago
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (1,'1/23/2022'),
-	 (2,'5/18/2022'),
-	 (3,'11/9/2022'),
-	 (4,'11/17/2022'),
-	 (5,'8/23/2022'),
-	 (6,'7/15/2022'),
-	 (7,'1/7/2023'),
-	 (8,'11/26/2022'),
-	 (9,'12/30/2022'),
-	 (10,'6/28/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (11,'9/13/2022'),
-	 (12,'10/31/2022'),
-	 (13,'9/10/2022'),
-	 (14,'10/3/2022'),
-	 (15,'1/24/2022'),
-	 (16,'12/10/2022'),
-	 (17,'1/23/2022'),
-	 (18,'11/18/2022'),
-	 (19,'12/17/2022'),
-	 (20,'11/19/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (21,'6/23/2022'),
-	 (22,'10/24/2022'),
-	 (23,'6/3/2022'),
-	 (24,'9/15/2022'),
-	 (25,'1/25/2022'),
-	 (26,'7/30/2022'),
-	 (27,'12/31/2022'),
-	 (28,'9/16/2022'),
-	 (29,'1/23/2022'),
-	 (30,'11/30/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (31,'5/18/2022'),
-	 (32,'9/19/2022'),
-	 (33,'11/19/2022'),
-	 (34,'10/20/2022'),
-	 (35,'10/18/2022'),
-	 (36,'6/20/2022'),
-	 (37,'6/25/2022'),
-	 (38,'6/12/2022'),
-	 (39,'1/12/2023'),
-	 (40,'1/5/2023');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (41,'4/1/2022'),
-	 (42,'5/13/2022'),
-	 (43,'12/4/2022'),
-	 (44,'9/16/2022'),
-	 (45,'8/13/2022'),
-	 (46,'12/14/2022'),
-	 (47,'6/26/2022'),
-	 (48,'2/11/2022'),
-	 (49,'12/11/2022'),
-	 (50,'3/28/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (51,'7/16/2022'),
-	 (52,'11/22/2022'),
-	 (53,'9/10/2022'),
-	 (54,'6/21/2022'),
-	 (55,'6/17/2022'),
-	 (56,'2/11/2022'),
-	 (57,'6/23/2022'),
-	 (58,'12/11/2022'),
-	 (59,'12/4/2022'),
-	 (60,'9/15/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (61,'9/29/2022'),
-	 (62,'8/5/2022'),
-	 (63,'9/18/2022'),
-	 (64,'11/26/2022'),
-	 (65,'12/13/2022'),
-	 (66,'10/13/2022'),
-	 (67,'2/15/2022'),
-	 (68,'8/23/2022'),
-	 (69,'6/15/2022'),
-	 (70,'1/24/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (71,'12/12/2022'),
-	 (72,'11/16/2022'),
-	 (73,'5/27/2022'),
-	 (74,'12/6/2022'),
-	 (75,'2/28/2022'),
-	 (76,'12/26/2022'),
-	 (77,'7/31/2022'),
-	 (78,'9/2/2022'),
-	 (79,'5/28/2022'),
-	 (80,'10/28/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (81,'1/26/2022'),
-	 (82,'7/22/2022'),
-	 (83,'6/1/2022'),
-	 (84,'6/5/2022'),
-	 (85,'12/12/2022'),
-	 (86,'3/9/2022'),
-	 (87,'5/29/2022'),
-	 (88,'1/31/2022'),
-	 (89,'7/23/2022'),
-	 (90,'4/20/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (91,'7/6/2022'),
-	 (92,'5/21/2022'),
-	 (93,'4/11/2022'),
-	 (94,'2/8/2022'),
-	 (95,'7/18/2022'),
-	 (96,'8/5/2022'),
-	 (97,'11/18/2022'),
-	 (98,'2/20/2022'),
-	 (99,'11/29/2022'),
-	 (100,'4/26/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (101,'7/20/2022'),
-	 (102,'11/9/2022'),
-	 (103,'2/14/2022'),
-	 (104,'4/22/2022'),
-	 (105,'12/23/2022'),
-	 (106,'1/23/2022'),
-	 (107,'11/17/2022'),
-	 (108,'9/3/2022'),
-	 (109,'4/6/2022'),
-	 (110,'1/21/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (111,'4/18/2022'),
-	 (112,'8/19/2022'),
-	 (113,'9/3/2022'),
-	 (114,'12/18/2022'),
-	 (115,'1/18/2023'),
-	 (116,'11/15/2022'),
-	 (117,'12/11/2022'),
-	 (118,'1/1/2023'),
-	 (119,'6/1/2022'),
-	 (120,'12/31/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (121,'7/23/2022'),
-	 (122,'6/21/2022'),
-	 (123,'3/27/2022'),
-	 (124,'9/10/2022'),
-	 (125,'8/20/2022'),
-	 (126,'8/4/2022'),
-	 (127,'12/27/2022'),
-	 (128,'8/14/2022'),
-	 (129,'2/12/2022'),
-	 (130,'12/26/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (131,'3/31/2022'),
-	 (132,'12/13/2022'),
-	 (133,'7/11/2022'),
-	 (134,'6/28/2022'),
-	 (135,'1/24/2022'),
-	 (136,'6/8/2022'),
-	 (137,'5/18/2022'),
-	 (138,'4/20/2022'),
-	 (139,'11/24/2022'),
-	 (140,'12/28/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (141,'3/6/2022'),
-	 (142,'2/25/2022'),
-	 (143,'10/5/2022'),
-	 (144,'8/16/2022'),
-	 (145,'9/17/2022'),
-	 (146,'3/19/2022'),
-	 (147,'11/15/2022'),
-	 (148,'7/17/2022'),
-	 (149,'10/9/2022'),
-	 (150,'7/22/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (151,'3/3/2022'),
-	 (152,'7/28/2022'),
-	 (153,'2/11/2022'),
-	 (154,'2/19/2022'),
-	 (155,'7/15/2022'),
-	 (156,'4/14/2022'),
-	 (157,'11/21/2022'),
-	 (158,'7/14/2022'),
-	 (159,'11/3/2022'),
-	 (160,'5/31/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (161,'2/6/2022'),
-	 (162,'6/2/2022'),
-	 (163,'11/9/2022'),
-	 (164,'11/5/2022'),
-	 (165,'8/14/2022'),
-	 (166,'9/13/2022'),
-	 (167,'12/10/2022'),
-	 (168,'6/5/2022'),
-	 (169,'3/30/2022'),
-	 (170,'1/17/2023');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (171,'8/3/2022'),
-	 (172,'6/8/2022'),
-	 (173,'1/27/2022'),
-	 (174,'1/12/2023'),
-	 (175,'11/7/2022'),
-	 (176,'5/7/2022'),
-	 (177,'11/10/2022'),
-	 (178,'2/15/2022'),
-	 (179,'9/22/2022'),
-	 (180,'5/19/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (181,'11/5/2022'),
-	 (182,'7/21/2022'),
-	 (183,'10/15/2022'),
-	 (184,'12/12/2022'),
-	 (185,'9/6/2022'),
-	 (186,'9/3/2022'),
-	 (187,'9/12/2022'),
-	 (188,'7/15/2022'),
-	 (189,'9/14/2022'),
-	 (190,'2/19/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (191,'1/13/2023'),
-	 (192,'10/21/2022'),
-	 (193,'7/22/2022'),
-	 (194,'1/25/2022'),
-	 (195,'12/6/2022'),
-	 (196,'2/9/2022'),
-	 (197,'6/2/2022'),
-	 (198,'9/22/2022'),
-	 (199,'9/6/2022'),
-	 (200,'4/2/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (201,'3/10/2022'),
-	 (202,'1/13/2023'),
-	 (203,'11/23/2022'),
-	 (204,'9/30/2022'),
-	 (205,'6/4/2022'),
-	 (206,'12/15/2022'),
-	 (207,'12/16/2022'),
-	 (208,'5/5/2022'),
-	 (209,'9/8/2022'),
-	 (210,'6/21/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (211,'11/16/2022'),
-	 (212,'3/17/2022'),
-	 (213,'1/5/2023'),
-	 (214,'2/16/2022'),
-	 (215,'2/15/2022'),
-	 (216,'6/4/2022'),
-	 (217,'9/20/2022'),
-	 (218,'10/9/2022'),
-	 (219,'1/14/2023'),
-	 (220,'1/5/2023');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (221,'1/17/2023'),
-	 (222,'8/2/2022'),
-	 (223,'2/23/2022'),
-	 (224,'4/14/2022'),
-	 (225,'5/21/2022'),
-	 (226,'12/1/2022'),
-	 (227,'7/14/2022'),
-	 (228,'1/1/2023'),
-	 (229,'10/30/2022'),
-	 (230,'8/9/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (231,'12/13/2022'),
-	 (232,'11/22/2022'),
-	 (233,'9/8/2022'),
-	 (234,'8/3/2022'),
-	 (235,'2/15/2022'),
-	 (236,'11/25/2022'),
-	 (237,'6/10/2022'),
-	 (238,'2/27/2022'),
-	 (239,'12/18/2022'),
-	 (240,'6/14/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (241,'4/13/2022'),
-	 (242,'11/28/2022'),
-	 (243,'2/2/2022'),
-	 (244,'12/13/2022'),
-	 (245,'2/19/2022'),
-	 (246,'11/9/2022'),
-	 (247,'8/3/2022'),
-	 (248,'8/11/2022'),
-	 (249,'11/12/2022'),
-	 (250,'6/18/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (251,'9/28/2022'),
-	 (252,'2/19/2022'),
-	 (253,'5/20/2022'),
-	 (254,'5/15/2022'),
-	 (255,'11/10/2022'),
-	 (256,'9/3/2022'),
-	 (257,'10/31/2022'),
-	 (258,'3/2/2022'),
-	 (259,'3/13/2022'),
-	 (260,'10/31/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (261,'7/31/2022'),
-	 (262,'8/8/2022'),
-	 (263,'9/3/2022'),
-	 (264,'6/30/2022'),
-	 (265,'1/3/2023'),
-	 (266,'11/7/2022'),
-	 (267,'2/26/2022'),
-	 (268,'2/16/2022'),
-	 (269,'8/25/2022'),
-	 (270,'7/1/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (271,'6/3/2022'),
-	 (272,'9/27/2022'),
-	 (273,'10/4/2022'),
-	 (274,'10/10/2022'),
-	 (275,'2/19/2022'),
-	 (276,'1/3/2023'),
-	 (277,'6/5/2022'),
-	 (278,'4/26/2022'),
-	 (279,'2/17/2022'),
-	 (280,'7/6/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (281,'3/1/2022'),
-	 (282,'11/12/2022'),
-	 (283,'1/28/2022'),
-	 (284,'4/23/2022'),
-	 (285,'5/11/2022'),
-	 (286,'5/10/2022'),
-	 (287,'5/26/2022'),
-	 (288,'4/12/2022'),
-	 (289,'7/2/2022'),
-	 (290,'4/27/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (291,'3/9/2022'),
-	 (292,'7/28/2022'),
-	 (293,'2/7/2022'),
-	 (294,'2/7/2022'),
-	 (295,'12/16/2022'),
-	 (296,'8/24/2022'),
-	 (297,'10/23/2022'),
-	 (298,'1/1/2023'),
-	 (299,'7/13/2022'),
-	 (300,'10/6/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (301,'5/13/2022'),
-	 (302,'3/7/2022'),
-	 (303,'3/9/2022'),
-	 (304,'12/5/2022'),
-	 (305,'11/16/2022'),
-	 (306,'5/4/2022'),
-	 (307,'2/17/2022'),
-	 (308,'2/6/2022'),
-	 (309,'12/4/2022'),
-	 (310,'8/3/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (311,'11/11/2022'),
-	 (312,'11/25/2022'),
-	 (313,'4/22/2022'),
-	 (314,'11/26/2022'),
-	 (315,'3/3/2022'),
-	 (316,'3/11/2022'),
-	 (317,'10/29/2022'),
-	 (318,'4/13/2022'),
-	 (319,'5/18/2022'),
-	 (320,'4/7/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (321,'5/30/2022'),
-	 (322,'7/21/2022'),
-	 (323,'3/21/2022'),
-	 (324,'6/25/2022'),
-	 (325,'8/10/2022'),
-	 (326,'2/18/2022'),
-	 (327,'4/19/2022'),
-	 (328,'8/10/2022'),
-	 (329,'6/8/2022'),
-	 (330,'10/9/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (331,'12/19/2022'),
-	 (332,'10/3/2022'),
-	 (333,'5/7/2022'),
-	 (334,'12/23/2022'),
-	 (335,'4/5/2022'),
-	 (336,'2/22/2022'),
-	 (337,'7/5/2022'),
-	 (338,'3/20/2022'),
-	 (339,'3/20/2022'),
-	 (340,'10/31/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (341,'9/4/2022'),
-	 (342,'12/13/2022'),
-	 (343,'6/30/2022'),
-	 (344,'12/10/2022'),
-	 (345,'2/20/2022'),
-	 (346,'9/4/2022'),
-	 (347,'10/5/2022'),
-	 (348,'7/17/2022'),
-	 (349,'6/14/2022'),
-	 (350,'12/13/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (351,'3/8/2022'),
-	 (352,'4/30/2022'),
-	 (353,'8/21/2022'),
-	 (354,'12/27/2022'),
-	 (355,'8/20/2022'),
-	 (356,'3/29/2022'),
-	 (357,'6/15/2022'),
-	 (358,'5/4/2022'),
-	 (359,'7/3/2022'),
-	 (360,'1/12/2023');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (361,'4/1/2022'),
-	 (362,'2/3/2022'),
-	 (363,'3/28/2022'),
-	 (364,'9/3/2022'),
-	 (365,'1/8/2023'),
-	 (366,'7/31/2022'),
-	 (367,'8/23/2022'),
-	 (368,'11/26/2022'),
-	 (369,'7/8/2022'),
-	 (370,'4/17/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (371,'6/21/2022'),
-	 (372,'11/22/2022'),
-	 (373,'5/2/2022'),
-	 (374,'2/16/2022'),
-	 (375,'2/5/2022'),
-	 (376,'12/4/2022'),
-	 (377,'5/5/2022'),
-	 (378,'4/19/2022'),
-	 (379,'6/23/2022'),
-	 (380,'6/13/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (381,'11/26/2022'),
-	 (382,'4/2/2022'),
-	 (383,'6/4/2022'),
-	 (384,'7/31/2022'),
-	 (385,'1/25/2022'),
-	 (386,'10/20/2022'),
-	 (387,'11/1/2022'),
-	 (388,'10/13/2022'),
-	 (389,'9/24/2022'),
-	 (390,'4/9/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (391,'3/8/2022'),
-	 (392,'11/20/2022'),
-	 (393,'4/11/2022'),
-	 (394,'8/18/2022'),
-	 (395,'9/13/2022'),
-	 (396,'10/16/2022'),
-	 (397,'10/1/2022'),
-	 (398,'10/22/2022'),
-	 (399,'5/27/2022'),
-	 (400,'9/18/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (401,'8/7/2022'),
-	 (402,'10/1/2022'),
-	 (403,'8/6/2022'),
-	 (404,'6/24/2022'),
-	 (405,'2/21/2022'),
-	 (406,'10/22/2022'),
-	 (407,'10/23/2022'),
-	 (408,'6/3/2022'),
-	 (409,'8/11/2022'),
-	 (410,'4/8/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (411,'9/4/2022'),
-	 (412,'4/7/2022'),
-	 (413,'1/29/2022'),
-	 (414,'12/19/2022'),
-	 (415,'9/20/2022'),
-	 (416,'6/18/2022'),
-	 (417,'6/26/2022'),
-	 (418,'7/11/2022'),
-	 (419,'9/19/2022'),
-	 (420,'10/17/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (421,'10/10/2022'),
-	 (422,'12/8/2022'),
-	 (423,'4/13/2022'),
-	 (424,'7/26/2022'),
-	 (425,'9/22/2022'),
-	 (426,'3/21/2022'),
-	 (427,'12/8/2022'),
-	 (428,'9/14/2022'),
-	 (429,'8/31/2022'),
-	 (430,'6/18/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (431,'9/4/2022'),
-	 (432,'12/13/2022'),
-	 (433,'2/10/2022'),
-	 (434,'12/7/2022'),
-	 (435,'9/18/2022'),
-	 (436,'12/24/2022'),
-	 (437,'9/17/2022'),
-	 (438,'3/4/2022'),
-	 (439,'3/12/2022'),
-	 (440,'9/15/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (441,'1/29/2022'),
-	 (442,'2/26/2022'),
-	 (443,'2/6/2022'),
-	 (444,'2/20/2022'),
-	 (445,'11/1/2022'),
-	 (446,'6/10/2022'),
-	 (447,'6/28/2022'),
-	 (448,'11/18/2022'),
-	 (449,'11/1/2022'),
-	 (450,'10/19/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (451,'11/16/2022'),
-	 (452,'4/6/2022'),
-	 (453,'3/25/2022'),
-	 (454,'1/27/2022'),
-	 (455,'6/1/2022'),
-	 (456,'6/24/2022'),
-	 (457,'2/22/2022'),
-	 (458,'6/16/2022'),
-	 (459,'12/29/2022'),
-	 (460,'5/8/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (461,'2/15/2022'),
-	 (462,'5/22/2022'),
-	 (463,'6/23/2022'),
-	 (464,'6/30/2022'),
-	 (465,'1/12/2023'),
-	 (466,'9/19/2022'),
-	 (467,'5/2/2022'),
-	 (468,'12/25/2022'),
-	 (469,'5/23/2022'),
-	 (470,'10/11/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (471,'1/25/2022'),
-	 (472,'5/12/2022'),
-	 (473,'7/7/2022'),
-	 (474,'9/11/2022'),
-	 (475,'12/2/2022'),
-	 (476,'10/6/2022'),
-	 (477,'4/15/2022'),
-	 (478,'3/30/2022'),
-	 (479,'9/6/2022'),
-	 (480,'10/26/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (481,'10/8/2022'),
-	 (482,'6/23/2022'),
-	 (483,'8/29/2022'),
-	 (484,'4/25/2022'),
-	 (485,'12/15/2022'),
-	 (486,'10/5/2022'),
-	 (487,'9/3/2022'),
-	 (488,'8/2/2022'),
-	 (489,'4/10/2022'),
-	 (490,'9/22/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (491,'6/8/2022'),
-	 (492,'5/4/2022'),
-	 (493,'6/23/2022'),
-	 (494,'9/16/2022'),
-	 (495,'4/6/2022'),
-	 (496,'9/11/2022'),
-	 (497,'3/15/2022'),
-	 (498,'11/8/2022'),
-	 (499,'3/14/2022'),
-	 (500,'12/26/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (501,'2/19/2022'),
-	 (502,'8/24/2022'),
-	 (503,'10/23/2022'),
-	 (504,'1/11/2023'),
-	 (505,'3/7/2022'),
-	 (506,'9/14/2022'),
-	 (507,'6/9/2022'),
-	 (508,'12/9/2022'),
-	 (509,'10/22/2022'),
-	 (510,'11/2/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (511,'7/28/2022'),
-	 (512,'3/3/2022'),
-	 (513,'2/2/2022'),
-	 (514,'8/31/2022'),
-	 (515,'11/17/2022'),
-	 (516,'6/4/2022'),
-	 (517,'4/28/2022'),
-	 (518,'12/5/2022'),
-	 (519,'10/22/2022'),
-	 (520,'1/11/2023');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (521,'1/23/2022'),
-	 (522,'10/22/2022'),
-	 (523,'1/11/2023'),
-	 (524,'3/10/2022'),
-	 (525,'8/24/2022'),
-	 (526,'4/7/2022'),
-	 (527,'4/10/2022'),
-	 (528,'9/29/2022'),
-	 (529,'7/26/2022'),
-	 (530,'1/8/2023');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (531,'2/18/2022'),
-	 (532,'2/20/2022'),
-	 (533,'6/19/2022'),
-	 (534,'7/26/2022'),
-	 (535,'1/7/2023'),
-	 (536,'12/22/2022'),
-	 (537,'8/9/2022'),
-	 (538,'4/17/2022'),
-	 (539,'8/21/2022'),
-	 (540,'2/13/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (541,'11/25/2022'),
-	 (542,'12/20/2022'),
-	 (543,'4/24/2022'),
-	 (544,'11/27/2022'),
-	 (545,'10/27/2022'),
-	 (546,'3/12/2022'),
-	 (547,'6/29/2022'),
-	 (548,'3/4/2022'),
-	 (549,'1/11/2023'),
-	 (550,'7/24/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (551,'11/6/2022'),
-	 (552,'11/13/2022'),
-	 (553,'10/17/2022'),
-	 (554,'8/2/2022'),
-	 (555,'5/22/2022'),
-	 (556,'10/27/2022'),
-	 (557,'3/10/2022'),
-	 (558,'4/22/2022'),
-	 (559,'11/12/2022'),
-	 (560,'5/3/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (561,'7/24/2022'),
-	 (562,'7/13/2022'),
-	 (563,'9/26/2022'),
-	 (564,'7/30/2022'),
-	 (565,'2/18/2022'),
-	 (566,'6/15/2022'),
-	 (567,'3/10/2022'),
-	 (568,'9/16/2022'),
-	 (569,'10/13/2022'),
-	 (570,'8/30/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (571,'3/23/2022'),
-	 (572,'3/8/2022'),
-	 (573,'11/28/2022'),
-	 (574,'12/18/2022'),
-	 (575,'1/15/2023'),
-	 (576,'7/15/2022'),
-	 (577,'8/3/2022'),
-	 (578,'10/22/2022'),
-	 (579,'9/28/2022'),
-	 (580,'4/3/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (581,'8/19/2022'),
-	 (582,'11/17/2022'),
-	 (583,'1/12/2023'),
-	 (584,'5/8/2022'),
-	 (585,'12/7/2022'),
-	 (586,'11/15/2022'),
-	 (587,'5/20/2022'),
-	 (588,'8/29/2022'),
-	 (589,'11/17/2022'),
-	 (590,'10/11/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (591,'12/20/2022'),
-	 (592,'4/12/2022'),
-	 (593,'7/9/2022'),
-	 (594,'4/20/2022'),
-	 (595,'7/7/2022'),
-	 (596,'10/17/2022'),
-	 (597,'7/17/2022'),
-	 (598,'8/18/2022'),
-	 (599,'7/10/2022'),
-	 (600,'5/24/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (601,'3/4/2022'),
-	 (602,'1/16/2023'),
-	 (603,'5/4/2022'),
-	 (604,'8/11/2022'),
-	 (605,'10/8/2022'),
-	 (606,'1/6/2023'),
-	 (607,'1/25/2022'),
-	 (608,'9/20/2022'),
-	 (609,'5/26/2022'),
-	 (610,'12/11/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (611,'2/5/2022'),
-	 (612,'3/29/2022'),
-	 (613,'3/15/2022'),
-	 (614,'3/29/2022'),
-	 (615,'6/24/2022'),
-	 (616,'3/19/2022'),
-	 (617,'6/8/2022'),
-	 (618,'5/8/2022'),
-	 (619,'8/19/2022'),
-	 (620,'7/24/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (621,'3/17/2022'),
-	 (622,'2/7/2022'),
-	 (623,'12/14/2022'),
-	 (624,'7/21/2022'),
-	 (625,'2/14/2022'),
-	 (626,'6/24/2022'),
-	 (627,'1/12/2023'),
-	 (628,'5/25/2022'),
-	 (629,'7/10/2022'),
-	 (630,'7/23/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (631,'10/16/2022'),
-	 (632,'11/11/2022'),
-	 (633,'6/14/2022'),
-	 (634,'6/19/2022'),
-	 (635,'9/27/2022'),
-	 (636,'10/2/2022'),
-	 (637,'10/19/2022'),
-	 (638,'6/29/2022'),
-	 (639,'3/27/2022'),
-	 (640,'5/12/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (641,'7/31/2022'),
-	 (642,'10/14/2022'),
-	 (643,'11/29/2022'),
-	 (644,'9/28/2022'),
-	 (645,'4/28/2022'),
-	 (646,'2/20/2022'),
-	 (647,'12/3/2022'),
-	 (648,'12/26/2022'),
-	 (649,'3/30/2022'),
-	 (650,'11/30/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (651,'7/14/2022'),
-	 (652,'9/10/2022'),
-	 (653,'10/20/2022'),
-	 (654,'3/20/2022'),
-	 (655,'10/19/2022'),
-	 (656,'12/17/2022'),
-	 (657,'7/8/2022'),
-	 (658,'4/29/2022'),
-	 (659,'11/3/2022'),
-	 (660,'2/27/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (661,'5/16/2022'),
-	 (662,'9/19/2022'),
-	 (663,'9/15/2022'),
-	 (664,'4/26/2022'),
-	 (665,'8/28/2022'),
-	 (666,'2/12/2022'),
-	 (667,'8/6/2022'),
-	 (668,'8/21/2022'),
-	 (669,'10/4/2022'),
-	 (670,'8/13/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (671,'8/29/2022'),
-	 (672,'11/22/2022'),
-	 (673,'11/23/2022'),
-	 (674,'8/18/2022'),
-	 (675,'1/7/2023'),
-	 (676,'10/1/2022'),
-	 (677,'5/23/2022'),
-	 (678,'9/10/2022'),
-	 (679,'12/14/2022'),
-	 (680,'9/21/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (681,'8/27/2022'),
-	 (682,'3/5/2022'),
-	 (683,'10/22/2022'),
-	 (684,'1/17/2023'),
-	 (685,'1/20/2022'),
-	 (686,'3/24/2022'),
-	 (687,'12/21/2022'),
-	 (688,'11/1/2022'),
-	 (689,'5/13/2022'),
-	 (690,'8/17/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (691,'4/9/2022'),
-	 (692,'9/15/2022'),
-	 (693,'10/23/2022'),
-	 (694,'6/30/2022'),
-	 (695,'9/7/2022'),
-	 (696,'3/24/2022'),
-	 (697,'11/14/2022'),
-	 (698,'5/7/2022'),
-	 (699,'5/12/2022'),
-	 (700,'8/6/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (701,'11/5/2022'),
-	 (702,'11/14/2022'),
-	 (703,'3/3/2022'),
-	 (704,'4/22/2022'),
-	 (705,'6/30/2022'),
-	 (706,'6/29/2022'),
-	 (707,'5/20/2022'),
-	 (708,'6/1/2022'),
-	 (709,'1/1/2023'),
-	 (710,'10/24/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (711,'2/4/2022'),
-	 (712,'3/13/2022'),
-	 (713,'11/10/2022'),
-	 (714,'7/6/2022'),
-	 (715,'7/28/2022'),
-	 (716,'10/2/2022'),
-	 (717,'11/29/2022'),
-	 (718,'4/9/2022'),
-	 (719,'12/30/2022'),
-	 (720,'6/4/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (721,'6/16/2022'),
-	 (722,'10/1/2022'),
-	 (723,'3/5/2022'),
-	 (724,'3/9/2022'),
-	 (725,'11/26/2022'),
-	 (726,'11/16/2022'),
-	 (727,'8/11/2022'),
-	 (728,'11/21/2022'),
-	 (729,'11/8/2022'),
-	 (730,'2/5/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (731,'5/5/2022'),
-	 (732,'7/15/2022'),
-	 (733,'6/22/2022'),
-	 (734,'10/9/2022'),
-	 (735,'7/7/2022'),
-	 (736,'10/13/2022'),
-	 (737,'3/8/2022'),
-	 (738,'9/15/2022'),
-	 (739,'7/9/2022'),
-	 (740,'4/27/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (741,'1/26/2022'),
-	 (742,'6/26/2022'),
-	 (743,'3/29/2022'),
-	 (744,'7/17/2022'),
-	 (745,'6/13/2022'),
-	 (746,'5/12/2022'),
-	 (747,'4/23/2022'),
-	 (748,'6/25/2022'),
-	 (749,'1/24/2022'),
-	 (750,'3/19/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (751,'1/19/2022'),
-	 (752,'4/18/2022'),
-	 (753,'2/26/2022'),
-	 (754,'10/20/2022'),
-	 (755,'9/18/2022'),
-	 (756,'12/17/2022'),
-	 (757,'8/19/2022'),
-	 (758,'5/13/2022'),
-	 (759,'10/2/2022'),
-	 (760,'2/4/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (761,'7/25/2022'),
-	 (762,'11/17/2022'),
-	 (763,'8/24/2022'),
-	 (764,'4/2/2022'),
-	 (765,'10/8/2022'),
-	 (766,'1/19/2022'),
-	 (767,'3/24/2022'),
-	 (768,'6/29/2022'),
-	 (769,'4/2/2022'),
-	 (770,'1/9/2023');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (771,'10/16/2022'),
-	 (772,'10/3/2022'),
-	 (773,'4/1/2022'),
-	 (774,'3/24/2022'),
-	 (775,'9/19/2022'),
-	 (776,'8/17/2022'),
-	 (777,'4/15/2022'),
-	 (778,'12/8/2022'),
-	 (779,'12/6/2022'),
-	 (780,'6/6/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (781,'6/17/2022'),
-	 (782,'1/27/2022'),
-	 (783,'8/26/2022'),
-	 (784,'1/6/2023'),
-	 (785,'3/5/2022'),
-	 (786,'2/14/2022'),
-	 (787,'6/6/2022'),
-	 (788,'8/28/2022'),
-	 (789,'7/22/2022'),
-	 (790,'12/17/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (791,'9/21/2022'),
-	 (792,'3/25/2022'),
-	 (793,'6/20/2022'),
-	 (794,'11/2/2022'),
-	 (795,'11/30/2022'),
-	 (796,'4/12/2022'),
-	 (797,'1/10/2023'),
-	 (798,'4/25/2022'),
-	 (799,'12/5/2022'),
-	 (800,'8/10/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (801,'2/6/2022'),
-	 (802,'12/13/2022'),
-	 (803,'1/10/2023'),
-	 (804,'3/3/2022'),
-	 (805,'9/7/2022'),
-	 (806,'2/3/2022'),
-	 (807,'5/18/2022'),
-	 (808,'1/16/2023'),
-	 (809,'8/30/2022'),
-	 (810,'7/14/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (811,'8/28/2022'),
-	 (812,'5/20/2022'),
-	 (813,'9/20/2022'),
-	 (814,'8/23/2022'),
-	 (815,'3/17/2022'),
-	 (816,'8/9/2022'),
-	 (817,'3/26/2022'),
-	 (818,'1/24/2022'),
-	 (819,'2/8/2022'),
-	 (820,'7/25/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (821,'11/20/2022'),
-	 (822,'8/7/2022'),
-	 (823,'8/30/2022'),
-	 (824,'6/3/2022'),
-	 (825,'4/21/2022'),
-	 (826,'7/8/2022'),
-	 (827,'9/7/2022'),
-	 (828,'12/13/2022'),
-	 (829,'6/12/2022'),
-	 (830,'1/31/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (831,'4/6/2022'),
-	 (832,'9/7/2022'),
-	 (833,'6/3/2022'),
-	 (834,'3/15/2022'),
-	 (835,'12/4/2022'),
-	 (836,'6/22/2022'),
-	 (837,'12/4/2022'),
-	 (838,'3/5/2022'),
-	 (839,'2/11/2022'),
-	 (840,'5/16/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (841,'5/31/2022'),
-	 (842,'9/11/2022'),
-	 (843,'3/22/2022'),
-	 (844,'5/15/2022'),
-	 (845,'5/6/2022'),
-	 (846,'4/27/2022'),
-	 (847,'8/18/2022'),
-	 (848,'10/1/2022'),
-	 (849,'8/29/2022'),
-	 (850,'3/16/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (851,'7/3/2022'),
-	 (852,'9/26/2022'),
-	 (853,'1/8/2023'),
-	 (854,'7/9/2022'),
-	 (855,'7/27/2022'),
-	 (856,'6/17/2022'),
-	 (857,'11/12/2022'),
-	 (858,'4/24/2022'),
-	 (859,'1/4/2023'),
-	 (860,'1/27/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (861,'3/12/2022'),
-	 (862,'12/13/2022'),
-	 (863,'11/5/2022'),
-	 (864,'2/3/2022'),
-	 (865,'7/17/2022'),
-	 (866,'12/18/2022'),
-	 (867,'5/25/2022'),
-	 (868,'3/27/2022'),
-	 (869,'6/9/2022'),
-	 (870,'6/22/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (871,'8/7/2022'),
-	 (872,'7/4/2022'),
-	 (873,'2/23/2022'),
-	 (874,'9/11/2022'),
-	 (875,'5/1/2022'),
-	 (876,'3/20/2022'),
-	 (877,'10/22/2022'),
-	 (878,'7/21/2022'),
-	 (879,'8/26/2022'),
-	 (880,'9/30/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (881,'5/8/2022'),
-	 (882,'1/31/2022'),
-	 (883,'5/4/2022'),
-	 (884,'6/26/2022'),
-	 (885,'1/1/2023'),
-	 (886,'10/3/2022'),
-	 (887,'1/20/2022'),
-	 (888,'8/30/2022'),
-	 (889,'6/14/2022'),
-	 (890,'9/5/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (891,'11/2/2022'),
-	 (892,'7/24/2022'),
-	 (893,'3/1/2022'),
-	 (894,'11/1/2022'),
-	 (895,'12/30/2022'),
-	 (896,'9/6/2022'),
-	 (897,'8/4/2022'),
-	 (898,'11/29/2022'),
-	 (899,'11/9/2022'),
-	 (900,'4/6/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (901,'11/30/2022'),
-	 (902,'2/2/2022'),
-	 (903,'10/10/2022'),
-	 (904,'2/23/2022'),
-	 (905,'3/28/2022'),
-	 (906,'2/8/2022'),
-	 (907,'11/6/2022'),
-	 (908,'1/24/2022'),
-	 (909,'1/9/2023'),
-	 (910,'9/21/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (911,'6/15/2022'),
-	 (912,'9/4/2022'),
-	 (913,'12/27/2022'),
-	 (914,'11/12/2022'),
-	 (915,'10/9/2022'),
-	 (916,'12/3/2022'),
-	 (917,'11/18/2022'),
-	 (918,'9/30/2022'),
-	 (919,'11/1/2022'),
-	 (920,'7/9/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (921,'1/30/2022'),
-	 (922,'2/23/2022'),
-	 (923,'1/30/2022'),
-	 (924,'8/24/2022'),
-	 (925,'9/8/2022'),
-	 (926,'6/5/2022'),
-	 (927,'6/25/2022'),
-	 (928,'9/12/2022'),
-	 (929,'12/23/2022'),
-	 (930,'6/4/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (931,'9/10/2022'),
-	 (932,'5/18/2022'),
-	 (933,'12/3/2022'),
-	 (934,'9/21/2022'),
-	 (935,'3/24/2022'),
-	 (936,'8/28/2022'),
-	 (937,'4/30/2022'),
-	 (938,'11/30/2022'),
-	 (939,'2/9/2022'),
-	 (940,'6/19/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (941,'4/29/2022'),
-	 (942,'2/6/2022'),
-	 (943,'9/20/2022'),
-	 (944,'12/21/2022'),
-	 (945,'12/20/2022'),
-	 (946,'9/28/2022'),
-	 (947,'3/2/2022'),
-	 (948,'4/4/2022'),
-	 (949,'4/30/2022'),
-	 (950,'9/6/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (951,'8/12/2022'),
-	 (952,'10/4/2022'),
-	 (953,'10/29/2022'),
-	 (954,'4/26/2022'),
-	 (955,'9/27/2022'),
-	 (956,'9/2/2022'),
-	 (957,'2/12/2022'),
-	 (958,'1/27/2022'),
-	 (959,'11/18/2022'),
-	 (960,'10/30/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (961,'5/20/2022'),
-	 (962,'9/20/2022'),
-	 (963,'2/28/2022'),
-	 (964,'5/25/2022'),
-	 (965,'12/19/2022'),
-	 (966,'4/2/2022'),
-	 (967,'10/26/2022'),
-	 (968,'6/7/2022'),
-	 (969,'6/2/2022'),
-	 (970,'1/18/2023');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (971,'8/20/2022'),
-	 (972,'4/14/2022'),
-	 (973,'9/10/2022'),
-	 (974,'5/1/2022'),
-	 (975,'10/6/2022'),
-	 (976,'2/8/2022'),
-	 (977,'10/26/2022'),
-	 (978,'2/24/2022'),
-	 (979,'4/30/2022'),
-	 (980,'3/12/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (981,'7/7/2022'),
-	 (982,'4/16/2022'),
-	 (983,'5/21/2022'),
-	 (984,'7/13/2022'),
-	 (985,'4/13/2022'),
-	 (986,'12/15/2022'),
-	 (987,'4/7/2022'),
-	 (988,'12/27/2022'),
-	 (989,'3/22/2022'),
-	 (990,'3/1/2022');
-INSERT INTO ataviada.modo_pago (codigo_cuenta,fecha_pago) VALUES
-	 (991,'6/19/2022'),
-	 (992,'7/17/2022'),
-	 (993,'1/20/2022'),
-	 (994,'12/3/2022'),
-	 (995,'11/21/2022'),
-	 (996,'6/1/2022'),
-	 (997,'6/8/2022'),
-	 (998,'10/25/2022'),
-	 (999,'3/1/2022'),
-	 (1000,'1/2/2023');
+-- 	Stock
+insert into stock (talla, cantidad) values ('3XS', 58);
+insert into stock (talla, cantidad) values ('2XS', 11);
+insert into stock (talla, cantidad) values ('XS', 25);
+insert into stock (talla, cantidad) values ('S', 88);
+insert into stock (talla, cantidad) values ('M', 55);
+insert into stock (talla, cantidad) values ('L', 79);
+insert into stock (talla, cantidad) values ('XL', 38);
+insert into stock (talla, cantidad) values ('2XL', 1);
+insert into stock (talla, cantidad) values ('3XL', 26);
 
--- datos reserva	
-insert into reserva (numero_identificacion, fecha_inicio, fecha_fin) values (1, '2021-12-12', '2022-09-15');
-insert into reserva (numero_identificacion, fecha_inicio, fecha_fin) values (2, '2021-09-19', '2022-05-29');
-insert into reserva (numero_identificacion, fecha_inicio, fecha_fin) values (3, '2022-02-18', '2022-10-03');
-insert into reserva (numero_identificacion, fecha_inicio, fecha_fin) values (4, '2021-07-23', '2022-07-31');
-insert into reserva (numero_identificacion, fecha_inicio, fecha_fin) values (5, '2022-03-24', null);
-insert into reserva (numero_identificacion, fecha_inicio, fecha_fin) values (6, '2021-06-21', '2022-07-08');
-insert into reserva (numero_identificacion, fecha_inicio, fecha_fin) values (7, '2022-04-05', null);
-insert into reserva (numero_identificacion, fecha_inicio, fecha_fin) values (8, '2021-06-14', '2022-09-30');
-insert into reserva (numero_identificacion, fecha_inicio, fecha_fin) values (9, '2021-06-30', null);
-insert into reserva (numero_identificacion, fecha_inicio, fecha_fin) values (10, '2021-08-10', '2022-09-19');
-	
--- datos bizum
-insert into bizum (nombre_cuenta, MODO_PAGO_codigo_cliente) values ('rhannaby0', 429);
-insert into bizum (nombre_cuenta, MODO_PAGO_codigo_cliente) values ('nbremley1', 656);
-insert into bizum (nombre_cuenta, MODO_PAGO_codigo_cliente) values ('breimers2', 208);
-insert into bizum (nombre_cuenta, MODO_PAGO_codigo_cliente) values ('gcostan3', 95);
-insert into bizum (nombre_cuenta, MODO_PAGO_codigo_cliente) values ('rblackway4', 123);
-insert into bizum (nombre_cuenta, MODO_PAGO_codigo_cliente) values ('ayusupov5', 785);
-insert into bizum (nombre_cuenta, MODO_PAGO_codigo_cliente) values ('rvanderkruys6', 643);
-insert into bizum (nombre_cuenta, MODO_PAGO_codigo_cliente) values ('cbeekmann7', 317);
-insert into bizum (nombre_cuenta, MODO_PAGO_codigo_cliente) values ('cbrumhead8', 547);
-insert into bizum (nombre_cuenta, MODO_PAGO_codigo_cliente) values ('wcritchlow9', 556);
+-- Reserva
+insert into reserva (numero_identificacion, fecha_inicio, fecha_fin, Cliente_codigo_cliente) values (1, '2023-04-21', null, 260);
+insert into reserva (numero_identificacion, fecha_inicio, fecha_fin, Cliente_codigo_cliente) values (2, '2023-05-05', '2023-06-03', 259);
+insert into reserva (numero_identificacion, fecha_inicio, fecha_fin, Cliente_codigo_cliente) values (3, '2023-04-12', '2023-05-27', 607);
+insert into reserva (numero_identificacion, fecha_inicio, fecha_fin, Cliente_codigo_cliente) values (4, '2023-05-04', '2023-06-08', 587);
+insert into reserva (numero_identificacion, fecha_inicio, fecha_fin, Cliente_codigo_cliente) values (5, '2023-04-30', null, 502);
+insert into reserva (numero_identificacion, fecha_inicio, fecha_fin, Cliente_codigo_cliente) values (6, '2023-04-26', '2023-05-22', 315);
+insert into reserva (numero_identificacion, fecha_inicio, fecha_fin, Cliente_codigo_cliente) values (7, '2023-04-20', '2023-05-20', 805);
+insert into reserva (numero_identificacion, fecha_inicio, fecha_fin, Cliente_codigo_cliente) values (8, '2023-04-12', '2023-05-30', 442);
+insert into reserva (numero_identificacion, fecha_inicio, fecha_fin, Cliente_codigo_cliente) values (9, '2023-05-10', '2023-05-22', 571);
+insert into reserva (numero_identificacion, fecha_inicio, fecha_fin, Cliente_codigo_cliente) values (10, '2023-05-09', '2023-06-02', 333);
+insert into reserva (numero_identificacion, fecha_inicio, fecha_fin, Cliente_codigo_cliente) values (11, '2023-05-04', '2023-06-04', 793);
+insert into reserva (numero_identificacion, fecha_inicio, fecha_fin, Cliente_codigo_cliente) values (12, '2023-04-07', '2023-05-28', 716);
+insert into reserva (numero_identificacion, fecha_inicio, fecha_fin, Cliente_codigo_cliente) values (13, '2023-05-09', null, 120);
+insert into reserva (numero_identificacion, fecha_inicio, fecha_fin, Cliente_codigo_cliente) values (14, '2023-04-01', null, 112);
+insert into reserva (numero_identificacion, fecha_inicio, fecha_fin, Cliente_codigo_cliente) values (15, '2023-05-02', null, 746);
+insert into reserva (numero_identificacion, fecha_inicio, fecha_fin, Cliente_codigo_cliente) values (16, '2023-04-09', '2023-06-06', 18);
+insert into reserva (numero_identificacion, fecha_inicio, fecha_fin, Cliente_codigo_cliente) values (17, '2023-05-07', '2023-05-31', 175);
+insert into reserva (numero_identificacion, fecha_inicio, fecha_fin, Cliente_codigo_cliente) values (18, '2023-04-19', '2023-05-27', 890);
+insert into reserva (numero_identificacion, fecha_inicio, fecha_fin, Cliente_codigo_cliente) values (19, '2023-04-02', '2023-05-18', 834);
+insert into reserva (numero_identificacion, fecha_inicio, fecha_fin, Cliente_codigo_cliente) values (20, '2023-04-23', '2023-06-09', 92);
 
--- datos pedido
-insert into pedido (fecha_pedido, fecha_prevista, fecha_entrega, estado) values ('2022-03-16', '2022-10-16', '2022-11-13', 'decente');
-insert into pedido (fecha_pedido, fecha_prevista, fecha_entrega, estado) values ('2021-06-28', '2023-03-16', '2023-01-06', 'decente');
-insert into pedido (fecha_pedido, fecha_prevista, fecha_entrega, estado) values ('2021-12-11', '2023-03-23', '2022-05-05', 'perfecto');
-insert into pedido (fecha_pedido, fecha_prevista, fecha_entrega, estado) values ('2021-04-29', '2023-03-08', '2022-11-13', 'decente');
-insert into pedido (fecha_pedido, fecha_prevista, fecha_entrega, estado) values ('2022-03-20', '2023-02-04', null, 'perfecto');
-insert into pedido (fecha_pedido, fecha_prevista, fecha_entrega, estado) values ('2021-04-17', '2022-10-13', null, 'perfecto');
-insert into pedido (fecha_pedido, fecha_prevista, fecha_entrega, estado) values ('2021-09-21', '2023-04-11', '2022-09-28', 'perfecto');
-insert into pedido (fecha_pedido, fecha_prevista, fecha_entrega, estado) values ('2021-11-19', '2023-01-02', null, 'decente');
-insert into pedido (fecha_pedido, fecha_prevista, fecha_entrega, estado) values ('2021-11-29', '2022-07-04', '2023-01-12', 'perfecto');
-insert into pedido (fecha_pedido, fecha_prevista, fecha_entrega, estado) values ('2021-06-15', '2022-09-09', '2022-12-19', 'perfecto');	
+-- Reserva Del Stock
+insert into reserva_del_stock (Reserva_numero_identificacion, Stock_talla) values (12, 'M');
+insert into reserva_del_stock (Reserva_numero_identificacion, Stock_talla) values (8, 'XL');
+insert into reserva_del_stock (Reserva_numero_identificacion, Stock_talla) values (16, 'XL');
+insert into reserva_del_stock (Reserva_numero_identificacion, Stock_talla) values (10, '3XL');
+insert into reserva_del_stock (Reserva_numero_identificacion, Stock_talla) values (4, 'XS');
+insert into reserva_del_stock (Reserva_numero_identificacion, Stock_talla) values (18, 'M');
+insert into reserva_del_stock (Reserva_numero_identificacion, Stock_talla) values (16, 'XS');
+insert into reserva_del_stock (Reserva_numero_identificacion, Stock_talla) values (20, '3XL');
+insert into reserva_del_stock (Reserva_numero_identificacion, Stock_talla) values (14, '2XL');
+insert into reserva_del_stock (Reserva_numero_identificacion, Stock_talla) values (6, 'S');
+insert into reserva_del_stock (Reserva_numero_identificacion, Stock_talla) values (18, 'L');
+insert into reserva_del_stock (Reserva_numero_identificacion, Stock_talla) values (9, '3XL');
+insert into reserva_del_stock (Reserva_numero_identificacion, Stock_talla) values (9, '2XL');
+insert into reserva_del_stock (Reserva_numero_identificacion, Stock_talla) values (10, '3XS');
+insert into reserva_del_stock (Reserva_numero_identificacion, Stock_talla) values (20, 'M');
+insert into reserva_del_stock (Reserva_numero_identificacion, Stock_talla) values (17, 'S');
+insert into reserva_del_stock (Reserva_numero_identificacion, Stock_talla) values (20, 'XS');
+insert into reserva_del_stock (Reserva_numero_identificacion, Stock_talla) values (7, 'XL');
+insert into reserva_del_stock (Reserva_numero_identificacion, Stock_talla) values (17, 'XL');
+insert into reserva_del_stock (Reserva_numero_identificacion, Stock_talla) values (13, '3XL');
 
--- datos clienteHacePedido
-insert into clientehacepedido (PEDIDO_fecha_pedido, CLIENTE_codigo_cliente) values ('2021-04-17', 4);
-insert into clientehacepedido (PEDIDO_fecha_pedido, CLIENTE_codigo_cliente) values ('2021-11-29', 7);
-insert into clientehacepedido (PEDIDO_fecha_pedido, CLIENTE_codigo_cliente) values ('2022-03-16', 8);
-insert into clientehacepedido (PEDIDO_fecha_pedido, CLIENTE_codigo_cliente) values ('2022-03-16', 2);
-insert into clientehacepedido (PEDIDO_fecha_pedido, CLIENTE_codigo_cliente) values ('2021-09-21', 10);
-insert into clientehacepedido (PEDIDO_fecha_pedido, CLIENTE_codigo_cliente) values ('2021-06-28', 6);
-insert into clientehacepedido (PEDIDO_fecha_pedido, CLIENTE_codigo_cliente) values ('2021-11-29', 8);
-insert into clientehacepedido (PEDIDO_fecha_pedido, CLIENTE_codigo_cliente) values ('2022-03-20', 7);
-insert into clientehacepedido (PEDIDO_fecha_pedido, CLIENTE_codigo_cliente) values ('2021-06-15', 4);
-insert into clientehacepedido (PEDIDO_fecha_pedido, CLIENTE_codigo_cliente) values ('2021-04-29 ', 5);
+-- Producto
+insert into producto (codigo_producto, nombre_producto, categoria, marca, precio, color, Stock_talla, Proveedor_codigo_proveedor) values (1, 'SPYKAR Women Burgundy Alexa Super Skinny Fit High-Rise Clean Look Stretchable Ankle Jeans', 'Home Ing', 'Zara', 63.82, 'Yellow', 'M', 864);
+insert into producto (codigo_producto, nombre_producto, categoria, marca, precio, color, Stock_talla, Proveedor_codigo_proveedor) values (2, 'Vishudh Women Maroon Printed Kurta with Palazzos', 'Transcof', 'Renata & Go', 6.01, 'Blue', 'XS', 571);
+insert into producto (codigo_producto, nombre_producto, categoria, marca, precio, color, Stock_talla, Proveedor_codigo_proveedor) values (3, 'Homesake Gold-Toned & White Solid Handcrafted Table Lamp with Shade', 'Tin', 'Renata & Go', 16.35, 'Maroon', 'M', 280);
+insert into producto (codigo_producto, nombre_producto, categoria, marca, precio, color, Stock_talla, Proveedor_codigo_proveedor) values (4, 'PARFAIT Plus Size Black Striped Non-Wired Lightly Padded T-shirt Bra P5252', 'Bitwolf', 'Kling', 22.05, 'Turquoise', '3XL', 749);
+insert into producto (codigo_producto, nombre_producto, categoria, marca, precio, color, Stock_talla, Proveedor_codigo_proveedor) values (5, 'ahilya Sterling Silver Textured Bangle', 'Domainer', null, 4.59, 'Orange', 'XS', 106);
+insert into producto (codigo_producto, nombre_producto, categoria, marca, precio, color, Stock_talla, Proveedor_codigo_proveedor) values (6, 'Vishudh Women Off-White & Green Floral Print A-Line Dress', 'Stringtough', 'Kling', 89.99, 'Fuscia', 'L', 689);
+insert into producto (codigo_producto, nombre_producto, categoria, marca, precio, color, Stock_talla, Proveedor_codigo_proveedor) values (7, 'PARFAIT Plus Size Beige Solid Underwired Lightly Padded Plunge Bra 2801', 'Konklab', 'Brownie', 27.81, 'Fuscia', 'XL', 575);
+insert into producto (codigo_producto, nombre_producto, categoria, marca, precio, color, Stock_talla, Proveedor_codigo_proveedor) values (8, 'Homesake Gold-Toned & White Solid Handcrafted Table Lamp with Shade', 'Treeflex', 'Zara', 78.96, 'Fuscia', 'XS', 21);
+insert into producto (codigo_producto, nombre_producto, categoria, marca, precio, color, Stock_talla, Proveedor_codigo_proveedor) values (9, 'Beli Women Black & Blue Woven Design Heels', 'Voltsillam', 'Kling', 49.87, 'Red', '2XL', 988);
+insert into producto (codigo_producto, nombre_producto, categoria, marca, precio, color, Stock_talla, Proveedor_codigo_proveedor) values (10, 'Jn Joy Navy Sheer Top', 'Bitchip', 'Renata & Go', 80.36, 'Violet', 'S', 148);
 
--- datos stock
-insert into stock (cantidad, talla, PRODUCTO_cod_producto, PRODUCTO_MODO_PAGO_codigo_cuenta) values (23, 'L', 1, 97);
-insert into stock (cantidad, talla, PRODUCTO_cod_producto, PRODUCTO_MODO_PAGO_codigo_cuenta) values (87, 'S', 21, 40);
-insert into stock (cantidad, talla, PRODUCTO_cod_producto, PRODUCTO_MODO_PAGO_codigo_cuenta) values (43, 'S', 48, 68);
-insert into stock (cantidad, talla, PRODUCTO_cod_producto, PRODUCTO_MODO_PAGO_codigo_cuenta) values (11, 'S', 66, 71);
-insert into stock (cantidad, talla, PRODUCTO_cod_producto, PRODUCTO_MODO_PAGO_codigo_cuenta) values (6, 'L', 185, 2);
-insert into stock (cantidad, talla, PRODUCTO_cod_producto, PRODUCTO_MODO_PAGO_codigo_cuenta) values (68, 'M', 318, 13);
-insert into stock (cantidad, talla, PRODUCTO_cod_producto, PRODUCTO_MODO_PAGO_codigo_cuenta) values (4, 'S', 471, 46);
-insert into stock (cantidad, talla, PRODUCTO_cod_producto, PRODUCTO_MODO_PAGO_codigo_cuenta) values (94, 'M', 558, 5);
-insert into stock (cantidad, talla, PRODUCTO_cod_producto, PRODUCTO_MODO_PAGO_codigo_cuenta) values (21, 'L', 606, 51);
-insert into stock (cantidad, talla, PRODUCTO_cod_producto, PRODUCTO_MODO_PAGO_codigo_cuenta) values (35, 'S', 708, 25);
+-- Pedido
+insert into pedido (fecha_pedido, fecha_prevista, fecha_entrega, Cliente_codigo_cliente, Pago_codigo_transaccion) values ('2022-07-01', '2023-05-01', null, 759.16, 3.87);
+insert into pedido (fecha_pedido, fecha_prevista, fecha_entrega, Cliente_codigo_cliente, Pago_codigo_transaccion) values ('2022-08-06', '2023-05-23', '2023-05-23', 565.1, 1.56);
+insert into pedido (fecha_pedido, fecha_prevista, fecha_entrega, Cliente_codigo_cliente, Pago_codigo_transaccion) values ('2023-03-01', '2023-05-22', '2023-05-22', 323.32, 6.29);
+insert into pedido (fecha_pedido, fecha_prevista, fecha_entrega, Cliente_codigo_cliente, Pago_codigo_transaccion) values ('2022-07-06', '2023-05-04', null, 505.87, 8.37);
+insert into pedido (fecha_pedido, fecha_prevista, fecha_entrega, Cliente_codigo_cliente, Pago_codigo_transaccion) values ('2022-06-11', '2023-04-18', '2023-04-19', 687.5, 2.86);
+insert into pedido (fecha_pedido, fecha_prevista, fecha_entrega, Cliente_codigo_cliente, Pago_codigo_transaccion) values ('2022-04-11', '2023-04-22', null, 788.61, 8.49);
+insert into pedido (fecha_pedido, fecha_prevista, fecha_entrega, Cliente_codigo_cliente, Pago_codigo_transaccion) values ('2023-02-17', '2023-04-18', '2023-05-06', 571.25, 5.76);
+insert into pedido (fecha_pedido, fecha_prevista, fecha_entrega, Cliente_codigo_cliente, Pago_codigo_transaccion) values ('2022-11-06', '2023-05-26', null, 74.8, 9.09);
+insert into pedido (fecha_pedido, fecha_prevista, fecha_entrega, Cliente_codigo_cliente, Pago_codigo_transaccion) values ('2022-08-12', '2023-05-21', '2023-05-21', 494.28, 2.1);
+insert into pedido (fecha_pedido, fecha_prevista, fecha_entrega, Cliente_codigo_cliente, Pago_codigo_transaccion) values ('2022-06-07', '2023-05-20', '2023-05-29', 806.39, 5.97);
 
--- datos tarjeta
-insert into tarjeta (digitos, fecha_caducidad, MODO_PAGO_codigo_cliente) values ('1426886964', '2023-12-13', 303);
-insert into tarjeta (digitos, fecha_caducidad, MODO_PAGO_codigo_cliente) values ('1834255055', '2023-10-19', 122);
-insert into tarjeta (digitos, fecha_caducidad, MODO_PAGO_codigo_cliente) values ('1755799284', '2022-06-07', 45);
-insert into tarjeta (digitos, fecha_caducidad, MODO_PAGO_codigo_cliente) values ('1203887499', '2022-07-10', 904);
-insert into tarjeta (digitos, fecha_caducidad, MODO_PAGO_codigo_cliente) values ('1721908130', '2023-05-18', 1);
-insert into tarjeta (digitos, fecha_caducidad, MODO_PAGO_codigo_cliente) values ('1487712399', '2022-04-19', 620);
-insert into tarjeta (digitos, fecha_caducidad, MODO_PAGO_codigo_cliente) values ('1500939868', '2022-12-10', 64);
-insert into tarjeta (digitos, fecha_caducidad, MODO_PAGO_codigo_cliente) values ('1968142874', '2023-09-11', 267);
-insert into tarjeta (digitos, fecha_caducidad, MODO_PAGO_codigo_cliente) values ('1222216498', '2022-09-11', 359);
-insert into tarjeta (digitos, fecha_caducidad, MODO_PAGO_codigo_cliente) values ('1222216491', '2023-06-22', 184);
-
--- datos lineaPedido
-insert into lineapedido (PRODUCTO_cod_producto, PRODUCTO_MODO_PAGO_codigo_cuenta, PEDIDO_fecha_pedido, cantidad, precio) values (21, 40, '2021-04-17', 86, 24.38);
-insert into lineapedido (PRODUCTO_cod_producto, PRODUCTO_MODO_PAGO_codigo_cuenta, PEDIDO_fecha_pedido, cantidad, precio) values (1, 97, '2021-11-19', 72, 23.68);
-insert into lineapedido (PRODUCTO_cod_producto, PRODUCTO_MODO_PAGO_codigo_cuenta, PEDIDO_fecha_pedido, cantidad, precio) values (15, 32, '2021-06-28', 28, 26.21);
-insert into lineapedido (PRODUCTO_cod_producto, PRODUCTO_MODO_PAGO_codigo_cuenta, PEDIDO_fecha_pedido, cantidad, precio) values (610, 257, '2021-06-28', 75, 91.88);
-insert into lineapedido (PRODUCTO_cod_producto, PRODUCTO_MODO_PAGO_codigo_cuenta, PEDIDO_fecha_pedido, cantidad, precio) values (100, 7, '2021-06-28', 100, 59.2);
-insert into lineapedido (PRODUCTO_cod_producto, PRODUCTO_MODO_PAGO_codigo_cuenta, PEDIDO_fecha_pedido, cantidad, precio) values (260, 57, '2021-11-19', 57, 37.04);
-insert into lineapedido (PRODUCTO_cod_producto, PRODUCTO_MODO_PAGO_codigo_cuenta, PEDIDO_fecha_pedido, cantidad, precio) values (322, 29, '2022-03-16', 5, 26.24);
-insert into lineapedido (PRODUCTO_cod_producto, PRODUCTO_MODO_PAGO_codigo_cuenta, PEDIDO_fecha_pedido, cantidad, precio) values (390, 55, '2021-11-19', 70, 56.89);
-insert into lineapedido (PRODUCTO_cod_producto, PRODUCTO_MODO_PAGO_codigo_cuenta, PEDIDO_fecha_pedido, cantidad, precio) values (593, 13, '2022-03-16', 30, 98.56);
-insert into lineapedido (PRODUCTO_cod_producto, PRODUCTO_MODO_PAGO_codigo_cuenta, PEDIDO_fecha_pedido, cantidad, precio) values (694, 44, '2021-06-28', 97, 29.22);
-
--- datos alquila
-insert into alquila (CLIENTE_codigo_cliente, PRODUCTO_cod_producto, fecha_alquiler, fecha_fin, precio) values (2, 233, '2020/12/8', '2023/2/18', 35.94);
-insert into alquila (CLIENTE_codigo_cliente, PRODUCTO_cod_producto, fecha_alquiler, fecha_fin, precio) values (10, 213, '2021/7/2', '2022/8/13', 40.12);
-insert into alquila (CLIENTE_codigo_cliente, PRODUCTO_cod_producto, fecha_alquiler, fecha_fin, precio) values (5, 283, '2021/1/17', '2023/2/23', 17.68);
-insert into alquila (CLIENTE_codigo_cliente, PRODUCTO_cod_producto, fecha_alquiler, fecha_fin, precio) values (8, 418, '2021/1/4', '2022/12/26', 18.14);
-insert into alquila (CLIENTE_codigo_cliente, PRODUCTO_cod_producto, fecha_alquiler, fecha_fin, precio) values (3, 693, '2022/3/31', '2023/3/14', 70.47);
-insert into alquila (CLIENTE_codigo_cliente, PRODUCTO_cod_producto, fecha_alquiler, fecha_fin, precio) values (7, 682, '2022/4/3', null, 7.54);
-insert into alquila (CLIENTE_codigo_cliente, PRODUCTO_cod_producto, fecha_alquiler, fecha_fin, precio) values (4, 424, '2022/10/23', '2023/1/30', 54.28);
-insert into alquila (CLIENTE_codigo_cliente, PRODUCTO_cod_producto, fecha_alquiler, fecha_fin, precio) values (6, 835, '2021/7/28', null, 9.13);
-insert into alquila (CLIENTE_codigo_cliente, PRODUCTO_cod_producto, fecha_alquiler, fecha_fin, precio) values (5, 733, '2020/5/16', '2023/1/8', 90.77);
-insert into alquila (CLIENTE_codigo_cliente, PRODUCTO_cod_producto, fecha_alquiler, fecha_fin, precio) values (1, 65, '2022/9/4', '2022/11/23', 28.3);
-
--- datos productoApareceReserva
-insert into productoaparecereserva (PRODUCTO_cod_producto, RESERVA_numero_identificacion, cantidad, precio) values (486, 1, 95, 74.08);
-insert into productoaparecereserva (PRODUCTO_cod_producto, RESERVA_numero_identificacion, cantidad, precio) values (574, 1, 86, 34.12);
-insert into productoaparecereserva (PRODUCTO_cod_producto, RESERVA_numero_identificacion, cantidad, precio) values (809, 9, 37, 3.85);
-insert into productoaparecereserva (PRODUCTO_cod_producto, RESERVA_numero_identificacion, cantidad, precio) values (513, 10, 4, 42.51);
-insert into productoaparecereserva (PRODUCTO_cod_producto, RESERVA_numero_identificacion, cantidad, precio) values (432, 8, 30, 17.64);
-insert into productoaparecereserva (PRODUCTO_cod_producto, RESERVA_numero_identificacion, cantidad, precio) values (19, 7, 42, 90.76);
-insert into productoaparecereserva (PRODUCTO_cod_producto, RESERVA_numero_identificacion, cantidad, precio) values (194, 5, 62, 48.3);
-insert into productoaparecereserva (PRODUCTO_cod_producto, RESERVA_numero_identificacion, cantidad, precio) values (421, 10, 4, 49.91);
-insert into productoaparecereserva (PRODUCTO_cod_producto, RESERVA_numero_identificacion, cantidad, precio) values (500, 10, 17, 2.27);
-insert into productoaparecereserva (PRODUCTO_cod_producto, RESERVA_numero_identificacion, cantidad, precio) values (910, 1, 96, 63.79);
-
--- datos clienteHaceReserva
-INSERT INTO ataviada.clientehacereserva (RESERVA_numero_identificacion,CLIENTE_codigo_cliente) VALUES
-	 (10,1),
-	 (1,2),
-	 (5,2),
-	 (6,2),
-	 (9,2),
-	 (2,3),
-	 (2,7),
-	 (1,8),
-	 (10,9),
-	 (4,10);
-
+-- Linea pedido
+insert into linea_pedido (Producto_codigo_Producto, Pedido_fecha_pedido, Pedido_fecha_prevista, cantidad, precio_unidad) values (8, '2022-07-01', '2023-05-01', 58, 89.81);
+insert into linea_pedido (Producto_codigo_Producto, Pedido_fecha_pedido, Pedido_fecha_prevista, cantidad, precio_unidad) values (1, '2022-06-07', '2023-05-20', 76, 2.44);
+insert into linea_pedido (Producto_codigo_Producto, Pedido_fecha_pedido, Pedido_fecha_prevista, cantidad, precio_unidad) values (7, '2022-06-11', '2023-04-18', 19, 15.59);
+insert into linea_pedido (Producto_codigo_Producto, Pedido_fecha_pedido, Pedido_fecha_prevista, cantidad, precio_unidad) values (9, '2022-08-12', '2023-05-21', 48, 22.71);
+insert into linea_pedido (Producto_codigo_Producto, Pedido_fecha_pedido, Pedido_fecha_prevista, cantidad, precio_unidad) values (5, '2022-11-06', '2023-05-26', 86, 88.36);
+insert into linea_pedido (Producto_codigo_Producto, Pedido_fecha_pedido, Pedido_fecha_prevista, cantidad, precio_unidad) values (4, '2023-03-01', '2023-05-22', 52, 38.02);
+insert into linea_pedido (Producto_codigo_Producto, Pedido_fecha_pedido, Pedido_fecha_prevista, cantidad, precio_unidad) values (3, '2023-02-17', '2023-04-18', 35, 25.0);
+insert into linea_pedido (Producto_codigo_Producto, Pedido_fecha_pedido, Pedido_fecha_prevista, cantidad, precio_unidad) values (8, '2022-07-06', '2023-05-04', 25, 94.4);
+insert into linea_pedido (Producto_codigo_Producto, Pedido_fecha_pedido, Pedido_fecha_prevista, cantidad, precio_unidad) values (10, '2022-11-06', '2023-05-26', 60, 39.98);
+insert into linea_pedido (Producto_codigo_Producto, Pedido_fecha_pedido, Pedido_fecha_prevista, cantidad, precio_unidad) values (4, '2023-02-17', '2023-04-18', 87, 58.98);
