@@ -5,8 +5,8 @@ use ataviada;
 -- Obtener el identificador de los clientes que han comprado algún producto
 -- que no tenga telefono
 select p.Cliente_codigo_cliente from pedido p 
-inner join cliente c ON p.Cliente_codigo_cliente = c.codigo_cliente
-where c.telefono is null;
+where p.Cliente_codigo_cliente in (select c2.codigo_cliente from cliente c2 
+where c2.telefono is null);
 
 -- ordenar los productos del más caro al más barato que sea menor de 100€ y mayor de 50€
 select p.nombre_producto, concat(p.precio, ' €') from producto p
@@ -45,7 +45,7 @@ where c.telefono is null;
 
 -- 3.1 Funciones
 
--- Funcion que te suma el precio total de una unidad de dos productos pedidos
+-- Funcion que te suma el precio total de dos productos pedidos
 
 drop function suma;
 
@@ -92,12 +92,12 @@ select buscar_nombre_cliente(3);
 
 -- cuenta cuantos clientes empiezan con una letra
 
-drop procedure total_cllientes_letra;
+drop procedure total_clientes_letra;
 
 delimiter &&
 CREATE PROCEDURE total_clientes_letra (IN palabra varchar(20))
 BEGIN
-  SELECT COUNT(*) FROM cliente c
+  SELECT COUNT(*) as 'total' FROM cliente c
   WHERE c.nombre like concat(palabra,'%');
 END 
 &&
@@ -121,7 +121,7 @@ BEGIN
 	where p.Cliente_codigo_cliente = cod);
 	
 	
-	SELECT concat('El cliente ', buscar_nombre_cliente(cod), ' tiene ', (reserva + pedido), ' reservas y pedidos en total.') 
+	SELECT concat('El cliente ', buscar_nombre_cliente(cod), ' tiene ', (reserva + pedido), ' reservas y pedidos en total.') as 'Reservas y pedidos totales'
 	FROM cliente c 
 	limit 1;
 
