@@ -152,6 +152,7 @@ BEGIN
   DECLARE total_personas INT;
   DECLARE mes_nombre VARCHAR(45);
   
+  -- Crea un cursor cursor que selecciona todas las personas que hayan reservado en el dia indicado
   DECLARE cliente_mes CURSOR FOR
     SELECT COUNT(*) AS total_personas, MONTHNAME(r.fecha_inicio) AS mes_nombre
     FROM reserva r
@@ -161,7 +162,7 @@ BEGIN
   DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
 
   OPEN cliente_mes;
-
+  -- Mete todos los datos que encuentre en la tabla creada
   read_loop: LOOP
     FETCH cliente_mes INTO total_personas, mes_nombre;
     IF done THEN
