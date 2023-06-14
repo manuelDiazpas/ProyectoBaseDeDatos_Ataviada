@@ -38,8 +38,8 @@ group by p.Stock_talla;
 -- vista de la consulta número 1
 create or replace view clientes_sin_telefono
 as select p.Cliente_codigo_cliente from pedido p 
-inner join cliente c ON p.Cliente_codigo_cliente = c.codigo_cliente
-where c.telefono is null;
+where p.Cliente_codigo_cliente in (select c2.codigo_cliente from cliente c2 
+where c2.telefono is null);
 
 -- 3. Funciones y Procedimientos
 
